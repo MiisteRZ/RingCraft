@@ -1,0 +1,184 @@
+{
+  "mod_elements": [
+    {
+      "name": "RingsGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rings_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java",
+          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RingsMenuBindingOnKeyPressedProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rings_menu_binding_on_key_pressed_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/RingsMenuBindingOnKeyPressedProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RingsMenuBinding",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rings_menu_binding",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/network/RingsMenuBindingMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "ReadGUIinfoProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "read_gu_iinfo_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ReadGUIinfoProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "ExecuteGUIProdecure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "execute_gui_prodecure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ExecuteGUIProdecureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "SaveGUIProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "save_gui_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/SaveGUIProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/GUI"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "ringSlot0",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "ringSlot1",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "ringSlot2",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "ringSaving",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
+      "key.ringcraft.rings_menu_binding": "Rings Menu Binding"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "GUI",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "ringcraft",
+    "modName": "RingCraft",
+    "version": "1.0.0",
+    "author": "faaii, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "miisterzmods.ringcraft"
+  },
+  "mcreatorVersion": 202400452410
+}

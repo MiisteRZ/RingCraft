@@ -1,0 +1,12 @@
+{
+  "_fv": 73,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "O",
+    "keyBindingName": "Rings Menu Binding",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "RingsMenuBindingOnKeyPressedProcedure"
+    }
+  }
+}
