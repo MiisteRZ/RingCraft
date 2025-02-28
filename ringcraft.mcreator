@@ -118,6 +118,48 @@
         ]
       },
       "path": "~/GUI"
+    },
+    {
+      "name": "RingCraftCreativeTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring_craft_creative_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "RegularRingItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regular_ring_item",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/item/RegularRingItemItem.java",
+          "src/main/resources/assets/ringcraft/models/item/regular_ring_item.json"
+        ]
+      }
+    },
+    {
+      "name": "ReinforcedIronStoneBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_stone_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_stone_block.json",
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -147,12 +189,23 @@
     }
   ],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:ReinforcedIronStoneBlock"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ReinforcedIronStoneBlock"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
-      "key.ringcraft.rings_menu_binding": "Rings Menu Binding"
+      "item.ringcraft.regular_ring_item": "Regular Ring",
+      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "item.ringcraft.regular_ring_item.description_0": "",
+      "key.ringcraft.rings_menu_binding": "Rings Menu Binding",
+      "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore"
     }
   },
   "foldersRoot": {

@@ -1,0 +1,9 @@
+{
+  "parent": "ringcraft:custom/reinforcediron",
+  "textures": {
+    "all": "ringcraft:block/reinforcedironstoneblock",
+    "particle": "ringcraft:block/reinforcedironstoneblock",
+    "0": "ringcraft:block/reinforcedironstoneblock"
+  },
+  "render_type": "solid"
+}

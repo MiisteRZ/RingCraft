@@ -19,7 +19,10 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import miisterzmods.ringcraft.network.RingcraftModVariables;
+import miisterzmods.ringcraft.init.RingcraftModTabs;
 import miisterzmods.ringcraft.init.RingcraftModMenus;
+import miisterzmods.ringcraft.init.RingcraftModItems;
+import miisterzmods.ringcraft.init.RingcraftModBlocks;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -39,6 +42,11 @@ public class RingcraftMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 
+		RingcraftModBlocks.REGISTRY.register(modEventBus);
+
+		RingcraftModItems.REGISTRY.register(modEventBus);
+
+		RingcraftModTabs.REGISTRY.register(modEventBus);
 		RingcraftModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
 		RingcraftModMenus.REGISTRY.register(modEventBus);
