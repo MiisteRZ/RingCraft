@@ -8,8 +8,8 @@
       "registry_name": "rings_gui",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java",
-          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java"
+          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java",
+          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -164,7 +164,7 @@
     {
       "name": "ReinforcedIronIngot",
       "type": "item",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "reinforced_iron_ingot",
       "metadata": {
@@ -172,6 +172,16 @@
           "src/main/java/miisterzmods/ringcraft/item/ReinforcedIronIngotItem.java",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_ingot.json"
         ]
+      }
+    },
+    {
+      "name": "RegularRingVillagerTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regular_ring_villager_trade",
+      "metadata": {
+        "files": []
       }
     }
   ],

@@ -27,8 +27,8 @@ public class RingsGUIScreen extends AbstractContainerScreen<RingsGUIMenu> {
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 138;
+		this.imageWidth = 172;
+		this.imageHeight = 153;
 	}
 
 	private static final ResourceLocation texture = ResourceLocation.parse("ringcraft:textures/screens/rings_gui.png");
@@ -46,6 +46,13 @@ public class RingsGUIScreen extends AbstractContainerScreen<RingsGUIMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/ring_gui_image.png"), this.leftPos + 6, this.topPos + 19, 0, 0, 48, 48, 48, 48);
+
+		guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/ring_gui_image.png"), this.leftPos + 116, this.topPos + 19, 0, 0, 48, 48, 48, 48);
+
+		guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/ring_gui_image.png"), this.leftPos + 60, this.topPos + 19, 0, 0, 48, 48, 48, 48);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -60,7 +67,7 @@ public class RingsGUIScreen extends AbstractContainerScreen<RingsGUIMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.ringcraft.rings_gui.label_magic_rings"), 60, 11, -6750055, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.ringcraft.rings_gui.label_magic_rings"), 60, 3, -6750055, false);
 	}
 
 	@Override
