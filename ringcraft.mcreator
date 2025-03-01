@@ -242,10 +242,10 @@
       "registry_name": "blaze_soul",
       "metadata": {
         "files": [
+          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemModel.java",
           "src/main/java/miisterzmods/ringcraft/item/renderer/BlazeSoulItemRenderer.java",
           "src/main/java/miisterzmods/ringcraft/item/BlazeSoulItem.java",
-          "src/main/resources/assets/ringcraft/models/item/blaze_soul.json",
-          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemModel.java"
+          "src/main/resources/assets/ringcraft/models/item/blaze_soul.json"
         ]
       },
       "path": "~/Items"
@@ -324,14 +324,14 @@
   "language_map": {
     "pl_pl": {
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
-      "advancements.regular_ring_obtained.descr": "forge a basic ring",
-      "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
+      "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
-      "item.ringcraft.blaze_soul": "Blaze Soul",
+      "item.ringcraft.blaze_soul": "Dusza płomyka",
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
-      "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
-      "advancements.regular_ring_obtained.title": "A New Beginning",
+      "advancements.reinforced_iron_ingot_obtained.title": "Zaawansowany sprzęt",
+      "advancements.regular_ring_obtained.title": "Nowy początek",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
@@ -339,11 +339,11 @@
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocnione złoże żelaza",
       "painting.ringcraft.painting_1.title": "Osi",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance"
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec"
     },
     "en_us": {
-      "item.ringcraft.regular_ring_item": "Regular Ring",
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
+      "item.ringcraft.regular_ring_item": "Regular Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "item.ringcraft.blaze_soul": "Blaze Soul",
