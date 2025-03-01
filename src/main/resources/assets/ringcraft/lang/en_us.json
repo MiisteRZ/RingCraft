@@ -1,13 +1,8 @@
 {
   "item.ringcraft.regular_ring_item": "Regular Ring",
-  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
-  "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
   "key.ringcraft.rings_menu_binding": "Rings Menu",
-  "item.ringcraft.blaze_soul": "Blaze Soul",
   "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
   "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
-  "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
-  "advancements.regular_ring_obtained.title": "A New Beginning",
   "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
   "item.ringcraft.regular_ring_item.description_0": "",
   "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
