@@ -60,7 +60,7 @@ public class RingsGUIScreen extends AbstractContainerScreen<RingsGUIMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.ringcraft.rings_gui.label_magic_rings"), 51, 11, -6750055, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.ringcraft.rings_gui.label_magic_rings"), 60, 11, -6750055, false);
 	}
 
 	@Override
