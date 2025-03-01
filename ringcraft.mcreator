@@ -164,7 +164,7 @@
     {
       "name": "ReinforcedIronIngot",
       "type": "item",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "reinforced_iron_ingot",
       "metadata": {
@@ -217,6 +217,7 @@
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
       "item.ringcraft.regular_ring_item.description_0": "",
+      "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza"
     },
