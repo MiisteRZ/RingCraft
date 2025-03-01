@@ -1,6 +1,7 @@
 {
   "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
   "item.ringcraft.regular_ring_item": "Regular Ring",
+  "block.ringcraft.reinforced_iron_deep_slate_ore_block": "Reinforced Iron Ore DeepSlate",
   "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
   "item.ringcraft.regular_ring_item.description_0": "",
   "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",

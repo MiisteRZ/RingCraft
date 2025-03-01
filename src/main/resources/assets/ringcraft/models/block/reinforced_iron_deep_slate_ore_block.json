@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ringcraft:block/deepslate_reinforced_iron_ore",
+    "up": "ringcraft:block/deepslate_reinforced_iron_ore",
+    "north": "ringcraft:block/deepslate_reinforced_iron_ore",
+    "east": "ringcraft:block/deepslate_reinforced_iron_ore",
+    "south": "ringcraft:block/deepslate_reinforced_iron_ore",
+    "west": "ringcraft:block/deepslate_reinforced_iron_ore",
+    "particle": "ringcraft:block/deepslate_reinforced_iron_ore"
+  },
+  "render_type": "solid"
+}

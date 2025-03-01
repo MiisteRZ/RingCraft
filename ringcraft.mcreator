@@ -173,6 +173,22 @@
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_ingot.json"
         ]
       }
+    },
+    {
+      "name": "ReinforcedIronDeepSlateOreBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_deep_slate_ore_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_deep_slate_ore_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deep_slate_ore_block.json",
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_deep_slate_ore_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deep_slate_ore_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronDeepSlateOreBlockBlock.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -204,9 +220,11 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:ReinforcedIronDeepSlateOreBlock",
       "~CUSTOM:ReinforcedIronStoneBlock"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ReinforcedIronDeepSlateOreBlock",
       "~CUSTOM:ReinforcedIronStoneBlock"
     ]
   },
@@ -215,6 +233,7 @@
     "pl_pl": {
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+      "block.ringcraft.reinforced_iron_deep_slate_ore_block": "Reinforced Iron Ore DeepSlate",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
@@ -224,6 +243,7 @@
     "en_us": {
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "block.ringcraft.reinforced_iron_deep_slate_ore_block": "Reinforced Iron Ore DeepSlate",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
