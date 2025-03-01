@@ -4,21 +4,21 @@ import software.bernie.geckolib.model.GeoModel;
 
 import net.minecraft.resources.ResourceLocation;
 
-import miisterzmods.ringcraft.item.BlazeSoulItemItem;
+import miisterzmods.ringcraft.item.BlazeSoulItem;
 
-public class BlazeSoulItemItemModel extends GeoModel<BlazeSoulItemItem> {
+public class BlazeSoulItemModel extends GeoModel<BlazeSoulItem> {
 	@Override
-	public ResourceLocation getAnimationResource(BlazeSoulItemItem animatable) {
+	public ResourceLocation getAnimationResource(BlazeSoulItem animatable) {
 		return ResourceLocation.parse("ringcraft:animations/blaze_soul.animation.json");
 	}
 
 	@Override
-	public ResourceLocation getModelResource(BlazeSoulItemItem animatable) {
+	public ResourceLocation getModelResource(BlazeSoulItem animatable) {
 		return ResourceLocation.parse("ringcraft:geo/blaze_soul.geo.json");
 	}
 
 	@Override
-	public ResourceLocation getTextureResource(BlazeSoulItemItem animatable) {
+	public ResourceLocation getTextureResource(BlazeSoulItem animatable) {
 		return ResourceLocation.parse("ringcraft:textures/item/blaze_soul.png");
 	}
 }

@@ -3,14 +3,14 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "A New Beginning",
-    "achievementDescription": "Forge a regular ring",
+    "achievementDescription": "Forge a Basic Ring",
     "achievementIcon": {
       "value": "CUSTOM:RegularRingItem"
     },
-    "background": "ring_craft_advancements.png",
+    "background": "Default",
     "disableDisplay": false,
     "showPopup": true,
-    "announceToChat": false,
+    "announceToChat": true,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],

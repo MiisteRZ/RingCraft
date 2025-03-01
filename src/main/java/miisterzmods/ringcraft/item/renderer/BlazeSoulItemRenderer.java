@@ -9,8 +9,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
-import miisterzmods.ringcraft.item.model.BlazeSoulItemItemModel;
-import miisterzmods.ringcraft.item.BlazeSoulItemItem;
+import miisterzmods.ringcraft.item.model.BlazeSoulItemModel;
+import miisterzmods.ringcraft.item.BlazeSoulItem;
 
 import java.util.Set;
 import java.util.HashSet;
@@ -18,13 +18,13 @@ import java.util.HashSet;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
-public class BlazeSoulItemItemRenderer extends GeoItemRenderer<BlazeSoulItemItem> {
-	public BlazeSoulItemItemRenderer() {
-		super(new BlazeSoulItemItemModel());
+public class BlazeSoulItemRenderer extends GeoItemRenderer<BlazeSoulItem> {
+	public BlazeSoulItemRenderer() {
+		super(new BlazeSoulItemModel());
 	}
 
 	@Override
-	public RenderType getRenderType(BlazeSoulItemItem animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
+	public RenderType getRenderType(BlazeSoulItem animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
 		return RenderType.entityTranslucent(getTextureLocation(animatable));
 	}
 
@@ -33,7 +33,7 @@ public class BlazeSoulItemItemRenderer extends GeoItemRenderer<BlazeSoulItemItem
 	protected MultiBufferSource currentBuffer;
 	protected RenderType renderType;
 	public ItemDisplayContext transformType;
-	protected BlazeSoulItemItem animatable;
+	protected BlazeSoulItem animatable;
 	private final Set<String> hiddenBones = new HashSet<>();
 	private final Set<String> suppressedBones = new HashSet<>();
 
@@ -44,7 +44,7 @@ public class BlazeSoulItemItemRenderer extends GeoItemRenderer<BlazeSoulItemItem
 	}
 
 	@Override
-	public void actuallyRender(PoseStack matrixStackIn, BlazeSoulItemItem animatable, BakedGeoModel model, RenderType type, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, boolean isRenderer, float partialTicks, int packedLightIn,
+	public void actuallyRender(PoseStack matrixStackIn, BlazeSoulItem animatable, BakedGeoModel model, RenderType type, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, boolean isRenderer, float partialTicks, int packedLightIn,
 			int packedOverlayIn, int color) {
 		this.currentBuffer = renderTypeBuffer;
 		this.renderType = type;
@@ -56,7 +56,7 @@ public class BlazeSoulItemItemRenderer extends GeoItemRenderer<BlazeSoulItemItem
 	}
 
 	@Override
-	public ResourceLocation getTextureLocation(BlazeSoulItemItem instance) {
+	public ResourceLocation getTextureLocation(BlazeSoulItem instance) {
 		return super.getTextureLocation(instance);
 	}
 }

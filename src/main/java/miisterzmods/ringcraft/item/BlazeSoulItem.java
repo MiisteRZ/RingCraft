@@ -16,15 +16,15 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 
-import miisterzmods.ringcraft.item.renderer.BlazeSoulItemItemRenderer;
+import miisterzmods.ringcraft.item.renderer.BlazeSoulItemRenderer;
 
 import java.util.function.Consumer;
 
-public class BlazeSoulItemItem extends Item implements GeoItem {
+public class BlazeSoulItem extends Item implements GeoItem {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	public String animationprocedure = "empty";
 
-	public BlazeSoulItemItem() {
+	public BlazeSoulItem() {
 		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.RARE));
 	}
 
@@ -36,12 +36,12 @@ public class BlazeSoulItemItem extends Item implements GeoItem {
 	@Override
 	public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
 		consumer.accept(new GeoRenderProvider() {
-			private BlazeSoulItemItemRenderer renderer;
+			private BlazeSoulItemRenderer renderer;
 
 			@Override
 			public BlockEntityWithoutLevelRenderer getGeoItemRenderer() {
 				if (this.renderer == null)
-					this.renderer = new BlazeSoulItemItemRenderer();
+					this.renderer = new BlazeSoulItemRenderer();
 				return this.renderer;
 			}
 		});
