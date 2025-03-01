@@ -8,8 +8,8 @@
       "registry_name": "rings_gui",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java",
-          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java"
+          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java",
+          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -150,21 +150,43 @@
       "registry_name": "reinforced_iron_stone_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
           "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_stone_block.json",
           "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
         ]
       }
     },
     {
+      "name": "Painting1",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/painting_variant/painting_1.json"
+        ]
+      }
+    },
+    {
+      "name": "RegularRingVillagerTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regular_ring_villager_trade",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
       "name": "ReinforcedIronIngot",
       "type": "item",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "reinforced_iron_ingot",
       "metadata": {
@@ -228,7 +250,13 @@
       "~CUSTOM:ReinforcedIronStoneBlock"
     ]
   },
-  "tab_element_order": {},
+  "tab_element_order": {
+    "CUSTOM:RingCraftCreativeTab": [
+      "ReinforcedIronStoneBlock",
+      "RegularRingItem",
+      "ReinforcedIronIngot"
+    ]
+  },
   "language_map": {
     "pl_pl": {
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
@@ -236,7 +264,6 @@
       "block.ringcraft.reinforced_iron_deep_slate_ore_block": "Reinforced Iron Ore DeepSlate",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
       "item.ringcraft.regular_ring_item.description_0": "",
-      "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza"
     },
@@ -246,9 +273,11 @@
       "block.ringcraft.reinforced_iron_deep_slate_ore_block": "Reinforced Iron Ore DeepSlate",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "item.ringcraft.regular_ring_item.description_0": "",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
-      "key.ringcraft.rings_menu_binding": "Rings Menu Binding",
-      "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore"
+      "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
+      "painting.ringcraft.painting_1.title": "Denk"
     }
   },
   "foldersRoot": {
@@ -264,10 +293,11 @@
     "modid": "ringcraft",
     "modName": "RingCraft",
     "version": "1.0.0",
-    "author": "faaii, MCreator",
+    "author": "Herbow Development, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
     "serverSideOnly": false,
+    "modPicture": "donk",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
