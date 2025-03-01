@@ -140,8 +140,7 @@
           "src/main/java/miisterzmods/ringcraft/item/RegularRingItemItem.java",
           "src/main/resources/assets/ringcraft/models/item/regular_ring_item.json"
         ]
-      },
-      "path": "~/Items"
+      }
     },
     {
       "name": "ReinforcedIronStoneBlock",
@@ -152,6 +151,7 @@
       "metadata": {
         "files": [
           "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_stone_block.json",
           "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
@@ -159,9 +159,36 @@
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java",
           "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json"
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "Painting1",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/painting_variant/painting_1.json"
+        ]
+      }
+    },
+    {
+      "name": "RegularRingVillagerTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regular_ring_villager_trade",
+      "metadata": {
+        "files": []
+      }
     },
     {
       "name": "ReinforcedIronIngot",
@@ -191,12 +218,23 @@
       "path": "~/Advancements"
     },
     {
+      "name": "ReinforcedIronDeepSlateOreBlock",
+      "type": "block",
       "name": "ReinforcedIronIngotObtained",
       "type": "achievement",
       "compiles": true,
       "locked_code": false,
+      "registry_name": "reinforced_iron_deep_slate_ore_block",
       "registry_name": "reinforced_iron_ingot_obtained",
       "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_deep_slate_ore_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deep_slate_ore_block.json",
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_deep_slate_ore_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deep_slate_ore_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronDeepSlateOreBlockBlock.java"
+        ]
+      }
         "files": [
           "src/main/resources/data/ringcraft/advancement/reinforced_iron_ingot_obtained.json"
         ]
@@ -249,13 +287,21 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:ReinforcedIronDeepSlateOreBlock",
       "~CUSTOM:ReinforcedIronStoneBlock"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ReinforcedIronDeepSlateOreBlock",
       "~CUSTOM:ReinforcedIronStoneBlock"
     ]
   },
-  "tab_element_order": {},
+  "tab_element_order": {
+    "CUSTOM:RingCraftCreativeTab": [
+      "ReinforcedIronStoneBlock",
+      "RegularRingItem",
+      "ReinforcedIronIngot"
+    ]
+  },
   "language_map": {
     "pl_pl": {
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
@@ -263,16 +309,21 @@
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
+      "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+      "block.ringcraft.reinforced_iron_deep_slate_ore_block": "Reinforced Iron Ore DeepSlate",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
       "advancements.regular_ring_obtained.title": "A new beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
       "item.ringcraft.regular_ring_item.description_0": "",
+      "key.ringcraft.rings_menu_binding": "Pierścienie",
+      "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza"
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza",
       "item.ringcraft.blaze_soul_item": "Blaze Soul Item"
     },
     "en_us": {
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "block.ringcraft.reinforced_iron_deep_slate_ore_block": "Reinforced Iron Ore DeepSlate",
       "advancements.regular_ring_obtained.descr": "Forge a regular ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -281,9 +332,13 @@
       "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "item.ringcraft.regular_ring_item.description_0": "",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "item.ringcraft.blaze_soul_item": "Blaze Soul"
+      "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
+      "painting.ringcraft.painting_1.title": "Denk"
     }
   },
   "foldersRoot": {
@@ -311,10 +366,11 @@
     "modid": "ringcraft",
     "modName": "RingCraft",
     "version": "1.0.0",
-    "author": "faaii, MCreator",
+    "author": "Herbow Development, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
     "serverSideOnly": false,
+    "modPicture": "donk",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

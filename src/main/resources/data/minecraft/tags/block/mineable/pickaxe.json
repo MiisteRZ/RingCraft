@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "ringcraft:reinforced_iron_deep_slate_ore_block",
     "ringcraft:reinforced_iron_stone_block"
   ]
 }

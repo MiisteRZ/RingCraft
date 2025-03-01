@@ -6,9 +6,12 @@
   "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
   "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
   "advancements.regular_ring_obtained.title": "A new beginning",
+  "block.ringcraft.reinforced_iron_deep_slate_ore_block": "Reinforced Iron Ore DeepSlate",
   "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
   "item.ringcraft.regular_ring_item.description_0": "",
   "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
   "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza",
-  "item.ringcraft.blaze_soul_item": "Blaze Soul Item"
+  "item.ringcraft.blaze_soul_item": "Blaze Soul Item",
+  "key.ringcraft.rings_menu_binding": "Pierścienie",
+  "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza"
 }

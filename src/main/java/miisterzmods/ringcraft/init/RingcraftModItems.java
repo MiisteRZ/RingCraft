@@ -23,6 +23,7 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> REINFORCED_IRON_STONE_BLOCK = block(RingcraftModBlocks.REINFORCED_IRON_STONE_BLOCK);
 	public static final DeferredItem<Item> REINFORCED_IRON_INGOT = REGISTRY.register("reinforced_iron_ingot", ReinforcedIronIngotItem::new);
 	public static final DeferredItem<Item> BLAZE_SOUL_ITEM = REGISTRY.register("blaze_soul_item", BlazeSoulItemItem::new);
+	public static final DeferredItem<Item> REINFORCED_IRON_DEEP_SLATE_ORE_BLOCK = block(RingcraftModBlocks.REINFORCED_IRON_DEEP_SLATE_ORE_BLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items
