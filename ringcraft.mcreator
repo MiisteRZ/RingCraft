@@ -258,8 +258,8 @@
   "tab_element_order": {},
   "language_map": {
     "pl_pl": {
-      "advancements.regular_ring_obtained.descr": "Obtain a regular ring",
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+      "advancements.regular_ring_obtained.descr": "Obtain a regular ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
@@ -272,8 +272,8 @@
       "item.ringcraft.blaze_soul_item": "Blaze Soul Item"
     },
     "en_us": {
-      "advancements.regular_ring_obtained.descr": "Forge a regular ring",
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "advancements.regular_ring_obtained.descr": "Forge a regular ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",

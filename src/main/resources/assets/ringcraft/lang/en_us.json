@@ -1,6 +1,6 @@
 {
-  "advancements.regular_ring_obtained.descr": "Forge a regular ring",
   "item.ringcraft.regular_ring_item": "Regular Ring",
+  "advancements.regular_ring_obtained.descr": "Forge a regular ring",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
   "key.ringcraft.rings_menu_binding": "Rings Menu",
   "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",

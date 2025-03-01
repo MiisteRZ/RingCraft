@@ -1,6 +1,6 @@
 {
-  "advancements.regular_ring_obtained.descr": "Obtain a regular ring",
   "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+  "advancements.regular_ring_obtained.descr": "Obtain a regular ring",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
   "key.ringcraft.rings_menu_binding": "Pierścienie",
   "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
