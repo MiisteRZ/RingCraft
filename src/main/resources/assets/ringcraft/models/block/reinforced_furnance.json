@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/bamboo_fence_particle",
+    "up": "minecraft:block/bee_nest_side",
+    "north": "minecraft:block/cactus_bottom",
+    "east": "minecraft:block/copper_door_top",
+    "south": "minecraft:block/copper_door_top",
+    "west": "minecraft:block/copper_door_top",
+    "particle": "minecraft:block/bamboo_fence_particle"
+  },
+  "render_type": "solid"
+}

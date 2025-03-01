@@ -1,8 +1,14 @@
 {
-  "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
   "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+  "key.ringcraft.rings_menu_binding": "Pierścienie",
+  "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
+  "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
   "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
   "item.ringcraft.regular_ring_item.description_0": "",
-  "key.ringcraft.rings_menu_binding": "Pierścienie",
-  "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza"
+  "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
+  "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+  "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza",
+  "painting.ringcraft.painting_1.title": "Denk",
+  "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+  "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance"
 }
