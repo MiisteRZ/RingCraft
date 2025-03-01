@@ -140,7 +140,8 @@
           "src/main/java/miisterzmods/ringcraft/item/RegularRingItemItem.java",
           "src/main/resources/assets/ringcraft/models/item/regular_ring_item.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "ReinforcedIronStoneBlock",
@@ -150,16 +151,17 @@
       "registry_name": "reinforced_iron_stone_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Painting1",
@@ -184,7 +186,8 @@
           "src/main/java/miisterzmods/ringcraft/item/ReinforcedIronIngotItem.java",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_ingot.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "ReinforcedFurnance",
@@ -194,14 +197,15 @@
       "registry_name": "reinforced_furnance",
       "metadata": {
         "files": [
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedFurnanceBlock.java",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_furnance.json",
           "src/main/java/miisterzmods/ringcraft/block/entity/ReinforcedFurnanceBlockEntity.java",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_furnance.json",
-          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedFurnanceBlock.java",
           "src/main/resources/assets/ringcraft/models/item/reinforced_furnance.json",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_furnance.json"
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "ReinforcedFurnanceGUI",
@@ -211,10 +215,11 @@
       "registry_name": "reinforced_furnance_gui",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/world/inventory/ReinforcedFurnanceGUIMenu.java",
-          "src/main/java/miisterzmods/ringcraft/client/gui/ReinforcedFurnanceGUIScreen.java"
+          "src/main/java/miisterzmods/ringcraft/client/gui/ReinforcedFurnanceGUIScreen.java",
+          "src/main/java/miisterzmods/ringcraft/world/inventory/ReinforcedFurnanceGUIMenu.java"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "ReinforcedIronBlockRecipe",
@@ -226,7 +231,50 @@
         "files": [
           "src/main/resources/data/ringcraft/recipe/reinforced_iron_block.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BlazeSoul",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_soul",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/item/renderer/BlazeSoulItemRenderer.java",
+          "src/main/java/miisterzmods/ringcraft/item/BlazeSoulItem.java",
+          "src/main/resources/assets/ringcraft/models/item/blaze_soul.json",
+          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemModel.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RegularRingObtained",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regular_ring_obtained",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/advancement/regular_ring_obtained.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ReinforcedIronIngotObtained",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_ingot_obtained",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/advancement/reinforced_iron_ingot_obtained.json"
+        ]
+      },
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [
@@ -269,15 +317,21 @@
       "ReinforcedIronStoneBlock",
       "RegularRingItem",
       "ReinforcedIronIngot",
-      "ReinforcedFurnance"
+      "ReinforcedFurnance",
+      "BlazeSoul"
     ]
   },
   "language_map": {
     "pl_pl": {
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+      "advancements.regular_ring_obtained.descr": "forge a basic ring",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
+      "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
+      "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
@@ -289,9 +343,14 @@
     },
     "en_us": {
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
+      "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
+      "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "item.ringcraft.regular_ring_item.description_0": "",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
@@ -307,6 +366,18 @@
     "children": [
       {
         "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Advancements",
         "children": []
       }
     ]

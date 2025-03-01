@@ -1,8 +1,13 @@
 {
   "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+  "advancements.regular_ring_obtained.descr": "forge a basic ring",
+  "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
   "key.ringcraft.rings_menu_binding": "Pierścienie",
+  "item.ringcraft.blaze_soul": "Blaze Soul",
   "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
   "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
+  "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
+  "advancements.regular_ring_obtained.title": "A New Beginning",
   "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
   "item.ringcraft.regular_ring_item.description_0": "",
   "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
