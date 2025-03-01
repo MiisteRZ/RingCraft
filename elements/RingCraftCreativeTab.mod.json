@@ -6,6 +6,6 @@
     "icon": {
       "value": "CUSTOM:RegularRingItem"
     },
-    "showSearch": true
+    "showSearch": false
   }
 }

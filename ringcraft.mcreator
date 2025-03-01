@@ -150,13 +150,13 @@
       "registry_name": "reinforced_iron_stone_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
           "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_stone_block.json",
           "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
         ]
       }
@@ -197,14 +197,27 @@
       "~CUSTOM:ReinforcedIronStoneBlock"
     ]
   },
-  "tab_element_order": {},
+  "tab_element_order": {
+    "CUSTOM:RingCraftCreativeTab": [
+      "ReinforcedIronStoneBlock",
+      "RegularRingItem"
+    ]
+  },
   "language_map": {
+    "pl_pl": {
+      "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
+      "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+      "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
+      "item.ringcraft.regular_ring_item.description_0": "",
+      "key.ringcraft.rings_menu_binding": "Pierścienie",
+      "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza"
+    },
     "en_us": {
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "item.ringcraft.regular_ring_item": "Regular Ring",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "item.ringcraft.regular_ring_item.description_0": "",
-      "key.ringcraft.rings_menu_binding": "Rings Menu Binding",
+      "key.ringcraft.rings_menu_binding": "Rings Menu",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore"
     }
   },
@@ -221,7 +234,7 @@
     "modid": "ringcraft",
     "modName": "RingCraft",
     "version": "1.0.0",
-    "author": "faaii, MCreator",
+    "author": "Herbow Development, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
     "serverSideOnly": false,

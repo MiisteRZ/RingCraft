@@ -18,7 +18,7 @@ public class RingcraftModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RingcraftMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RING_CRAFT_CREATIVE_TAB = REGISTRY.register("ring_craft_creative_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ringcraft.ring_craft_creative_tab")).icon(() -> new ItemStack(RingcraftModItems.REGULAR_RING_ITEM.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(RingcraftModItems.REGULAR_RING_ITEM.get());
 				tabData.accept(RingcraftModBlocks.REINFORCED_IRON_STONE_BLOCK.get().asItem());
-			}).withSearchBar().build());
+				tabData.accept(RingcraftModItems.REGULAR_RING_ITEM.get());
+			}).build());
 }

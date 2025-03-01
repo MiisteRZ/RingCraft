@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 1,
-    "texture": "regularringtexture",
+    "texture": "ring",
     "customModelName": "regularring:default",
     "customProperties": {},
     "states": [],
