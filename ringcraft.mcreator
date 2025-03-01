@@ -140,7 +140,8 @@
           "src/main/java/miisterzmods/ringcraft/item/RegularRingItemItem.java",
           "src/main/resources/assets/ringcraft/models/item/regular_ring_item.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "ReinforcedIronStoneBlock",
@@ -150,16 +151,17 @@
       "registry_name": "reinforced_iron_stone_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "ReinforcedIronIngot",
@@ -172,17 +174,50 @@
           "src/main/java/miisterzmods/ringcraft/item/ReinforcedIronIngotItem.java",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_ingot.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
-      "name": "RegularRingVillagerTrade",
-      "type": "villagertrade",
+      "name": "RegularRingObtained",
+      "type": "achievement",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "regular_ring_villager_trade",
+      "registry_name": "regular_ring_obtained",
       "metadata": {
-        "files": []
-      }
+        "files": [
+          "src/main/resources/data/ringcraft/advancement/regular_ring_obtained.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ReinforcedIronIngotObtained",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_ingot_obtained",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/advancement/reinforced_iron_ingot_obtained.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "BlazeSoulItem",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_soul_item",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/item/renderer/BlazeSoulItemItemRenderer.java",
+          "src/main/resources/assets/ringcraft/models/item/blaze_soul_item.json",
+          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemItemModel.java",
+          "src/main/java/miisterzmods/ringcraft/item/BlazeSoulItemItem.java"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [
@@ -223,22 +258,32 @@
   "tab_element_order": {},
   "language_map": {
     "pl_pl": {
-      "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+      "advancements.regular_ring_obtained.descr": "Obtain a regular ring",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
+      "key.ringcraft.rings_menu_binding": "Pierścienie",
+      "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
+      "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
+      "advancements.regular_ring_obtained.title": "A new beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
-      "key.ringcraft.rings_menu_binding": "Pierścienie",
-      "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza"
+      "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza",
+      "item.ringcraft.blaze_soul_item": "Blaze Soul Item"
     },
     "en_us": {
-      "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "advancements.regular_ring_obtained.descr": "Forge a regular ring",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
+      "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
+      "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
+      "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
-      "key.ringcraft.rings_menu_binding": "Rings Menu Binding",
-      "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore"
+      "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
+      "item.ringcraft.blaze_soul_item": "Blaze Soul"
     }
   },
   "foldersRoot": {
@@ -246,6 +291,18 @@
     "children": [
       {
         "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Blocks",
         "children": []
       }
     ]
