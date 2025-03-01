@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "block",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ringcraft:reinforced_iron_ingot"
+    },
+    {
+      "item": "ringcraft:reinforced_iron_ingot"
+    },
+    {
+      "item": "ringcraft:reinforced_iron_ingot"
+    },
+    {
+      "item": "ringcraft:reinforced_iron_ingot"
+    },
+    {
+      "item": "ringcraft:reinforced_iron_ingot"
+    },
+    {
+      "item": "ringcraft:reinforced_iron_ingot"
+    },
+    {
+      "item": "ringcraft:reinforced_iron_ingot"
+    },
+    {
+      "item": "ringcraft:reinforced_iron_ingot"
+    },
+    {
+      "item": "ringcraft:reinforced_iron_ingot"
+    }
+  ],
+  "result": {
+    "id": "minecraft:stone",
+    "count": 1
+  }
+}

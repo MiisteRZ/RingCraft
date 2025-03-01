@@ -10,7 +10,7 @@
     "textureBack": "minecraft:copper_door_top",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 2,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -44,7 +44,11 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:RingCraftCreativeTab"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
@@ -82,7 +86,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -103,8 +107,9 @@
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
-    "hasInventory": false,
-    "openGUIOnRightClick": false,
+    "hasInventory": true,
+    "guiBoundTo": "ReinforcedFurnanceGUI",
+    "openGUIOnRightClick": true,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,

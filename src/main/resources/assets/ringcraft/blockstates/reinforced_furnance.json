@@ -1,7 +1,27 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "ringcraft:block/reinforced_furnance"
+    },
+    "facing=east": {
+      "model": "ringcraft:block/reinforced_furnance",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ringcraft:block/reinforced_furnance",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ringcraft:block/reinforced_furnance",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "ringcraft:block/reinforced_furnance",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "ringcraft:block/reinforced_furnance",
+      "x": 90
     }
   }
 }

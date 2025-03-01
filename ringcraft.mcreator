@@ -174,16 +174,6 @@
       }
     },
     {
-      "name": "RegularRingVillagerTrade",
-      "type": "villagertrade",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "regular_ring_villager_trade",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
       "name": "ReinforcedIronIngot",
       "type": "item",
       "compiles": true,
@@ -204,6 +194,7 @@
       "registry_name": "reinforced_furnance",
       "metadata": {
         "files": [
+          "src/main/java/miisterzmods/ringcraft/block/entity/ReinforcedFurnanceBlockEntity.java",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_furnance.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json",
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedFurnanceBlock.java",
@@ -222,6 +213,18 @@
         "files": [
           "src/main/java/miisterzmods/ringcraft/world/inventory/ReinforcedFurnanceGUIMenu.java",
           "src/main/java/miisterzmods/ringcraft/client/gui/ReinforcedFurnanceGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "ReinforcedIronBlockRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/reinforced_iron_block.json"
         ]
       }
     }
@@ -265,21 +268,22 @@
     "CUSTOM:RingCraftCreativeTab": [
       "ReinforcedIronStoneBlock",
       "RegularRingItem",
-      "ReinforcedIronIngot"
+      "ReinforcedIronIngot",
+      "ReinforcedFurnance"
     ]
   },
   "language_map": {
     "pl_pl": {
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
-      "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
+      "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
       "item.ringcraft.regular_ring_item.description_0": "",
-      "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
+      "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
-      "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza",
-      "painting.ringcraft.painting_1.title": "Denk",
+      "block.ringcraft.reinforced_iron_stone_block": "Wzmocnione złoże żelaza",
+      "painting.ringcraft.painting_1.title": "Osi",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance"
     },

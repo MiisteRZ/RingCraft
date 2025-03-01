@@ -23,6 +23,7 @@ import miisterzmods.ringcraft.init.RingcraftModTabs;
 import miisterzmods.ringcraft.init.RingcraftModMenus;
 import miisterzmods.ringcraft.init.RingcraftModItems;
 import miisterzmods.ringcraft.init.RingcraftModBlocks;
+import miisterzmods.ringcraft.init.RingcraftModBlockEntities;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -43,7 +44,7 @@ public class RingcraftMod {
 		modEventBus.addListener(this::registerNetworking);
 
 		RingcraftModBlocks.REGISTRY.register(modEventBus);
-
+		RingcraftModBlockEntities.REGISTRY.register(modEventBus);
 		RingcraftModItems.REGISTRY.register(modEventBus);
 
 		RingcraftModTabs.REGISTRY.register(modEventBus);
