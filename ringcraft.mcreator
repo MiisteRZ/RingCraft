@@ -140,7 +140,8 @@
           "src/main/java/miisterzmods/ringcraft/item/RegularRingItemItem.java",
           "src/main/resources/assets/ringcraft/models/item/regular_ring_item.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "ReinforcedIronStoneBlock",
@@ -159,7 +160,8 @@
           "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "Painting1",
@@ -184,7 +186,8 @@
           "src/main/java/miisterzmods/ringcraft/item/ReinforcedIronIngotItem.java",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_ingot.json"
         ]
-      }
+      },
+      "path": "~/Items"
     },
     {
       "name": "ReinforcedFurnance",
@@ -194,14 +197,15 @@
       "registry_name": "reinforced_furnance",
       "metadata": {
         "files": [
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedFurnanceBlock.java",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_furnance.json",
           "src/main/java/miisterzmods/ringcraft/block/entity/ReinforcedFurnanceBlockEntity.java",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_furnance.json",
-          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedFurnanceBlock.java",
           "src/main/resources/assets/ringcraft/models/item/reinforced_furnance.json",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_furnance.json"
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "ReinforcedFurnanceGUI",
@@ -214,7 +218,8 @@
           "src/main/java/miisterzmods/ringcraft/world/inventory/ReinforcedFurnanceGUIMenu.java",
           "src/main/java/miisterzmods/ringcraft/client/gui/ReinforcedFurnanceGUIScreen.java"
         ]
-      }
+      },
+      "path": "~/Blocks"
     },
     {
       "name": "ReinforcedIronBlockRecipe",
@@ -226,7 +231,24 @@
         "files": [
           "src/main/resources/data/ringcraft/recipe/reinforced_iron_block.json"
         ]
-      }
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "BlazeSoul",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_soul",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/item/renderer/BlazeSoulItemRenderer.java",
+          "src/main/java/miisterzmods/ringcraft/item/BlazeSoulItem.java",
+          "src/main/resources/assets/ringcraft/models/item/blaze_soul.json",
+          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemModel.java"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [
@@ -269,13 +291,15 @@
       "ReinforcedIronStoneBlock",
       "RegularRingItem",
       "ReinforcedIronIngot",
-      "ReinforcedFurnance"
+      "ReinforcedFurnance",
+      "BlazeSoul"
     ]
   },
   "language_map": {
     "pl_pl": {
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
@@ -290,6 +314,7 @@
     "en_us": {
       "item.ringcraft.regular_ring_item": "Regular Ring",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
@@ -307,6 +332,14 @@
     "children": [
       {
         "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Items",
         "children": []
       }
     ]

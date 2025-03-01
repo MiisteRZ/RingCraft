@@ -1,6 +1,7 @@
 {
   "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
   "key.ringcraft.rings_menu_binding": "Pierścienie",
+  "item.ringcraft.blaze_soul": "Blaze Soul",
   "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
   "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
   "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
