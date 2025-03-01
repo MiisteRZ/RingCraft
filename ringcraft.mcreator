@@ -172,6 +172,29 @@
           "src/main/resources/data/ringcraft/painting_variant/painting_1.json"
         ]
       }
+    },
+    {
+      "name": "RegularRingVillagerTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regular_ring_villager_trade",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ReinforcedIronIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/item/ReinforcedIronIngotItem.java",
+          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_ingot.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -212,7 +235,8 @@
   "tab_element_order": {
     "CUSTOM:RingCraftCreativeTab": [
       "ReinforcedIronStoneBlock",
-      "RegularRingItem"
+      "RegularRingItem",
+      "ReinforcedIronIngot"
     ]
   },
   "language_map": {
@@ -221,10 +245,8 @@
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
       "item.ringcraft.regular_ring_item.description_0": "",
-      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
-      "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza",
-      "painting.ringcraft.painting_1.title": "Denk"
+      "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza"
     },
     "en_us": {
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
@@ -232,6 +254,7 @@
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "item.ringcraft.regular_ring_item.description_0": "",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+      "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk"

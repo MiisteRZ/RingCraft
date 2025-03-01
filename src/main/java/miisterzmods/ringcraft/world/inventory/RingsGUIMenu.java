@@ -90,7 +90,7 @@ public class RingsGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 34, 30) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 23, 37) {
 			private final int slot = 0;
 			private int x = RingsGUIMenu.this.x;
 			private int y = RingsGUIMenu.this.y;
@@ -100,7 +100,7 @@ public class RingsGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 				return Blocks.DIRT.asItem() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 124, 30) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 131, 37) {
 			private final int slot = 1;
 			private int x = RingsGUIMenu.this.x;
 			private int y = RingsGUIMenu.this.y;
@@ -110,7 +110,7 @@ public class RingsGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 				return Blocks.DIRT.asItem() == stack.getItem();
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 79, 30) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 77, 37) {
 			private final int slot = 2;
 			private int x = RingsGUIMenu.this.x;
 			private int y = RingsGUIMenu.this.y;
@@ -122,9 +122,9 @@ public class RingsGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, -27 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, -2 + 8 + sj * 18, -11 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, -27 + 142));
+			this.addSlot(new Slot(inv, si, -2 + 8 + si * 18, -11 + 142));
 		ReadGUIinfoProcedureProcedure.execute(entity);
 	}
 

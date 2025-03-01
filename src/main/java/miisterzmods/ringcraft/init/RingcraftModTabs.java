@@ -20,5 +20,6 @@ public class RingcraftModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ringcraft.ring_craft_creative_tab")).icon(() -> new ItemStack(RingcraftModItems.REGULAR_RING_ITEM.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(RingcraftModBlocks.REINFORCED_IRON_STONE_BLOCK.get().asItem());
 				tabData.accept(RingcraftModItems.REGULAR_RING_ITEM.get());
+				tabData.accept(RingcraftModItems.REINFORCED_IRON_INGOT.get());
 			}).build());
 }
