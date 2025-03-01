@@ -4,9 +4,9 @@
   "definition": {
     "type": 1,
     "width": 176,
-    "height": 166,
+    "height": 138,
     "inventoryOffsetX": 0,
-    "inventoryOffsetY": 0,
+    "inventoryOffsetY": -13,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
@@ -24,8 +24,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "x": 150,
-          "y": 71,
+          "x": 159,
+          "y": 80,
           "locked": false
         }
       },
@@ -43,8 +43,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "x": 258,
-          "y": 71,
+          "x": 249,
+          "y": 80,
           "locked": false
         }
       },
@@ -63,7 +63,7 @@
           },
           "dropItemsWhenNotBound": false,
           "x": 204,
-          "y": 61,
+          "y": 80,
           "locked": false
         }
       },
@@ -78,8 +78,8 @@
             "value": -6750055,
             "falpha": 0.0
           },
-          "x": 132,
-          "y": 43,
+          "x": 177,
+          "y": 62,
           "locked": false
         }
       }
@@ -98,7 +98,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

@@ -3,7 +3,7 @@
   "_type": "keybind",
   "definition": {
     "triggerKey": "O",
-    "keyBindingName": "Rings Menu Binding",
+    "keyBindingName": "Rings Menu",
     "keyBindingCategoryKey": "misc",
     "onKeyPressed": {
       "name": "RingsMenuBindingOnKeyPressedProcedure"

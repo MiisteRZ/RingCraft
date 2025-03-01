@@ -21,5 +21,5 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.REGULAR_RING_ITEM.get());
 				tabData.accept(RingcraftModBlocks.REINFORCED_IRON_STONE_BLOCK.get().asItem());
 				tabData.accept(RingcraftModItems.REINFORCED_IRON_INGOT.get());
-			}).withSearchBar().build());
+			}).build());
 }

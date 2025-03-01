@@ -212,6 +212,14 @@
   },
   "tab_element_order": {},
   "language_map": {
+    "pl_pl": {
+      "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
+      "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+      "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
+      "item.ringcraft.regular_ring_item.description_0": "",
+      "key.ringcraft.rings_menu_binding": "Pierścienie",
+      "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza"
+    },
     "en_us": {
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "item.ringcraft.regular_ring_item": "Regular Ring",

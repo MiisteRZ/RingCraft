@@ -28,7 +28,7 @@ public class RingsGUIScreen extends AbstractContainerScreen<RingsGUIMenu> {
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageHeight = 138;
 	}
 
 	private static final ResourceLocation texture = ResourceLocation.parse("ringcraft:textures/screens/rings_gui.png");
@@ -60,7 +60,7 @@ public class RingsGUIScreen extends AbstractContainerScreen<RingsGUIMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.ringcraft.rings_gui.label_magic_rings"), 6, 6, -6750055, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.ringcraft.rings_gui.label_magic_rings"), 51, 11, -6750055, false);
 	}
 
 	@Override
