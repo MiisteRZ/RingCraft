@@ -4,10 +4,10 @@
   "definition": {
     "texture": "minecraft:bamboo_fence_particle",
     "textureTop": "minecraft:bee_nest_side",
-    "textureLeft": "minecraft:copper_door_top",
+    "textureLeft": "reinforced_iron_block",
     "textureFront": "minecraft:cactus_bottom",
-    "textureRight": "minecraft:copper_door_top",
-    "textureBack": "minecraft:copper_door_top",
+    "textureRight": "reinforced_iron_block",
+    "textureBack": "reinforced_iron_block",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 2,

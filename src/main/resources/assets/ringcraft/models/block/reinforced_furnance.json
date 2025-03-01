@@ -4,9 +4,9 @@
     "down": "minecraft:block/bamboo_fence_particle",
     "up": "minecraft:block/bee_nest_side",
     "north": "minecraft:block/cactus_bottom",
-    "east": "minecraft:block/copper_door_top",
-    "south": "minecraft:block/copper_door_top",
-    "west": "minecraft:block/copper_door_top",
+    "east": "ringcraft:block/reinforced_iron_block",
+    "south": "ringcraft:block/reinforced_iron_block",
+    "west": "ringcraft:block/reinforced_iron_block",
     "particle": "minecraft:block/bamboo_fence_particle"
   },
   "render_type": "solid"
