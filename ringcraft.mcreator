@@ -160,6 +160,18 @@
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
         ]
       }
+    },
+    {
+      "name": "Painting1",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "painting_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/painting_variant/painting_1.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -209,16 +221,20 @@
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
       "item.ringcraft.regular_ring_item.description_0": "",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
-      "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza"
+      "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza",
+      "painting.ringcraft.painting_1.title": "Denk"
     },
     "en_us": {
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "item.ringcraft.regular_ring_item": "Regular Ring",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "item.ringcraft.regular_ring_item.description_0": "",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
-      "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore"
+      "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
+      "painting.ringcraft.painting_1.title": "Denk"
     }
   },
   "foldersRoot": {
@@ -238,6 +254,7 @@
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",
     "serverSideOnly": false,
+    "modPicture": "donk",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

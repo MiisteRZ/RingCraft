@@ -3,6 +3,8 @@
   "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
   "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
   "item.ringcraft.regular_ring_item.description_0": "",
+  "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
   "key.ringcraft.rings_menu_binding": "Pierścienie",
-  "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza"
+  "block.ringcraft.reinforced_iron_stone_block": "Wzmocniony złoże żelaza",
+  "painting.ringcraft.painting_1.title": "Denk"
 }

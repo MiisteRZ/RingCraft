@@ -1,9 +1,13 @@
 {
-  "parent": "ringcraft:custom/reinforcediron",
+  "parent": "block/cube",
   "textures": {
-    "all": "ringcraft:block/reinforcedironstoneblock",
-    "particle": "ringcraft:block/reinforcedironstoneblock",
-    "0": "ringcraft:block/reinforcedironstoneblock"
+    "down": "ringcraft:block/reinforcedironstoneblock",
+    "up": "ringcraft:block/reinforcedironstoneblock",
+    "north": "ringcraft:block/reinforcedironstoneblock",
+    "east": "ringcraft:block/reinforcedironstoneblock",
+    "south": "ringcraft:block/reinforcedironstoneblock",
+    "west": "ringcraft:block/reinforcedironstoneblock",
+    "particle": "ringcraft:block/reinforcedironstoneblock"
   },
   "render_type": "solid"
 }
