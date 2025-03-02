@@ -9,8 +9,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.BlockPos;
 
-import miisterzmods.ringcraft.init.RingcraftModItems;
-
 public class CustomFurnaceRecipesProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
 		return (new Object() {
@@ -40,7 +38,7 @@ public class CustomFurnaceRecipesProcedure {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == RingcraftModItems.REINFORCED_IRON_INGOT.get() && new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 2)).getItem() == Items.IRON_INGOT && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				if (world instanceof ILevelExtension _ext) {
 					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -49,6 +47,6 @@ public class CustomFurnaceRecipesProcedure {
 				}
 				return 0;
 			}
-		}.getAmount(world, BlockPos.containing(x, y, z), 2) < new ItemStack(RingcraftModItems.REINFORCED_IRON_INGOT.get()).getMaxStackSize());
+		}.getAmount(world, BlockPos.containing(x, y, z), 2) < new ItemStack(Items.IRON_INGOT).getMaxStackSize());
 	}
 }
