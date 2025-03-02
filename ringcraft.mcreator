@@ -263,7 +263,7 @@
     {
       "name": "GoldRing",
       "type": "item",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "gold_ring",
       "metadata": {
@@ -339,41 +339,9 @@
       "path": "~/ReinforcedFurnaceProcedures/Recipes/CustomRecipes"
     },
     {
-      "name": "MainRecipes",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "main_recipes",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/miisterzmods/ringcraft/procedures/MainRecipesProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/ReinforcedFurnaceProcedures/Recipes"
-    },
-    {
       "name": "FurnaceFuelProcedure",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "furnace_fuel_procedure",
       "metadata": {
@@ -404,7 +372,7 @@
     {
       "name": "FurnaceSmeltingProcedure",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "furnace_smelting_procedure",
       "metadata": {
@@ -435,7 +403,7 @@
     {
       "name": "FurnaceOnTickUpdate",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "furnace_on_tick_update",
       "metadata": {
@@ -532,6 +500,38 @@
         ]
       },
       "path": "~/ReinforcedFurnaceProcedures"
+    },
+    {
+      "name": "MainRecipes",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_recipes",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/MainRecipesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReinforcedFurnaceProcedures/Recipes"
     }
   ],
   "variable_elements": [
@@ -585,8 +585,8 @@
   "language_map": {
     "pl_pl": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "advancements.regular_ring_obtained.descr": "forge a basic ring",
+      "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
@@ -605,8 +605,8 @@
     },
     "en_us": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "item.ringcraft.regular_ring_item": "Regular Ring",
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
+      "item.ringcraft.regular_ring_item": "Regular Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
