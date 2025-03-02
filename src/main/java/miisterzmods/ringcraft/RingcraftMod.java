@@ -20,7 +20,6 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import miisterzmods.ringcraft.network.RingcraftModVariables;
 import miisterzmods.ringcraft.init.RingcraftModTabs;
-import miisterzmods.ringcraft.init.RingcraftModMobEffects;
 import miisterzmods.ringcraft.init.RingcraftModMenus;
 import miisterzmods.ringcraft.init.RingcraftModItems;
 import miisterzmods.ringcraft.init.RingcraftModBlocks;
@@ -51,7 +50,6 @@ public class RingcraftMod {
 		RingcraftModTabs.REGISTRY.register(modEventBus);
 		RingcraftModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
-		RingcraftModMobEffects.REGISTRY.register(modEventBus);
 		RingcraftModMenus.REGISTRY.register(modEventBus);
 
 		// Start of user code block mod init
