@@ -1,4 +1,5 @@
 {
+  "item.ringcraft.gold_ring": "Regular Ring",
   "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "item.ringcraft.regular_ring_item": "Regular Ring",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
@@ -12,6 +13,7 @@
   "item.ringcraft.regular_ring_item.description_0": "",
   "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
   "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
+  "item.ringcraft.gold_ring.description_0": "",
   "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
   "painting.ringcraft.painting_1.title": "Denk",
   "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",

@@ -1,6 +1,7 @@
 {
-  "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+  "item.ringcraft.gold_ring": "Regular Ring",
   "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
+  "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
   "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
   "key.ringcraft.rings_menu_binding": "Pierścienie",
   "item.ringcraft.blaze_soul": "Dusza płomyka",
@@ -12,6 +13,7 @@
   "item.ringcraft.regular_ring_item.description_0": "",
   "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
   "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+  "item.ringcraft.gold_ring.description_0": "Złoty pierścień",
   "block.ringcraft.reinforced_iron_stone_block": "Wzmocnione złoże żelaza",
   "painting.ringcraft.painting_1.title": "Osi",
   "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",

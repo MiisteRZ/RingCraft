@@ -5,6 +5,12 @@
         "2": "regularringtexture"
       },
       "name": "default"
+    },
+    "gold": {
+      "map": {
+        "2": "goldring"
+      },
+      "name": "gold"
     }
   }
 }
