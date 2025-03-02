@@ -197,12 +197,12 @@
       "registry_name": "reinforced_furnance",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedFurnanceBlock.java",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_furnance.json",
           "src/main/java/miisterzmods/ringcraft/block/entity/ReinforcedFurnanceBlockEntity.java",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_furnance.json",
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedFurnanceBlock.java",
           "src/main/resources/assets/ringcraft/models/item/reinforced_furnance.json",
-          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json"
+          "src/main/resources/assets/ringcraft/models/block/reinforced_furnance.json"
         ]
       },
       "path": "~/Blocks"
@@ -273,6 +273,22 @@
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "BlazeSoul",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_soul",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemModel.java",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/BlazeSoulItemRenderer.java",
+          "src/main/java/miisterzmods/ringcraft/item/BlazeSoulItem.java",
+          "src/main/resources/assets/ringcraft/models/item/blaze_soul.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [
@@ -316,6 +332,7 @@
       "RegularRingItem",
       "ReinforcedIronIngot",
       "ReinforcedFurnance",
+      "BlazeSoul",
       "GoldRing"
     ]
   },
@@ -326,6 +343,7 @@
       "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
       "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
       "advancements.reinforced_iron_ingot_obtained.title": "Zaawansowany sprzęt",
@@ -346,6 +364,7 @@
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
@@ -365,7 +384,11 @@
     "name": "~",
     "children": [
       {
-        "name": "GUI",
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Advancements",
         "children": []
       },
       {
@@ -373,11 +396,7 @@
         "children": []
       },
       {
-        "name": "Items",
-        "children": []
-      },
-      {
-        "name": "Advancements",
+        "name": "GUI",
         "children": []
       }
     ]
