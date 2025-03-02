@@ -1,21 +1,6 @@
 
 package miisterzmods.ringcraft.potion;
 
-import net.neoforged.neoforge.common.EffectCure;
-
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.resources.ResourceLocation;
-
-import miisterzmods.ringcraft.procedures.FireproofEffectOnEffectActiveTickProcedure;
-import miisterzmods.ringcraft.RingcraftMod;
-
-import java.util.Set;
-
 public class FireproofEffectMobEffect extends MobEffect {
 	public FireproofEffectMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -50688);
@@ -35,7 +20,7 @@ public class FireproofEffectMobEffect extends MobEffect {
 
 	@Override
 	public boolean applyEffectTick(LivingEntity entity, int amplifier) {
-		FireproofEffectOnEffectActiveTickProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity);
+		FireproofEffectOnEffectActiveTickProcedure.execute();
 		return super.applyEffectTick(entity, amplifier);
 	}
 }
