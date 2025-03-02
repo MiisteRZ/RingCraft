@@ -339,8 +339,8 @@
   "language_map": {
     "pl_pl": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+      "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
       "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
       "item.ringcraft.blaze_soul": "Dusza płomyka",
@@ -360,8 +360,8 @@
     },
     "en_us": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "item.ringcraft.blaze_soul": "Blaze Soul",
