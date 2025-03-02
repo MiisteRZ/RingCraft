@@ -1,6 +1,6 @@
 {
-  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "item.ringcraft.regular_ring_item": "Regular Ring",
+  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
   "effect.ringcraft.fireproof_effect": "Fireproof Effect",
   "key.ringcraft.rings_menu_binding": "Rings Menu",
