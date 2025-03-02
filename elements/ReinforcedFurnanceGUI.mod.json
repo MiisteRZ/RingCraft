@@ -23,7 +23,7 @@
             "value": -6697729,
             "falpha": 0.0
           },
-          "id": 0,
+          "id": 1,
           "disablePickup": {
             "fixedValue": false
           },
@@ -40,7 +40,7 @@
             "value": -6723841,
             "falpha": 0.0
           },
-          "id": 1,
+          "id": 2,
           "disablePickup": {
             "fixedValue": false
           },
@@ -63,7 +63,7 @@
             "value": -13108,
             "falpha": 0.0
           },
-          "id": 2,
+          "id": 0,
           "disablePickup": {
             "fixedValue": false
           },

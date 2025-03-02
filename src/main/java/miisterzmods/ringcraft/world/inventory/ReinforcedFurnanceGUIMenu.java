@@ -82,13 +82,13 @@ public class ReinforcedFurnanceGUIMenu extends AbstractContainerMenu implements 
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 57, 27) {
-			private final int slot = 0;
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 57, 27) {
+			private final int slot = 1;
 			private int x = ReinforcedFurnanceGUIMenu.this.x;
 			private int y = ReinforcedFurnanceGUIMenu.this.y;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 113, 42) {
-			private final int slot = 1;
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 113, 42) {
+			private final int slot = 2;
 			private int x = ReinforcedFurnanceGUIMenu.this.x;
 			private int y = ReinforcedFurnanceGUIMenu.this.y;
 
@@ -97,8 +97,8 @@ public class ReinforcedFurnanceGUIMenu extends AbstractContainerMenu implements 
 				return false;
 			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 57, 57) {
-			private final int slot = 2;
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 57, 57) {
+			private final int slot = 0;
 			private int x = ReinforcedFurnanceGUIMenu.this.x;
 			private int y = ReinforcedFurnanceGUIMenu.this.y;
 		}));
@@ -219,9 +219,9 @@ public class ReinforcedFurnanceGUIMenu extends AbstractContainerMenu implements 
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
-					if (j == 0)
+					if (j == 1)
 						continue;
-					if (j == 2)
+					if (j == 0)
 						continue;
 					playerIn.drop(internal.getStackInSlot(j), false);
 					if (internal instanceof IItemHandlerModifiable ihm)
@@ -229,9 +229,9 @@ public class ReinforcedFurnanceGUIMenu extends AbstractContainerMenu implements 
 				}
 			} else {
 				for (int i = 0; i < internal.getSlots(); ++i) {
-					if (i == 0)
+					if (i == 1)
 						continue;
-					if (i == 2)
+					if (i == 0)
 						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.getStackInSlot(i));
 					if (internal instanceof IItemHandlerModifiable ihm)

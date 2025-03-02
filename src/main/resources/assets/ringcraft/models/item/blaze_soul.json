@@ -1,6 +1,0 @@
-{
-  "parent": "ringcraft:displaysettings/blaze_soul",
-  "textures": {
-    "layer0": "ringcraft:item/blaze_soul"
-  }
-}
