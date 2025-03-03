@@ -64,7 +64,7 @@ public class ReinforcedFurnanceBlock extends Block implements EntityBlock {
 					return 15;
 				return 0;
 			}
-		}.getLightLevel())).pushReaction(PushReaction.BLOCK));
+		}.getLightLevel())).requiresCorrectToolForDrops().pushReaction(PushReaction.BLOCK));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
