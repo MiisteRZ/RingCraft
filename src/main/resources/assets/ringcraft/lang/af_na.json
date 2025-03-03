@@ -1,0 +1,21 @@
+{
+  "item.ringcraft.gold_ring": "Goud Ring",
+  "item.ringcraft.regular_ring_item": "Gereelde Ring",
+  "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
+  "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
+  "key.ringcraft.rings_menu_binding": "Rings Menu",
+  "item.ringcraft.blaze_soul": "Opvlammer Siel",
+  "block.ringcraft.reinforced_furnance": "Versterkte Oond",
+  "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
+  "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
+  "advancements.regular_ring_obtained.title": "\u0027n Nuwe Begin",
+  "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+  "item.ringcraft.regular_ring_item.description_0": "",
+  "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+  "item.ringcraft.reinforced_iron_ingot": "Versterkte ysterstaaf",
+  "item.ringcraft.gold_ring.description_0": "",
+  "block.ringcraft.reinforced_iron_stone_block": "Versterkte Ystererts",
+  "painting.ringcraft.painting_1.title": "Denk",
+  "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+  "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Versterkte Oond"
+}
