@@ -1,10 +1,11 @@
 {
   "item.ringcraft.gold_ring": "Regulär Ring",
-  "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
   "item.ringcraft.regular_ring_item": "Regulär Ring",
+  "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
   "advancements.reinforced_iron_ingot_obtained.descr": "Besorge einen verstärkten Eisenbarren",
   "key.ringcraft.rings_menu_binding": "Ring Menu",
   "block.ringcraft.reinforced_furnance": "Verstärkter Ofen",
+  "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
   "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringe",
   "advancements.reinforced_iron_ingot_obtained.title": "Fortgeschrittene Metallurgie",
   "advancements.regular_ring_obtained.title": "Ein neuer Beginn",

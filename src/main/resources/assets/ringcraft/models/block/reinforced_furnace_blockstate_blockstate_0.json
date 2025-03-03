@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "minecraft:block/barrel_top",
-    "up": "minecraft:block/barrel_top",
-    "north": "minecraft:block/barrel_top",
-    "east": "minecraft:block/barrel_top",
-    "south": "minecraft:block/barrel_top",
-    "west": "minecraft:block/barrel_top",
-    "particle": "ringcraft:block/reinforced_furnance_front"
+    "down": "ringcraft:block/reinforced_furnance_animated",
+    "up": "ringcraft:block/reinforced_furnance_animated",
+    "north": "ringcraft:block/reinforced_furnance_animated",
+    "east": "ringcraft:block/reinforced_furnance_animated",
+    "south": "ringcraft:block/reinforced_furnance_animated",
+    "west": "ringcraft:block/reinforced_furnance_animated",
+    "particle": "ringcraft:block/reinforced_furnance_animated"
   },
   "render_type": "solid"
 }

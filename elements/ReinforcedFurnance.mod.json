@@ -3,9 +3,9 @@
   "_type": "block",
   "definition": {
     "texture": "reinforced_furnance_bottom",
-    "textureTop": "soul_pumpkin_front",
+    "textureTop": "reinforced_furnance_top",
     "textureLeft": "reinforced_furnance_side",
-    "textureFront": "reinforced_furnance_front",
+    "textureFront": "reinforced_furnance_front_unlit",
     "textureRight": "reinforced_furnance_side",
     "textureBack": "reinforced_furnance_side",
     "renderType": 10,
@@ -36,9 +36,7 @@
     "customProperties": [],
     "name": "Reinforced Furnance",
     "specialInformation": {
-      "fixedValue": [
-        "Texture is a placeholder"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

@@ -460,6 +460,10 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -589,6 +593,7 @@
       "~CUSTOM:ReinforcedIronStoneBlock"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ReinforcedFurnance",
       "~CUSTOM:ReinforcedIronStoneBlock"
     ]
   },
@@ -611,6 +616,7 @@
       "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
       "advancements.reinforced_iron_ingot_obtained.title": "Zaawansowany sprzęt",
       "advancements.regular_ring_obtained.title": "Nowy początek",
@@ -652,6 +658,7 @@
       "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "block.ringcraft.reinforced_furnance": "Versterkte Oond",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
       "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
       "advancements.regular_ring_obtained.title": "\u0027n Nuwe Begin",
@@ -672,6 +679,7 @@
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
       "advancements.regular_ring_obtained.title": "A New Beginning",
@@ -692,6 +700,7 @@
       "advancements.reinforced_iron_ingot_obtained.descr": "Verkrijg een Gewapend IJzerstaaf",
       "key.ringcraft.rings_menu_binding": "Ringen Menu",
       "block.ringcraft.reinforced_furnance": "Gewamped Oven",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringen",
       "advancements.reinforced_iron_ingot_obtained.title": "Geavanceerde IJzerwaren vekrijgen",
       "advancements.regular_ring_obtained.title": "Een Nieuw Begin",
@@ -712,6 +721,7 @@
       "advancements.reinforced_iron_ingot_obtained.descr": "Besorge einen verstärkten Eisenbarren",
       "key.ringcraft.rings_menu_binding": "Ring Menu",
       "block.ringcraft.reinforced_furnance": "Verstärkter Ofen",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringe",
       "advancements.reinforced_iron_ingot_obtained.title": "Fortgeschrittene Metallurgie",
       "advancements.regular_ring_obtained.title": "Ein neuer Beginn",
