@@ -5,7 +5,6 @@ import net.neoforged.neoforge.common.extensions.ILevelExtension;
 import net.neoforged.neoforge.capabilities.Capabilities;
 
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.BlockPos;
 
@@ -22,7 +21,7 @@ public class FurnaceCustomRecipeProcedure {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == Items.RAW_IRON && (new Object() {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getItem() == RingcraftModItems.REINFORCED_RAW_IRON.get() && (new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				if (world instanceof ILevelExtension _ext) {
 					IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
