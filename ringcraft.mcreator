@@ -341,7 +341,7 @@
     {
       "name": "FurnaceFuelProcedure",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "furnace_fuel_procedure",
       "metadata": {
@@ -372,7 +372,7 @@
     {
       "name": "FurnaceSmeltingProcedure",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "furnace_smelting_procedure",
       "metadata": {
@@ -403,7 +403,7 @@
     {
       "name": "FurnaceOnTickUpdate",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "furnace_on_tick_update",
       "metadata": {
