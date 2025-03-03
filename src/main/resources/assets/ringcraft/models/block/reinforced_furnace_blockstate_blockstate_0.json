@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ringcraft:block/reinforced_furnance_front",
+    "up": "ringcraft:block/reinforced_furnance_front",
+    "north": "ringcraft:block/reinforced_furnance_front",
+    "east": "ringcraft:block/reinforced_furnance_front",
+    "south": "ringcraft:block/reinforced_furnance_front",
+    "west": "ringcraft:block/reinforced_furnance_front",
+    "particle": "ringcraft:block/reinforced_furnance_front"
+  },
+  "render_type": "solid"
+}

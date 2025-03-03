@@ -532,6 +532,19 @@
         ]
       },
       "path": "~/ReinforcedFurnaceProcedures"
+    },
+    {
+      "name": "ReinforcedFurnaceBlockstate",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_furnace_blockstate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/block/reinforced_furnace_blockstate_blockstate_0.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [
@@ -565,6 +578,7 @@
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:ReinforcedIronStoneBlock"
     ],
+    "ITEMS:mod:furnacefuel": [],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:ReinforcedIronStoneBlock"
     ]
@@ -582,8 +596,8 @@
   "language_map": {
     "pl_pl": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "advancements.regular_ring_obtained.descr": "forge a basic ring",
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+      "advancements.regular_ring_obtained.descr": "forge a basic ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
@@ -602,8 +616,8 @@
     },
     "en_us": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",

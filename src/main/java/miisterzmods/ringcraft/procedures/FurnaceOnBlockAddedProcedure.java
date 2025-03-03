@@ -13,7 +13,7 @@ public class FurnaceOnBlockAddedProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putDouble("MaxSmelting", 2400);
+				_blockEntity.getPersistentData().putDouble("MaxSmelting", 500);
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
