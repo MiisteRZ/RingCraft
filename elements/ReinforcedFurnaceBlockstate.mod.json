@@ -5,7 +5,7 @@
     "block": "ReinforcedFurnance",
     "blockstateList": [
       {
-        "texture": "reinforced_furnance_front",
+        "texture": "minecraft:barrel_top",
         "textureTop": "",
         "textureLeft": "",
         "textureFront": "",
