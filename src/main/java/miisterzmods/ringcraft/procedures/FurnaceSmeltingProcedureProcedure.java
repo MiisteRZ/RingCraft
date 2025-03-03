@@ -1,6 +1,20 @@
 package miisterzmods.ringcraft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.neoforged.neoforge.items.IItemHandlerModifiable;
+import net.neoforged.neoforge.items.IItemHandler;
+import net.neoforged.neoforge.common.extensions.ILevelExtension;
+import net.neoforged.neoforge.capabilities.Capabilities;
+
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.SingleRecipeInput;
+import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.BlockPos;
+
+import miisterzmods.ringcraft.init.RingcraftModItems;
 
 public class FurnaceSmeltingProcedureProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -51,7 +65,7 @@ public class FurnaceSmeltingProcedureProcedure {
 						}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
 						_itemHandlerModifiable.setStackInSlot(2, _setstack);
 					}
-				} else if (CustomFurnaceRecipesProcedure.execute(world, x, y, z)) {
+				} else if (FurnaceCustomRecipeProcedure.execute(world, x, y, z)) {
 					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 						ItemStack _setstack = new ItemStack(RingcraftModItems.REINFORCED_IRON_INGOT.get()).copy();
 						_setstack.setCount((int) (new Object() {
