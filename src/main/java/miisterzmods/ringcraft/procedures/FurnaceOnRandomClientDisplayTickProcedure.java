@@ -1,0 +1,35 @@
+package miisterzmods.ringcraft.procedures;
+
+import net.neoforged.bus.api.Event;
+
+public class FurnaceOnRandomClientDisplayTickProcedure {
+public static void execute(
+LevelAccessor world,
+double x,
+double y,
+double z,
+BlockState blockstate ) {
+if (==1) {if ((new Object() {
+public Direction getDirection(BlockState _bs) {
+Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+if (_prop instanceof DirectionProperty _dp) return _bs.getValue(_dp);
+_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ?
+Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
+}}.getDirection(blockstate)) == Direction.NORTH) {world.addParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE, (Math.floor(x)+0), (Math.floor(y)+0), (Math.floor(z)+0), 0, 0.1, 0);}else if ((new Object() {
+public Direction getDirection(BlockState _bs) {
+Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+if (_prop instanceof DirectionProperty _dp) return _bs.getValue(_dp);
+_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ?
+Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
+}}.getDirection(blockstate)) == Direction.EAST) {world.addParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE, (Math.floor(x)+0), (Math.floor(y)+0), (Math.floor(z)+0), 0, 0.1, 0);}else if ((new Object() {
+public Direction getDirection(BlockState _bs) {
+Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
+if (_prop instanceof DirectionProperty _dp) return _bs.getValue(_dp);
+_prop = _bs.getBlock().getStateDefinition().getProperty("axis");
+return _prop instanceof EnumProperty _ep && _ep.getPossibleValues().toArray()[0] instanceof Direction.Axis ?
+Direction.fromAxisAndDirection((Direction.Axis) _bs.getValue(_ep), Direction.AxisDirection.POSITIVE) : Direction.NORTH;
+}}.getDirection(blockstate)) == Direction.SOUTH) {world.addParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE, (Math.floor(x)+0), (Math.floor(y)+0), (Math.floor(z)+0), 0, 0.1, 0);}else{world.addParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE, (Math.floor(x)+0), (Math.floor(y)+0), (Math.floor(z)+0), 0, 0.1, 0);}}
+}
+}

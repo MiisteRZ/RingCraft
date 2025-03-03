@@ -275,20 +275,286 @@
       "path": "~/Items"
     },
     {
-      "name": "BlazeSoul",
-      "type": "animateditem",
+      "name": "SmeltingResultCondition",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "blaze_soul",
+      "registry_name": "smelting_result_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/SmeltingResultConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReinforcedFurnaceProcedures/Recipes/VanillaRecipes"
+    },
+    {
+      "name": "MainRecipes",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_recipes",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/MainRecipesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReinforcedFurnaceProcedures/Recipes"
+    },
+    {
+      "name": "FurnaceOnRandomClientDisplayTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_on_random_client_display_tick",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemModel.java",
-          "src/main/java/miisterzmods/ringcraft/item/renderer/BlazeSoulItemRenderer.java",
-          "src/main/java/miisterzmods/ringcraft/item/BlazeSoulItem.java",
-          "src/main/resources/assets/ringcraft/models/item/blaze_soul.json"
+          "src/main/java/miisterzmods/ringcraft/procedures/FurnaceOnRandomClientDisplayTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReinforcedFurnaceProcedures"
+    },
+    {
+      "name": "FurnaceOnBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_on_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/FurnaceOnBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReinforcedFurnaceProcedures"
+    },
+    {
+      "name": "FurnaceSmeltingProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_smelting_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/FurnaceSmeltingProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReinforcedFurnaceProcedures"
+    },
+    {
+      "name": "ReinforcedFurnaceBlockstate",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_furnace_blockstate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/block/reinforced_furnace_blockstate_blockstate_0.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "FurnaceOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/FurnaceOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReinforcedFurnaceProcedures"
+    },
+    {
+      "name": "ReinforcedRawIron",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_raw_iron",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/item/ReinforcedRawIronItem.java",
+          "src/main/resources/assets/ringcraft/models/item/reinforced_raw_iron.json"
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "FurnaceFuelProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_fuel_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/FurnaceFuelProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReinforcedFurnaceProcedures"
+    },
+    {
+      "name": "FurnaceCustomRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furnace_custom_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/FurnaceCustomRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ReinforcedFurnaceProcedures/Recipes/CustomRecipes"
     }
   ],
   "variable_elements": [
@@ -333,7 +599,8 @@
       "ReinforcedIronIngot",
       "ReinforcedFurnance",
       "BlazeSoul",
-      "GoldRing"
+      "GoldRing",
+      "ReinforcedRawIron"
     ]
   },
   "language_map": {
@@ -343,7 +610,6 @@
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
-      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
       "advancements.reinforced_iron_ingot_obtained.title": "Zaawansowany sprzęt",
@@ -364,8 +630,8 @@
       "item.ringcraft.regular_ring_item": "Regular Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
-      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
       "advancements.regular_ring_obtained.title": "A New Beginning",
@@ -385,7 +651,6 @@
       "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
-      "item.ringcraft.blaze_soul": "Opvlammer Siel",
       "block.ringcraft.reinforced_furnance": "Versterkte Oond",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
       "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
@@ -406,7 +671,6 @@
       "item.ringcraft.regular_ring_item": "Regular Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
-      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
@@ -427,7 +691,6 @@
       "item.ringcraft.regular_ring_item": "Normale Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Verkrijg een Gewapend IJzerstaaf",
       "key.ringcraft.rings_menu_binding": "Ringen Menu",
-      "item.ringcraft.blaze_soul": "Blazeziel",
       "block.ringcraft.reinforced_furnance": "Gewamped Oven",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringen",
       "advancements.reinforced_iron_ingot_obtained.title": "Geavanceerde IJzerwaren vekrijgen",
@@ -448,7 +711,6 @@
       "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Besorge einen verstärkten Eisenbarren",
       "key.ringcraft.rings_menu_binding": "Ring Menu",
-      "item.ringcraft.blaze_soul": "Lohenseele",
       "block.ringcraft.reinforced_furnance": "Verstärkter Ofen",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringe",
       "advancements.reinforced_iron_ingot_obtained.title": "Fortgeschrittene Metallurgie",
@@ -470,6 +732,24 @@
       {
         "name": "Items",
         "children": []
+      },
+      {
+        "name": "ReinforcedFurnaceProcedures",
+        "children": [
+          {
+            "name": "Recipes",
+            "children": [
+              {
+                "name": "CustomRecipes",
+                "children": []
+              },
+              {
+                "name": "VanillaRecipes",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Advancements",

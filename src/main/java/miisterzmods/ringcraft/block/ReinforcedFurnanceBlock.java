@@ -1,10 +1,17 @@
 
 package miisterzmods.ringcraft.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.api.distmarker.Dist;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.pathfinder.PathType;
+import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -25,16 +32,21 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import miisterzmods.ringcraft.world.inventory.ReinforcedFurnanceGUIMenu;
+import miisterzmods.ringcraft.procedures.FurnaceOnTickUpdateProcedure;
+import miisterzmods.ringcraft.procedures.FurnaceOnBlockAddedProcedure;
 import miisterzmods.ringcraft.block.entity.ReinforcedFurnanceBlockEntity;
 
 import java.util.List;
@@ -42,10 +54,17 @@ import java.util.List;
 import io.netty.buffer.Unpooled;
 
 public class ReinforcedFurnanceBlock extends Block implements EntityBlock {
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 	public ReinforcedFurnanceBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).lightLevel(s -> (new Object() {
+			public int getLightLevel() {
+				if (s.getValue(BLOCKSTATE) == 1)
+					return 15;
+				return 0;
+			}
+		}.getLightLevel())).requiresCorrectToolForDrops().pushReaction(PushReaction.BLOCK));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -62,9 +81,31 @@ public class ReinforcedFurnanceBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		if (state.getValue(BLOCKSTATE) == 1) {
+			return switch (state.getValue(FACING)) {
+				default -> box(0, 0, 0, 16, 16, 16);
+				case NORTH -> box(0, 0, 0, 16, 16, 16);
+				case EAST -> box(0, 0, 0, 16, 16, 16);
+				case WEST -> box(0, 0, 0, 16, 16, 16);
+				case UP -> box(0, 0, 0, 16, 16, 16);
+				case DOWN -> box(0, 0, 0, 16, 16, 16);
+			};
+		}
+		return switch (state.getValue(FACING)) {
+			default -> box(0, 0, 0, 16, 16, 16);
+			case NORTH -> box(0, 0, 0, 16, 16, 16);
+			case EAST -> box(0, 0, 0, 16, 16, 16);
+			case WEST -> box(0, 0, 0, 16, 16, 16);
+			case UP -> box(0, 0, 0, 16, 16, 16);
+			case DOWN -> box(0, 0, 0, 16, 16, 16);
+		};
+	}
+
+	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING);
+		builder.add(FACING, BLOCKSTATE);
 	}
 
 	@Override
@@ -78,6 +119,25 @@ public class ReinforcedFurnanceBlock extends Block implements EntityBlock {
 
 	public BlockState mirror(BlockState state, Mirror mirrorIn) {
 		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
+	}
+
+	@Override
+	public PathType getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
+		return PathType.BLOCKED;
+	}
+
+	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 1);
+		FurnaceOnBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		FurnaceOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
+		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override

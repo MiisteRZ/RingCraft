@@ -1,10 +1,9 @@
 {
   "item.ringcraft.gold_ring": "Goud Ring",
-  "advancements.regular_ring_obtained.descr": "Smeed een basisring",
   "item.ringcraft.regular_ring_item": "Normale Ring",
+  "advancements.regular_ring_obtained.descr": "Smeed een basisring",
   "advancements.reinforced_iron_ingot_obtained.descr": "Verkrijg een Gewapend IJzerstaaf",
   "key.ringcraft.rings_menu_binding": "Ringen Menu",
-  "item.ringcraft.blaze_soul": "Blazeziel",
   "block.ringcraft.reinforced_furnance": "Gewamped Oven",
   "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringen",
   "advancements.reinforced_iron_ingot_obtained.title": "Geavanceerde IJzerwaren vekrijgen",

@@ -1,10 +1,9 @@
 {
   "item.ringcraft.gold_ring": "Goud Ring",
-  "item.ringcraft.regular_ring_item": "Gereelde Ring",
   "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
+  "item.ringcraft.regular_ring_item": "Gereelde Ring",
   "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
   "key.ringcraft.rings_menu_binding": "Rings Menu",
-  "item.ringcraft.blaze_soul": "Opvlammer Siel",
   "block.ringcraft.reinforced_furnance": "Versterkte Oond",
   "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
   "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
