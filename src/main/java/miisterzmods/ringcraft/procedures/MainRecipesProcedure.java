@@ -1,9 +1,15 @@
 package miisterzmods.ringcraft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
+import net.neoforged.bus.api.Event;
 
 public class MainRecipesProcedure {
-	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		return SmeltingResultConditionProcedure.execute(world, x, y, z) || CustomFurnaceRecipesProcedure.execute(world, x, y, z);
-	}
+public static boolean execute(
+LevelAccessor world,
+double x,
+double y,
+double z ) {
+return
+SmeltingResultConditionProcedure.execute(world,x,y,z)
+||;
+}
 }

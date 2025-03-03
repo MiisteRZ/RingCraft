@@ -1,15 +1,6 @@
 package miisterzmods.ringcraft.procedures;
 
-import net.neoforged.neoforge.items.IItemHandler;
-import net.neoforged.neoforge.common.extensions.ILevelExtension;
-import net.neoforged.neoforge.capabilities.Capabilities;
-
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.crafting.SingleRecipeInput;
-import net.minecraft.world.item.crafting.RecipeType;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.core.BlockPos;
+import net.neoforged.bus.api.Event;
 
 public class SmeltingResultConditionProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {

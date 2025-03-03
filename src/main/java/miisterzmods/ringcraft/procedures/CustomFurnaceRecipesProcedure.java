@@ -1,13 +1,6 @@
 package miisterzmods.ringcraft.procedures;
 
-import net.neoforged.neoforge.items.IItemHandler;
-import net.neoforged.neoforge.common.extensions.ILevelExtension;
-import net.neoforged.neoforge.capabilities.Capabilities;
-
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.core.BlockPos;
+import net.neoforged.bus.api.Event;
 
 public class CustomFurnaceRecipesProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {

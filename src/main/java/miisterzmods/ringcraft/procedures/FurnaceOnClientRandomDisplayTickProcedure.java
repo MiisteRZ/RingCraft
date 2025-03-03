@@ -1,13 +1,6 @@
 package miisterzmods.ringcraft.procedures;
 
-import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.Direction;
+import net.neoforged.bus.api.Event;
 
 public class FurnaceOnClientRandomDisplayTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {

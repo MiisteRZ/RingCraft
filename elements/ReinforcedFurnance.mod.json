@@ -2,12 +2,12 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "minecraft:bamboo_fence_particle",
-    "textureTop": "minecraft:bee_nest_side",
-    "textureLeft": "reinforced_iron_block",
-    "textureFront": "minecraft:cactus_bottom",
-    "textureRight": "reinforced_iron_block",
-    "textureBack": "reinforced_iron_block",
+    "texture": "reinforced_furnance_bottom",
+    "textureTop": "soul_pumpkin_front",
+    "textureLeft": "reinforced_furnance_side",
+    "textureFront": "reinforced_furnance_front",
+    "textureRight": "reinforced_furnance_side",
+    "textureBack": "reinforced_furnance_side",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 2,
@@ -124,12 +124,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "FurnaceOnBlockAdded"
-    },
-    "onTickUpdate": {
-      "name": "FurnaceOnTickUpdate"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

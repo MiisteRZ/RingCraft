@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "minecraft:block/bamboo_fence_particle",
-    "up": "minecraft:block/bee_nest_side",
-    "north": "minecraft:block/cactus_bottom",
-    "east": "ringcraft:block/reinforced_iron_block",
-    "south": "ringcraft:block/reinforced_iron_block",
-    "west": "ringcraft:block/reinforced_iron_block",
-    "particle": "minecraft:block/bamboo_fence_particle"
+    "down": "ringcraft:block/reinforced_furnance_bottom",
+    "up": "ringcraft:block/soul_pumpkin_front",
+    "north": "ringcraft:block/reinforced_furnance_front",
+    "east": "ringcraft:block/reinforced_furnance_side",
+    "south": "ringcraft:block/reinforced_furnance_side",
+    "west": "ringcraft:block/reinforced_furnance_side",
+    "particle": "ringcraft:block/reinforced_furnance_bottom"
   },
   "render_type": "solid"
 }
