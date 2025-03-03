@@ -585,8 +585,8 @@
   "language_map": {
     "pl_pl": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "advancements.regular_ring_obtained.descr": "forge a basic ring",
+      "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
@@ -605,8 +605,8 @@
     },
     "en_us": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "item.ringcraft.regular_ring_item": "Regular Ring",
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
+      "item.ringcraft.regular_ring_item": "Regular Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
