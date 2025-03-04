@@ -24,6 +24,5 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModBlocks.REINFORCED_FURNANCE.get().asItem());
 				tabData.accept(RingcraftModItems.GOLD_RING.get());
 				tabData.accept(RingcraftModItems.REINFORCED_RAW_IRON.get());
-				tabData.accept(RingcraftModBlocks.RING_FORGE.get().asItem());
 			}).build());
 }

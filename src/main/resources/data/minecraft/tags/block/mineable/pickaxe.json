@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "ringcraft:ring_forge",
     "ringcraft:reinforced_furnance",
     "ringcraft:reinforced_iron_stone_block"
   ]
