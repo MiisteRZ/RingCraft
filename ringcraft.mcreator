@@ -8,8 +8,8 @@
       "registry_name": "rings_gui",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java",
-          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java"
+          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java",
+          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -615,6 +615,25 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "RingsMainProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rings_main_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/RingsMainProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/RingsProcedures"
     }
   ],
   "variable_elements": [
@@ -648,10 +667,16 @@
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:ReinforcedIronStoneBlock"
     ],
+    "ITEMS:mod:furnacefuel": [
+      "Items.COAL#0"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:RingForge",
       "~CUSTOM:ReinforcedFurnance",
       "~CUSTOM:ReinforcedIronStoneBlock"
+    ],
+    "ITEMS:mod:rings": [
+      "CUSTOM:ReinforcedIronIngot"
     ]
   },
   "tab_element_order": {
@@ -669,8 +694,8 @@
   "language_map": {
     "pl_pl": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+      "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
       "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
@@ -691,8 +716,8 @@
     },
     "en_us": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -713,8 +738,8 @@
     },
     "af_na": {
       "item.ringcraft.gold_ring": "Goud Ring",
-      "item.ringcraft.regular_ring_item": "Gereelde Ring",
       "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
+      "item.ringcraft.regular_ring_item": "Gereelde Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -735,8 +760,8 @@
     },
     "es_es": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -757,8 +782,8 @@
     },
     "nl_nl": {
       "item.ringcraft.gold_ring": "Goud Ring",
-      "advancements.regular_ring_obtained.descr": "Smeed een basisring",
       "item.ringcraft.regular_ring_item": "Normale Ring",
+      "advancements.regular_ring_obtained.descr": "Smeed een basisring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Verkrijg een Gewapend IJzerstaaf",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Ringen Menu",
@@ -779,8 +804,8 @@
     },
     "de_de": {
       "item.ringcraft.gold_ring": "Regulär Ring",
-      "item.ringcraft.regular_ring_item": "Regulär Ring",
       "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
+      "item.ringcraft.regular_ring_item": "Regulär Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Besorge einen verstärkten Eisenbarren",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Ring Menu",
@@ -835,6 +860,10 @@
       },
       {
         "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "RingsProcedures",
         "children": []
       }
     ]
