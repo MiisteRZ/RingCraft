@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "a a",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "ringcraft:reinforced_iron_ingot"
+    }
+  },
+  "result": {
+    "id": "ringcraft:regular_ring_item",
+    "count": 1
+  }
+}

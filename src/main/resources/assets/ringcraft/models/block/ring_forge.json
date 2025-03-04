@@ -1,0 +1,9 @@
+{
+  "parent": "ringcraft:custom/ringforgemodel",
+  "textures": {
+    "all": "ringcraft:block/ringforgetexture",
+    "particle": "ringcraft:block/ringforgetexture",
+    "0": "ringcraft:block/ringforgetexture"
+  },
+  "render_type": "solid"
+}
