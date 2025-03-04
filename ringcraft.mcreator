@@ -634,6 +634,38 @@
         ]
       },
       "path": "~/RingsProcedures"
+    },
+    {
+      "name": "FireRingShootBinding",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_ring_shoot_binding",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/network/FireRingShootBindingMessage.java"
+        ]
+      },
+      "path": "~/RingsProcedures"
+    },
+    {
+      "name": "FireRingShootProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_ring_shoot_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/FireRingShootProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/RingsProcedures"
     }
   ],
   "variable_elements": [
@@ -708,6 +740,7 @@
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.gold_ring.description_0": "Złoty pierścień",
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocnione złoże żelaza",
       "painting.ringcraft.painting_1.title": "Osi",
@@ -730,6 +763,7 @@
       "item.ringcraft.regular_ring_item.description_0": "",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
+      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
@@ -752,6 +786,7 @@
       "item.ringcraft.regular_ring_item.description_0": "",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.reinforced_iron_ingot": "Versterkte ysterstaaf",
+      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_stone_block": "Versterkte Ystererts",
       "painting.ringcraft.painting_1.title": "Denk",
@@ -774,6 +809,7 @@
       "item.ringcraft.regular_ring_item.description_0": "",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
+      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
@@ -796,6 +832,7 @@
       "item.ringcraft.regular_ring_item.description_0": "",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.reinforced_iron_ingot": "Gewapend IJzerstaaf",
+      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_stone_block": "Gewapend IJzererts",
       "painting.ringcraft.painting_1.title": "Denk",
@@ -818,6 +855,7 @@
       "item.ringcraft.regular_ring_item.description_0": "",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
+      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_stone_block": "Verstärkter Eisenerz",
       "painting.ringcraft.painting_1.title": "Esse",
