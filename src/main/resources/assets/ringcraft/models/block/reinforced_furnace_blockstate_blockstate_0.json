@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "ringcraft:block/reinforced_furnance_animated",
-    "up": "ringcraft:block/reinforced_furnance_animated",
+    "down": "ringcraft:block/reinforced_furnance_bottom",
+    "up": "ringcraft:block/reinforced_furnance_top",
     "north": "ringcraft:block/reinforced_furnance_animated",
-    "east": "ringcraft:block/reinforced_furnance_animated",
-    "south": "ringcraft:block/reinforced_furnance_animated",
-    "west": "ringcraft:block/reinforced_furnance_animated",
-    "particle": "ringcraft:block/reinforced_furnance_animated"
+    "east": "ringcraft:block/reinforced_furnance_side",
+    "south": "ringcraft:block/reinforced_furnance_side",
+    "west": "ringcraft:block/reinforced_furnance_side",
+    "particle": "ringcraft:block/reinforced_furnance_top"
   },
   "render_type": "solid"
 }
