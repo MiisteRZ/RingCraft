@@ -13,7 +13,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
@@ -94,31 +93,16 @@ public class RingsGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 			private final int slot = 0;
 			private int x = RingsGUIMenu.this.x;
 			private int y = RingsGUIMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Blocks.DIRT.asItem() == stack.getItem();
-			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 131, 37) {
 			private final int slot = 1;
 			private int x = RingsGUIMenu.this.x;
 			private int y = RingsGUIMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Blocks.DIRT.asItem() == stack.getItem();
-			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 77, 37) {
 			private final int slot = 2;
 			private int x = RingsGUIMenu.this.x;
 			private int y = RingsGUIMenu.this.y;
-
-			@Override
-			public boolean mayPlace(ItemStack stack) {
-				return Blocks.DIRT.asItem() == stack.getItem();
-			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)

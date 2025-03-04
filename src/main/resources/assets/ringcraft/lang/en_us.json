@@ -1,8 +1,9 @@
 {
   "item.ringcraft.gold_ring": "Regular Ring",
-  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "item.ringcraft.regular_ring_item": "Regular Ring",
+  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
+  "block.ringcraft.ring_forge": "Ring Forge",
   "key.ringcraft.rings_menu_binding": "Rings Menu",
   "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
   "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
@@ -13,6 +14,7 @@
   "item.ringcraft.regular_ring_item.description_0": "",
   "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
   "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
+  "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
   "item.ringcraft.gold_ring.description_0": "",
   "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
   "painting.ringcraft.painting_1.title": "Denk",

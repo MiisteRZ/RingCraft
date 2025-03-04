@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "ringcraft:reinforced_iron_ingot"
+    },
+    "b": {
+      "item": "minecraft:obsidian"
+    },
+    "c": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "result": {
+    "id": "ringcraft:ring_forge",
+    "count": 1
+  }
+}

@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "Blocks.DIRT#0"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false
@@ -33,7 +33,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "Blocks.DIRT#0"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false
@@ -52,7 +52,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": "Blocks.DIRT#0"
+            "value": ""
           },
           "disablePlacement": {
             "fixedValue": false

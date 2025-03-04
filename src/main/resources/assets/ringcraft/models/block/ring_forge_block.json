@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ringcraft:block/ringforgetexture",
+    "up": "ringcraft:block/ringforgetexture",
+    "north": "ringcraft:block/ringforgetexture",
+    "east": "ringcraft:block/ringforgetexture",
+    "south": "ringcraft:block/ringforgetexture",
+    "west": "ringcraft:block/ringforgetexture",
+    "particle": "ringcraft:block/ringforgetexture"
+  },
+  "render_type": "solid"
+}
