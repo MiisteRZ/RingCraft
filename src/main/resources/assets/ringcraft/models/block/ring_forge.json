@@ -1,9 +1,13 @@
 {
-  "parent": "ringcraft:custom/ringforgemodel",
+  "parent": "block/cube",
   "textures": {
-    "all": "ringcraft:block/ringforgetexture",
-    "particle": "ringcraft:block/ringforgetexture",
-    "0": "ringcraft:block/ringforgetexture"
+    "down": "minecraft:block/amethyst_block",
+    "up": "minecraft:block/amethyst_block",
+    "north": "ringcraft:block/ringforgefront",
+    "east": "minecraft:block/amethyst_block",
+    "south": "minecraft:block/amethyst_block",
+    "west": "minecraft:block/amethyst_block",
+    "particle": "minecraft:block/amethyst_block"
   },
   "render_type": "solid"
 }
