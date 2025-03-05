@@ -4,9 +4,9 @@
     "down": "minecraft:block/amethyst_block",
     "up": "minecraft:block/amethyst_block",
     "north": "ringcraft:block/ringforgefront",
-    "east": "minecraft:block/amethyst_block",
-    "south": "minecraft:block/amethyst_block",
-    "west": "minecraft:block/amethyst_block",
+    "east": "ringcraft:block/ringforgesides",
+    "south": "ringcraft:block/ringforgesides",
+    "west": "ringcraft:block/ringforgesides",
     "particle": "minecraft:block/amethyst_block"
   },
   "render_type": "solid"

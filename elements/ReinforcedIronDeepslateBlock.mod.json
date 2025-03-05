@@ -2,15 +2,15 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "minecraft:amethyst_block",
-    "textureTop": "minecraft:amethyst_block",
-    "textureLeft": "ringforgesides",
-    "textureFront": "ringforgefront",
-    "textureRight": "ringforgesides",
-    "textureBack": "ringforgesides",
+    "texture": "deepslate_reinforced_iron_ore",
+    "textureTop": "deepslate_reinforced_iron_ore",
+    "textureLeft": "deepslate_reinforced_iron_ore",
+    "textureFront": "deepslate_reinforced_iron_ore",
+    "textureRight": "deepslate_reinforced_iron_ore",
+    "textureBack": "deepslate_reinforced_iron_ore",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 2,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -18,7 +18,7 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -34,11 +34,11 @@
       }
     ],
     "customProperties": [],
-    "name": "Ring Forge",
+    "name": "Reinforced Iron Deepslate",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
+    "hardness": 7.5,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -49,7 +49,7 @@
     ],
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:ReinforcedRawIron"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -57,18 +57,18 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "lightOpacity": 15,
     "material": {
       "value": "NONE"
     },
-    "tickRate": 1,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "STONE",
     "creativePickItem": {
       "value": ""
     },
@@ -103,7 +103,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "vanillaToolTier": "NONE",
+    "vanillaToolTier": "IRON",
     "isBonemealable": false,
     "hasInventory": false,
     "openGUIOnRightClick": false,
@@ -131,7 +131,7 @@
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "minGenerateHeight": -64,
+    "maxGenerateHeight": 8
   }
 }

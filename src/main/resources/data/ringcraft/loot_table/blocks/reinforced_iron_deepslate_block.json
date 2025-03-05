@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "random_sequence": "ringcraft:blocks/reinforced_iron_stone_block",
+  "random_sequence": "ringcraft:blocks/reinforced_iron_deepslate_block",
   "pools": [
     {
       "rolls": 1.0,
