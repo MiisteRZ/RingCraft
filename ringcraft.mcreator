@@ -726,8 +726,8 @@
   "language_map": {
     "pl_pl": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
+      "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
@@ -749,8 +749,8 @@
     },
     "en_us": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "item.ringcraft.regular_ring_item": "Regular Ring",
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
+      "item.ringcraft.regular_ring_item": "Regular Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -772,8 +772,8 @@
     },
     "af_na": {
       "item.ringcraft.gold_ring": "Goud Ring",
-      "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
       "item.ringcraft.regular_ring_item": "Gereelde Ring",
+      "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -795,8 +795,8 @@
     },
     "es_es": {
       "item.ringcraft.gold_ring": "Regular Ring",
-      "item.ringcraft.regular_ring_item": "Regular Ring",
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
+      "item.ringcraft.regular_ring_item": "Regular Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -818,8 +818,8 @@
     },
     "nl_nl": {
       "item.ringcraft.gold_ring": "Goud Ring",
-      "item.ringcraft.regular_ring_item": "Normale Ring",
       "advancements.regular_ring_obtained.descr": "Smeed een basisring",
+      "item.ringcraft.regular_ring_item": "Normale Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Verkrijg een Gewapend IJzerstaaf",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Ringen Menu",
@@ -841,8 +841,8 @@
     },
     "de_de": {
       "item.ringcraft.gold_ring": "Regulär Ring",
-      "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
       "item.ringcraft.regular_ring_item": "Regulär Ring",
+      "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Besorge einen verstärkten Eisenbarren",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Ring Menu",

@@ -4,10 +4,10 @@
   "definition": {
     "texture": "minecraft:amethyst_block",
     "textureTop": "minecraft:amethyst_block",
-    "textureLeft": "minecraft:amethyst_block",
+    "textureLeft": "ringforgesides",
     "textureFront": "ringforgefront",
-    "textureRight": "minecraft:amethyst_block",
-    "textureBack": "minecraft:amethyst_block",
+    "textureRight": "ringforgesides",
+    "textureBack": "ringforgesides",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 2,
