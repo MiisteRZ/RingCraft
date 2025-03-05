@@ -1,7 +1,7 @@
 {
   "item.ringcraft.gold_ring": "Anillo Regular",
-  "item.ringcraft.regular_ring_item": "Anillo Regular",
   "advancements.regular_ring_obtained.descr": "Forja un Anillo Regular",
+  "item.ringcraft.regular_ring_item": "Anillo Regular",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtén un Lingote de Hierro Reforzado",
   "block.ringcraft.ring_forge": "Forja de Anillos",
   "key.ringcraft.rings_menu_binding": "Menú de Anillos RingCraft",
@@ -19,5 +19,6 @@
   "block.ringcraft.reinforced_iron_stone_block": "Hierro Reforzado",
   "painting.ringcraft.painting_1.title": "Denk",
   "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+  "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
   "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Horno Reforzado"
 }
