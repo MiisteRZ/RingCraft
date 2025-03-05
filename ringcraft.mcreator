@@ -217,8 +217,8 @@
       "registry_name": "reinforced_furnance_gui",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/client/gui/ReinforcedFurnanceGUIScreen.java",
-          "src/main/java/miisterzmods/ringcraft/world/inventory/ReinforcedFurnanceGUIMenu.java"
+          "src/main/java/miisterzmods/ringcraft/world/inventory/ReinforcedFurnanceGUIMenu.java",
+          "src/main/java/miisterzmods/ringcraft/client/gui/ReinforcedFurnanceGUIScreen.java"
         ]
       },
       "path": "~/Blocks/ReinforcedFurnance"
