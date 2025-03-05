@@ -668,6 +668,24 @@
         ]
       },
       "path": "~/RingsProcedures"
+    },
+    {
+      "name": "HelpProcedureNOGAMEFUNCTION",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "help_procedure_nogamefunction",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/HelpProcedureNOGAMEFUNCTIONProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
