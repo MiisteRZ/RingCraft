@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ringcraft:block/reinforced_iron_block",
+    "up": "ringcraft:block/reinforced_iron_block",
+    "north": "ringcraft:block/reinforced_iron_block",
+    "east": "ringcraft:block/reinforced_iron_block",
+    "south": "ringcraft:block/reinforced_iron_block",
+    "west": "ringcraft:block/reinforced_iron_block",
+    "particle": "ringcraft:block/reinforced_iron_block"
+  },
+  "render_type": "solid"
+}
