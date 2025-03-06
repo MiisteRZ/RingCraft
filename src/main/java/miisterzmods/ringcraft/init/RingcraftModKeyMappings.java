@@ -17,7 +17,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import miisterzmods.ringcraft.network.RingsMenuBindingMessage;
-import miisterzmods.ringcraft.network.FireRingShootBindingMessage;
+import miisterzmods.ringcraft.network.RingPowerKeybindMessage;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class RingcraftModKeyMappings {
@@ -34,15 +34,15 @@ public class RingcraftModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping FIRE_RING_SHOOT_BINDING = new KeyMapping("key.ringcraft.fire_ring_shoot_binding", GLFW.GLFW_KEY_R, "key.categories.misc") {
+	public static final KeyMapping RING_POWER_KEYBIND = new KeyMapping("key.ringcraft.ring_power_keybind", GLFW.GLFW_KEY_R, "key.categories.gameplay") {
 		private boolean isDownOld = false;
 
 		@Override
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				PacketDistributor.sendToServer(new FireRingShootBindingMessage(0, 0));
-				FireRingShootBindingMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				PacketDistributor.sendToServer(new RingPowerKeybindMessage(0, 0));
+				RingPowerKeybindMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
 		}
@@ -51,7 +51,7 @@ public class RingcraftModKeyMappings {
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(RINGS_MENU_BINDING);
-		event.register(FIRE_RING_SHOOT_BINDING);
+		event.register(RING_POWER_KEYBIND);
 	}
 
 	@EventBusSubscriber({Dist.CLIENT})
@@ -60,7 +60,7 @@ public class RingcraftModKeyMappings {
 		public static void onClientTick(ClientTickEvent.Post event) {
 			if (Minecraft.getInstance().screen == null) {
 				RINGS_MENU_BINDING.consumeClick();
-				FIRE_RING_SHOOT_BINDING.consumeClick();
+				RING_POWER_KEYBIND.consumeClick();
 			}
 		}
 	}
