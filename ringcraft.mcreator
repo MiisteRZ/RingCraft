@@ -636,19 +636,6 @@
       "path": "~/RingsProcedures"
     },
     {
-      "name": "FireRingShootBinding",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fire_ring_shoot_binding",
-      "metadata": {
-        "files": [
-          "src/main/java/miisterzmods/ringcraft/network/FireRingShootBindingMessage.java"
-        ]
-      },
-      "path": "~/RingsProcedures"
-    },
-    {
       "name": "FireRingShootProcedure",
       "type": "procedure",
       "compiles": true,
@@ -734,6 +721,73 @@
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "RingPowerKeybindOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring_power_keybind_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/RingPowerKeybindOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/RingsProcedures"
+    },
+    {
+      "name": "RingPowerKeybind",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring_power_keybind",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/network/RingPowerKeybindMessage.java"
+        ]
+      },
+      "path": "~/RingsProcedures"
+    },
+    {
+      "name": "BlazeSoulLootTable",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_soul_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/BlazeSoulLootTableProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Other"
     }
   ],
   "variable_elements": [
@@ -809,10 +863,10 @@
       "advancements.reinforced_iron_ingot_obtained.title": "Zaawansowany sprzęt",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
-      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocnione złoże żelaza",
       "painting.ringcraft.painting_1.title": "Osi",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "key.ringcraft.ring_power_keybind": "Ring Power",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec",
       "item.ringcraft.gold_ring": "Regular Ring",
@@ -835,10 +889,10 @@
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
-      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "key.ringcraft.ring_power_keybind": "Ring Power",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Gold Ring",
@@ -861,10 +915,10 @@
       "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Versterkte ysterstaaf",
-      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "block.ringcraft.reinforced_iron_stone_block": "Versterkte Ystererts",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "key.ringcraft.ring_power_keybind": "Ring Power",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Versterkte Oond",
       "item.ringcraft.gold_ring": "Goud Ring",
@@ -887,10 +941,10 @@
       "advancements.reinforced_iron_ingot_obtained.title": "Tecnología Avanzada",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Lingote de Hierro Reforzado",
-      "key.ringcraft.fire_ring_shoot_binding": "Atajo del Disparo con Anillo ed Fuego",
       "block.ringcraft.reinforced_iron_stone_block": "Hierro Reforzado",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "key.ringcraft.ring_power_keybind": "Ring Power",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Horno Reforzado",
       "item.ringcraft.gold_ring": "Anillo Regular",
@@ -913,10 +967,10 @@
       "advancements.reinforced_iron_ingot_obtained.title": "Geavanceerde IJzerwaren vekrijgen",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Gewapend IJzerstaaf",
-      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "block.ringcraft.reinforced_iron_stone_block": "Gewapend IJzererts",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "key.ringcraft.ring_power_keybind": "Ring Power",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Gewamped Oven",
       "item.ringcraft.gold_ring": "Goud Ring",
@@ -939,10 +993,10 @@
       "advancements.reinforced_iron_ingot_obtained.title": "Fortgeschrittene Metallurgie",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
-      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "block.ringcraft.reinforced_iron_stone_block": "Verstärkter Eisenerz",
       "painting.ringcraft.painting_1.title": "Esse",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "key.ringcraft.ring_power_keybind": "Ring Power",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Verstärkter Ofen",
       "item.ringcraft.gold_ring": "Regulär Ring",
