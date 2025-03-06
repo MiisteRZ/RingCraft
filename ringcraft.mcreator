@@ -151,14 +151,14 @@
       "registry_name": "reinforced_iron_stone_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json"
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -680,11 +680,14 @@
       "registry_name": "reinforced_iron_deepslate_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_deepslate_block.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_deepslate_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deepslate_block.json",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_deepslate_block.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_deepslate_block.json",
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_deepslate_block.json",
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronDeepslateBlockBlock.java",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deepslate_block.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deepslate_block.json"
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_deepslate_block_biome_modifier.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deepslate_block.json"
         ]
       },
       "path": "~/Blocks"

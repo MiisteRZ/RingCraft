@@ -24,7 +24,7 @@
         "value": "Blocks.OBSIDIAN"
       },
       {
-        "value": "Blocks.IRON_BARS"
+        "value": "CUSTOM:ReinforcedIronBlock"
       },
       {
         "value": "Blocks.OBSIDIAN"
