@@ -8,8 +8,8 @@
       "registry_name": "rings_gui",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java",
-          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java"
+          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java",
+          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -151,14 +151,14 @@
       "registry_name": "reinforced_iron_stone_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -197,12 +197,12 @@
       "registry_name": "reinforced_furnance",
       "metadata": {
         "files": [
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedFurnanceBlock.java",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_furnance.json",
           "src/main/java/miisterzmods/ringcraft/block/entity/ReinforcedFurnanceBlockEntity.java",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_furnance.json",
-          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedFurnanceBlock.java",
           "src/main/resources/assets/ringcraft/models/item/reinforced_furnance.json",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_furnance.json"
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json"
         ]
       },
       "path": "~/Blocks"
@@ -215,8 +215,8 @@
       "registry_name": "reinforced_furnance_gui",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/world/inventory/ReinforcedFurnanceGUIMenu.java",
-          "src/main/java/miisterzmods/ringcraft/client/gui/ReinforcedFurnanceGUIScreen.java"
+          "src/main/java/miisterzmods/ringcraft/client/gui/ReinforcedFurnanceGUIScreen.java",
+          "src/main/java/miisterzmods/ringcraft/world/inventory/ReinforcedFurnanceGUIMenu.java"
         ]
       },
       "path": "~/Blocks"
@@ -491,8 +491,8 @@
       "registry_name": "reinforced_raw_iron",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/ReinforcedRawIronItem.java",
-          "src/main/resources/assets/ringcraft/models/item/reinforced_raw_iron.json"
+          "src/main/resources/assets/ringcraft/models/item/reinforced_raw_iron.json",
+          "src/main/java/miisterzmods/ringcraft/item/ReinforcedRawIronItem.java"
         ]
       },
       "path": "~/Items"
@@ -568,11 +568,11 @@
       "registry_name": "ring_forge",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/ring_forge.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/ring_forge.json",
           "src/main/resources/assets/ringcraft/models/item/ring_forge.json",
-          "src/main/java/miisterzmods/ringcraft/block/RingForgeBlock.java",
-          "src/main/resources/assets/ringcraft/blockstates/ring_forge.json"
+          "src/main/resources/assets/ringcraft/models/block/ring_forge.json",
+          "src/main/resources/assets/ringcraft/blockstates/ring_forge.json",
+          "src/main/java/miisterzmods/ringcraft/block/RingForgeBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -693,11 +693,11 @@
       "registry_name": "reinforced_iron_deepslate_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_deepslate_block.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deepslate_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_deepslate_block.json",
+          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_deepslate_block.json",
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronDeepslateBlockBlock.java",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deepslate_block.json"
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deepslate_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deepslate_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -710,14 +710,30 @@
       "registry_name": "reinforced_iron_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_block.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronBlockBlock.java",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_block.json",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_block.json"
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronBlockBlock.java",
+          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_block.json"
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "BlazeSoul",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_soul",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/item/renderer/BlazeSoulItemRenderer.java",
+          "src/main/java/miisterzmods/ringcraft/item/BlazeSoulItem.java",
+          "src/main/resources/assets/ringcraft/models/item/blaze_soul.json",
+          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemModel.java"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [
@@ -748,13 +764,13 @@
   ],
   "sound_elements": [],
   "tag_elements": {
+    "ITEMS:mod:furnacefuel": [
+      "Items.COAL#0"
+    ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:ReinforcedIronBlock",
       "~CUSTOM:ReinforcedIronDeepslateBlock",
       "~CUSTOM:ReinforcedIronStoneBlock"
-    ],
-    "ITEMS:mod:furnacefuel": [
-      "Items.COAL#0"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:ReinforcedIronBlock",
@@ -783,154 +799,160 @@
   },
   "language_map": {
     "pl_pl": {
-      "item.ringcraft.gold_ring": "Regular Ring",
       "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
-      "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
-      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
       "advancements.reinforced_iron_ingot_obtained.title": "Zaawansowany sprzęt",
-      "advancements.regular_ring_obtained.title": "Nowy początek",
-      "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
-      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
-      "item.ringcraft.gold_ring.description_0": "Złoty pierścień",
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocnione złoże żelaza",
       "painting.ringcraft.painting_1.title": "Osi",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec"
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec",
+      "item.ringcraft.gold_ring": "Regular Ring",
+      "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
+      "advancements.regular_ring_obtained.title": "Nowy początek",
+      "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+      "item.ringcraft.gold_ring.description_0": "Złoty pierścień",
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
     "en_us": {
-      "item.ringcraft.gold_ring": "Regular Ring",
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
-      "item.ringcraft.regular_ring_item": "Regular Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
-      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
-      "advancements.regular_ring_obtained.title": "A New Beginning",
-      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "item.ringcraft.regular_ring_item.description_0": "",
-      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
-      "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance"
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
+      "item.ringcraft.gold_ring": "Gold Ring",
+      "item.ringcraft.regular_ring_item": "Regular Ring",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
+      "advancements.regular_ring_obtained.title": "A New Beginning",
+      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+      "item.ringcraft.gold_ring.description_0": "",
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
     "af_na": {
-      "item.ringcraft.gold_ring": "Goud Ring",
-      "item.ringcraft.regular_ring_item": "Gereelde Ring",
       "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Versterkte Oond",
-      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
       "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
-      "advancements.regular_ring_obtained.title": "\u0027n Nuwe Begin",
-      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "item.ringcraft.regular_ring_item.description_0": "",
-      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.reinforced_iron_ingot": "Versterkte ysterstaaf",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
-      "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_stone_block": "Versterkte Ystererts",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Versterkte Oond"
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Versterkte Oond",
+      "item.ringcraft.gold_ring": "Goud Ring",
+      "item.ringcraft.regular_ring_item": "Gereelde Ring",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
+      "advancements.regular_ring_obtained.title": "\u0027n Nuwe Begin",
+      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+      "item.ringcraft.gold_ring.description_0": "",
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
     "es_es": {
-      "item.ringcraft.gold_ring": "Anillo Regular",
-      "item.ringcraft.regular_ring_item": "Anillo Regular",
       "advancements.regular_ring_obtained.descr": "Forja un Anillo Regular",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtén un Lingote de Hierro Reforzado",
       "block.ringcraft.ring_forge": "Forja de Anillos",
       "key.ringcraft.rings_menu_binding": "Menú de Anillos RingCraft",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Horno Reforzado",
-      "item.ringcraft.reinforced_raw_iron": "Hierro Reforzado",
       "gui.ringcraft.rings_gui.label_magic_rings": "Anillos Mágicos",
       "advancements.reinforced_iron_ingot_obtained.title": "Tecnología Avanzada",
-      "advancements.regular_ring_obtained.title": "Un Nuevo Comienzo",
-      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "item.ringcraft.regular_ring_item.description_0": "",
-      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.reinforced_iron_ingot": "Lingote de Hierro Reforzado",
       "key.ringcraft.fire_ring_shoot_binding": "Atajo del Disparo con Anillo ed Fuego",
-      "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_stone_block": "Hierro Reforzado",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Horno Reforzado"
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Horno Reforzado",
+      "item.ringcraft.gold_ring": "Anillo Regular",
+      "item.ringcraft.regular_ring_item": "Anillo Regular",
+      "item.ringcraft.reinforced_raw_iron": "Hierro Reforzado",
+      "advancements.regular_ring_obtained.title": "Un Nuevo Comienzo",
+      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+      "item.ringcraft.gold_ring.description_0": "",
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
     "nl_nl": {
-      "item.ringcraft.gold_ring": "Goud Ring",
       "advancements.regular_ring_obtained.descr": "Smeed een basisring",
-      "item.ringcraft.regular_ring_item": "Normale Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Verkrijg een Gewapend IJzerstaaf",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Ringen Menu",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Gewamped Oven",
-      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringen",
       "advancements.reinforced_iron_ingot_obtained.title": "Geavanceerde IJzerwaren vekrijgen",
-      "advancements.regular_ring_obtained.title": "Een Nieuw Begin",
-      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "item.ringcraft.regular_ring_item.description_0": "",
-      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.reinforced_iron_ingot": "Gewapend IJzerstaaf",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
-      "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_stone_block": "Gewapend IJzererts",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Gewamped Oven"
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Gewamped Oven",
+      "item.ringcraft.gold_ring": "Goud Ring",
+      "item.ringcraft.regular_ring_item": "Normale Ring",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
+      "advancements.regular_ring_obtained.title": "Een Nieuw Begin",
+      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+      "item.ringcraft.gold_ring.description_0": "",
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
     "de_de": {
-      "item.ringcraft.gold_ring": "Regulär Ring",
-      "item.ringcraft.regular_ring_item": "Regulär Ring",
       "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Besorge einen verstärkten Eisenbarren",
       "block.ringcraft.ring_forge": "Ring Forge",
       "key.ringcraft.rings_menu_binding": "Ring Menu",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Verstärkter Ofen",
-      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringe",
       "advancements.reinforced_iron_ingot_obtained.title": "Fortgeschrittene Metallurgie",
-      "advancements.regular_ring_obtained.title": "Ein neuer Beginn",
-      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "item.ringcraft.regular_ring_item.description_0": "",
-      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
-      "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_stone_block": "Verstärkter Eisenerz",
       "painting.ringcraft.painting_1.title": "Esse",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Verstärkter Ofen"
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Verstärkter Ofen",
+      "item.ringcraft.gold_ring": "Regulär Ring",
+      "item.ringcraft.regular_ring_item": "Regulär Ring",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
+      "advancements.regular_ring_obtained.title": "Ein neuer Beginn",
+      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+      "item.ringcraft.gold_ring.description_0": "",
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     }
   },
   "foldersRoot": {
