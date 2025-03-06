@@ -1,6 +1,9 @@
 package miisterzmods.ringcraft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.entity.Entity;
+
+import miisterzmods.ringcraft.network.RingcraftModVariables;
+import miisterzmods.ringcraft.init.RingcraftModItems;
 
 public class RingPowerKeybindOnKeyPressedProcedure {
 	public static void execute(Entity entity) {
