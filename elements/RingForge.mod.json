@@ -122,6 +122,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "ForgeOnBlockAdded"
+    },
+    "onTickUpdate": {
+      "name": "ForgeOnTickUpdate"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
