@@ -8,8 +8,8 @@
       "registry_name": "rings_gui",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java",
-          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java"
+          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java",
+          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -867,6 +867,25 @@
           "src/main/java/miisterzmods/ringcraft/potion/FireproofEffectMobEffect.java"
         ]
       }
+    },
+    {
+      "name": "RingsMainProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rings_main_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/RingsMainProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/RingsProcedures"
     }
   ],
   "variable_elements": [
