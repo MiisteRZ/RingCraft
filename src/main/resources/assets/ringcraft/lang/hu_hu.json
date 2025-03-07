@@ -1,7 +1,7 @@
 {
   "advancements.regular_ring_obtained.descr": "Alapgyűrűt kovácsolni",
-  "advancements.reinforced_iron_ingot_obtained.descr": "Szerezzen megerősített vasrúd",
   "block.ringcraft.ring_forge": "Gyűrűkovácsolás",
+  "advancements.reinforced_iron_ingot_obtained.descr": "Szerezzen megerősített vasrúd",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Gyűrűk menü",
   "item.ringcraft.blaze_soul": "Őrlángidéző lélek",
