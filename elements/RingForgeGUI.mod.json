@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "CUSTOM:RegularRingItem"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -76,6 +76,149 @@
           "y": 43,
           "locked": false
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "forgesmeltingprogress0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ForgeSmeltProgress0DisplayCondition"
+          },
+          "x": 204,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "forgesmeltingprogress1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ForgeSmeltProgress1DisplayCondition"
+          },
+          "x": 204,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "forgesmeltingprogress2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ForgeSmeltProgress2DisplayCondition"
+          },
+          "x": 0,
+          "y": 0,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "forgesmeltingprogress3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ForgeSmeltProgress3DisplayCondition"
+          },
+          "x": 204,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "forgesmeltingprogress4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ForgeSmeltProgress4DisplayCondition"
+          },
+          "x": 204,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "forgesmeltingprogress5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ForgeSmeltProgress5DisplayCondition"
+          },
+          "x": 204,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "forgesmeltingprogress6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ForgeSmeltProgress6DisplayCondition"
+          },
+          "x": 204,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "forgesmeltingprogress7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ForgeSmeltProgress7DisplayCondition"
+          },
+          "x": 204,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "forgesmeltingprogress8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ForgeSmeltProgress8DisplayCondition"
+          },
+          "x": 204,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "forgesmeltingprogress9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ForgeSmeltProgress9DisplayCondition"
+          },
+          "x": 204,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "forgesmeltingprogress10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ForgeSmeltProgress10DisplayCondition"
+          },
+          "x": 204,
+          "y": 71,
+          "locked": false
+        }
       }
     ],
     "gridSettings": {
@@ -83,7 +226,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

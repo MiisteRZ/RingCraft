@@ -9,6 +9,17 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import miisterzmods.ringcraft.world.inventory.RingForgeGUIMenu;
+import miisterzmods.ringcraft.procedures.ForgeSmeltProgress9DisplayConditionProcedure;
+import miisterzmods.ringcraft.procedures.ForgeSmeltProgress8DisplayConditionProcedure;
+import miisterzmods.ringcraft.procedures.ForgeSmeltProgress7DisplayConditionProcedure;
+import miisterzmods.ringcraft.procedures.ForgeSmeltProgress6DisplayConditionProcedure;
+import miisterzmods.ringcraft.procedures.ForgeSmeltProgress5DisplayConditionProcedure;
+import miisterzmods.ringcraft.procedures.ForgeSmeltProgress4DisplayConditionProcedure;
+import miisterzmods.ringcraft.procedures.ForgeSmeltProgress3DisplayConditionProcedure;
+import miisterzmods.ringcraft.procedures.ForgeSmeltProgress2DisplayConditionProcedure;
+import miisterzmods.ringcraft.procedures.ForgeSmeltProgress1DisplayConditionProcedure;
+import miisterzmods.ringcraft.procedures.ForgeSmeltProgress10DisplayConditionProcedure;
+import miisterzmods.ringcraft.procedures.ForgeSmeltProgress0DisplayConditionProcedure;
 
 import java.util.HashMap;
 
@@ -46,6 +57,39 @@ public class RingForgeGUIScreen extends AbstractContainerScreen<RingForgeGUIMenu
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		if (ForgeSmeltProgress0DisplayConditionProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/forgesmeltingprogress0.png"), this.leftPos + 78, this.topPos + 36, 0, 0, 16, 16, 16, 16);
+		}
+		if (ForgeSmeltProgress1DisplayConditionProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/forgesmeltingprogress1.png"), this.leftPos + 78, this.topPos + 36, 0, 0, 16, 16, 16, 16);
+		}
+		if (ForgeSmeltProgress2DisplayConditionProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/forgesmeltingprogress2.png"), this.leftPos + -126, this.topPos + -35, 0, 0, 16, 16, 16, 16);
+		}
+		if (ForgeSmeltProgress3DisplayConditionProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/forgesmeltingprogress3.png"), this.leftPos + 78, this.topPos + 36, 0, 0, 16, 16, 16, 16);
+		}
+		if (ForgeSmeltProgress4DisplayConditionProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/forgesmeltingprogress4.png"), this.leftPos + 78, this.topPos + 36, 0, 0, 16, 16, 16, 16);
+		}
+		if (ForgeSmeltProgress5DisplayConditionProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/forgesmeltingprogress5.png"), this.leftPos + 78, this.topPos + 36, 0, 0, 16, 16, 16, 16);
+		}
+		if (ForgeSmeltProgress6DisplayConditionProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/forgesmeltingprogress6.png"), this.leftPos + 78, this.topPos + 36, 0, 0, 16, 16, 16, 16);
+		}
+		if (ForgeSmeltProgress7DisplayConditionProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/forgesmeltingprogress7.png"), this.leftPos + 78, this.topPos + 36, 0, 0, 16, 16, 16, 16);
+		}
+		if (ForgeSmeltProgress8DisplayConditionProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/forgesmeltingprogress8.png"), this.leftPos + 78, this.topPos + 36, 0, 0, 16, 16, 16, 16);
+		}
+		if (ForgeSmeltProgress9DisplayConditionProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/forgesmeltingprogress9.png"), this.leftPos + 78, this.topPos + 36, 0, 0, 16, 16, 16, 16);
+		}
+		if (ForgeSmeltProgress10DisplayConditionProcedure.execute(world, x, y, z)) {
+			guiGraphics.blit(ResourceLocation.parse("ringcraft:textures/screens/forgesmeltingprogress10.png"), this.leftPos + 78, this.topPos + 36, 0, 0, 16, 16, 16, 16);
+		}
 		RenderSystem.disableBlend();
 	}
 

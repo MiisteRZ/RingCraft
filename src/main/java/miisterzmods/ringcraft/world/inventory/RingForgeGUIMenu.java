@@ -23,6 +23,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import miisterzmods.ringcraft.init.RingcraftModMenus;
+import miisterzmods.ringcraft.init.RingcraftModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -86,6 +87,11 @@ public class RingForgeGUIMenu extends AbstractContainerMenu implements Supplier<
 			private final int slot = 0;
 			private int x = RingForgeGUIMenu.this.x;
 			private int y = RingForgeGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return RingcraftModItems.REGULAR_RING_ITEM.get() == stack.getItem();
+			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 52, 24) {
 			private final int slot = 1;
