@@ -840,6 +840,52 @@
         ]
       },
       "path": "~/RingsProcedures"
+    },
+    {
+      "name": "FireproofEffectOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireproof_effect_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/FireproofEffectOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FireproofEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireproof_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/potion/FireproofEffectMobEffect.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -934,6 +980,7 @@
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Regular Ring",
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
@@ -962,6 +1009,7 @@
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec",
       "item.ringcraft.gold_ring": "Regular Ring",
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
@@ -991,40 +1039,11 @@
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Regular Ring",
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "item.ringcraft.reinforced_raw_iron": "Besi Mentah Bertulang",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "A New Beginning",
-      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
-      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
-      "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
-    },
-    "af_na": {
-      "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
-      "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
-      "block.ringcraft.ring_forge": "Ring Forge",
-      "item.ringcraft.fire_ring": "Gold Ring",
-      "key.ringcraft.rings_menu_binding": "Rings Menu",
-      "item.ringcraft.blaze_soul": "Blaze Soul",
-      "block.ringcraft.reinforced_furnance": "Versterkte Oond",
-      "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
-      "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
-      "item.ringcraft.regular_ring_item.description_0": "",
-      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
-      "item.ringcraft.reinforced_iron_ingot": "Versterkte ysterstaaf",
-      "block.ringcraft.reinforced_iron_stone_block": "Versterkte Ystererts",
-      "painting.ringcraft.painting_1.title": "Denk",
-      "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
-      "key.ringcraft.ring_power_keybind": "Ring Power",
-      "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Versterkte Oond",
-      "item.ringcraft.gold_ring": "Goud Ring",
-      "item.ringcraft.regular_ring_item": "Gereelde Ring",
-      "item.ringcraft.enderman_soul": "Blaze Soul",
-      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
-      "item.ringcraft.fire_ring.description_0": "",
-      "advancements.regular_ring_obtained.title": "\u0027n Nuwe Begin",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.gold_ring.description_0": "",
@@ -1050,6 +1069,7 @@
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Fornalha reforçada",
       "item.ringcraft.gold_ring": "Anel ouro",
       "item.ringcraft.regular_ring_item": "Anel normal",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "item.ringcraft.fire_ring.description_0": "",
@@ -1059,34 +1079,36 @@
       "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_block": "Bloco de ferro reforçado"
     },
-    "hu_hu": {
-      "advancements.regular_ring_obtained.descr": "Alapgyűrűt kovácsolni",
-      "advancements.reinforced_iron_ingot_obtained.descr": "Szerezzen megerősített vasrúd",
-      "block.ringcraft.ring_forge": "Gyűrűkovácsolás",
+    "af_na": {
+      "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
+      "block.ringcraft.ring_forge": "Ring Forge",
       "item.ringcraft.fire_ring": "Gold Ring",
-      "key.ringcraft.rings_menu_binding": "Gyűrűk menü",
-      "item.ringcraft.blaze_soul": "Őrlángidéző lélek",
-      "block.ringcraft.reinforced_furnance": "Megerősített kemence",
-      "gui.ringcraft.rings_gui.label_magic_rings": "Varázsgyűrűk",
-      "advancements.reinforced_iron_ingot_obtained.title": "Speciális hardver",
+      "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
+      "block.ringcraft.reinforced_furnance": "Versterkte Oond",
+      "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
+      "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
       "item.ringcraft.regular_ring_item.description_0": "",
-      "key.ringcraft.fire_ring_shoot_binding": "Tűzgyűrű Lő",
-      "item.ringcraft.reinforced_iron_ingot": "Megerősített vasrúd",
-      "block.ringcraft.reinforced_iron_stone_block": "Megerősített vasérc",
+      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
+      "item.ringcraft.reinforced_iron_ingot": "Versterkte ysterstaaf",
+      "block.ringcraft.reinforced_iron_stone_block": "Versterkte Ystererts",
       "painting.ringcraft.painting_1.title": "Denk",
-      "key.ringcraft.ring_power_keybind": "Hatalom gyűrű",
-      "block.ringcraft.reinforced_iron_deepslate_block": "Megerősített vasérc mélypalában",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Megerősített kemence",
-      "item.ringcraft.gold_ring": "Aranygyűrű",
-      "item.ringcraft.regular_ring_item": "Rendszeres gyűrű",
+      "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "key.ringcraft.ring_power_keybind": "Ring Power",
+      "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Versterkte Oond",
+      "item.ringcraft.gold_ring": "Goud Ring",
+      "item.ringcraft.regular_ring_item": "Gereelde Ring",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Blaze Soul",
-      "item.ringcraft.reinforced_raw_iron": "Megerősített nyersvas",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
-      "advancements.regular_ring_obtained.title": "Egy Új Kezdet",
+      "advancements.regular_ring_obtained.title": "\u0027n Nuwe Begin",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Megerősített Vasblokk"
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
     "de_de": {
       "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
@@ -1109,6 +1131,7 @@
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Verstärkter Ofen",
       "item.ringcraft.gold_ring": "Regulär Ring",
       "item.ringcraft.regular_ring_item": "Regulär Ring",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
@@ -1117,6 +1140,36 @@
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
+    },
+    "hu_hu": {
+      "advancements.regular_ring_obtained.descr": "Alapgyűrűt kovácsolni",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Szerezzen megerősített vasrúd",
+      "block.ringcraft.ring_forge": "Gyűrűkovácsolás",
+      "item.ringcraft.fire_ring": "Gold Ring",
+      "key.ringcraft.rings_menu_binding": "Gyűrűk menü",
+      "item.ringcraft.blaze_soul": "Őrlángidéző lélek",
+      "block.ringcraft.reinforced_furnance": "Megerősített kemence",
+      "gui.ringcraft.rings_gui.label_magic_rings": "Varázsgyűrűk",
+      "advancements.reinforced_iron_ingot_obtained.title": "Speciális hardver",
+      "item.ringcraft.regular_ring_item.description_0": "",
+      "key.ringcraft.fire_ring_shoot_binding": "Tűzgyűrű Lő",
+      "item.ringcraft.reinforced_iron_ingot": "Megerősített vasrúd",
+      "block.ringcraft.reinforced_iron_stone_block": "Megerősített vasérc",
+      "painting.ringcraft.painting_1.title": "Denk",
+      "key.ringcraft.ring_power_keybind": "Hatalom gyűrű",
+      "block.ringcraft.reinforced_iron_deepslate_block": "Megerősített vasérc mélypalában",
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Megerősített kemence",
+      "item.ringcraft.gold_ring": "Aranygyűrű",
+      "item.ringcraft.regular_ring_item": "Rendszeres gyűrű",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
+      "item.ringcraft.enderman_soul": "Blaze Soul",
+      "item.ringcraft.reinforced_raw_iron": "Megerősített nyersvas",
+      "item.ringcraft.fire_ring.description_0": "",
+      "advancements.regular_ring_obtained.title": "Egy Új Kezdet",
+      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+      "item.ringcraft.gold_ring.description_0": "",
+      "block.ringcraft.reinforced_iron_block": "Megerősített Vasblokk"
     },
     "en_us": {
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
@@ -1139,6 +1192,7 @@
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Gold Ring",
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Enderman Soul",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
@@ -1168,6 +1222,7 @@
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Regular Ring",
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
@@ -1198,6 +1253,7 @@
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Horno Reforzado",
       "item.ringcraft.gold_ring": "Anillo Regular",
       "item.ringcraft.regular_ring_item": "Anillo Regular",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "item.ringcraft.reinforced_raw_iron": "Hierro Reforzado",
       "item.ringcraft.fire_ring.description_0": "",
@@ -1228,6 +1284,7 @@
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Gewamped Oven",
       "item.ringcraft.gold_ring": "Goud Ring",
       "item.ringcraft.regular_ring_item": "Normale Ring",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
@@ -1257,6 +1314,7 @@
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Fornalha reforçada",
       "item.ringcraft.gold_ring": "Anel ouro",
       "item.ringcraft.regular_ring_item": "Anel normal",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "item.ringcraft.fire_ring.description_0": "",
