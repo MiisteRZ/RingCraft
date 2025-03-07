@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import miisterzmods.ringcraft.block.entity.RingForgeBlockEntity;
 import miisterzmods.ringcraft.block.entity.ReinforcedFurnanceBlockEntity;
 import miisterzmods.ringcraft.RingcraftMod;
 
@@ -22,6 +23,7 @@ import miisterzmods.ringcraft.RingcraftMod;
 public class RingcraftModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, RingcraftMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> REINFORCED_FURNANCE = register("reinforced_furnance", RingcraftModBlocks.REINFORCED_FURNANCE, ReinforcedFurnanceBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<?>> RING_FORGE = register("ring_forge", RingcraftModBlocks.RING_FORGE, RingForgeBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -32,5 +34,6 @@ public class RingcraftModBlockEntities {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, REINFORCED_FURNANCE.get(), (blockEntity, side) -> ((ReinforcedFurnanceBlockEntity) blockEntity).getItemHandler());
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, RING_FORGE.get(), (blockEntity, side) -> ((RingForgeBlockEntity) blockEntity).getItemHandler());
 	}
 }

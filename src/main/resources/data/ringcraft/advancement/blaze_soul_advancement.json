@@ -4,24 +4,24 @@
       "id": "ringcraft:regular_ring_item"
     },
     "title": {
-      "translate": "advancements.regular_ring_obtained.title"
+      "translate": "advancements.blaze_soul_advancement.title"
     },
     "description": {
-      "translate": "advancements.regular_ring_obtained.descr"
+      "translate": "advancements.blaze_soul_advancement.descr"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": false
+    "hidden": true
   },
   "criteria": {
-    "regular_ring_obtained_0": {
+    "blaze_soul_advancement_0": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "items": [
-              "ringcraft:regular_ring_item"
+              "ringcraft:blaze_soul"
             ],
             "count": {
               "min": 1,
