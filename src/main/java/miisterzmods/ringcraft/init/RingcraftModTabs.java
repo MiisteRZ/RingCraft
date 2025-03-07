@@ -29,5 +29,6 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.ENDERMAN_SOUL.get());
 				tabData.accept(RingcraftModItems.REGULAR_RING_ITEM.get());
 				tabData.accept(RingcraftModItems.GOLD_RING.get());
+				tabData.accept(RingcraftModItems.FIRE_RING.get());
 			}).build());
 }

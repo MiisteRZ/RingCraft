@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 1,
-    "texture": "gold_ring",
-    "customModelName": "regularring:gold",
+    "texture": "fire_ring",
+    "customModelName": "regularring:fire",
     "customProperties": {},
     "states": [],
-    "name": "Gold Ring",
-    "rarity": "UNCOMMON",
+    "name": "Fire Ring",
+    "rarity": "RARE",
     "creativeTabs": [
       {
         "value": "CUSTOM:RingCraftCreativeTab"
@@ -23,7 +23,7 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": false,
+    "immuneToFire": true,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,

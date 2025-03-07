@@ -11,6 +11,12 @@
         "2": "goldring"
       },
       "name": "gold"
+    },
+    "fire": {
+      "map": {
+        "2": "fire_ring"
+      },
+      "name": "fire"
     }
   }
 }
