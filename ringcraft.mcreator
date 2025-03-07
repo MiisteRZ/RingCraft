@@ -563,7 +563,7 @@
     {
       "name": "RingForge",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ring_forge",
       "metadata": {
@@ -891,7 +891,7 @@
     {
       "name": "ForgeSmeltProgress6DisplayCondition",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_6_display_condition",
       "metadata": {
@@ -923,7 +923,7 @@
     {
       "name": "ForgeSmeltProgress10DisplayCondition",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_10_display_condition",
       "metadata": {
@@ -955,7 +955,7 @@
     {
       "name": "ForgeSmeltProgress8DisplayCondition",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_8_display_condition",
       "metadata": {
@@ -987,7 +987,7 @@
     {
       "name": "ForgeSmeltProgress1DisplayCondition",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_1_display_condition",
       "metadata": {
@@ -1019,7 +1019,7 @@
     {
       "name": "ForgeSmeltProgress4DisplayCondition",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_4_display_condition",
       "metadata": {
@@ -1051,7 +1051,7 @@
     {
       "name": "ForgeSmeltProgress7DisplayCondition",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_7_display_condition",
       "metadata": {
@@ -1083,7 +1083,7 @@
     {
       "name": "ForgeSmeltProgress5DisplayCondition",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_5_display_condition",
       "metadata": {
@@ -1115,7 +1115,7 @@
     {
       "name": "ForgeSmeltProgress9DisplayCondition",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_9_display_condition",
       "metadata": {
@@ -1147,7 +1147,7 @@
     {
       "name": "ForgeSmeltProgress0DisplayCondition",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_0_display_condition",
       "metadata": {
@@ -1179,7 +1179,7 @@
     {
       "name": "ForgeSmeltProgress3DisplayCondition",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_3_display_condition",
       "metadata": {
@@ -1211,7 +1211,7 @@
     {
       "name": "ForgeSmeltProgress2DisplayCondition",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_2_display_condition",
       "metadata": {
@@ -1243,7 +1243,7 @@
     {
       "name": "FrostResistanceEffect",
       "type": "potioneffect",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "frost_resistance_effect",
       "metadata": {
@@ -1256,7 +1256,7 @@
     {
       "name": "FrostResistanceEffectOnEffectActiveTick",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "frost_resistance_effect_on_effect_active_tick",
       "metadata": {
