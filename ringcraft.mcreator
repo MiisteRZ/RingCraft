@@ -568,10 +568,10 @@
       "registry_name": "ring_forge",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/ring_forge.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/ring_forge.json",
-          "src/main/resources/assets/ringcraft/models/item/ring_forge.json",
+          "src/main/resources/assets/ringcraft/models/block/ring_forge.json",
           "src/main/java/miisterzmods/ringcraft/block/RingForgeBlock.java",
+          "src/main/resources/assets/ringcraft/models/item/ring_forge.json",
           "src/main/resources/assets/ringcraft/blockstates/ring_forge.json"
         ]
       },
@@ -680,11 +680,14 @@
       "registry_name": "reinforced_iron_deepslate_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_deepslate_block.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_deepslate_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deepslate_block.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deepslate_block.json",
-          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_deepslate_block.json",
+          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_deepslate_block.json",
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronDeepslateBlockBlock.java",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deepslate_block.json"
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_deepslate_block_biome_modifier.json",
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_deepslate_block.json",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_deepslate_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -897,6 +900,7 @@
       "item.ringcraft.gold_ring.description_0": "Złoty pierścień",
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocnione złoże żelaza",
       "painting.ringcraft.painting_1.title": "Osi",
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec"
     },
