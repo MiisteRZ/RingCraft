@@ -1,0 +1,6 @@
+{
+  "parent": "ringcraft:displaysettings/enderman_soul",
+  "textures": {
+    "layer0": "ringcraft:item/enderman_soul"
+  }
+}

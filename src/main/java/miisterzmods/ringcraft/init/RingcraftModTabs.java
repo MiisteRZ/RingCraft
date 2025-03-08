@@ -28,5 +28,7 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModBlocks.RING_FORGE.get().asItem());
 				tabData.accept(RingcraftModBlocks.REINFORCED_IRON_DEEPSLATE_BLOCK.get().asItem());
 				tabData.accept(RingcraftModBlocks.REINFORCED_IRON_BLOCK.get().asItem());
+				tabData.accept(RingcraftModItems.FIRE_RING.get());
+				tabData.accept(RingcraftModItems.ENDERMAN_SOUL.get());
 			}).build());
 }

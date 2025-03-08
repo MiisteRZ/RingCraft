@@ -16,6 +16,8 @@ import miisterzmods.ringcraft.item.ReinforcedRawIronItem;
 import miisterzmods.ringcraft.item.ReinforcedIronIngotItem;
 import miisterzmods.ringcraft.item.RegularRingItemItem;
 import miisterzmods.ringcraft.item.GoldRingItem;
+import miisterzmods.ringcraft.item.FireRingItem;
+import miisterzmods.ringcraft.item.EndermanSoulItem;
 import miisterzmods.ringcraft.item.BlazeSoulItem;
 import miisterzmods.ringcraft.RingcraftMod;
 
@@ -31,6 +33,8 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> REINFORCED_IRON_DEEPSLATE_BLOCK = block(RingcraftModBlocks.REINFORCED_IRON_DEEPSLATE_BLOCK);
 	public static final DeferredItem<Item> BLAZE_SOUL = REGISTRY.register("blaze_soul", BlazeSoulItem::new);
 	public static final DeferredItem<Item> REINFORCED_IRON_BLOCK = block(RingcraftModBlocks.REINFORCED_IRON_BLOCK);
+	public static final DeferredItem<Item> FIRE_RING = REGISTRY.register("fire_ring", FireRingItem::new);
+	public static final DeferredItem<Item> ENDERMAN_SOUL = REGISTRY.register("enderman_soul", EndermanSoulItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
