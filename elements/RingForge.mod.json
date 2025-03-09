@@ -18,7 +18,7 @@
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -74,6 +74,10 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "BLOCKED",
+    "beaconColorModifier": {
+      "value": -39322,
+      "falpha": 0.0
+    },
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
@@ -84,7 +88,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -122,12 +126,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockAdded": {
-      "name": "ForgeOnBlockAdded"
-    },
-    "onTickUpdate": {
-      "name": "ForgeOnTickUpdate"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

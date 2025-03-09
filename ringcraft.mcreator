@@ -8,8 +8,8 @@
       "registry_name": "rings_gui",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java",
-          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java"
+          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java",
+          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -151,13 +151,13 @@
       "registry_name": "reinforced_iron_stone_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
           "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_stone_block.json",
           "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
         ]
       },
@@ -563,7 +563,7 @@
     {
       "name": "RingForge",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ring_forge",
       "metadata": {
@@ -761,7 +761,7 @@
     {
       "name": "ForgeSmeltProgress6DisplayCondition",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_6_display_condition",
       "metadata": {
@@ -793,7 +793,7 @@
     {
       "name": "FrostResistanceEffect",
       "type": "potioneffect",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "frost_resistance_effect",
       "metadata": {
@@ -825,14 +825,19 @@
         "files": [
           "src/main/java/miisterzmods/ringcraft/procedures/CooldownTickProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/RingsProcedures"
     },
     {
       "name": "ForgeSmeltProgress9DisplayCondition",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_9_display_condition",
       "metadata": {
@@ -864,7 +869,7 @@
     {
       "name": "ForgeSmeltProgress0DisplayCondition",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_0_display_condition",
       "metadata": {
@@ -896,7 +901,7 @@
     {
       "name": "ForgeSmeltProgress3DisplayCondition",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_3_display_condition",
       "metadata": {
@@ -928,7 +933,7 @@
     {
       "name": "FrostResistanceEffectOnEffectActiveTick",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "frost_resistance_effect_on_effect_active_tick",
       "metadata": {
@@ -1016,7 +1021,7 @@
     {
       "name": "ForgeSmeltProgress10DisplayCondition",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_10_display_condition",
       "metadata": {
@@ -1048,7 +1053,7 @@
     {
       "name": "ForgeSmeltProgress8DisplayCondition",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_8_display_condition",
       "metadata": {
@@ -1080,7 +1085,7 @@
     {
       "name": "ForgeSmeltProgress1DisplayCondition",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_1_display_condition",
       "metadata": {
@@ -1112,7 +1117,7 @@
     {
       "name": "ForgeSmeltProgress4DisplayCondition",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_4_display_condition",
       "metadata": {
@@ -1144,7 +1149,7 @@
     {
       "name": "ForgeSmeltProgress7DisplayCondition",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_7_display_condition",
       "metadata": {
@@ -1190,7 +1195,7 @@
     {
       "name": "ForgeSmeltProgress5DisplayCondition",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_5_display_condition",
       "metadata": {
@@ -1238,7 +1243,7 @@
     {
       "name": "ForgeSmeltProgress2DisplayCondition",
       "type": "procedure",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "forge_smelt_progress_2_display_condition",
       "metadata": {
@@ -1302,13 +1307,13 @@
   ],
   "sound_elements": [],
   "tag_elements": {
+    "ITEMS:mod:furnacefuel": [
+      "Items.COAL#0"
+    ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:ReinforcedIronBlock",
       "~CUSTOM:ReinforcedIronDeepslateBlock",
       "~CUSTOM:ReinforcedIronStoneBlock"
-    ],
-    "ITEMS:mod:furnacefuel": [
-      "Items.COAL#0"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:ReinforcedIronBlock",
@@ -1340,24 +1345,29 @@
   "language_map": {
     "ru_ru": {
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
-      "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "block.ringcraft.ring_forge": "Ring Forge",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
+      "item.ringcraft.fire_ring": "Fire Ring",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
       "item.ringcraft.regular_ring_item.description_0": "",
-      "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
+      "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Regular Ring",
       "item.ringcraft.regular_ring_item": "Regular Ring",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
+      "item.ringcraft.enderman_soul": "Enderman Soul",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
+      "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
@@ -1365,27 +1375,34 @@
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
     "pl_pl": {
-      "item.ringcraft.gold_ring": "Regular Ring",
-      "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
-      "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
       "block.ringcraft.ring_forge": "Ring Forge",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
+      "item.ringcraft.fire_ring": "Fire Ring",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
-      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
       "advancements.reinforced_iron_ingot_obtained.title": "Zaawansowany sprzęt",
-      "advancements.regular_ring_obtained.title": "Nowy początek",
       "item.ringcraft.regular_ring_item.description_0": "",
-      "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
       "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
-      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
-      "item.ringcraft.gold_ring.description_0": "Złoty pierścień",
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocnione złoże żelaza",
       "painting.ringcraft.painting_1.title": "Osi",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+      "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
+      "key.ringcraft.ring_power_keybind": "Ring Power",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec"
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec",
+      "item.ringcraft.gold_ring": "Regular Ring",
+      "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
+      "item.ringcraft.enderman_soul": "Enderman Soul",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
+      "item.ringcraft.fire_ring.description_0": "",
+      "advancements.regular_ring_obtained.title": "Nowy początek",
+      "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+      "item.ringcraft.gold_ring.description_0": "Złoty pierścień",
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
     "id_id": {
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
@@ -1548,6 +1565,7 @@
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "block.ringcraft.ring_forge": "Ring Forge",
+      "item.ringcraft.fire_ring": "Fire Ring",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
@@ -1560,11 +1578,13 @@
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
-      "item.ringcraft.gold_ring": "Regular Ring",
+      "item.ringcraft.gold_ring": "Gold Ring",
       "item.ringcraft.regular_ring_item": "Regular Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
+      "item.ringcraft.enderman_soul": "Enderman Soul",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "A New Beginning",
