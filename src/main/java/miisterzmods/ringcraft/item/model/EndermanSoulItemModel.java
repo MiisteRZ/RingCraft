@@ -1,11 +1,5 @@
 package miisterzmods.ringcraft.item.model;
 
-import software.bernie.geckolib.model.GeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import miisterzmods.ringcraft.item.EndermanSoulItem;
-
 public class EndermanSoulItemModel extends GeoModel<EndermanSoulItem> {
 	@Override
 	public ResourceLocation getAnimationResource(EndermanSoulItem animatable) {

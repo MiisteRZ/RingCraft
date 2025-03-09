@@ -563,7 +563,7 @@
     {
       "name": "RingForge",
       "type": "block",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ring_forge",
       "metadata": {
@@ -889,32 +889,6 @@
       "path": "~/RingsProcedures"
     },
     {
-      "name": "BlazeSoulAdvancement",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blaze_soul_advancement",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ringcraft/advancement/blaze_soul_advancement.json"
-        ]
-      },
-      "path": "~/Advancements"
-    },
-    {
-      "name": "EndermanSoulAdvancement",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enderman_soul_advancement",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ringcraft/advancement/enderman_soul_advancement.json"
-        ]
-      },
-      "path": "~/Advancements"
-    },
-    {
       "name": "RingForgeGUI",
       "type": "gui",
       "compiles": true,
@@ -927,38 +901,6 @@
         ]
       },
       "path": "~/GUI"
-    },
-    {
-      "name": "ForgeSmeltingResultCondition",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_smelting_result_condition",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/miisterzmods/ringcraft/procedures/ForgeSmeltingResultConditionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/RingForgeProcedures/recipes/customrecipe"
     },
     {
       "name": "MainForgeRecipes",
@@ -991,68 +933,6 @@
         ]
       },
       "path": "~/RingForgeProcedures/recipes"
-    },
-    {
-      "name": "ForgeFuelProcedure",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_fuel_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/miisterzmods/ringcraft/procedures/ForgeFuelProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/RingForgeProcedures"
-    },
-    {
-      "name": "ForgeOnBlockAdded",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "forge_on_block_added",
-      "metadata": {
-        "files": [
-          "src/main/java/miisterzmods/ringcraft/procedures/ForgeOnBlockAddedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/RingForgeProcedures"
     },
     {
       "name": "ForgeSmeltingProcedure",
@@ -1121,6 +1001,113 @@
       "path": "~/RingForgeProcedures"
     },
     {
+      "name": "ForgeOnBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_on_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeOnBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingForgeProcedures"
+    },
+    {
+      "name": "ForgeSmeltingResultCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_smelting_result_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeSmeltingResultConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingForgeProcedures/recipes/customrecipe"
+    },
+    {
+      "name": "BlazeSoulAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_soul_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/advancement/blaze_soul_advancement.json"
+        ]
+      },
+      "path": "~/Advancements"
+    },
+    {
+      "name": "ForgeFuelProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_fuel_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeFuelProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingForgeProcedures"
+    },
+    {
       "name": "RingForgeONBlockstate",
       "type": "blockstates",
       "compiles": true,
@@ -1132,6 +1119,19 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "EndermanSoulAdvancement",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderman_soul_advancement",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/advancement/enderman_soul_advancement.json"
+        ]
+      },
+      "path": "~/Advancements"
     }
   ],
   "variable_elements": [
@@ -1212,11 +1212,9 @@
     "ru_ru": {
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
-      "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "block.ringcraft.ring_forge": "Ring Forge",
-      "item.ringcraft.fire_ring": "Gold Ring",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
-      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
@@ -1226,17 +1224,13 @@
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
-      "key.ringcraft.ring_power_keybind": "Ring Power",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Regular Ring",
       "item.ringcraft.regular_ring_item": "Regular Ring",
-      "effect.ringcraft.fireproof_effect": "Fireproof",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
-      "item.ringcraft.enderman_soul": "Blaze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
-      "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
@@ -1247,11 +1241,10 @@
     "pl_pl": {
       "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
-      "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
       "block.ringcraft.ring_forge": "Ring Forge",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
-      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
       "advancements.reinforced_iron_ingot_obtained.title": "Zaawansowany sprzęt",
@@ -1260,7 +1253,6 @@
       "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocnione złoże żelaza",
       "painting.ringcraft.painting_1.title": "Osi",
-      "key.ringcraft.ring_power_keybind": "Ring Power",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec",
       "item.ringcraft.gold_ring": "Regular Ring",
@@ -1655,6 +1647,20 @@
         ]
       },
       {
+        "name": "RingForgeProcedures",
+        "children": [
+          {
+            "name": "recipes",
+            "children": [
+              {
+                "name": "customrecipe",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
         "name": "ReinforcedFurnaceProcedures",
         "children": [
           {
@@ -1704,20 +1710,6 @@
       {
         "name": "RingsProcedures",
         "children": []
-      },
-      {
-        "name": "RingForgeProcedures",
-        "children": [
-          {
-            "name": "recipes",
-            "children": [
-              {
-                "name": "customrecipe",
-                "children": []
-              }
-            ]
-          }
-        ]
       }
     ]
   },

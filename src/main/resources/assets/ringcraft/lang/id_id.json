@@ -1,8 +1,8 @@
 {
-  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
-  "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
+  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "block.ringcraft.ring_forge": "Ring Forge",
+  "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Menu Cincin",
   "item.ringcraft.blaze_soul": "Blaze Soul",

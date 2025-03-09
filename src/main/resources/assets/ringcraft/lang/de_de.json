@@ -1,8 +1,8 @@
 {
-  "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
   "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
-  "advancements.reinforced_iron_ingot_obtained.descr": "Besorge einen verstärkten Eisenbarren",
+  "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
   "block.ringcraft.ring_forge": "Ring Forge",
+  "advancements.reinforced_iron_ingot_obtained.descr": "Besorge einen verstärkten Eisenbarren",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Ring Menu",
   "item.ringcraft.blaze_soul": "Blaze Soul",

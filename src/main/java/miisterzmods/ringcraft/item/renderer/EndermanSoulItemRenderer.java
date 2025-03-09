@@ -1,23 +1,5 @@
 package miisterzmods.ringcraft.item.renderer;
 
-import software.bernie.geckolib.renderer.GeoItemRenderer;
-import software.bernie.geckolib.cache.object.BakedGeoModel;
-
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.ItemDisplayContext;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
-
-import miisterzmods.ringcraft.item.model.EndermanSoulItemModel;
-import miisterzmods.ringcraft.item.EndermanSoulItem;
-
-import java.util.Set;
-import java.util.HashSet;
-
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
-
 public class EndermanSoulItemRenderer extends GeoItemRenderer<EndermanSoulItem> {
 	public EndermanSoulItemRenderer() {
 		super(new EndermanSoulItemModel());
@@ -59,4 +41,5 @@ public class EndermanSoulItemRenderer extends GeoItemRenderer<EndermanSoulItem> 
 	public ResourceLocation getTextureLocation(EndermanSoulItem instance) {
 		return super.getTextureLocation(instance);
 	}
+
 }
