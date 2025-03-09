@@ -1,7 +1,6 @@
 {
-  "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
   "advancements.regular_ring_obtained.descr": "Forja un Anillo Regular",
-  "block.ringcraft.ring_forge": "Forja de Anillos",
+  "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtén un Lingote de Hierro Reforzado",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Menú de Anillos RingCraft",
@@ -10,6 +9,7 @@
   "gui.ringcraft.rings_gui.label_magic_rings": "Anillos Mágicos",
   "advancements.reinforced_iron_ingot_obtained.title": "Tecnología Avanzada",
   "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
+  "block.ringcraft.ring_forge_block": "Ring Forge",
   "item.ringcraft.regular_ring_item.description_0": "",
   "key.ringcraft.fire_ring_shoot_binding": "Atajo del Disparo con Anillo ed Fuego",
   "item.ringcraft.reinforced_iron_ingot": "Lingote de Hierro Reforzado",

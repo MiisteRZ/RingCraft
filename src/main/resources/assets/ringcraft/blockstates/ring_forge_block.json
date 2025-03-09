@@ -14,14 +14,6 @@
     "facing=west": {
       "model": "ringcraft:block/ring_forge_block",
       "y": 270
-    },
-    "facing=up": {
-      "model": "ringcraft:block/ring_forge_block",
-      "x": 270
-    },
-    "facing=down": {
-      "model": "ringcraft:block/ring_forge_block",
-      "x": 90
     }
   }
 }

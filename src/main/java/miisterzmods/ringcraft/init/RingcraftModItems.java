@@ -29,12 +29,12 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> REINFORCED_FURNANCE = block(RingcraftModBlocks.REINFORCED_FURNANCE);
 	public static final DeferredItem<Item> GOLD_RING = REGISTRY.register("gold_ring", GoldRingItem::new);
 	public static final DeferredItem<Item> REINFORCED_RAW_IRON = REGISTRY.register("reinforced_raw_iron", ReinforcedRawIronItem::new);
-	public static final DeferredItem<Item> RING_FORGE = block(RingcraftModBlocks.RING_FORGE);
 	public static final DeferredItem<Item> REINFORCED_IRON_DEEPSLATE_BLOCK = block(RingcraftModBlocks.REINFORCED_IRON_DEEPSLATE_BLOCK);
 	public static final DeferredItem<Item> BLAZE_SOUL = REGISTRY.register("blaze_soul", BlazeSoulItem::new);
 	public static final DeferredItem<Item> REINFORCED_IRON_BLOCK = block(RingcraftModBlocks.REINFORCED_IRON_BLOCK);
 	public static final DeferredItem<Item> ENDERMAN_SOUL = REGISTRY.register("enderman_soul", EndermanSoulItem::new);
 	public static final DeferredItem<Item> FIRE_RING = REGISTRY.register("fire_ring", FireRingItem::new);
+	public static final DeferredItem<Item> RING_FORGE_BLOCK = block(RingcraftModBlocks.RING_FORGE_BLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

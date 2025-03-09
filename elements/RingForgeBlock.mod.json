@@ -2,15 +2,15 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "ringforgetexture",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
+    "texture": "ringforgebottom",
+    "textureTop": "ringforgetop",
+    "textureLeft": "ringforgesides",
+    "textureFront": "ringforgefront",
+    "textureRight": "ringforgesides",
+    "textureBack": "ringforgesides",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 2,
+    "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -38,7 +38,7 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 6.0,
+    "hardness": 8.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -49,7 +49,7 @@
     ],
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:RingForgeBlock"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -61,7 +61,7 @@
     "material": {
       "value": "NONE"
     },
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -73,14 +73,14 @@
       "value": ""
     },
     "offsetType": "NONE",
-    "aiPathNodeType": "DEFAULT",
+    "aiPathNodeType": "BLOCKED",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "reactionToPushing": "NORMAL",
+    "reactionToPushing": "BLOCK",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
@@ -107,7 +107,7 @@
     "isBonemealable": false,
     "hasInventory": false,
     "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "inventorySize": 3,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,

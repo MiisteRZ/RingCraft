@@ -1,7 +1,6 @@
 {
-  "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
   "advancements.regular_ring_obtained.descr": "Smeed een basisring",
-  "block.ringcraft.ring_forge": "Ring Forge",
+  "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
   "advancements.reinforced_iron_ingot_obtained.descr": "Verkrijg een Gewapend IJzerstaaf",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Ringen Menu",
@@ -10,6 +9,7 @@
   "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringen",
   "advancements.reinforced_iron_ingot_obtained.title": "Geavanceerde IJzerwaren vekrijgen",
   "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
+  "block.ringcraft.ring_forge_block": "Ring Forge",
   "item.ringcraft.regular_ring_item.description_0": "",
   "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
   "item.ringcraft.reinforced_iron_ingot": "Gewapend IJzerstaaf",
