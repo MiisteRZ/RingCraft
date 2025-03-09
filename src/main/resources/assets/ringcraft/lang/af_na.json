@@ -1,5 +1,6 @@
 {
   "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
+  "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
   "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
   "block.ringcraft.ring_forge": "Ring Forge",
   "item.ringcraft.fire_ring": "Gold Ring",
@@ -8,6 +9,8 @@
   "block.ringcraft.reinforced_furnance": "Versterkte Oond",
   "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
   "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
+  "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
+  "block.ringcraft.ring_forge_block": "Ring Forge",
   "item.ringcraft.regular_ring_item.description_0": "",
   "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
   "item.ringcraft.reinforced_iron_ingot": "Versterkte ysterstaaf",
@@ -21,12 +24,15 @@
   "item.ringcraft.gold_ring": "Goud Ring",
   "item.ringcraft.regular_ring_item": "Gereelde Ring",
   "effect.ringcraft.fireproof_effect": "Fireproof",
+  "advancements.enderman_soul_advancement.title": "Dark Power!",
   "item.ringcraft.enderman_soul": "Blaze Soul",
+  "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
   "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
   "item.ringcraft.fire_ring.description_0": "",
   "advancements.regular_ring_obtained.title": "\u0027n Nuwe Begin",
   "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
   "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+  "advancements.blaze_soul_advancement.title": "Fire Power!",
   "item.ringcraft.gold_ring.description_0": "",
   "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
 }
