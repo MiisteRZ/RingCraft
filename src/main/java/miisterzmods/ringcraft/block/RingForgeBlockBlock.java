@@ -1,91 +1,30 @@
 
 package miisterzmods.ringcraft.block;
 
-import org.checkerframework.checker.units.qual.s;
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
 
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.Shapes;
-import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.pathfinder.PathType;
-import net.minecraft.world.level.material.PushReaction;
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
-import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.Containers;
-import net.minecraft.util.RandomSource;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.core.Direction;
-import net.minecraft.core.BlockPos;
-
-import miisterzmods.ringcraft.world.inventory.RingForgeGUIMenu;
-import miisterzmods.ringcraft.procedures.ForgeOnTickUpdateProcedure;
-import miisterzmods.ringcraft.procedures.ForgeOnBlockAddedProcedure;
-import miisterzmods.ringcraft.block.entity.RingForgeBlockEntity;
-
-import io.netty.buffer.Unpooled;
-
-public class RingForgeBlock extends Block implements EntityBlock {
+public class RingForgeBlockBlock extends Block implements EntityBlock {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
-	public RingForgeBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1f, 10f).lightLevel(s -> (new Object() {
+	public RingForgeBlockBlock() {
+		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(8f, 10f).lightLevel(s -> (new Object() {
 			public int getLightLevel() {
 				if (s.getValue(BLOCKSTATE) == 1)
 					return 15;
 				return 0;
 			}
-		}.getLightLevel())).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.BLOCK).isRedstoneConductor((bs, br, bp) -> false));
+		}.getLightLevel())).requiresCorrectToolForDrops().pushReaction(PushReaction.BLOCK));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
 	@Override
-	public boolean propagatesSkylightDown(BlockState state, BlockGetter reader, BlockPos pos) {
-		return true;
-	}
-
-	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
-	}
-
-	@Override
-	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.empty();
+		return 15;
 	}
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		if (state.getValue(BLOCKSTATE) == 1) {
-			return switch (state.getValue(FACING)) {
-				default -> box(0, 0, 0, 16, 16, 16);
-				case NORTH -> box(0, 0, 0, 16, 16, 16);
-				case EAST -> box(0, 0, 0, 16, 16, 16);
-				case WEST -> box(0, 0, 0, 16, 16, 16);
-			};
-		}
 		return switch (state.getValue(FACING)) {
 			default -> box(0, 0, 0, 16, 16, 16);
 			case NORTH -> box(0, 0, 0, 16, 16, 16);
@@ -159,7 +98,7 @@ public class RingForgeBlock extends Block implements EntityBlock {
 
 	@Override
 	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-		return new RingForgeBlockEntity(pos, state);
+		return new RingForgeBlockBlockEntity(pos, state);
 	}
 
 	@Override
@@ -173,7 +112,7 @@ public class RingForgeBlock extends Block implements EntityBlock {
 	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
 		if (state.getBlock() != newState.getBlock()) {
 			BlockEntity blockEntity = world.getBlockEntity(pos);
-			if (blockEntity instanceof RingForgeBlockEntity be) {
+			if (blockEntity instanceof RingForgeBlockBlockEntity be) {
 				Containers.dropContents(world, pos, be);
 				world.updateNeighbourForOutputSignal(pos, this);
 			}
@@ -189,7 +128,7 @@ public class RingForgeBlock extends Block implements EntityBlock {
 	@Override
 	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
 		BlockEntity tileentity = world.getBlockEntity(pos);
-		if (tileentity instanceof RingForgeBlockEntity be)
+		if (tileentity instanceof RingForgeBlockBlockEntity be)
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;

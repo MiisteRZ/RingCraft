@@ -25,7 +25,7 @@ public class CooldownTickProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getData(RingcraftModVariables.PLAYER_VARIABLES).cooldown >= 0) {
+		if (entity.getData(RingcraftModVariables.PLAYER_VARIABLES).cooldown > 0) {
 			{
 				RingcraftModVariables.PlayerVariables _vars = entity.getData(RingcraftModVariables.PLAYER_VARIABLES);
 				_vars.cooldown = entity.getData(RingcraftModVariables.PLAYER_VARIABLES).cooldown - 1;

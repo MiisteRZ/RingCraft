@@ -40,7 +40,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:RingForge"
+      "value": "CUSTOM:RingForgeBlock"
     },
     "name": "ring_forge_crafting_recipe",
     "namespace": "mod"

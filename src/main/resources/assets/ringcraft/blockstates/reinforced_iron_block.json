@@ -1,27 +1,7 @@
 {
   "variants": {
-    "facing=north": {
+    "": {
       "model": "ringcraft:block/reinforced_iron_block"
-    },
-    "facing=east": {
-      "model": "ringcraft:block/reinforced_iron_block",
-      "y": 90
-    },
-    "facing=south": {
-      "model": "ringcraft:block/reinforced_iron_block",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "ringcraft:block/reinforced_iron_block",
-      "y": 270
-    },
-    "facing=up": {
-      "model": "ringcraft:block/reinforced_iron_block",
-      "x": 270
-    },
-    "facing=down": {
-      "model": "ringcraft:block/reinforced_iron_block",
-      "x": 90
     }
   }
 }

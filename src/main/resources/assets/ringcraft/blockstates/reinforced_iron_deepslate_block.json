@@ -1,19 +1,7 @@
 {
   "variants": {
-    "facing=north": {
+    "": {
       "model": "ringcraft:block/reinforced_iron_deepslate_block"
-    },
-    "facing=east": {
-      "model": "ringcraft:block/reinforced_iron_deepslate_block",
-      "y": 90
-    },
-    "facing=south": {
-      "model": "ringcraft:block/reinforced_iron_deepslate_block",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "ringcraft:block/reinforced_iron_deepslate_block",
-      "y": 270
     }
   }
 }

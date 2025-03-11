@@ -1,6 +1,5 @@
 {
   "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
-  "block.ringcraft.ring_forge": "Ring Forge",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -14,7 +13,6 @@
   "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
   "painting.ringcraft.painting_1.title": "Denk",
   "key.ringcraft.ring_power_keybind": "Ring Power",
-  "effect.ringcraft.frost_resistance_effect": "Fireproof",
   "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
   "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
   "item.ringcraft.gold_ring": "Regular Ring",

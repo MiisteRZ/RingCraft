@@ -4,17 +4,33 @@
   "definition": {
     "type": 1,
     "width": 176,
-    "height": 170,
+    "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
       {
+        "type": "label",
+        "data": {
+          "name": "label_ring_forge",
+          "text": {
+            "fixedValue": "Ring Forge"
+          },
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "x": 186,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "CUSTOM:RegularRingItem"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -25,7 +41,7 @@
           },
           "dropItemsWhenNotBound": false,
           "x": 177,
-          "y": 89,
+          "y": 92,
           "locked": false
         }
       },
@@ -44,7 +60,7 @@
           },
           "dropItemsWhenNotBound": false,
           "x": 177,
-          "y": 58,
+          "y": 62,
           "locked": false
         }
       },
@@ -56,24 +72,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
-          "x": 229,
+          "x": 231,
           "y": 71,
-          "locked": false
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_ring_forge",
-          "text": {
-            "fixedValue": "Ring Forge"
-          },
-          "color": {
-            "value": -13434829,
-            "falpha": 0.0
-          },
-          "x": 186,
-          "y": 43,
           "locked": false
         }
       }

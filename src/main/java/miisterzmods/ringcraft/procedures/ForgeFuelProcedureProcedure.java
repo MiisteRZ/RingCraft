@@ -1,19 +1,6 @@
 package miisterzmods.ringcraft.procedures;
 
-import net.neoforged.neoforge.items.IItemHandlerModifiable;
-import net.neoforged.neoforge.items.IItemHandler;
-import net.neoforged.neoforge.common.extensions.ILevelExtension;
-import net.neoforged.neoforge.capabilities.Capabilities;
-
-import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.BlockPos;
+import net.neoforged.bus.api.Event;
 
 public class ForgeFuelProcedureProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -49,7 +36,7 @@ public class ForgeFuelProcedureProcedure {
 				return -1;
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "Fuel") == 0) {
-			if (MainForgeRecipesProcedure.execute(world, x, y, z) && new Object() {
+			if (ForgeMainRecipesProcedure.execute() && new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					if (world instanceof ILevelExtension _ext) {
 						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -67,13 +54,13 @@ public class ForgeFuelProcedureProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("ringcraft:forgefuel")))) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")))) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("MaxFuel", 3600);
+						_blockEntity.getPersistentData().putDouble("MaxFuel", 1600);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -82,7 +69,7 @@ public class ForgeFuelProcedureProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putDouble("Fuel", 3600);
+						_blockEntity.getPersistentData().putDouble("Fuel", 1600);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
