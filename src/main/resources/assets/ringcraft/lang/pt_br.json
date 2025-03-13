@@ -1,6 +1,6 @@
 {
-  "advancements.regular_ring_obtained.descr": "Forjar um anel básico",
   "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+  "advancements.regular_ring_obtained.descr": "Forjar um anel básico",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Menu de Anéis",
@@ -21,6 +21,7 @@
   "effect.ringcraft.frost_resistance": "Frost Resistance",
   "block.ringcraft.reinforced_iron_deepslate_block": "Minério de ferro eforçado de rardósia",
   "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Fornalha reforçada",
+  "item.ringcraft.vex_soul": "Blaze Soul",
   "item.ringcraft.gold_ring": "Anel ouro",
   "item.ringcraft.regular_ring_item": "Anel normal",
   "effect.ringcraft.fireproof_effect": "Fireproof",
