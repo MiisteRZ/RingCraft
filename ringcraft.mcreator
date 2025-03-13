@@ -1187,6 +1187,23 @@
         ]
       },
       "path": "~/Items/Souls"
+    },
+    {
+      "name": "IceKingEntity",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_king_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/entity/model/IceKingEntityModel.java",
+          "src/main/java/miisterzmods/ringcraft/client/renderer/IceKingEntityRenderer.java",
+          "src/main/resources/assets/ringcraft/models/item/ice_king_entity_spawn_egg.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/ice_king_entity_biome_modifier.json",
+          "src/main/java/miisterzmods/ringcraft/entity/IceKingEntityEntity.java"
+        ]
+      },
+      "path": "~/MOBS"
     }
   ],
   "variable_elements": [
@@ -1250,20 +1267,22 @@
   },
   "tab_element_order": {
     "CUSTOM:RingCraftCreativeTab": [
-      "ReinforcedIronBlock",
-      "ReinforcedIronDeepslateBlock",
       "ReinforcedIronStoneBlock",
-      "ReinforcedRawIron",
+      "RegularRingItem",
       "ReinforcedIronIngot",
-      "RingForgeBlock",
       "ReinforcedFurnance",
       "BlazeSoul",
-      "VexSoul",
-      "EndermanSoul",
-      "RegularRingItem",
       "GoldRing",
+      "ReinforcedRawIron",
+      "RingForge",
+      "ReinforcedIronDeepslateBlock",
+      "ReinforcedIronBlock",
+      "FireRing",
+      "EndermanSoul",
+      "RingForgeBlock",
       "FlightRing",
-      "FireRing"
+      "VexSoul",
+      "IceKingEntity"
     ]
   },
   "language_map": {
@@ -1808,6 +1827,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "MOBS",
+        "children": []
       },
       {
         "name": "Other",

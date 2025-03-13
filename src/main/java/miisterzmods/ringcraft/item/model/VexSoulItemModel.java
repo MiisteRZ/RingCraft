@@ -1,11 +1,5 @@
 package miisterzmods.ringcraft.item.model;
 
-import software.bernie.geckolib.model.GeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import miisterzmods.ringcraft.item.VexSoulItem;
-
 public class VexSoulItemModel extends GeoModel<VexSoulItem> {
 	@Override
 	public ResourceLocation getAnimationResource(VexSoulItem animatable) {

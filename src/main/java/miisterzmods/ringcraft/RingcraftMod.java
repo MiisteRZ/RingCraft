@@ -23,6 +23,7 @@ import miisterzmods.ringcraft.init.RingcraftModTabs;
 import miisterzmods.ringcraft.init.RingcraftModMobEffects;
 import miisterzmods.ringcraft.init.RingcraftModMenus;
 import miisterzmods.ringcraft.init.RingcraftModItems;
+import miisterzmods.ringcraft.init.RingcraftModEntities;
 import miisterzmods.ringcraft.init.RingcraftModBlocks;
 import miisterzmods.ringcraft.init.RingcraftModBlockEntities;
 
@@ -47,7 +48,7 @@ public class RingcraftMod {
 		RingcraftModBlocks.REGISTRY.register(modEventBus);
 		RingcraftModBlockEntities.REGISTRY.register(modEventBus);
 		RingcraftModItems.REGISTRY.register(modEventBus);
-
+		RingcraftModEntities.REGISTRY.register(modEventBus);
 		RingcraftModTabs.REGISTRY.register(modEventBus);
 		RingcraftModVariables.ATTACHMENT_TYPES.register(modEventBus);
 
