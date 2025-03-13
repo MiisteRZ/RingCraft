@@ -1,6 +1,6 @@
 {
-  "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
   "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
+  "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
   "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -17,6 +17,7 @@
   "block.ringcraft.reinforced_iron_stone_block": "Versterkte Ystererts",
   "painting.ringcraft.painting_1.title": "Denk",
   "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+  "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
   "key.ringcraft.ring_power_keybind": "Ring Power",
   "effect.ringcraft.frost_resistance": "Frost Resistance",
   "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
@@ -29,6 +30,7 @@
   "item.ringcraft.flight_ring.description_0": "",
   "item.ringcraft.enderman_soul": "Blaze Soul",
   "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+  "entity.ringcraft.ice_king_entity": "Ice King",
   "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
   "item.ringcraft.fire_ring.description_0": "",
   "advancements.regular_ring_obtained.title": "\u0027n Nuwe Begin",
