@@ -1,6 +1,6 @@
 {
-  "advancements.regular_ring_obtained.descr": "Smeed een basisring",
   "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+  "advancements.regular_ring_obtained.descr": "Smeed een basisring",
   "advancements.reinforced_iron_ingot_obtained.descr": "Verkrijg een Gewapend IJzerstaaf",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Ringen Menu",
@@ -13,6 +13,7 @@
   "item.ringcraft.regular_ring_item.description_0": "",
   "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
   "item.ringcraft.reinforced_iron_ingot": "Gewapend IJzerstaaf",
+  "item.ringcraft.flight_ring": "Fire Ring",
   "block.ringcraft.reinforced_iron_stone_block": "Gewapend IJzererts",
   "painting.ringcraft.painting_1.title": "Denk",
   "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
@@ -25,6 +26,7 @@
   "item.ringcraft.regular_ring_item": "Normale Ring",
   "effect.ringcraft.fireproof_effect": "Fireproof",
   "advancements.enderman_soul_advancement.title": "Dark Power!",
+  "item.ringcraft.flight_ring.description_0": "",
   "item.ringcraft.enderman_soul": "Blaze Soul",
   "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
   "entity.ringcraft.ice_king_entity": "Ice King",
