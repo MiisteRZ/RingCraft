@@ -105,8 +105,9 @@
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
-    "hasInventory": false,
-    "openGUIOnRightClick": false,
+    "hasInventory": true,
+    "guiBoundTo": "RingForgeGUI",
+    "openGUIOnRightClick": true,
     "inventorySize": 3,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
@@ -121,6 +122,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "ForgeOnBlockAdded"
+    },
+    "onTickUpdate": {
+      "name": "ForgeOnTickUpdate"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
