@@ -161,7 +161,7 @@
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Reinforced Iron"
     },
     {
       "name": "Painting1",
@@ -187,7 +187,7 @@
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_ingot.json"
         ]
       },
-      "path": "~/Items"
+      "path": "~/Items/Ingots"
     },
     {
       "name": "ReinforcedFurnance",
@@ -205,7 +205,7 @@
           "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Reinforced Furnace"
     },
     {
       "name": "ReinforcedFurnanceGUI",
@@ -219,7 +219,7 @@
           "src/main/java/miisterzmods/ringcraft/world/inventory/ReinforcedFurnanceGUIMenu.java"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Reinforced Furnace"
     },
     {
       "name": "ReinforcedIronBlockRecipe",
@@ -232,7 +232,7 @@
           "src/main/resources/data/ringcraft/recipe/reinforced_iron_block.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Reinforced Iron"
     },
     {
       "name": "RegularRingObtained",
@@ -446,7 +446,7 @@
           "src/main/resources/assets/ringcraft/models/block/reinforced_furnace_blockstate_blockstate_0.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Reinforced Furnace"
     },
     {
       "name": "FurnaceOnTickUpdate",
@@ -495,7 +495,7 @@
           "src/main/java/miisterzmods/ringcraft/item/ReinforcedRawIronItem.java"
         ]
       },
-      "path": "~/Items"
+      "path": "~/Items/RawOres"
     },
     {
       "name": "FurnaceFuelProcedure",
@@ -571,7 +571,7 @@
           "src/main/resources/data/ringcraft/recipe/regular_ring_crafting.json"
         ]
       },
-      "path": "~/Items"
+      "path": "~/Items/Rings"
     },
     {
       "name": "ReinforcedFurnceCraftingRecipe",
@@ -584,7 +584,7 @@
           "src/main/resources/data/ringcraft/recipe/reinforced_furnce_crafting_recipe.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Reinforced Furnace"
     },
     {
       "name": "RingForgeCraftingRecipe",
@@ -597,7 +597,7 @@
           "src/main/resources/data/ringcraft/recipe/ring_forge_crafting_recipe.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Ring Forge"
     },
     {
       "name": "RingsMainProcedure",
@@ -673,7 +673,7 @@
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deepslate_block.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Reinforced Iron"
     },
     {
       "name": "BlazeSoul",
@@ -738,7 +738,7 @@
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_block.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Reinforced Iron"
     },
     {
       "name": "FireproofEffect",
@@ -750,7 +750,8 @@
         "files": [
           "src/main/java/miisterzmods/ringcraft/potion/FireproofEffectMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "CooldownTick",
@@ -838,7 +839,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "FireRing",
@@ -886,7 +888,7 @@
           "src/main/resources/data/ringcraft/loot_table/blocks/ring_forge_block.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Ring Forge"
     },
     {
       "name": "RingForgeGUI",
@@ -1042,7 +1044,7 @@
           "src/main/resources/assets/ringcraft/models/block/forge_on_block_state_blockstate_0.json"
         ]
       },
-      "path": "~/Blocks"
+      "path": "~/Blocks/Ring Forge"
     },
     {
       "name": "ForgeSmeltingResultCondition",
@@ -1106,6 +1108,38 @@
         ]
       },
       "path": "~/RingForgeProcedures"
+    },
+    {
+      "name": "FrostResistanceActiveTickCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frost_resistance_active_tick_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/FrostResistanceActiveTickConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "FrostResistance",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frost_resistance",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/potion/FrostResistanceMobEffect.java"
+        ]
+      },
+      "path": "~/Effects"
     }
   ],
   "variable_elements": [
@@ -1196,6 +1230,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Regular Ring",
@@ -1228,6 +1263,7 @@
       "painting.ringcraft.painting_1.title": "Osi",
       "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec",
       "item.ringcraft.gold_ring": "Regular Ring",
@@ -1260,6 +1296,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
       "key.ringcraft.ring_power_keybind": "Cincin daya",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Regular Ring",
@@ -1295,6 +1332,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Minério de ferro reforçado",
       "painting.ringcraft.painting_1.title": "Denk",
       "key.ringcraft.ring_power_keybind": "Forja de poder",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Minério de ferro eforçado de rardósia",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Fornalha reforçada",
       "item.ringcraft.gold_ring": "Anel ouro",
@@ -1331,6 +1369,7 @@
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Versterkte Oond",
       "item.ringcraft.gold_ring": "Goud Ring",
@@ -1367,6 +1406,7 @@
       "painting.ringcraft.painting_1.title": "Esse",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Verstärkter Ofen",
       "item.ringcraft.gold_ring": "Regulär Ring",
@@ -1402,6 +1442,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Megerősített vasérc",
       "painting.ringcraft.painting_1.title": "Denk",
       "key.ringcraft.ring_power_keybind": "Hatalom gyűrű",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Megerősített vasérc mélypalában",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Megerősített kemence",
       "item.ringcraft.gold_ring": "Aranygyűrű",
@@ -1439,6 +1480,7 @@
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Gold Ring",
@@ -1471,6 +1513,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Regular Ring",
@@ -1507,6 +1550,7 @@
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Horno Reforzado",
       "item.ringcraft.gold_ring": "Anillo Regular",
@@ -1543,6 +1587,7 @@
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Gewamped Oven",
       "item.ringcraft.gold_ring": "Goud Ring",
@@ -1578,6 +1623,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Minério de ferro reforçado",
       "painting.ringcraft.painting_1.title": "Denk",
       "key.ringcraft.ring_power_keybind": "Forja de poder",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Minério de ferro eforçado de rardósia",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Fornalha reforçada",
       "item.ringcraft.gold_ring": "Anel ouro",
@@ -1660,15 +1706,15 @@
         "name": "Blocks",
         "children": [
           {
-            "name": "ReinforcedIronOre",
+            "name": "Reinforced Iron",
             "children": []
           },
           {
-            "name": "RingForge",
+            "name": "Ring Forge",
             "children": []
           },
           {
-            "name": "ReinforcedFurnance",
+            "name": "Reinforced Furnace",
             "children": []
           }
         ]
@@ -1683,6 +1729,10 @@
       },
       {
         "name": "RingsProcedures",
+        "children": []
+      },
+      {
+        "name": "Effects",
         "children": []
       }
     ]
