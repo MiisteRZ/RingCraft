@@ -16,6 +16,7 @@ import miisterzmods.ringcraft.item.ReinforcedRawIronItem;
 import miisterzmods.ringcraft.item.ReinforcedIronIngotItem;
 import miisterzmods.ringcraft.item.RegularRingItemItem;
 import miisterzmods.ringcraft.item.GoldRingItem;
+import miisterzmods.ringcraft.item.FlightRingItem;
 import miisterzmods.ringcraft.item.FireRingItem;
 import miisterzmods.ringcraft.item.EndermanSoulItem;
 import miisterzmods.ringcraft.item.BlazeSoulItem;
@@ -35,6 +36,7 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> FIRE_RING = REGISTRY.register("fire_ring", FireRingItem::new);
 	public static final DeferredItem<Item> ENDERMAN_SOUL = REGISTRY.register("enderman_soul", EndermanSoulItem::new);
 	public static final DeferredItem<Item> RING_FORGE_BLOCK = block(RingcraftModBlocks.RING_FORGE_BLOCK);
+	public static final DeferredItem<Item> FLIGHT_RING = REGISTRY.register("flight_ring", FlightRingItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,6 +1,16 @@
 
 package miisterzmods.ringcraft.potion;
 
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.resources.ResourceLocation;
+
+import miisterzmods.ringcraft.procedures.FrostResistanceActiveTickConditionProcedure;
+import miisterzmods.ringcraft.RingcraftMod;
+
 public class FrostResistanceMobEffect extends MobEffect {
 	public FrostResistanceMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -16711681);
