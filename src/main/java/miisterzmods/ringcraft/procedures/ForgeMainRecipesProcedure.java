@@ -1,9 +1,9 @@
 package miisterzmods.ringcraft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
 
 public class ForgeMainRecipesProcedure {
-	public static boolean execute() {
-		return;
+	public static boolean execute(LevelAccessor world, double x, double y, double z) {
+		return ForgeSmeltingResultConditionProcedure.execute(world, x, y, z);
 	}
 }

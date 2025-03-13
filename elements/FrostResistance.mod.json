@@ -1,0 +1,52 @@
+{
+  "_fv": 73,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Frost Resistance",
+    "icon": "frost_resistance",
+    "color": {
+      "value": -16711681,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": true,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ARMOR"
+        },
+        "amount": 1.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "KNOCKBACK_RESISTANCE"
+        },
+        "amount": 0.1,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "EXPLOSION_KNOCKBACK_RESISTANCE"
+        },
+        "amount": 0.1,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "SUBMERGED_MINING_SPEED"
+        },
+        "amount": 0.5,
+        "operation": "ADD_VALUE"
+      }
+    ],
+    "onActiveTick": {
+      "name": "FrostResistanceActiveTickCondition"
+    }
+  }
+}

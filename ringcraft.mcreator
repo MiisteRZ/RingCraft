@@ -888,32 +888,6 @@
       "path": "~/Blocks"
     },
     {
-      "name": "BlazeSoulLootable",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blaze_soul_lootable",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ringcraft/loot_table/entities/blaze.json"
-        ]
-      },
-      "path": "~/Items/Souls"
-    },
-    {
-      "name": "EndermanSoulLoottable",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "enderman_soul_loottable",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ringcraft/loot_table/entities/enderman.json"
-        ]
-      },
-      "path": "~/Items/Souls"
-    },
-    {
       "name": "RingForgeGUI",
       "type": "gui",
       "compiles": true,
@@ -1114,6 +1088,38 @@
         ]
       },
       "path": "~/RingForgeProcedures"
+    },
+    {
+      "name": "FrostResistanceActiveTickCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frost_resistance_active_tick_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/FrostResistanceActiveTickConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "FrostResistance",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frost_resistance",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/potion/FrostResistanceMobEffect.java"
+        ]
+      },
+      "path": "~/Effects"
     }
   ],
   "variable_elements": [
@@ -1197,6 +1203,7 @@
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.regular_ring_item.description_0": "",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
@@ -1228,12 +1235,15 @@
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
       "advancements.reinforced_iron_ingot_obtained.title": "Zaawansowany sprzęt",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
+      "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocnione złoże żelaza",
       "painting.ringcraft.painting_1.title": "Osi",
       "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec",
       "item.ringcraft.gold_ring": "Regular Ring",
@@ -1258,6 +1268,7 @@
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
@@ -1265,6 +1276,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
       "key.ringcraft.ring_power_keybind": "Cincin daya",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Regular Ring",
@@ -1292,6 +1304,7 @@
       "block.ringcraft.reinforced_furnance": "Versterkte Oond",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
       "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.regular_ring_item.description_0": "",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
@@ -1300,6 +1313,7 @@
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Versterkte Oond",
       "item.ringcraft.gold_ring": "Goud Ring",
@@ -1327,6 +1341,7 @@
       "block.ringcraft.reinforced_furnance": "Fornalha reforçada",
       "gui.ringcraft.rings_gui.label_magic_rings": "Anéis Mágicos",
       "advancements.reinforced_iron_ingot_obtained.title": "Hardware avançado",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Barra de ferro reforçado",
@@ -1334,6 +1349,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Minério de ferro reforçado",
       "painting.ringcraft.painting_1.title": "Denk",
       "key.ringcraft.ring_power_keybind": "Forja de poder",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Minério de ferro eforçado de rardósia",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Fornalha reforçada",
       "item.ringcraft.gold_ring": "Anel ouro",
@@ -1361,6 +1377,7 @@
       "block.ringcraft.reinforced_furnance": "Megerősített kemence",
       "gui.ringcraft.rings_gui.label_magic_rings": "Varázsgyűrűk",
       "advancements.reinforced_iron_ingot_obtained.title": "Speciális hardver",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.regular_ring_item.description_0": "",
       "key.ringcraft.fire_ring_shoot_binding": "Tűzgyűrű Lő",
@@ -1368,6 +1385,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Megerősített vasérc",
       "painting.ringcraft.painting_1.title": "Denk",
       "key.ringcraft.ring_power_keybind": "Hatalom gyűrű",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Megerősített vasérc mélypalában",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Megerősített kemence",
       "item.ringcraft.gold_ring": "Aranygyűrű",
@@ -1395,6 +1413,7 @@
       "block.ringcraft.reinforced_furnance": "Verstärkter Ofen",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringe",
       "advancements.reinforced_iron_ingot_obtained.title": "Fortgeschrittene Metallurgie",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.regular_ring_item.description_0": "",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
@@ -1403,6 +1422,7 @@
       "painting.ringcraft.painting_1.title": "Esse",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Verstärkter Ofen",
       "item.ringcraft.gold_ring": "Regulär Ring",
@@ -1430,6 +1450,8 @@
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
+      "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.regular_ring_item.description_0": "",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
@@ -1438,6 +1460,7 @@
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Gold Ring",
@@ -1462,6 +1485,7 @@
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.regular_ring_item.description_0": "",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
@@ -1469,6 +1493,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.gold_ring": "Regular Ring",
@@ -1496,6 +1521,7 @@
       "block.ringcraft.reinforced_furnance": "Horno Reforzado",
       "gui.ringcraft.rings_gui.label_magic_rings": "Anillos Mágicos",
       "advancements.reinforced_iron_ingot_obtained.title": "Tecnología Avanzada",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.regular_ring_item.description_0": "",
       "key.ringcraft.fire_ring_shoot_binding": "Atajo del Disparo con Anillo ed Fuego",
@@ -1504,6 +1530,7 @@
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Horno Reforzado",
       "item.ringcraft.gold_ring": "Anillo Regular",
@@ -1531,6 +1558,7 @@
       "block.ringcraft.reinforced_furnance": "Gewamped Oven",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringen",
       "advancements.reinforced_iron_ingot_obtained.title": "Geavanceerde IJzerwaren vekrijgen",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.regular_ring_item.description_0": "",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
@@ -1539,6 +1567,7 @@
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Gewamped Oven",
       "item.ringcraft.gold_ring": "Goud Ring",
@@ -1566,6 +1595,7 @@
       "block.ringcraft.reinforced_furnance": "Fornalha reforçada",
       "gui.ringcraft.rings_gui.label_magic_rings": "Anéis Mágicos",
       "advancements.reinforced_iron_ingot_obtained.title": "Hardware avançado",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Barra de ferro reforçado",
@@ -1573,6 +1603,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Minério de ferro reforçado",
       "painting.ringcraft.painting_1.title": "Denk",
       "key.ringcraft.ring_power_keybind": "Forja de poder",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Minério de ferro eforçado de rardósia",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Fornalha reforçada",
       "item.ringcraft.gold_ring": "Anel ouro",
@@ -1655,15 +1686,15 @@
         "name": "Blocks",
         "children": [
           {
-            "name": "ReinforcedIronOre",
+            "name": "Reinforced Furnace",
             "children": []
           },
           {
-            "name": "RingForge",
+            "name": "Ring Forge",
             "children": []
           },
           {
-            "name": "ReinforcedFurnance",
+            "name": "Reinforced Iron",
             "children": []
           }
         ]
@@ -1678,6 +1709,10 @@
       },
       {
         "name": "RingsProcedures",
+        "children": []
+      },
+      {
+        "name": "Effects",
         "children": []
       }
     ]
