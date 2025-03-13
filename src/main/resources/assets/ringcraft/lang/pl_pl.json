@@ -1,7 +1,7 @@
 {
   "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
-  "block.ringcraft.ring_forge": "Ring Forge",
   "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
+  "block.ringcraft.ring_forge": "Ring Forge",
   "item.ringcraft.fire_ring": "Fire Ring",
   "key.ringcraft.rings_menu_binding": "Pierścienie",
   "item.ringcraft.blaze_soul": "Blaze Soul",
@@ -20,6 +20,7 @@
   "effect.ringcraft.frost_resistance": "Frost Resistance",
   "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
   "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec",
+  "item.ringcraft.vex_soul": "Blaze Soul",
   "item.ringcraft.gold_ring": "Regular Ring",
   "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
   "effect.ringcraft.fireproof_effect": "Fireproof",

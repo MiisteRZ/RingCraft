@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import miisterzmods.ringcraft.item.VexSoulItem;
 import miisterzmods.ringcraft.item.ReinforcedRawIronItem;
 import miisterzmods.ringcraft.item.ReinforcedIronIngotItem;
 import miisterzmods.ringcraft.item.RegularRingItemItem;
@@ -37,6 +38,7 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> ENDERMAN_SOUL = REGISTRY.register("enderman_soul", EndermanSoulItem::new);
 	public static final DeferredItem<Item> RING_FORGE_BLOCK = block(RingcraftModBlocks.RING_FORGE_BLOCK);
 	public static final DeferredItem<Item> FLIGHT_RING = REGISTRY.register("flight_ring", FlightRingItem::new);
+	public static final DeferredItem<Item> VEX_SOUL = REGISTRY.register("vex_soul", VexSoulItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
