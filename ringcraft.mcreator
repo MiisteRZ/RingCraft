@@ -1140,6 +1140,23 @@
         ]
       },
       "path": "~/Effects"
+    },
+    {
+      "name": "IceKingEntity",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_king_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/client/renderer/IceKingEntityRenderer.java",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/ice_king_entity_biome_modifier.json",
+          "src/main/java/miisterzmods/ringcraft/entity/model/IceKingEntityModel.java",
+          "src/main/resources/assets/ringcraft/models/item/ice_king_entity_spawn_egg.json",
+          "src/main/java/miisterzmods/ringcraft/entity/IceKingEntityEntity.java"
+        ]
+      },
+      "path": "~/MOBS"
     }
   ],
   "variable_elements": [
@@ -1209,7 +1226,8 @@
       "ReinforcedIronBlock",
       "FireRing",
       "EndermanSoul",
-      "RingForgeBlock"
+      "RingForgeBlock",
+      "IceKingEntity"
     ]
   },
   "language_map": {
@@ -1229,6 +1247,7 @@
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
@@ -1237,6 +1256,7 @@
       "item.ringcraft.regular_ring_item": "Regular Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "A New Beginning",
@@ -1261,6 +1281,7 @@
       "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocnione złoże żelaza",
       "painting.ringcraft.painting_1.title": "Osi",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
@@ -1270,6 +1291,7 @@
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "Nowy początek",
@@ -1295,6 +1317,7 @@
       "key.ringcraft.fire_ring_shoot_binding": "Tembakan Cincin Api",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "key.ringcraft.ring_power_keybind": "Cincin daya",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
@@ -1305,6 +1328,7 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
       "item.ringcraft.reinforced_raw_iron": "Besi Mentah Bertulang",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "A New Beginning",
@@ -1331,6 +1355,7 @@
       "key.ringcraft.fire_ring_shoot_binding": "Tiro ao Anel de Fogo ",
       "block.ringcraft.reinforced_iron_stone_block": "Minério de ferro reforçado",
       "painting.ringcraft.painting_1.title": "Denk",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "key.ringcraft.ring_power_keybind": "Forja de poder",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Minério de ferro eforçado de rardósia",
@@ -1341,6 +1366,7 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "Um novo começo",
@@ -1368,6 +1394,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Versterkte Ystererts",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
@@ -1378,6 +1405,7 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "\u0027n Nuwe Begin",
@@ -1405,6 +1433,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Verstärkter Eisenerz",
       "painting.ringcraft.painting_1.title": "Esse",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
@@ -1415,6 +1444,7 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "Ein neuer Beginn",
@@ -1441,6 +1471,7 @@
       "item.ringcraft.reinforced_iron_ingot": "Megerősített vasrúd",
       "block.ringcraft.reinforced_iron_stone_block": "Megerősített vasérc",
       "painting.ringcraft.painting_1.title": "Denk",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "key.ringcraft.ring_power_keybind": "Hatalom gyűrű",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Megerősített vasérc mélypalában",
@@ -1451,6 +1482,7 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
       "item.ringcraft.reinforced_raw_iron": "Megerősített nyersvas",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "Egy Új Kezdet",
@@ -1478,6 +1510,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
@@ -1487,6 +1520,7 @@
       "item.ringcraft.regular_ring_item": "Regular Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.enderman_soul": "Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "A New Beginning",
@@ -1512,6 +1546,7 @@
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
@@ -1522,6 +1557,7 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "A New Beginning",
@@ -1549,6 +1585,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Hierro Reforzado",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
@@ -1559,6 +1596,7 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
       "item.ringcraft.reinforced_raw_iron": "Hierro Reforzado",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "Un Nuevo Comienzo",
@@ -1586,6 +1624,7 @@
       "block.ringcraft.reinforced_iron_stone_block": "Gewapend IJzererts",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
@@ -1596,6 +1635,7 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "Een Nieuw Begin",
@@ -1622,6 +1662,7 @@
       "key.ringcraft.fire_ring_shoot_binding": "Tiro ao Anel de Fogo ",
       "block.ringcraft.reinforced_iron_stone_block": "Minério de ferro reforçado",
       "painting.ringcraft.painting_1.title": "Denk",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "key.ringcraft.ring_power_keybind": "Forja de poder",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Minério de ferro eforçado de rardósia",
@@ -1632,6 +1673,7 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.enderman_soul": "Blaze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.regular_ring_obtained.title": "Um novo começo",
@@ -1733,6 +1775,10 @@
       },
       {
         "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "MOBS",
         "children": []
       }
     ]

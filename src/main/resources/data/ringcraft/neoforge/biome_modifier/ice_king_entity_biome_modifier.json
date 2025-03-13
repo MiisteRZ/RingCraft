@@ -1,0 +1,15 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "snowy_taiga",
+    "snowy_plains",
+    "snowy_beach",
+    "snowy_slopes"
+  ],
+  "spawners": {
+    "type": "ringcraft:ice_king_entity",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

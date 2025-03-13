@@ -30,5 +30,6 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.FIRE_RING.get());
 				tabData.accept(RingcraftModItems.ENDERMAN_SOUL.get());
 				tabData.accept(RingcraftModBlocks.RING_FORGE_BLOCK.get().asItem());
+				tabData.accept(RingcraftModItems.ICE_KING_ENTITY_SPAWN_EGG.get());
 			}).build());
 }
