@@ -1,7 +1,7 @@
 {
-  "parent": "ringcraft:custom/flightring",
+  "parent": "ringcraft:custom/regularring",
   "textures": {
-    "0": "ringcraft:block/flightringtexture",
-    "particle": "ringcraft:item/flight_ring"
+    "2": "ringcraft:block/teleportation_ring",
+    "particle": "ringcraft:item/teleportation_ring"
   }
 }

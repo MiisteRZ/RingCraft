@@ -16,7 +16,9 @@ import net.neoforged.neoforge.common.NeoForgeMod;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
@@ -31,6 +33,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
@@ -46,6 +49,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import miisterzmods.ringcraft.procedures.IceKingEntityPlayerCollidesWithThisEntityProcedure;
+import miisterzmods.ringcraft.procedures.IceKingEntityEntityIsHurtProcedure;
 import miisterzmods.ringcraft.init.RingcraftModEntities;
 
 public class IceKingEntityEntity extends Monster implements GeoEntity {
@@ -61,7 +66,7 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 
 	public IceKingEntityEntity(EntityType<IceKingEntityEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 30;
 		setNoAi(false);
 		setCustomName(Component.literal("Ice King"));
 		setCustomNameVisible(true);
@@ -86,31 +91,39 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Player.class, false, true));
+		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected boolean canPerformAttack(LivingEntity entity) {
 				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
 			}
 		});
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(5, new ClimbOnTopOfPowderSnowGoal(this, this.level()));
-		this.goalSelector.addGoal(6, new FloatGoal(this));
+		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(6, new ClimbOnTopOfPowderSnowGoal(this, this.level()));
+		this.goalSelector.addGoal(7, new FloatGoal(this));
+	}
+
+	@Override
+	public SoundEvent getAmbientSound() {
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.snow.break"));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.hurt"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.glass.break"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.generic.death"));
+		return BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.warden.death"));
 	}
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
+		IceKingEntityEntityIsHurtProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		Entity immediatesourceentity = source.getDirectEntity();
 		if (source.is(DamageTypes.IN_FIRE))
 			return false;
 		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud || source.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
@@ -156,6 +169,12 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 	}
 
 	@Override
+	public void playerTouch(Player sourceentity) {
+		super.playerTouch(sourceentity);
+		IceKingEntityPlayerCollidesWithThisEntityProcedure.execute(sourceentity);
+	}
+
+	@Override
 	public void startSeenByPlayer(ServerPlayer player) {
 		super.startSeenByPlayer(player);
 		this.bossInfo.addPlayer(player);
@@ -181,8 +200,8 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 50);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.2);
+		builder = builder.add(Attributes.MAX_HEALTH, 80);
 		builder = builder.add(Attributes.ARMOR, 3);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 6);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 20);

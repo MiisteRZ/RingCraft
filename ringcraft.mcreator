@@ -720,6 +720,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -1241,12 +1253,78 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
         ]
       },
       "path": "~/RingsProcedures"
+    },
+    {
+      "name": "IceKingEntityPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_king_entity_player_collides_with_this_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/IceKingEntityPlayerCollidesWithThisEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/MOBS"
+    },
+    {
+      "name": "IceKingEntityEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_king_entity_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/IceKingEntityEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MOBS"
     }
   ],
   "variable_elements": [
@@ -1426,8 +1504,8 @@
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
     "id_id": {
-      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
+      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Menu Cincin",
@@ -1468,9 +1546,52 @@
       "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
-    "af_na": {
-      "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
+    "pt_br": {
+      "advancements.regular_ring_obtained.descr": "Forjar um anel básico",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
+      "item.ringcraft.fire_ring": "Gold Ring",
+      "key.ringcraft.rings_menu_binding": "Menu de Anéis",
+      "item.ringcraft.blaze_soul": "Alma de blaze",
+      "block.ringcraft.reinforced_furnance": "Fornalha reforçada",
+      "gui.ringcraft.rings_gui.label_magic_rings": "Anéis Mágicos",
+      "advancements.reinforced_iron_ingot_obtained.title": "Hardware avançado",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
+      "block.ringcraft.ring_forge_block": "Ring Forge",
+      "item.ringcraft.regular_ring_item.description_0": "",
+      "item.ringcraft.reinforced_iron_ingot": "Barra de ferro reforçado",
+      "key.ringcraft.fire_ring_shoot_binding": "Tiro ao Anel de Fogo ",
+      "item.ringcraft.flight_ring": "Fire Ring",
+      "block.ringcraft.reinforced_iron_stone_block": "Minério de ferro reforçado",
+      "painting.ringcraft.painting_1.title": "Denk",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
+      "key.ringcraft.ring_power_keybind": "Forja de poder",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
+      "block.ringcraft.reinforced_iron_deepslate_block": "Minério de ferro eforçado de rardósia",
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Fornalha reforçada",
+      "item.ringcraft.vex_soul": "Blaze Soul",
+      "item.ringcraft.gold_ring": "Anel ouro",
+      "item.ringcraft.regular_ring_item": "Anel normal",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
+      "advancements.enderman_soul_advancement.title": "Dark Power!",
+      "item.ringcraft.flight_ring.description_0": "",
+      "item.ringcraft.enderman_soul": "Blaze Soul",
+      "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
+      "item.ringcraft.teleportation_ring.description_0": "",
+      "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
+      "item.ringcraft.fire_ring.description_0": "",
+      "item.ringcraft.teleportation_ring": "Flight Ring",
+      "advancements.regular_ring_obtained.title": "Um novo começo",
+      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+      "advancements.blaze_soul_advancement.title": "Fire Power!",
+      "item.ringcraft.gold_ring.description_0": "",
+      "block.ringcraft.reinforced_iron_block": "Bloco de ferro reforçado"
+    },
+    "af_na": {
+      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -1512,95 +1633,9 @@
       "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
-    "pt_br": {
-      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
-      "advancements.regular_ring_obtained.descr": "Forjar um anel básico",
-      "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
-      "item.ringcraft.fire_ring": "Gold Ring",
-      "key.ringcraft.rings_menu_binding": "Menu de Anéis",
-      "item.ringcraft.blaze_soul": "Alma de blaze",
-      "block.ringcraft.reinforced_furnance": "Fornalha reforçada",
-      "gui.ringcraft.rings_gui.label_magic_rings": "Anéis Mágicos",
-      "advancements.reinforced_iron_ingot_obtained.title": "Hardware avançado",
-      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
-      "block.ringcraft.ring_forge_block": "Ring Forge",
-      "item.ringcraft.regular_ring_item.description_0": "",
-      "item.ringcraft.reinforced_iron_ingot": "Barra de ferro reforçado",
-      "key.ringcraft.fire_ring_shoot_binding": "Tiro ao Anel de Fogo ",
-      "item.ringcraft.flight_ring": "Fire Ring",
-      "block.ringcraft.reinforced_iron_stone_block": "Minério de ferro reforçado",
-      "painting.ringcraft.painting_1.title": "Denk",
-      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "key.ringcraft.ring_power_keybind": "Forja de poder",
-      "effect.ringcraft.frost_resistance": "Frost Resistance",
-      "block.ringcraft.reinforced_iron_deepslate_block": "Minério de ferro eforçado de rardósia",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Fornalha reforçada",
-      "item.ringcraft.vex_soul": "Blaze Soul",
-      "item.ringcraft.gold_ring": "Anel ouro",
-      "item.ringcraft.regular_ring_item": "Anel normal",
-      "effect.ringcraft.fireproof_effect": "Fireproof",
-      "advancements.enderman_soul_advancement.title": "Dark Power!",
-      "item.ringcraft.flight_ring.description_0": "",
-      "item.ringcraft.enderman_soul": "Blaze Soul",
-      "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
-      "entity.ringcraft.ice_king_entity": "Ice King",
-      "item.ringcraft.teleportation_ring.description_0": "",
-      "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
-      "item.ringcraft.fire_ring.description_0": "",
-      "item.ringcraft.teleportation_ring": "Flight Ring",
-      "advancements.regular_ring_obtained.title": "Um novo começo",
-      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
-      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
-      "advancements.blaze_soul_advancement.title": "Fire Power!",
-      "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Bloco de ferro reforçado"
-    },
-    "hu_hu": {
-      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
-      "advancements.regular_ring_obtained.descr": "Alapgyűrűt kovácsolni",
-      "advancements.reinforced_iron_ingot_obtained.descr": "Szerezzen megerősített vasrúd",
-      "item.ringcraft.fire_ring": "Gold Ring",
-      "key.ringcraft.rings_menu_binding": "Gyűrűk menü",
-      "item.ringcraft.blaze_soul": "Őrlángidéző lélek",
-      "block.ringcraft.reinforced_furnance": "Megerősített kemence",
-      "gui.ringcraft.rings_gui.label_magic_rings": "Varázsgyűrűk",
-      "advancements.reinforced_iron_ingot_obtained.title": "Speciális hardver",
-      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
-      "block.ringcraft.ring_forge_block": "Ring Forge",
-      "item.ringcraft.regular_ring_item.description_0": "",
-      "key.ringcraft.fire_ring_shoot_binding": "Tűzgyűrű Lő",
-      "item.ringcraft.reinforced_iron_ingot": "Megerősített vasrúd",
-      "item.ringcraft.flight_ring": "Fire Ring",
-      "block.ringcraft.reinforced_iron_stone_block": "Megerősített vasérc",
-      "painting.ringcraft.painting_1.title": "Denk",
-      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "key.ringcraft.ring_power_keybind": "Hatalom gyűrű",
-      "effect.ringcraft.frost_resistance": "Frost Resistance",
-      "block.ringcraft.reinforced_iron_deepslate_block": "Megerősített vasérc mélypalában",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Megerősített kemence",
-      "item.ringcraft.vex_soul": "Blaze Soul",
-      "item.ringcraft.gold_ring": "Aranygyűrű",
-      "item.ringcraft.regular_ring_item": "Rendszeres gyűrű",
-      "effect.ringcraft.fireproof_effect": "Fireproof",
-      "advancements.enderman_soul_advancement.title": "Dark Power!",
-      "item.ringcraft.flight_ring.description_0": "",
-      "item.ringcraft.enderman_soul": "Blaze Soul",
-      "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
-      "entity.ringcraft.ice_king_entity": "Ice King",
-      "item.ringcraft.teleportation_ring.description_0": "",
-      "item.ringcraft.reinforced_raw_iron": "Megerősített nyersvas",
-      "item.ringcraft.fire_ring.description_0": "",
-      "item.ringcraft.teleportation_ring": "Flight Ring",
-      "advancements.regular_ring_obtained.title": "Egy Új Kezdet",
-      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
-      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
-      "advancements.blaze_soul_advancement.title": "Fire Power!",
-      "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Megerősített Vasblokk"
-    },
     "de_de": {
-      "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Besorge einen verstärkten Eisenbarren",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Ring Menu",
@@ -1641,6 +1676,49 @@
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.gold_ring.description_0": "",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
+    },
+    "hu_hu": {
+      "advancements.regular_ring_obtained.descr": "Alapgyűrűt kovácsolni",
+      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Szerezzen megerősített vasrúd",
+      "item.ringcraft.fire_ring": "Gold Ring",
+      "key.ringcraft.rings_menu_binding": "Gyűrűk menü",
+      "item.ringcraft.blaze_soul": "Őrlángidéző lélek",
+      "block.ringcraft.reinforced_furnance": "Megerősített kemence",
+      "gui.ringcraft.rings_gui.label_magic_rings": "Varázsgyűrűk",
+      "advancements.reinforced_iron_ingot_obtained.title": "Speciális hardver",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
+      "block.ringcraft.ring_forge_block": "Ring Forge",
+      "item.ringcraft.regular_ring_item.description_0": "",
+      "key.ringcraft.fire_ring_shoot_binding": "Tűzgyűrű Lő",
+      "item.ringcraft.reinforced_iron_ingot": "Megerősített vasrúd",
+      "item.ringcraft.flight_ring": "Fire Ring",
+      "block.ringcraft.reinforced_iron_stone_block": "Megerősített vasérc",
+      "painting.ringcraft.painting_1.title": "Denk",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
+      "key.ringcraft.ring_power_keybind": "Hatalom gyűrű",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
+      "block.ringcraft.reinforced_iron_deepslate_block": "Megerősített vasérc mélypalában",
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Megerősített kemence",
+      "item.ringcraft.vex_soul": "Blaze Soul",
+      "item.ringcraft.gold_ring": "Aranygyűrű",
+      "item.ringcraft.regular_ring_item": "Rendszeres gyűrű",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
+      "advancements.enderman_soul_advancement.title": "Dark Power!",
+      "item.ringcraft.flight_ring.description_0": "",
+      "item.ringcraft.enderman_soul": "Blaze Soul",
+      "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
+      "item.ringcraft.teleportation_ring.description_0": "",
+      "item.ringcraft.reinforced_raw_iron": "Megerősített nyersvas",
+      "item.ringcraft.fire_ring.description_0": "",
+      "item.ringcraft.teleportation_ring": "Flight Ring",
+      "advancements.regular_ring_obtained.title": "Egy Új Kezdet",
+      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
+      "advancements.blaze_soul_advancement.title": "Fire Power!",
+      "item.ringcraft.gold_ring.description_0": "",
+      "block.ringcraft.reinforced_iron_block": "Megerősített Vasblokk"
     },
     "en_us": {
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
@@ -1685,8 +1763,8 @@
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
     "uk_ua": {
-      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
+      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -1728,8 +1806,8 @@
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
     "es_es": {
-      "advancements.regular_ring_obtained.descr": "Forja un Anillo Regular",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "advancements.regular_ring_obtained.descr": "Forja un Anillo Regular",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtén un Lingote de Hierro Reforzado",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Menú de Anillos RingCraft",
@@ -1772,8 +1850,8 @@
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
     "nl_nl": {
-      "advancements.regular_ring_obtained.descr": "Smeed een basisring",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "advancements.regular_ring_obtained.descr": "Smeed een basisring",
       "advancements.reinforced_iron_ingot_obtained.descr": "Verkrijg een Gewapend IJzerstaaf",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Ringen Menu",
@@ -1816,8 +1894,8 @@
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
     },
     "pt_pt": {
-      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "advancements.regular_ring_obtained.descr": "Forjar um anel básico",
+      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Menu de Anéis",
