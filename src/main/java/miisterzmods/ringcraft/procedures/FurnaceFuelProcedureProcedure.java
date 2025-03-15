@@ -67,7 +67,7 @@ public class FurnaceFuelProcedureProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("ringcraft:furnacefuel")))) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("minecraft:coals")))) {
 				if ((new Object() {
 					public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
 						if (world instanceof ILevelExtension _ext) {
@@ -77,7 +77,7 @@ public class FurnaceFuelProcedureProcedure {
 						}
 						return ItemStack.EMPTY;
 					}
-				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("ringcraft:furnacefuel")))) {
+				}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("minecraft:coals")))) {
 					if (!world.isClientSide()) {
 						BlockPos _bp = BlockPos.containing(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);

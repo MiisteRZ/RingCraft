@@ -1,6 +1,6 @@
 {
-  "advancements.regular_ring_obtained.descr": "Alapgyűrűt kovácsolni",
   "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+  "advancements.regular_ring_obtained.descr": "Alapgyűrűt kovácsolni",
   "advancements.reinforced_iron_ingot_obtained.descr": "Szerezzen megerősített vasrúd",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Gyűrűk menü",
@@ -30,8 +30,10 @@
   "item.ringcraft.enderman_soul": "Blaze Soul",
   "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
   "entity.ringcraft.ice_king_entity": "Ice King",
+  "item.ringcraft.teleportation_ring.description_0": "",
   "item.ringcraft.reinforced_raw_iron": "Megerősített nyersvas",
   "item.ringcraft.fire_ring.description_0": "",
+  "item.ringcraft.teleportation_ring": "Flight Ring",
   "advancements.regular_ring_obtained.title": "Egy Új Kezdet",
   "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
   "painting.ringcraft.painting_1.author": "EnnyTheDonkey",

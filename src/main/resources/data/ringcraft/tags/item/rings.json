@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "ringcraft:reinforced_iron_ingot"
+    "ringcraft:reinforced_iron_ingot",
+    "ringcraft:regular_ring_item",
+    "ringcraft:gold_ring",
+    "ringcraft:fire_ring",
+    "ringcraft:flight_ring",
+    "ringcraft:teleportation_ring"
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
   "advancements.regular_ring_obtained.descr": "Forja un Anillo Regular",
+  "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtén un Lingote de Hierro Reforzado",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Menú de Anillos RingCraft",
@@ -31,8 +31,10 @@
   "item.ringcraft.enderman_soul": "Blaze Soul",
   "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
   "entity.ringcraft.ice_king_entity": "Ice King",
+  "item.ringcraft.teleportation_ring.description_0": "",
   "item.ringcraft.reinforced_raw_iron": "Hierro Reforzado",
   "item.ringcraft.fire_ring.description_0": "",
+  "item.ringcraft.teleportation_ring": "Flight Ring",
   "advancements.regular_ring_obtained.title": "Un Nuevo Comienzo",
   "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
   "painting.ringcraft.painting_1.author": "EnnyTheDonkey",

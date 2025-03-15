@@ -1,6 +1,6 @@
 {
-  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Menu Cincin",
@@ -30,8 +30,10 @@
   "item.ringcraft.enderman_soul": "Blaze Soul",
   "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
   "entity.ringcraft.ice_king_entity": "Ice King",
+  "item.ringcraft.teleportation_ring.description_0": "",
   "item.ringcraft.reinforced_raw_iron": "Besi Mentah Bertulang",
   "item.ringcraft.fire_ring.description_0": "",
+  "item.ringcraft.teleportation_ring": "Flight Ring",
   "advancements.regular_ring_obtained.title": "A New Beginning",
   "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
   "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
