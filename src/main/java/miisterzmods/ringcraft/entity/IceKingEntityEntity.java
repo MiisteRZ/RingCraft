@@ -22,6 +22,7 @@ import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.goal.ClimbOnTopOfPowderSnowGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacementTypes;
@@ -56,7 +57,7 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
-	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.PINK, ServerBossEvent.BossBarOverlay.PROGRESS);
+	private final ServerBossEvent bossInfo = new ServerBossEvent(this.getDisplayName(), ServerBossEvent.BossBarColor.BLUE, ServerBossEvent.BossBarOverlay.PROGRESS);
 
 	public IceKingEntityEntity(EntityType<IceKingEntityEntity> type, Level world) {
 		super(type, world);
@@ -94,7 +95,8 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(5, new FloatGoal(this));
+		this.goalSelector.addGoal(5, new ClimbOnTopOfPowderSnowGoal(this, this.level()));
+		this.goalSelector.addGoal(6, new FloatGoal(this));
 	}
 
 	@Override

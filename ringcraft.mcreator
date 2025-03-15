@@ -1149,10 +1149,10 @@
       "registry_name": "ice_king_entity",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/client/renderer/IceKingEntityRenderer.java",
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/ice_king_entity_biome_modifier.json",
           "src/main/java/miisterzmods/ringcraft/entity/model/IceKingEntityModel.java",
+          "src/main/java/miisterzmods/ringcraft/client/renderer/IceKingEntityRenderer.java",
           "src/main/resources/assets/ringcraft/models/item/ice_king_entity_spawn_egg.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/ice_king_entity_biome_modifier.json",
           "src/main/java/miisterzmods/ringcraft/entity/IceKingEntityEntity.java"
         ]
       },
@@ -1256,6 +1256,9 @@
       "~CUSTOM:ReinforcedIronDeepslateBlock",
       "~CUSTOM:ReinforcedIronStoneBlock"
     ],
+    "ENTITIES:minecraft:freeze_immune_entity_types": [
+      "CUSTOM:IceKingEntity"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:RingForgeBlock",
       "~CUSTOM:ReinforcedIronBlock",
@@ -1263,9 +1266,13 @@
       "~CUSTOM:ReinforcedFurnance",
       "~CUSTOM:ReinforcedIronStoneBlock"
     ],
+    "ENTITIES:minecraft:powder_snow_walkable_mobs": [
+      "CUSTOM:IceKingEntity"
+    ],
     "ITEMS:mod:rings": [
       "CUSTOM:ReinforcedIronIngot"
-    ]
+    ],
+    "BIOMES:minecraft:is_overworld": []
   },
   "tab_element_order": {
     "CUSTOM:RingCraftCreativeTab": [
