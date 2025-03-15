@@ -1,6 +1,10 @@
 package miisterzmods.ringcraft.entity.model;
 
-import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.model.GeoModel;
+
+import net.minecraft.resources.ResourceLocation;
+
+import miisterzmods.ringcraft.entity.IceKingEntityEntity;
 
 public class IceKingEntityModel extends GeoModel<IceKingEntityEntity> {
 	@Override

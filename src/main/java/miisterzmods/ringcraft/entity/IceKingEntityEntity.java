@@ -1,22 +1,64 @@
 
 package miisterzmods.ringcraft.entity;
 
-import net.minecraft.nbt.Tag;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.network.syncher.EntityDataSerializers;
-import net.minecraft.network.syncher.SynchedEntityData;
-
-import javax.annotation.Nullable;
-
-import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.util.GeckoLibUtil;
+import software.bernie.geckolib.animation.RawAnimation;
+import software.bernie.geckolib.animation.PlayState;
 import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animatable.GeoEntity;
+
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
+import net.neoforged.neoforge.common.NeoForgeMod;
+
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.Zombie;
+import net.minecraft.world.entity.monster.Skeleton;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
+import net.minecraft.world.entity.ai.goal.FloatGoal;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnPlacementTypes;
+import net.minecraft.world.entity.Pose;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntityDimensions;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.AreaEffectCloud;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.Difficulty;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerBossEvent;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.chat.Component;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.registries.BuiltInRegistries;
+
+import miisterzmods.ringcraft.procedures.IceKingEntityPlayerCollidesWithThisEntityProcedure;
+import miisterzmods.ringcraft.procedures.IceKingEntityEntityIsHurtProcedure;
+import miisterzmods.ringcraft.init.RingcraftModEntities;
 
 public class IceKingEntityEntity extends Monster implements GeoEntity {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(IceKingEntityEntity.class, EntityDataSerializers.BOOLEAN);
 	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(IceKingEntityEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(IceKingEntityEntity.class, EntityDataSerializers.STRING);
-
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
@@ -28,10 +70,8 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-
 		setCustomName(Component.literal("Ice King"));
 		setCustomNameVisible(true);
-
 	}
 
 	@Override
@@ -53,14 +93,11 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
-
 			@Override
 			protected boolean canPerformAttack(LivingEntity entity) {
 				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
 			}
-
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
@@ -70,16 +107,13 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Skeleton.class, true, false));
 		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Zombie.class, true, false));
 		this.goalSelector.addGoal(9, new MeleeAttackGoal(this, 1.2, false) {
-
 			@Override
 			protected boolean canPerformAttack(LivingEntity entity) {
 				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < 25 && this.mob.getSensing().hasLineOfSight(entity);
 			}
-
 		});
 		this.goalSelector.addGoal(10, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(11, new FloatGoal(this));
-
 	}
 
 	@Override
@@ -94,6 +128,8 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
+		IceKingEntityEntityIsHurtProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		Entity immediatesourceentity = source.getDirectEntity();
 		if (source.is(DamageTypes.IN_FIRE))
 			return false;
 		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud || source.typeHolder().is(NeoForgeMod.POISON_DAMAGE))
@@ -139,6 +175,12 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 	}
 
 	@Override
+	public void playerTouch(Player sourceentity) {
+		super.playerTouch(sourceentity);
+		IceKingEntityPlayerCollidesWithThisEntityProcedure.execute(sourceentity);
+	}
+
+	@Override
 	public void startSeenByPlayer(ServerPlayer player) {
 		super.startSeenByPlayer(player);
 		this.bossInfo.addPlayer(player);
@@ -170,11 +212,8 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 6);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 20);
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.9);
-
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 5);
-
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 2.5);
-
 		return builder;
 	}
 
@@ -233,7 +272,6 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 		if (this.deathTime == 20) {
 			this.remove(IceKingEntityEntity.RemovalReason.KILLED);
 			this.dropExperience(this);
-
 		}
 	}
 
@@ -256,5 +294,4 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 	public AnimatableInstanceCache getAnimatableInstanceCache() {
 		return this.cache;
 	}
-
 }
