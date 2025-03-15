@@ -52,7 +52,7 @@ public record RingPowerKeybindMessage(int eventType, int pressedms) implements C
 			return;
 		if (type == 0) {
 
-			RingPowerKeybindOnKeyPressedProcedure.execute(entity);
+			RingPowerKeybindOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

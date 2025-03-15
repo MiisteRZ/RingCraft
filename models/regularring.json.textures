@@ -17,6 +17,12 @@
         "2": "fire_ring"
       },
       "name": "fire"
+    },
+    "teleportation": {
+      "map": {
+        "2": "teleportation_ring"
+      },
+      "name": "teleportation"
     }
   }
 }

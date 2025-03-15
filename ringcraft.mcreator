@@ -1206,6 +1206,109 @@
         ]
       },
       "path": "~/Items/Souls"
+    },
+    {
+      "name": "TeleportationRingUsed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportation_ring_used",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/TeleportationRingUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingsProcedures"
+    },
+    {
+      "name": "IceKingEntityEntityIsHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_king_entity_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/IceKingEntityEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MOBS"
+    },
+    {
+      "name": "IceKingEntityPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_king_entity_player_collides_with_this_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/IceKingEntityPlayerCollidesWithThisEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/MOBS"
+    },
+    {
+      "name": "TeleportationRing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleportation_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/item/TeleportationRingItem.java",
+          "src/main/resources/assets/ringcraft/models/item/teleportation_ring.json"
+        ]
+      },
+      "path": "~/Items/Rings"
     }
   ],
   "variable_elements": [
@@ -1284,7 +1387,8 @@
       "RingForgeBlock",
       "IceKingEntity",
       "FlightRing",
-      "VexSoul"
+      "VexSoul",
+      "TeleportationRing"
     ]
   },
   "language_map": {
@@ -1604,6 +1708,7 @@
       "entity.ringcraft.ice_king_entity": "Ice King",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
+      "item.ringcraft.teleportation_ring": "Teleportation Ring",
       "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
