@@ -39,7 +39,7 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> FIRE_RING = REGISTRY.register("fire_ring", FireRingItem::new);
 	public static final DeferredItem<Item> ENDERMAN_SOUL = REGISTRY.register("enderman_soul", EndermanSoulItem::new);
 	public static final DeferredItem<Item> RING_FORGE_BLOCK = block(RingcraftModBlocks.RING_FORGE_BLOCK);
-	public static final DeferredItem<Item> ICE_KING_ENTITY_SPAWN_EGG = REGISTRY.register("ice_king_entity_spawn_egg", () -> new DeferredSpawnEggItem(RingcraftModEntities.ICE_KING_ENTITY, -6684673, -16724737, new Item.Properties()));
+	public static final DeferredItem<Item> ICE_KING_ENTITY_SPAWN_EGG = REGISTRY.register("ice_king_entity_spawn_egg", () -> new DeferredSpawnEggItem(RingcraftModEntities.ICE_KING_ENTITY, -6684673, -1, new Item.Properties()));
 	public static final DeferredItem<Item> FLIGHT_RING = REGISTRY.register("flight_ring", FlightRingItem::new);
 	public static final DeferredItem<Item> VEX_SOUL = REGISTRY.register("vex_soul", VexSoulItem::new);
 	public static final DeferredItem<Item> TELEPORTATION_RING = REGISTRY.register("teleportation_ring", TeleportationRingItem::new);

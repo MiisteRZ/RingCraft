@@ -1,10 +1,6 @@
 package miisterzmods.ringcraft.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-
-import miisterzmods.ringcraft.network.RingcraftModVariables;
-import miisterzmods.ringcraft.init.RingcraftModItems;
+import net.neoforged.bus.api.Event;
 
 public class RingPower2KeybindOnKeyPressedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

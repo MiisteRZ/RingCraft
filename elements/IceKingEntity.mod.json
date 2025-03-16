@@ -13,8 +13,8 @@
       "fixedValue": 2.5
     },
     "entityDataEntries": [],
-    "modelWidth": 0.8,
-    "modelHeight": 1.4000000000000001,
+    "modelWidth": 0.6,
+    "modelHeight": 1.8,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "stepHeight": 0.9,
@@ -24,7 +24,7 @@
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16724737,
+      "value": -1,
       "falpha": 0.0
     },
     "creativeTabs": [
@@ -33,7 +33,7 @@
       }
     ],
     "isBoss": true,
-    "bossBarColor": "BLUE",
+    "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
       "value": ""
@@ -58,12 +58,12 @@
     "attackStrength": 6,
     "attackKnockback": 2.5,
     "knockbackResistance": 5.0,
-    "movementSpeed": 0.2,
+    "movementSpeed": 0.3,
     "armorBaseValue": 3.0,
     "trackingRange": 64,
     "followRange": 20,
-    "health": 80,
-    "xpAmount": 30,
+    "health": 50,
+    "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
     "guiBoundTo": "<NONE>",
@@ -92,13 +92,13 @@
       "value": ""
     },
     "livingSound": {
-      "value": "block.snow.break"
+      "value": ""
     },
     "hurtSound": {
-      "value": "block.glass.break"
+      "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "entity.warden.death"
+      "value": "entity.generic.death"
     },
     "stepSound": {
       "value": ""
@@ -114,11 +114,11 @@
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">TRUE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"climb_powder_snow\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"watch_closest_entity\"><field name=\"entity\">EntityPlayer</field><field name=\"radius\">6</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">CUSTOM:IceKingEntity</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntitySkeleton</field><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">TRUE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityZombie</field><field name=\"condition\">null,null</field><next><block type=\"attack_with_range\"><field name=\"range\">5</field><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "model": "iceking.geo.json",
     "groupName": "",
     "animation1": "idle",
-    "animation2": "",
+    "animation2": "walking",
     "animation3": "",
     "animation4": "attack",
     "animation5": "",
@@ -127,7 +127,7 @@
     "animation8": "",
     "animation9": "",
     "animation10": "",
-    "enable2": false,
+    "enable2": true,
     "enable3": false,
     "enable4": true,
     "enable5": false,
@@ -162,7 +162,7 @@
     ],
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 1,
+    "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,

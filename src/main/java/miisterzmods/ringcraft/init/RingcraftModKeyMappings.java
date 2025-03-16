@@ -36,19 +36,6 @@ public class RingcraftModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping RING_1_BINDING = new KeyMapping("key.ringcraft.ring_1_binding", GLFW.GLFW_KEY_Y, "key.categories.gameplay") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				PacketDistributor.sendToServer(new Ring1BindingMessage(0, 0));
-				Ring1BindingMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
 	public static final KeyMapping RING_2_BINDING = new KeyMapping("key.ringcraft.ring_2_binding", GLFW.GLFW_KEY_U, "key.categories.gameplay") {
 		private boolean isDownOld = false;
 
@@ -58,6 +45,19 @@ public class RingcraftModKeyMappings {
 			if (isDownOld != isDown && isDown) {
 				PacketDistributor.sendToServer(new Ring2BindingMessage(0, 0));
 				Ring2BindingMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
+	public static final KeyMapping RING_1_BINDING = new KeyMapping("key.ringcraft.ring_1_binding", GLFW.GLFW_KEY_Y, "key.categories.gameplay") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				PacketDistributor.sendToServer(new Ring1BindingMessage(0, 0));
+				Ring1BindingMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
 		}
@@ -79,8 +79,8 @@ public class RingcraftModKeyMappings {
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(RINGS_MENU_BINDING);
-		event.register(RING_1_BINDING);
 		event.register(RING_2_BINDING);
+		event.register(RING_1_BINDING);
 		event.register(RING_3_BINDING);
 	}
 
@@ -90,8 +90,8 @@ public class RingcraftModKeyMappings {
 		public static void onClientTick(ClientTickEvent.Post event) {
 			if (Minecraft.getInstance().screen == null) {
 				RINGS_MENU_BINDING.consumeClick();
-				RING_1_BINDING.consumeClick();
 				RING_2_BINDING.consumeClick();
+				RING_1_BINDING.consumeClick();
 				RING_3_BINDING.consumeClick();
 			}
 		}

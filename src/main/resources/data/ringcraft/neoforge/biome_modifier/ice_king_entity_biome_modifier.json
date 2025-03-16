@@ -8,7 +8,7 @@
   ],
   "spawners": {
     "type": "ringcraft:ice_king_entity",
-    "weight": 1,
+    "weight": 20,
     "minCount": 1,
     "maxCount": 1
   }
