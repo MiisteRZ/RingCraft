@@ -1,5 +1,6 @@
 {
   "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
+  "key.ringcraft.ring_3_binding": "Ring 3",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
   "item.ringcraft.fire_ring": "Fire Ring",
   "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -13,12 +14,13 @@
   "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
   "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
   "item.ringcraft.flight_ring": "Flight Ring",
+  "key.ringcraft.ring_2_binding": "Ring 1",
   "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
   "painting.ringcraft.painting_1.title": "Denk",
   "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-  "key.ringcraft.ring_power_keybind": "Ring Power",
   "effect.ringcraft.frost_resistance": "Frost Resistance",
   "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+  "key.ringcraft.ring_1_binding": "Ring 1",
   "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
   "item.ringcraft.vex_soul": "Vex Soul",
   "item.ringcraft.gold_ring": "Regular Ring",
@@ -30,10 +32,13 @@
   "item.ringcraft.teleportation_ring.description_0": "",
   "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
   "item.ringcraft.fire_ring.description_0": "",
+  "gui.ringcraft.rings_gui.label_3": "3",
   "item.ringcraft.teleportation_ring": "Flight Ring",
   "advancements.regular_ring_obtained.title": "A New Beginning",
   "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
   "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
   "item.ringcraft.gold_ring.description_0": "",
-  "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
+  "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+  "gui.ringcraft.rings_gui.label_1": "1",
+  "gui.ringcraft.rings_gui.label_2": "2"
 }

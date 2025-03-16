@@ -692,19 +692,6 @@
       "path": "~/Items/Souls"
     },
     {
-      "name": "RingPowerKeybind",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ring_power_keybind",
-      "metadata": {
-        "files": [
-          "src/main/java/miisterzmods/ringcraft/network/RingPowerKeybindMessage.java"
-        ]
-      },
-      "path": "~/RingsProcedures"
-    },
-    {
       "name": "RingPowerKeybindOnKeyPressed",
       "type": "procedure",
       "compiles": true,
@@ -1325,6 +1312,115 @@
         ]
       },
       "path": "~/MOBS"
+    },
+    {
+      "name": "Ring1Binding",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring_1_binding",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/network/Ring1BindingMessage.java"
+        ]
+      },
+      "path": "~/RingsProcedures"
+    },
+    {
+      "name": "Ring2Binding",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring_2_binding",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/network/Ring2BindingMessage.java"
+        ]
+      },
+      "path": "~/RingsProcedures"
+    },
+    {
+      "name": "Ring3Binding",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring_3_binding",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/network/Ring3BindingMessage.java"
+        ]
+      },
+      "path": "~/RingsProcedures"
+    },
+    {
+      "name": "RingPower2KeybindOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring_power_2_keybind_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/RingPower2KeybindOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingsProcedures"
+    },
+    {
+      "name": "RingPower3KeybindOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring_power_3_keybind_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/RingPower3KeybindOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingsProcedures"
     }
   ],
   "variable_elements": [
@@ -1426,6 +1522,7 @@
   "language_map": {
     "ru_ru": {
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
+      "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "item.ringcraft.fire_ring": "Fire Ring",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -1439,12 +1536,13 @@
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "item.ringcraft.flight_ring": "Flight Ring",
+      "key.ringcraft.ring_2_binding": "Ring 1",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.vex_soul": "Vex Soul",
       "item.ringcraft.gold_ring": "Regular Ring",
@@ -1456,15 +1554,19 @@
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.teleportation_ring": "Flight Ring",
       "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
     },
     "pl_pl": {
       "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
+      "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
       "block.ringcraft.ring_forge": "Ring Forge",
       "item.ringcraft.fire_ring": "Fire Ring",
@@ -1478,13 +1580,14 @@
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
       "item.ringcraft.flight_ring": "Flight Ring",
+      "key.ringcraft.ring_2_binding": "Ring 1",
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocnione złoże żelaza",
       "painting.ringcraft.painting_1.title": "Osi",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
-      "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec",
       "item.ringcraft.vex_soul": "Vex Soul",
       "item.ringcraft.gold_ring": "Regular Ring",
@@ -1496,16 +1599,20 @@
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.teleportation_ring": "Flight Ring",
       "advancements.regular_ring_obtained.title": "Nowy początek",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.gold_ring.description_0": "Złoty pierścień",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
     },
     "id_id": {
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Menu Cincin",
@@ -1519,12 +1626,13 @@
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "key.ringcraft.fire_ring_shoot_binding": "Tembakan Cincin Api",
       "item.ringcraft.flight_ring": "Fire Ring",
+      "key.ringcraft.ring_2_binding": "Ring 1",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "key.ringcraft.ring_power_keybind": "Cincin daya",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.vex_soul": "Blaze Soul",
       "item.ringcraft.gold_ring": "Regular Ring",
@@ -1538,17 +1646,21 @@
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Besi Mentah Bertulang",
       "item.ringcraft.fire_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.teleportation_ring": "Flight Ring",
       "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
     },
     "pt_br": {
       "advancements.regular_ring_obtained.descr": "Forjar um anel básico",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Menu de Anéis",
@@ -1562,12 +1674,13 @@
       "item.ringcraft.reinforced_iron_ingot": "Barra de ferro reforçado",
       "key.ringcraft.fire_ring_shoot_binding": "Tiro ao Anel de Fogo ",
       "item.ringcraft.flight_ring": "Fire Ring",
+      "key.ringcraft.ring_2_binding": "Ring 1",
       "block.ringcraft.reinforced_iron_stone_block": "Minério de ferro reforçado",
       "painting.ringcraft.painting_1.title": "Denk",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "key.ringcraft.ring_power_keybind": "Forja de poder",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Minério de ferro eforçado de rardósia",
+      "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Fornalha reforçada",
       "item.ringcraft.vex_soul": "Blaze Soul",
       "item.ringcraft.gold_ring": "Anel ouro",
@@ -1581,17 +1694,21 @@
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "item.ringcraft.fire_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.teleportation_ring": "Flight Ring",
       "advancements.regular_ring_obtained.title": "Um novo começo",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Bloco de ferro reforçado"
+      "block.ringcraft.reinforced_iron_block": "Bloco de ferro reforçado",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
     },
     "af_na": {
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
+      "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -1605,13 +1722,14 @@
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.reinforced_iron_ingot": "Versterkte ysterstaaf",
       "item.ringcraft.flight_ring": "Fire Ring",
+      "key.ringcraft.ring_2_binding": "Ring 1",
       "block.ringcraft.reinforced_iron_stone_block": "Versterkte Ystererts",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Versterkte Oond",
       "item.ringcraft.vex_soul": "Blaze Soul",
       "item.ringcraft.gold_ring": "Goud Ring",
@@ -1625,17 +1743,21 @@
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.teleportation_ring": "Flight Ring",
       "advancements.regular_ring_obtained.title": "\u0027n Nuwe Begin",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
     },
     "de_de": {
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
+      "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Besorge einen verstärkten Eisenbarren",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Ring Menu",
@@ -1649,13 +1771,14 @@
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "item.ringcraft.flight_ring": "Fire Ring",
+      "key.ringcraft.ring_2_binding": "Ring 1",
       "block.ringcraft.reinforced_iron_stone_block": "Verstärkter Eisenerz",
       "painting.ringcraft.painting_1.title": "Esse",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Verstärkter Ofen",
       "item.ringcraft.vex_soul": "Blaze Soul",
       "item.ringcraft.gold_ring": "Regulär Ring",
@@ -1669,17 +1792,21 @@
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.teleportation_ring": "Flight Ring",
       "advancements.regular_ring_obtained.title": "Ein neuer Beginn",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
     },
     "hu_hu": {
       "advancements.regular_ring_obtained.descr": "Alapgyűrűt kovácsolni",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Szerezzen megerősített vasrúd",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Gyűrűk menü",
@@ -1693,12 +1820,13 @@
       "key.ringcraft.fire_ring_shoot_binding": "Tűzgyűrű Lő",
       "item.ringcraft.reinforced_iron_ingot": "Megerősített vasrúd",
       "item.ringcraft.flight_ring": "Fire Ring",
+      "key.ringcraft.ring_2_binding": "Ring 1",
       "block.ringcraft.reinforced_iron_stone_block": "Megerősített vasérc",
       "painting.ringcraft.painting_1.title": "Denk",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "key.ringcraft.ring_power_keybind": "Hatalom gyűrű",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Megerősített vasérc mélypalában",
+      "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Megerősített kemence",
       "item.ringcraft.vex_soul": "Blaze Soul",
       "item.ringcraft.gold_ring": "Aranygyűrű",
@@ -1712,16 +1840,20 @@
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Megerősített nyersvas",
       "item.ringcraft.fire_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.teleportation_ring": "Flight Ring",
       "advancements.regular_ring_obtained.title": "Egy Új Kezdet",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Megerősített Vasblokk"
+      "block.ringcraft.reinforced_iron_block": "Megerősített Vasblokk",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
     },
     "en_us": {
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
+      "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "block.ringcraft.ring_forge": "Ring Forge",
       "item.ringcraft.fire_ring": "Fire Ring",
@@ -1736,14 +1868,15 @@
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "item.ringcraft.flight_ring": "Flight Ring",
+      "key.ringcraft.ring_2_binding": "Ring 2",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.vex_soul": "Vex Soul",
       "item.ringcraft.gold_ring": "Gold Ring",
@@ -1755,16 +1888,20 @@
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
       "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
     },
     "uk_ua": {
       "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
@@ -1778,12 +1915,13 @@
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "item.ringcraft.flight_ring": "Fire Ring",
+      "key.ringcraft.ring_2_binding": "Ring 1",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "painting.ringcraft.painting_1.title": "Denk",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.vex_soul": "Blaze Soul",
       "item.ringcraft.gold_ring": "Regular Ring",
@@ -1797,17 +1935,21 @@
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.teleportation_ring": "Flight Ring",
       "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
     },
     "es_es": {
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "advancements.regular_ring_obtained.descr": "Forja un Anillo Regular",
+      "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtén un Lingote de Hierro Reforzado",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Menú de Anillos RingCraft",
@@ -1821,13 +1963,14 @@
       "key.ringcraft.fire_ring_shoot_binding": "Atajo del Disparo con Anillo ed Fuego",
       "item.ringcraft.reinforced_iron_ingot": "Lingote de Hierro Reforzado",
       "item.ringcraft.flight_ring": "Fire Ring",
+      "key.ringcraft.ring_2_binding": "Ring 1",
       "block.ringcraft.reinforced_iron_stone_block": "Hierro Reforzado",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Horno Reforzado",
       "item.ringcraft.vex_soul": "Blaze Soul",
       "item.ringcraft.gold_ring": "Anillo Regular",
@@ -1841,17 +1984,21 @@
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Hierro Reforzado",
       "item.ringcraft.fire_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.teleportation_ring": "Flight Ring",
       "advancements.regular_ring_obtained.title": "Un Nuevo Comienzo",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
     },
     "nl_nl": {
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "advancements.regular_ring_obtained.descr": "Smeed een basisring",
+      "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Verkrijg een Gewapend IJzerstaaf",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Ringen Menu",
@@ -1865,13 +2012,14 @@
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.reinforced_iron_ingot": "Gewapend IJzerstaaf",
       "item.ringcraft.flight_ring": "Fire Ring",
+      "key.ringcraft.ring_2_binding": "Ring 1",
       "block.ringcraft.reinforced_iron_stone_block": "Gewapend IJzererts",
       "painting.ringcraft.painting_1.title": "Denk",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Gewamped Oven",
       "item.ringcraft.vex_soul": "Blaze Soul",
       "item.ringcraft.gold_ring": "Goud Ring",
@@ -1885,17 +2033,21 @@
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "item.ringcraft.fire_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.teleportation_ring": "Flight Ring",
       "advancements.regular_ring_obtained.title": "Een Nieuw Begin",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
     },
     "pt_pt": {
       "advancements.regular_ring_obtained.descr": "Forjar um anel básico",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "item.ringcraft.fire_ring": "Gold Ring",
       "key.ringcraft.rings_menu_binding": "Menu de Anéis",
@@ -1909,12 +2061,13 @@
       "item.ringcraft.reinforced_iron_ingot": "Barra de ferro reforçado",
       "key.ringcraft.fire_ring_shoot_binding": "Tiro ao Anel de Fogo ",
       "item.ringcraft.flight_ring": "Fire Ring",
+      "key.ringcraft.ring_2_binding": "Ring 1",
       "block.ringcraft.reinforced_iron_stone_block": "Minério de ferro reforçado",
       "painting.ringcraft.painting_1.title": "Denk",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "key.ringcraft.ring_power_keybind": "Forja de poder",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "block.ringcraft.reinforced_iron_deepslate_block": "Minério de ferro eforçado de rardósia",
+      "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Fornalha reforçada",
       "item.ringcraft.vex_soul": "Blaze Soul",
       "item.ringcraft.gold_ring": "Anel ouro",
@@ -1928,13 +2081,16 @@
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "item.ringcraft.fire_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.teleportation_ring": "Flight Ring",
       "advancements.regular_ring_obtained.title": "Um novo começo",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.gold_ring.description_0": "",
-      "block.ringcraft.reinforced_iron_block": "Bloco de ferro reforçado"
+      "block.ringcraft.reinforced_iron_block": "Bloco de ferro reforçado",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
     }
   },
   "foldersRoot": {
