@@ -1,13 +1,26 @@
 
 package miisterzmods.ringcraft.network;
 
+import net.neoforged.neoforge.network.handling.IPayloadContext;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
+import net.minecraft.network.protocol.PacketFlow;
+import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+
+import miisterzmods.ringcraft.procedures.RingPowerKeybindOnKeyPressedProcedure;
 import miisterzmods.ringcraft.RingcraftMod;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public record Ring1BindingMessage(int eventType, int pressedms) implements CustomPacketPayload {
-
 	public static final Type<Ring1BindingMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(RingcraftMod.MODID, "key_ring_1_binding"));
-
 	public static final StreamCodec<RegistryFriendlyByteBuf, Ring1BindingMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, Ring1BindingMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);
@@ -34,21 +47,17 @@ public record Ring1BindingMessage(int eventType, int pressedms) implements Custo
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(entity.blockPosition()))
 			return;
-
 		if (type == 0) {
 
 			RingPowerKeybindOnKeyPressedProcedure.execute(world, x, y, z, entity);
 		}
-
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		RingcraftMod.addNetworkMessage(Ring1BindingMessage.TYPE, Ring1BindingMessage.STREAM_CODEC, Ring1BindingMessage::handleData);
 	}
-
 }

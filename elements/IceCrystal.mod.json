@@ -3,7 +3,7 @@
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
-    "texture": "icecrystaltexture",
+    "texture": "ice_crystal_texture",
     "name": "Ice Crystal",
     "idle": "animation",
     "rarity": "EPIC",
