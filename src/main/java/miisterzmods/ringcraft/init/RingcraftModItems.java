@@ -18,6 +18,7 @@ import miisterzmods.ringcraft.item.TeleportationRingItem;
 import miisterzmods.ringcraft.item.ReinforcedRawIronItem;
 import miisterzmods.ringcraft.item.ReinforcedIronIngotItem;
 import miisterzmods.ringcraft.item.RegularRingItemItem;
+import miisterzmods.ringcraft.item.IceCrystalItem;
 import miisterzmods.ringcraft.item.GoldRingItem;
 import miisterzmods.ringcraft.item.FlightRingItem;
 import miisterzmods.ringcraft.item.FireRingItem;
@@ -43,6 +44,7 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> FLIGHT_RING = REGISTRY.register("flight_ring", FlightRingItem::new);
 	public static final DeferredItem<Item> VEX_SOUL = REGISTRY.register("vex_soul", VexSoulItem::new);
 	public static final DeferredItem<Item> TELEPORTATION_RING = REGISTRY.register("teleportation_ring", TeleportationRingItem::new);
+	public static final DeferredItem<Item> ICE_CRYSTAL = REGISTRY.register("ice_crystal", IceCrystalItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

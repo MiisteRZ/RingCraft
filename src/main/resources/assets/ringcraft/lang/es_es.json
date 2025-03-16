@@ -1,6 +1,6 @@
 {
-  "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
   "advancements.regular_ring_obtained.descr": "Forja un Anillo Regular",
+  "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtén un Lingote de Hierro Reforzado",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Menú de Anillos RingCraft",
@@ -40,5 +40,6 @@
   "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
   "advancements.blaze_soul_advancement.title": "Fire Power!",
   "item.ringcraft.gold_ring.description_0": "",
-  "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block"
+  "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+  "item.ringcraft.ice_crystal": "Ice Crystal"
 }

@@ -1,6 +1,6 @@
 {
-  "advancements.regular_ring_obtained.descr": "Alapgyűrűt kovácsolni",
   "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+  "advancements.regular_ring_obtained.descr": "Alapgyűrűt kovácsolni",
   "advancements.reinforced_iron_ingot_obtained.descr": "Szerezzen megerősített vasrúd",
   "item.ringcraft.fire_ring": "Gold Ring",
   "key.ringcraft.rings_menu_binding": "Gyűrűk menü",
@@ -39,5 +39,6 @@
   "painting.ringcraft.painting_1.author": "EnnyTheDonkey",
   "advancements.blaze_soul_advancement.title": "Fire Power!",
   "item.ringcraft.gold_ring.description_0": "",
-  "block.ringcraft.reinforced_iron_block": "Megerősített Vasblokk"
+  "block.ringcraft.reinforced_iron_block": "Megerősített Vasblokk",
+  "item.ringcraft.ice_crystal": "Ice Crystal"
 }

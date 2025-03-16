@@ -34,5 +34,6 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.FLIGHT_RING.get());
 				tabData.accept(RingcraftModItems.VEX_SOUL.get());
 				tabData.accept(RingcraftModItems.TELEPORTATION_RING.get());
+				tabData.accept(RingcraftModItems.ICE_CRYSTAL.get());
 			}).build());
 }

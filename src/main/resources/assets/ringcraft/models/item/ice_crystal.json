@@ -1,0 +1,6 @@
+{
+  "parent": "ringcraft:displaysettings/icecrystal.item",
+  "textures": {
+    "layer0": "ringcraft:item/icecrystaltexture"
+  }
+}
