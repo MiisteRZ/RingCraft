@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "ringcraft:regular_ring_item"
+    "ringcraft:regular_ring_item",
+    "ringcraft:flight_ring",
+    "ringcraft:fire_ring",
+    "ringcraft:teleportation_ring"
   ]
 }

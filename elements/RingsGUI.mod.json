@@ -24,6 +24,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "OnRingEquipSoundEffect"
+          },
           "x": 150,
           "y": 80,
           "locked": false
@@ -43,6 +46,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "OnRingEquipSoundEffect2"
+          },
           "x": 258,
           "y": 80,
           "locked": false
@@ -62,6 +68,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "OnRingEquipSoundEffect3"
+          },
           "x": 204,
           "y": 80,
           "locked": false

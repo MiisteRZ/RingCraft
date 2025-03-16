@@ -46,5 +46,8 @@
   "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
   "item.ringcraft.teleportation_ring.description_0": "",
   "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
-  "item.ringcraft.gold_ring.description_0": ""
+  "gui.ringcraft.rings_gui.label_3": "3",
+  "item.ringcraft.gold_ring.description_0": "",
+  "gui.ringcraft.rings_gui.label_1": "1",
+  "gui.ringcraft.rings_gui.label_2": "2"
 }
