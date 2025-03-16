@@ -1,11 +1,5 @@
 package miisterzmods.ringcraft.item.model;
 
-import software.bernie.geckolib.model.GeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import miisterzmods.ringcraft.item.IceCrystalItem;
-
 public class IceCrystalItemModel extends GeoModel<IceCrystalItem> {
 	@Override
 	public ResourceLocation getAnimationResource(IceCrystalItem animatable) {

@@ -2,11 +2,11 @@
   "_fv": 73,
   "_type": "keybind",
   "definition": {
-    "triggerKey": "R",
-    "keyBindingName": "Ring Power",
+    "triggerKey": "U",
+    "keyBindingName": "Ring 2",
     "keyBindingCategoryKey": "gameplay",
     "onKeyPressed": {
-      "name": "RingPowerKeybindOnKeyPressed"
+      "name": "RingPower2KeybindOnKeyPressed"
     }
   }
 }

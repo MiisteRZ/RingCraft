@@ -1,24 +1,12 @@
 
 package miisterzmods.ringcraft.item;
 
-import software.bernie.geckolib.util.GeckoLibUtil;
-import software.bernie.geckolib.animation.RawAnimation;
-import software.bernie.geckolib.animation.PlayState;
-import software.bernie.geckolib.animation.AnimationState;
-import software.bernie.geckolib.animation.AnimationController;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+
+import javax.annotation.Nullable;
+
 import software.bernie.geckolib.animation.AnimatableManager;
-import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.animatable.client.GeoRenderProvider;
-import software.bernie.geckolib.animatable.GeoItem;
-
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
-
-import miisterzmods.ringcraft.item.renderer.IceCrystalItemRenderer;
-
-import java.util.function.Consumer;
+import software.bernie.geckolib.animation.AnimationState;
 
 public class IceCrystalItem extends Item implements GeoItem {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
@@ -86,4 +74,5 @@ public class IceCrystalItem extends Item implements GeoItem {
 	public AnimatableInstanceCache getAnimatableInstanceCache() {
 		return this.cache;
 	}
+
 }
