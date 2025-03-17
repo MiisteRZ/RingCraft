@@ -23,7 +23,7 @@ import miisterzmods.ringcraft.RingcraftMod;
 public class RingcraftModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, RingcraftMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<IceKingEntityEntity>> ICE_KING_ENTITY = register("ice_king_entity",
-			EntityType.Builder.<IceKingEntityEntity>of(IceKingEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<IceKingEntityEntity>of(IceKingEntityEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

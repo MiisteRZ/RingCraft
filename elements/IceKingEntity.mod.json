@@ -55,11 +55,11 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 6,
+    "attackStrength": 8,
     "attackKnockback": 2.5,
     "knockbackResistance": 5.0,
-    "movementSpeed": 0.3,
-    "armorBaseValue": 3.0,
+    "movementSpeed": 1.0,
+    "armorBaseValue": 4.5,
     "trackingRange": 64,
     "followRange": 20,
     "health": 50,
@@ -162,8 +162,8 @@
     ],
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
-    "mobSpawningType": "monster",
+    "spawningProbability": 10,
+    "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [
@@ -178,6 +178,9 @@
       },
       {
         "value": "snowy_slopes"
+      },
+      {
+        "value": "mutated_ice_flats"
       }
     ],
     "spawnInDungeons": false

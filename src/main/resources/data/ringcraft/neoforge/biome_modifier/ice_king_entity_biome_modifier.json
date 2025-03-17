@@ -4,11 +4,12 @@
     "snowy_taiga",
     "snowy_plains",
     "snowy_beach",
-    "snowy_slopes"
+    "snowy_slopes",
+    "ice_spikes"
   ],
   "spawners": {
     "type": "ringcraft:ice_king_entity",
-    "weight": 20,
+    "weight": 10,
     "minCount": 1,
     "maxCount": 1
   }

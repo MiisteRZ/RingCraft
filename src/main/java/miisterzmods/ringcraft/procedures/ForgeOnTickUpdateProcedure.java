@@ -15,7 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 public class ForgeOnTickUpdateProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip1 ? blockstate.getValue(_getip1) : -1) == 0 && new Object() {
 			public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 				if (world instanceof ILevelExtension _ext) {
@@ -43,7 +43,7 @@ public class ForgeOnTickUpdateProcedure {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("ringcraft:ringtoforge"))) && ForgeMainRecipesProcedure.execute(world, x, y, z, itemstack)) {
+		}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("ringcraft:ringtoforge"))) && ForgeMainRecipesProcedure.execute(world, x, y, z)) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -61,8 +61,8 @@ public class ForgeOnTickUpdateProcedure {
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
 		} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip9 ? blockstate.getValue(_getip9) : -1) == 1) {
-			ForgeFuelProcedureProcedure.execute(world, x, y, z, itemstack);
-			ForgeSmeltingProcedureProcedure.execute(world, x, y, z, itemstack);
+			ForgeFuelProcedureProcedure.execute(world, x, y, z);
+			ForgeSmeltingProcedureProcedure.execute(world, x, y, z);
 		}
 	}
 }

@@ -125,6 +125,9 @@
     "onBlockAdded": {
       "name": "ForgeOnBlockAdded"
     },
+    "onTickUpdate": {
+      "name": "ForgeOnTickUpdate"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

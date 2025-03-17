@@ -39,7 +39,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.Difficulty;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
@@ -200,16 +200,15 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		event.register(RingcraftModEntities.ICE_KING_ENTITY.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)),
-				RegisterSpawnPlacementsEvent.Operation.REPLACE);
+				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8), RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 1);
 		builder = builder.add(Attributes.MAX_HEALTH, 50);
-		builder = builder.add(Attributes.ARMOR, 3);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 6);
+		builder = builder.add(Attributes.ARMOR, 4.5);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 8);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 20);
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.9);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 5);
