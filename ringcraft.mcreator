@@ -152,14 +152,14 @@
       "registry_name": "reinforced_iron_stone_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json"
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
         ]
       },
       "path": "~/Blocks/Reinforced Iron"
@@ -1716,6 +1716,358 @@
         ]
       },
       "path": "~/RingForgeProcedures/recipes/customrecipe"
+    },
+    {
+      "name": "ForgeSmelting0DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_smelting_0_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeSmelting0DisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/DisplayConditions"
+    },
+    {
+      "name": "ForgeSmelting1DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_smelting_1_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeSmelting1DisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/DisplayConditions"
+    },
+    {
+      "name": "ForgeSmelting2DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_smelting_2_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeSmelting2DisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/DisplayConditions"
+    },
+    {
+      "name": "ForgeSmelting3DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_smelting_3_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeSmelting3DisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/DisplayConditions"
+    },
+    {
+      "name": "ForgeSmelting4DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_smelting_4_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeSmelting4DisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/DisplayConditions"
+    },
+    {
+      "name": "ForgeSmelting5DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_smelting_5_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeSmelting5DisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/DisplayConditions"
+    },
+    {
+      "name": "ForgeSmelting6DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_smelting_6_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeSmelting6DisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/DisplayConditions"
+    },
+    {
+      "name": "ForgeSmelting7DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_smelting_7_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeSmelting7DisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/DisplayConditions"
+    },
+    {
+      "name": "ForgeSmelting8DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_smelting_8_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeSmelting8DisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/DisplayConditions"
+    },
+    {
+      "name": "ForgeSmelting9DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_smelting_9_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeSmelting9DisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/DisplayConditions"
+    },
+    {
+      "name": "ForgeSmelting10DisplayCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_smelting_10_display_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeSmelting10DisplayConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/GUI/DisplayConditions"
     }
   ],
   "variable_elements": [
@@ -2525,7 +2877,12 @@
       },
       {
         "name": "GUI",
-        "children": []
+        "children": [
+          {
+            "name": "DisplayConditions",
+            "children": []
+          }
+        ]
       },
       {
         "name": "RingsProcedures",
