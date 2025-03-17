@@ -5,7 +5,7 @@
     "achievementName": "Feel the Ice King Power!",
     "achievementDescription": "Beat an Ice King and get It's Crystal!",
     "achievementIcon": {
-      "value": "CUSTOM:IceKingEntity.spawn_egg"
+      "value": "CUSTOM:WaterWalkRing"
     },
     "background": "ring_craft_advancements.png",
     "disableDisplay": false,

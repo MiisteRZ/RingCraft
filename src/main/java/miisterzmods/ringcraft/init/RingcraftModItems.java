@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import miisterzmods.ringcraft.item.WaterWalkRingItem;
 import miisterzmods.ringcraft.item.VexSoulItem;
 import miisterzmods.ringcraft.item.TeleportationRingItem;
 import miisterzmods.ringcraft.item.ReinforcedRawIronItem;
@@ -45,6 +46,7 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> VEX_SOUL = REGISTRY.register("vex_soul", VexSoulItem::new);
 	public static final DeferredItem<Item> TELEPORTATION_RING = REGISTRY.register("teleportation_ring", TeleportationRingItem::new);
 	public static final DeferredItem<Item> ICE_CRYSTAL = REGISTRY.register("ice_crystal", IceCrystalItem::new);
+	public static final DeferredItem<Item> WATER_WALK_RING = REGISTRY.register("water_walk_ring", WaterWalkRingItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

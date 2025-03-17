@@ -1517,37 +1517,6 @@
       "path": "~/RingsProcedures"
     },
     {
-      "name": "WaterWalkRing",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "water_walk_ring",
-      "metadata": {
-        "files": [
-          "src/main/java/miisterzmods/ringcraft/procedures/WaterWalkRingProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/RingsProcedures"
-    },
-    {
       "name": "OnRingEquipSoundEffect",
       "type": "procedure",
       "compiles": true,
@@ -2048,6 +2017,85 @@
         ]
       },
       "path": "~/GUI/DisplayConditions"
+    },
+    {
+      "name": "WaterWalkRingProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_walk_ring_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/WaterWalkRingProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingsProcedures"
+    },
+    {
+      "name": "WaterWalkRing",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_walk_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/item/model/WaterWalkRingItemModel.java",
+          "src/main/resources/assets/ringcraft/models/item/water_walk_ring.json",
+          "src/main/java/miisterzmods/ringcraft/item/WaterWalkRingItem.java",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/WaterWalkRingItemRenderer.java"
+        ]
+      },
+      "path": "~/Items/Rings"
+    },
+    {
+      "name": "ForgeWaterWalkRingRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_water_walk_ring_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeWaterWalkRingRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingForgeProcedures/recipes/customrecipe"
     }
   ],
   "variable_elements": [
@@ -2111,7 +2159,8 @@
     "ITEMS:mod:rings": [
       "CUSTOM:FlightRing",
       "CUSTOM:FireRing",
-      "CUSTOM:TeleportationRing"
+      "CUSTOM:TeleportationRing",
+      "CUSTOM:WaterWalkRing"
     ]
   },
   "tab_element_order": {
@@ -2133,7 +2182,8 @@
       "FlightRing",
       "VexSoul",
       "TeleportationRing",
-      "IceCrystal"
+      "IceCrystal",
+      "WaterWalkRing"
     ]
   },
   "language_map": {
@@ -2178,6 +2228,7 @@
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "item.ringcraft.gold_ring": "Regular Ring",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
@@ -2231,6 +2282,7 @@
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "item.ringcraft.gold_ring": "Regular Ring",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
@@ -2283,6 +2335,7 @@
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Cincin daya",
       "item.ringcraft.gold_ring": "Regular Ring",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
@@ -2336,6 +2389,7 @@
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "item.ringcraft.gold_ring": "Goud Ring",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
@@ -2388,6 +2442,7 @@
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Forja de poder",
       "item.ringcraft.gold_ring": "Anel ouro",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
@@ -2440,6 +2495,7 @@
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Hatalom gyűrű",
       "item.ringcraft.gold_ring": "Aranygyűrű",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
@@ -2493,6 +2549,7 @@
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "item.ringcraft.gold_ring": "Regulär Ring",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
@@ -2548,6 +2605,7 @@
       "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "item.ringcraft.gold_ring": "Gold Ring",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
@@ -2600,6 +2658,7 @@
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "item.ringcraft.gold_ring": "Regular Ring",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
@@ -2653,6 +2712,7 @@
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "item.ringcraft.gold_ring": "Anillo Regular",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
@@ -2706,6 +2766,7 @@
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "item.ringcraft.gold_ring": "Goud Ring",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
@@ -2758,6 +2819,7 @@
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Forja de poder",
       "item.ringcraft.gold_ring": "Anel ouro",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",

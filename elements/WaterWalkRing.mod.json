@@ -1,7 +1,54 @@
 {
   "_fv": 73,
-  "_type": "procedure",
+  "_type": "animateditem",
   "definition": {
-    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"logic_binary_ops\" inline=\"false\"><field name=\"OP\">OR</field><value name=\"A\"><block type=\"compare_mcblocks\"><value name=\"a\"><block type=\"world_data_blockat\"><value name=\"x\"><block type=\"coord_x\"></block></value><value name=\"y\"><block type=\"math_dual_ops\"><field name=\"OP\">MINUS</field><value name=\"A\"><block type=\"coord_y\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></value><value name=\"z\"><block type=\"coord_z\"></block></value></block></value><value name=\"b\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.FLOWING_WATER</field></block></value></block></value><value name=\"B\"><block type=\"compare_mcblocks\"><value name=\"a\"><block type=\"world_data_blockat\"><value name=\"x\"><block type=\"coord_x\"></block></value><value name=\"y\"><block type=\"math_dual_ops\"><field name=\"OP\">MINUS</field><value name=\"A\"><block type=\"coord_y\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></value><value name=\"z\"><block type=\"coord_z\"></block></value></block></value><value name=\"b\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.WATER</field></block></value></block></value></block></value><statement name=\"DO0\"><block type=\"block_replace\"><field name=\"state\">TRUE</field><field name=\"nbt\">FALSE</field><value name=\"x\"><block type=\"math_dual_ops\"><field name=\"OP\">MINUS</field><value name=\"A\"><block type=\"coord_x\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></value><value name=\"y\"><block type=\"math_dual_ops\"><field name=\"OP\">MINUS</field><value name=\"A\"><block type=\"coord_y\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></value><value name=\"z\"><block type=\"math_dual_ops\"><field name=\"OP\">MINUS</field><value name=\"A\"><block type=\"coord_z\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></value><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.ICE</field></block></value><next><block type=\"block_replace\"><field name=\"state\">TRUE</field><field name=\"nbt\">FALSE</field><value name=\"x\"><block type=\"math_dual_ops\"><field name=\"OP\">ADD</field><value name=\"A\"><block type=\"coord_x\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></value><value name=\"y\"><block type=\"math_dual_ops\"><field name=\"OP\">MINUS</field><value name=\"A\"><block type=\"coord_z\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></value><value name=\"z\"><block type=\"math_dual_ops\"><field name=\"OP\">ADD</field><value name=\"A\"><block type=\"coord_x\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></value><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.ICE</field></block></value><next><block type=\"block_replace\"><field name=\"state\">TRUE</field><field name=\"nbt\">FALSE</field><value name=\"x\"><block type=\"math_dual_ops\"><field name=\"OP\">MINUS</field><value name=\"A\"><block type=\"coord_x\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">2</field></block></value></block></value><value name=\"y\"><block type=\"math_dual_ops\"><field name=\"OP\">MINUS</field><value name=\"A\"><block type=\"coord_y\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></value><value name=\"z\"><block type=\"math_dual_ops\"><field name=\"OP\">MINUS</field><value name=\"A\"><block type=\"coord_z\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">2</field></block></value></block></value><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.ICE</field></block></value><next><block type=\"block_replace\"><field name=\"state\">TRUE</field><field name=\"nbt\">FALSE</field><value name=\"x\"><block type=\"math_dual_ops\"><field name=\"OP\">ADD</field><value name=\"A\"><block type=\"coord_x\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">2</field></block></value></block></value><value name=\"y\"><block type=\"math_dual_ops\"><field name=\"OP\">MINUS</field><value name=\"A\"><block type=\"coord_y\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></value><value name=\"z\"><block type=\"math_dual_ops\"><field name=\"OP\">ADD</field><value name=\"A\"><block type=\"coord_z\"></block></value><value name=\"B\"><block type=\"math_number\"><field name=\"NUM\">2</field></block></value></block></value><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">Blocks.ICE</field></block></value></block></next></block></next></block></next></block></statement></block></next></block></xml>"
+    "renderType": 0,
+    "texture": "waterwalk_ring_texture",
+    "name": "Water Walk Ring",
+    "idle": "animation",
+    "rarity": "EPIC",
+    "displaySettings": "water_walk_ring.json",
+    "leftArm": "",
+    "rightArm": "",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:RingCraftCreativeTab"
+      }
+    ],
+    "firstPersonArms": false,
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "enableArmPose": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none",
+    "normal": "water_walk_ring.geo.json",
+    "armPoseList": [],
+    "disableSwing": false
   }
 }
