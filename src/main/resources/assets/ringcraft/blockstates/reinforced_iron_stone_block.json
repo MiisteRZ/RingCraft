@@ -1,10 +1,7 @@
 {
   "variants": {
-    "blockstate=0": {
+    "": {
       "model": "ringcraft:block/reinforced_iron_stone_block"
-    },
-    "blockstate=1": {
-      "model": "ringcraft:block/forge_on_block_state_blockstate_0"
     }
   }
 }

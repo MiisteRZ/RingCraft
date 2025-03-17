@@ -20,7 +20,7 @@ public class OnRingEquipSoundEffect3Procedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY)
-				.is(ItemTags.create(ResourceLocation.parse("minecraft:logs")))) {
+				.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")))) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.enchantment_table.use")), SoundSource.NEUTRAL, 1, 1);

@@ -12,6 +12,15 @@
         "state": {
           "Name": "ringcraft:reinforced_iron_stone_block"
         }
+      },
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "c:stones"
+        },
+        "state": {
+          "Name": "ringcraft:reinforced_iron_stone_block"
+        }
       }
     ]
   }

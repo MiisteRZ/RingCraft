@@ -12,6 +12,20 @@
         "state": {
           "Name": "ringcraft:reinforced_iron_deepslate_block"
         }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:deepslate",
+            "Properties": {
+              "axis": "y"
+            }
+          }
+        },
+        "state": {
+          "Name": "ringcraft:reinforced_iron_deepslate_block"
+        }
       }
     ]
   }
