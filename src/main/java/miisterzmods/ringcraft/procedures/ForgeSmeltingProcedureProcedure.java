@@ -15,7 +15,7 @@ import net.minecraft.core.BlockPos;
 import miisterzmods.ringcraft.init.RingcraftModItems;
 
 public class ForgeSmeltingProcedureProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
+	public static void execute(LevelAccessor world, double x, double y, double z, ItemStack itemstack) {
 		if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -23,7 +23,7 @@ public class ForgeSmeltingProcedureProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "Fuel") > -1 && ForgeMainRecipesProcedure.execute(world, x, y, z)) {
+		}.getValue(world, BlockPos.containing(x, y, z), "Fuel") > -1 && ForgeMainRecipesProcedure.execute(world, x, y, z, itemstack)) {
 			if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -42,6 +42,21 @@ public class ForgeSmeltingProcedureProcedure {
 				if (ForgeSmeltingResultConditionProcedure.execute(world, x, y, z)) {
 					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 						ItemStack _setstack = new ItemStack(RingcraftModItems.FIRE_RING.get()).copy();
+						_setstack.setCount((int) (new Object() {
+							public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).getCount();
+								}
+								return 0;
+							}
+						}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
+				} else if (ForgeTPRingRecipeProcedure.execute(world, x, y, z, itemstack)) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(RingcraftModItems.TELEPORTATION_RING.get()).copy();
 						_setstack.setCount((int) (new Object() {
 							public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 								if (world instanceof ILevelExtension _ext) {

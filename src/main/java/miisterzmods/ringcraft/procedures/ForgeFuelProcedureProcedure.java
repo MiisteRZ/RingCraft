@@ -16,7 +16,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 public class ForgeFuelProcedureProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
+	public static void execute(LevelAccessor world, double x, double y, double z, ItemStack itemstack) {
 		if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -49,7 +49,7 @@ public class ForgeFuelProcedureProcedure {
 				return -1;
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "Fuel") == 0) {
-			if (ForgeMainRecipesProcedure.execute(world, x, y, z) && new Object() {
+			if (ForgeMainRecipesProcedure.execute(world, x, y, z, itemstack) && new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 					if (world instanceof ILevelExtension _ext) {
 						IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
@@ -67,7 +67,7 @@ public class ForgeFuelProcedureProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")))) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("ringcraft:ringtoforge")))) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
