@@ -146,7 +146,7 @@
     {
       "name": "ReinforcedIronStoneBlock",
       "type": "block",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "reinforced_iron_stone_block",
       "metadata": {
@@ -873,7 +873,7 @@
     {
       "name": "RingForgeBlock",
       "type": "block",
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "ring_forge_block",
       "metadata": {
@@ -1092,7 +1092,7 @@
     {
       "name": "FrostResistanceActiveTickCondition",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "frost_resistance_active_tick_condition",
       "metadata": {
@@ -1111,7 +1111,7 @@
     {
       "name": "FrostResistance",
       "type": "potioneffect",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "frost_resistance",
       "metadata": {
