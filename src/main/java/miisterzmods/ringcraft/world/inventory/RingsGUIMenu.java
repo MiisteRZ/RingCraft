@@ -1,6 +1,7 @@
 
 package miisterzmods.ringcraft.world.inventory;
 
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.items.wrapper.InvWrapper;
 import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
@@ -28,6 +29,7 @@ import net.minecraft.core.BlockPos;
 import miisterzmods.ringcraft.procedures.SaveGUIProcedureProcedure;
 import miisterzmods.ringcraft.procedures.ReadGUIinfoProcedureProcedure;
 import miisterzmods.ringcraft.procedures.ExecuteGUIProdecureProcedure;
+import miisterzmods.ringcraft.network.RingsGUISlotMessage;
 import miisterzmods.ringcraft.init.RingcraftModMenus;
 
 import java.util.function.Supplier;
@@ -89,26 +91,44 @@ public class RingsGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 23, 37) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 23, 41) {
 			private final int slot = 0;
 			private int x = RingsGUIMenu.this.x;
 			private int y = RingsGUIMenu.this.y;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(0, 0, 0);
+			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 131, 37) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 131, 41) {
 			private final int slot = 1;
 			private int x = RingsGUIMenu.this.x;
 			private int y = RingsGUIMenu.this.y;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(1, 0, 0);
+			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 77, 37) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 77, 41) {
 			private final int slot = 2;
 			private int x = RingsGUIMenu.this.x;
 			private int y = RingsGUIMenu.this.y;
+
+			@Override
+			public void setChanged() {
+				super.setChanged();
+				slotChanged(2, 0, 0);
+			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, -2 + 8 + sj * 18, -11 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, -2 + 8 + sj * 18, -3 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, -2 + 8 + si * 18, -11 + 142));
+			this.addSlot(new Slot(inv, si, -2 + 8 + si * 18, -3 + 142));
 		ReadGUIinfoProcedureProcedure.execute(entity);
 	}
 
@@ -246,6 +266,13 @@ public class RingsGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 						ihm.setStackInSlot(i, ItemStack.EMPTY);
 				}
 			}
+		}
+	}
+
+	private void slotChanged(int slotid, int ctype, int meta) {
+		if (this.world != null && this.world.isClientSide()) {
+			PacketDistributor.sendToServer(new RingsGUISlotMessage(slotid, x, y, z, ctype, meta));
+			RingsGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

@@ -4,9 +4,9 @@
   "definition": {
     "type": 1,
     "width": 172,
-    "height": 153,
+    "height": 161,
     "inventoryOffsetX": 0,
-    "inventoryOffsetY": -4,
+    "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
@@ -24,6 +24,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "OnRingEquipSoundEffect"
+          },
           "x": 150,
           "y": 80,
           "locked": false
@@ -43,6 +46,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "OnRingEquipSoundEffect2"
+          },
           "x": 258,
           "y": 80,
           "locked": false
@@ -62,6 +68,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "OnRingEquipSoundEffect3"
+          },
           "x": 204,
           "y": 80,
           "locked": false
@@ -78,8 +87,8 @@
             "value": -6750055,
             "falpha": 0.0
           },
-          "x": 188,
-          "y": 47,
+          "x": 182,
+          "y": 41,
           "locked": false
         }
       },
@@ -110,6 +119,54 @@
           "use1Xscale": false,
           "x": 188,
           "y": 63,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_1",
+          "text": {
+            "fixedValue": "1"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 156,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_2",
+          "text": {
+            "fixedValue": "2"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 266,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_3",
+          "text": {
+            "fixedValue": "3"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 208,
+          "y": 52,
           "locked": false
         }
       }

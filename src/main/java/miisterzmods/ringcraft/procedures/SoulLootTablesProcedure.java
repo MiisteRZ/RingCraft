@@ -7,6 +7,7 @@ import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.monster.Vex;
 import net.minecraft.world.entity.monster.EnderMan;
 import net.minecraft.world.entity.monster.Blaze;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -16,6 +17,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 
 import miisterzmods.ringcraft.init.RingcraftModItems;
+import miisterzmods.ringcraft.entity.IceKingEntityEntity;
 
 import javax.annotation.Nullable;
 
@@ -48,6 +50,24 @@ public class SoulLootTablesProcedure {
 			if (1 == Mth.nextInt(RandomSource.create(), 1, 50) ? true : false) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RingcraftModItems.ENDERMAN_SOUL.get()));
+					entityToSpawn.setPickUpDelay(10);
+					entityToSpawn.setUnlimitedLifetime();
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		} else if (entity instanceof Vex) {
+			if (1 == Mth.nextInt(RandomSource.create(), 1, 25) ? true : false) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RingcraftModItems.VEX_SOUL.get()));
+					entityToSpawn.setPickUpDelay(10);
+					entityToSpawn.setUnlimitedLifetime();
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		} else if (entity instanceof IceKingEntityEntity) {
+			if (1 == Mth.nextInt(RandomSource.create(), 1, 3) ? true : false) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RingcraftModItems.ICE_CRYSTAL.get()));
 					entityToSpawn.setPickUpDelay(10);
 					entityToSpawn.setUnlimitedLifetime();
 					_level.addFreshEntity(entityToSpawn);

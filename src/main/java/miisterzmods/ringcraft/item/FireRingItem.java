@@ -14,7 +14,7 @@ import java.util.List;
 
 public class FireRingItem extends Item {
 	public FireRingItem() {
-		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.RARE));
+		super(new Item.Properties().stacksTo(1).fireResistant().rarity(Rarity.EPIC));
 	}
 
 	@Override

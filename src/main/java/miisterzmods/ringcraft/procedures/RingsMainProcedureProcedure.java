@@ -39,6 +39,10 @@ public class RingsMainProcedureProcedure {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(RingcraftModMobEffects.FIREPROOF_EFFECT, 600, 1));
 			}
+			if (entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot0.getItem() == RingcraftModItems.WATER_WALK_RING.get()
+					|| entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot1.getItem() == RingcraftModItems.WATER_WALK_RING.get()
+					|| entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot2.getItem() == RingcraftModItems.WATER_WALK_RING.get()) {
+			}
 		}
 	}
 }

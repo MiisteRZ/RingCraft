@@ -1,0 +1,7 @@
+{
+  "parent": "ringcraft:custom/flightring",
+  "textures": {
+    "0": "ringcraft:block/flightringtexture",
+    "particle": "ringcraft:item/flight_ring"
+  }
+}

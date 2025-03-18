@@ -98,7 +98,7 @@ public class RingForgeGUIMenu extends AbstractContainerMenu implements Supplier<
 			private int x = RingForgeGUIMenu.this.x;
 			private int y = RingForgeGUIMenu.this.y;
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 106, 35) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 111, 41) {
 			private final int slot = 2;
 			private int x = RingForgeGUIMenu.this.x;
 			private int y = RingForgeGUIMenu.this.y;

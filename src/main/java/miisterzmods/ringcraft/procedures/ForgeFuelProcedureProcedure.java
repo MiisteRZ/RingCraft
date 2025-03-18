@@ -67,7 +67,7 @@ public class ForgeFuelProcedureProcedure {
 					}
 					return ItemStack.EMPTY;
 				}
-			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")))) {
+			}.getItemStack(world, BlockPos.containing(x, y, z), 0)).is(ItemTags.create(ResourceLocation.parse("ringcraft:ringtoforge")))) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);

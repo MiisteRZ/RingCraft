@@ -17,7 +17,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import miisterzmods.ringcraft.network.RingsMenuBindingMessage;
-import miisterzmods.ringcraft.network.RingPowerKeybindMessage;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class RingcraftModKeyMappings {
