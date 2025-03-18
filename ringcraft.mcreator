@@ -8,9 +8,9 @@
       "registry_name": "rings_gui",
       "metadata": {
         "files": [
+          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java",
           "src/main/java/miisterzmods/ringcraft/network/RingsGUISlotMessage.java",
-          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java",
-          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java"
+          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -152,14 +152,14 @@
       "registry_name": "reinforced_iron_stone_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json"
         ]
       },
       "path": "~/Blocks/Reinforced Iron"
@@ -187,11 +187,11 @@
       "metadata": {
         "files": [
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedFurnanceBlock.java",
-          "src/main/java/miisterzmods/ringcraft/block/entity/ReinforcedFurnanceBlockEntity.java",
-          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json",
           "src/main/resources/assets/ringcraft/models/block/reinforced_furnance.json",
+          "src/main/java/miisterzmods/ringcraft/block/entity/ReinforcedFurnanceBlockEntity.java",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_furnance.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_furnance.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_furnance.json"
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json"
         ]
       },
       "path": "~/Blocks/Reinforced Furnace"
@@ -257,8 +257,8 @@
       "registry_name": "gold_ring",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/GoldRingItem.java",
-          "src/main/resources/assets/ringcraft/models/item/gold_ring.json"
+          "src/main/resources/assets/ringcraft/models/item/gold_ring.json",
+          "src/main/java/miisterzmods/ringcraft/item/GoldRingItem.java"
         ]
       },
       "path": "~/Items/Rings"
@@ -480,8 +480,8 @@
       "registry_name": "reinforced_raw_iron",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/ReinforcedRawIronItem.java",
-          "src/main/resources/assets/ringcraft/models/item/reinforced_raw_iron.json"
+          "src/main/resources/assets/ringcraft/models/item/reinforced_raw_iron.json",
+          "src/main/java/miisterzmods/ringcraft/item/ReinforcedRawIronItem.java"
         ]
       },
       "path": "~/Items/RawOres"
@@ -652,14 +652,14 @@
       "registry_name": "reinforced_iron_deepslate_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_deepslate_block.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deepslate_block.json",
-          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_deepslate_block.json",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_deepslate_block.json",
-          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_deepslate_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronDeepslateBlockBlock.java",
           "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_deepslate_block_biome_modifier.json",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deepslate_block.json"
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_deepslate_block.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_deepslate_block.json",
+          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_deepslate_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronDeepslateBlockBlock.java",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_deepslate_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deepslate_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deepslate_block.json"
         ]
       },
       "path": "~/Blocks/Reinforced Iron"
@@ -673,9 +673,9 @@
       "metadata": {
         "files": [
           "src/main/java/miisterzmods/ringcraft/item/renderer/BlazeSoulItemRenderer.java",
-          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemModel.java",
           "src/main/java/miisterzmods/ringcraft/item/BlazeSoulItem.java",
-          "src/main/resources/assets/ringcraft/models/item/blaze_soul.json"
+          "src/main/resources/assets/ringcraft/models/item/blaze_soul.json",
+          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemModel.java"
         ]
       },
       "path": "~/Items/Souls"
@@ -723,11 +723,11 @@
       "registry_name": "reinforced_iron_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_block.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronBlockBlock.java",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_block.json",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_block.json"
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronBlockBlock.java",
+          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_block.json"
         ]
       },
       "path": "~/Blocks/Reinforced Iron"
@@ -856,10 +856,10 @@
       "registry_name": "enderman_soul",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/EndermanSoulItem.java",
           "src/main/java/miisterzmods/ringcraft/item/model/EndermanSoulItemModel.java",
+          "src/main/resources/assets/ringcraft/models/item/enderman_soul.json",
           "src/main/java/miisterzmods/ringcraft/item/renderer/EndermanSoulItemRenderer.java",
-          "src/main/resources/assets/ringcraft/models/item/enderman_soul.json"
+          "src/main/java/miisterzmods/ringcraft/item/EndermanSoulItem.java"
         ]
       },
       "path": "~/Items/Souls"
@@ -874,10 +874,10 @@
         "files": [
           "src/main/java/miisterzmods/ringcraft/block/RingForgeBlockBlock.java",
           "src/main/java/miisterzmods/ringcraft/block/entity/RingForgeBlockBlockEntity.java",
-          "src/main/resources/data/ringcraft/loot_table/blocks/ring_forge_block.json",
-          "src/main/resources/assets/ringcraft/models/item/ring_forge_block.json",
           "src/main/resources/assets/ringcraft/blockstates/ring_forge_block.json",
-          "src/main/resources/assets/ringcraft/models/block/ring_forge_block.json"
+          "src/main/resources/assets/ringcraft/models/block/ring_forge_block.json",
+          "src/main/resources/assets/ringcraft/models/item/ring_forge_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/ring_forge_block.json"
         ]
       },
       "path": "~/Blocks/Ring Forge"
@@ -1141,10 +1141,10 @@
       "registry_name": "ice_king_entity",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/client/renderer/IceKingEntityRenderer.java",
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/ice_king_entity_biome_modifier.json",
           "src/main/java/miisterzmods/ringcraft/entity/model/IceKingEntityModel.java",
+          "src/main/java/miisterzmods/ringcraft/client/renderer/IceKingEntityRenderer.java",
           "src/main/resources/assets/ringcraft/models/item/ice_king_entity_spawn_egg.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/ice_king_entity_biome_modifier.json",
           "src/main/java/miisterzmods/ringcraft/entity/IceKingEntityEntity.java"
         ]
       },
@@ -1158,8 +1158,8 @@
       "registry_name": "flight_ring",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/FlightRingItem.java",
-          "src/main/resources/assets/ringcraft/models/item/flight_ring.json"
+          "src/main/resources/assets/ringcraft/models/item/flight_ring.json",
+          "src/main/java/miisterzmods/ringcraft/item/FlightRingItem.java"
         ]
       },
       "path": "~/Items/Rings"
@@ -1191,9 +1191,9 @@
       "registry_name": "vex_soul",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/renderer/VexSoulItemRenderer.java",
-          "src/main/resources/assets/ringcraft/models/item/vex_soul.json",
           "src/main/java/miisterzmods/ringcraft/item/model/VexSoulItemModel.java",
+          "src/main/resources/assets/ringcraft/models/item/vex_soul.json",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/VexSoulItemRenderer.java",
           "src/main/java/miisterzmods/ringcraft/item/VexSoulItem.java"
         ]
       },
@@ -1445,9 +1445,9 @@
       "registry_name": "ice_crystal",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/renderer/IceCrystalItemRenderer.java",
-          "src/main/java/miisterzmods/ringcraft/item/IceCrystalItem.java",
           "src/main/java/miisterzmods/ringcraft/item/model/IceCrystalItemModel.java",
+          "src/main/java/miisterzmods/ringcraft/item/IceCrystalItem.java",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/IceCrystalItemRenderer.java",
           "src/main/resources/assets/ringcraft/models/item/ice_crystal.json"
         ]
       },
@@ -2030,13 +2030,142 @@
       "registry_name": "water_walk_ring",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/model/WaterWalkRingItemModel.java",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/WaterWalkRingItemRenderer.java",
           "src/main/resources/assets/ringcraft/models/item/water_walk_ring.json",
-          "src/main/java/miisterzmods/ringcraft/item/WaterWalkRingItem.java",
-          "src/main/java/miisterzmods/ringcraft/item/renderer/WaterWalkRingItemRenderer.java"
+          "src/main/java/miisterzmods/ringcraft/item/model/WaterWalkRingItemModel.java",
+          "src/main/java/miisterzmods/ringcraft/item/WaterWalkRingItem.java"
         ]
       },
       "path": "~/Items/Rings"
+    },
+    {
+      "name": "WindRing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wind_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/item/WindRingItem.java",
+          "src/main/resources/assets/ringcraft/models/item/wind_ring.json"
+        ]
+      },
+      "path": "~/Items/Rings"
+    },
+    {
+      "name": "WindRingProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wind_ring_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/WindRingProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingsProcedures"
+    },
+    {
+      "name": "BreezeSoul",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breeze_soul",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/item/model/BreezeSoulItemModel.java",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/BreezeSoulItemRenderer.java",
+          "src/main/java/miisterzmods/ringcraft/item/BreezeSoulItem.java",
+          "src/main/resources/assets/ringcraft/models/item/breeze_soul.json"
+        ]
+      },
+      "path": "~/Items/Souls"
+    },
+    {
+      "name": "ForgeFlightRingRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_flight_ring_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeFlightRingRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingForgeProcedures/recipes/customrecipe"
+    },
+    {
+      "name": "ForgeWindRingRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forge_wind_ring_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ForgeWindRingRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingForgeProcedures/recipes/customrecipe"
     }
   ],
   "variable_elements": [
@@ -2087,6 +2216,12 @@
       "~CUSTOM:ReinforcedIronDeepslateBlock",
       "~CUSTOM:ReinforcedIronStoneBlock"
     ],
+    "ITEMS:mod:souls": [
+      "CUSTOM:BlazeSoul",
+      "CUSTOM:EndermanSoul",
+      "CUSTOM:VexSoul",
+      "CUSTOM:BreezeSoul"
+    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:RingForgeBlock",
       "~CUSTOM:ReinforcedIronBlock",
@@ -2101,30 +2236,35 @@
       "CUSTOM:FlightRing",
       "CUSTOM:FireRing",
       "CUSTOM:TeleportationRing",
-      "CUSTOM:WaterWalkRing"
+      "CUSTOM:WaterWalkRing",
+      "CUSTOM:WindRing"
+    ],
+    "ITEMS:mod:gems": [
+      "CUSTOM:IceCrystal"
     ]
   },
   "tab_element_order": {
     "CUSTOM:RingCraftCreativeTab": [
-      "ReinforcedIronStoneBlock",
-      "RegularRingItem",
-      "ReinforcedIronIngot",
-      "ReinforcedFurnance",
-      "BlazeSoul",
-      "GoldRing",
-      "ReinforcedRawIron",
-      "RingForge",
-      "ReinforcedIronDeepslateBlock",
       "ReinforcedIronBlock",
-      "FireRing",
-      "EndermanSoul",
+      "ReinforcedIronDeepslateBlock",
+      "ReinforcedIronStoneBlock",
+      "ReinforcedRawIron",
+      "ReinforcedIronIngot",
+      "RegularRingItem",
+      "GoldRing",
+      "ReinforcedFurnance",
       "RingForgeBlock",
-      "IceKingEntity",
-      "FlightRing",
+      "BlazeSoul",
       "VexSoul",
-      "TeleportationRing",
+      "BreezeSoul",
+      "EndermanSoul",
       "IceCrystal",
-      "WaterWalkRing"
+      "FireRing",
+      "FlightRing",
+      "TeleportationRing",
+      "WindRing",
+      "WaterWalkRing",
+      "IceKingEntity"
     ]
   },
   "language_map": {
@@ -2152,6 +2292,7 @@
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.enderman_soul_advancement.descr": "Get the Soul of an Enderman",
       "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
+      "item.ringcraft.wind_ring": "Flight Ring",
       "item.ringcraft.fire_ring.description_0": "",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
       "advancements.regular_ring_obtained.title": "A New Beginning",
@@ -2159,6 +2300,7 @@
       "advancements.blaze_soul_advancement.title": "Feel the Fire Power",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "block.ringcraft.ring_forge_block": "Ring Forge",
@@ -2176,64 +2318,68 @@
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.gold_ring.description_0": "",
+      "item.ringcraft.wind_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
     "pl_pl": {
       "advancements.regular_ring_obtained.descr": "Wytop zwykły pierścień",
-      "advancements.blaze_soul_advancement.descr": "Zdobądź duszę płomyka",
+      "advancements.blaze_soul_advancement.descr": "Get the Soul of a Blaze",
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
-      "item.ringcraft.fire_ring": "Pierścień ognia",
+      "item.ringcraft.fire_ring": "Fire Ring",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
       "advancements.reinforced_iron_ingot_obtained.title": "Zaawansowany sprzęt",
-      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Kuźnia pierścieni",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
       "item.ringcraft.regular_ring_item.description_0": "",
       "item.ringcraft.reinforced_iron_ingot": "Wzmocniona sztabka żelaza",
       "block.ringcraft.reinforced_iron_stone_block": "Wzmocnione złoże żelaza",
-      "item.ringcraft.ice_king_entity_spawn_egg": "Jajo spawnujące Lodowego Króla",
-      "block.ringcraft.reinforced_iron_deepslate_block": "Wzmocnione złoże łupkowe żelaza",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
+      "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Wzmocniony piec",
-      "item.ringcraft.vex_soul": "Dusza dręczyciela",
+      "item.ringcraft.vex_soul": "Vex Soul",
       "item.ringcraft.regular_ring_item": "Zwyczajny pierścień",
-      "item.ringcraft.enderman_soul": "Dusza endermana",
-      "entity.ringcraft.ice_king_entity": "Lodowy Król",
-      "advancements.enderman_soul_advancement.descr": "Zdobądź duszę endermana",
-      "advancements.ice_crystal_advancement.descr": "Pokonaj Lodowego Króla i zdobądź jego kryształ!!",
+      "item.ringcraft.enderman_soul": "Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
+      "advancements.enderman_soul_advancement.descr": "Get the Soul of an Enderman",
+      "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
+      "item.ringcraft.wind_ring": "Flight Ring",
       "item.ringcraft.fire_ring.description_0": "",
-      "item.ringcraft.teleportation_ring": "Pierścień teleportacji",
+      "item.ringcraft.teleportation_ring": "Teleportation Ring",
       "advancements.regular_ring_obtained.title": "Nowy początek",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
-      "advancements.blaze_soul_advancement.title": "Czuj moc ognia!",
-      "block.ringcraft.reinforced_iron_block": "Wzmociony blok żelaza",
-      "item.ringcraft.ice_crystal": "Lodowy kryształ",
-      "block.ringcraft.ring_forge": "Kuźnia pierścieni",
-      "item.ringcraft.blaze_soul": "Dusza płomyka",
+      "advancements.blaze_soul_advancement.title": "Feel the Fire Power",
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+      "item.ringcraft.ice_crystal": "Ice Crystal",
+      "block.ringcraft.ring_forge": "Ring Forge",
+      "item.ringcraft.breeze_soul": "Vex Soul",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Wzmocniony piec",
-      "block.ringcraft.ring_forge_block": "Kuźnia pierścieni",
-      "item.ringcraft.flight_ring": "Pierścień lotu",
+      "block.ringcraft.ring_forge_block": "Ring Forge",
+      "item.ringcraft.flight_ring": "Flight Ring",
       "key.ringcraft.ring_2_binding": "Ring 2",
-      "effect.ringcraft.frost_resistance_effect": "Mrozoodporność",
-      "key.ringcraft.ring_power_keybind": "Moc pierścienia",
-      "effect.ringcraft.frost_resistance": "Mrozoodporność",
-      "item.ringcraft.gold_ring": "Złoty pierścień",
-      "item.ringcraft.water_walk_ring": "Pierścień chodzenia po wodzie",
-      "effect.ringcraft.fireproof_effect": "Ognioodporność",
+      "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
+      "key.ringcraft.ring_power_keybind": "Ring Power",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
+      "item.ringcraft.gold_ring": "Regular Ring",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.flight_ring.description_0": "",
-      "advancements.enderman_soul_advancement.title": "Czuj moc kresu",
-      "advancements.ice_crystal_advancement.title": "Czuj moc Lodowego Króla!",
+      "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
+      "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "item.ringcraft.teleportation_ring.description_0": "",
-      "item.ringcraft.reinforced_raw_iron": "Wzmocniona ruda żelaza",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.gold_ring.description_0": "Złoty pierścień",
+      "item.ringcraft.wind_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
     "id_id": {
-      "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "item.ringcraft.fire_ring": "Gold Ring",
@@ -2255,6 +2401,7 @@
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
+      "item.ringcraft.wind_ring": "Flight Ring",
       "item.ringcraft.fire_ring.description_0": "",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
       "advancements.regular_ring_obtained.title": "A New Beginning",
@@ -2262,6 +2409,7 @@
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "block.ringcraft.ring_forge_block": "Ring Forge",
@@ -2279,12 +2427,68 @@
       "item.ringcraft.reinforced_raw_iron": "Besi Mentah Bertulang",
       "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.gold_ring.description_0": "",
+      "item.ringcraft.wind_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
+    },
+    "af_na": {
+      "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
+      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "key.ringcraft.ring_3_binding": "Ring 3",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
+      "item.ringcraft.fire_ring": "Gold Ring",
+      "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
+      "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
+      "item.ringcraft.regular_ring_item.description_0": "",
+      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
+      "item.ringcraft.reinforced_iron_ingot": "Versterkte ysterstaaf",
+      "block.ringcraft.reinforced_iron_stone_block": "Versterkte Ystererts",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
+      "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "key.ringcraft.ring_1_binding": "Ring 1",
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Versterkte Oond",
+      "item.ringcraft.vex_soul": "Blaze Soul",
+      "item.ringcraft.regular_ring_item": "Gereelde Ring",
+      "item.ringcraft.enderman_soul": "Blaze Soul",
+      "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
+      "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
+      "item.ringcraft.wind_ring": "Flight Ring",
+      "item.ringcraft.fire_ring.description_0": "",
+      "item.ringcraft.teleportation_ring": "Teleportation Ring",
+      "advancements.regular_ring_obtained.title": "\u0027n Nuwe Begin",
+      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "advancements.blaze_soul_advancement.title": "Fire Power!",
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+      "item.ringcraft.ice_crystal": "Ice Crystal",
+      "item.ringcraft.breeze_soul": "Vex Soul",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
+      "block.ringcraft.reinforced_furnance": "Versterkte Oond",
+      "block.ringcraft.ring_forge_block": "Ring Forge",
+      "item.ringcraft.flight_ring": "Fire Ring",
+      "key.ringcraft.ring_2_binding": "Ring 1",
+      "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
+      "key.ringcraft.ring_power_keybind": "Ring Power",
+      "item.ringcraft.gold_ring": "Goud Ring",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
+      "advancements.enderman_soul_advancement.title": "Dark Power!",
+      "item.ringcraft.flight_ring.description_0": "",
+      "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
+      "item.ringcraft.teleportation_ring.description_0": "",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
+      "gui.ringcraft.rings_gui.label_3": "3",
+      "item.ringcraft.gold_ring.description_0": "",
+      "item.ringcraft.wind_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
     "pt_br": {
-      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "advancements.regular_ring_obtained.descr": "Forjar um anel básico",
+      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "item.ringcraft.fire_ring": "Gold Ring",
@@ -2306,6 +2510,7 @@
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
+      "item.ringcraft.wind_ring": "Flight Ring",
       "item.ringcraft.fire_ring.description_0": "",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
       "advancements.regular_ring_obtained.title": "Um novo começo",
@@ -2313,6 +2518,7 @@
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "block.ringcraft.reinforced_iron_block": "Bloco de ferro reforçado",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Alma de blaze",
       "block.ringcraft.reinforced_furnance": "Fornalha reforçada",
       "block.ringcraft.ring_forge_block": "Ring Forge",
@@ -2330,116 +2536,13 @@
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.gold_ring.description_0": "",
-      "gui.ringcraft.rings_gui.label_1": "1",
-      "gui.ringcraft.rings_gui.label_2": "2"
-    },
-    "af_na": {
-      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
-      "advancements.regular_ring_obtained.descr": "Smee \u0027n basiese ring",
-      "key.ringcraft.ring_3_binding": "Ring 3",
-      "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
-      "item.ringcraft.fire_ring": "Gold Ring",
-      "key.ringcraft.rings_menu_binding": "Rings Menu",
-      "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
-      "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
-      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
-      "item.ringcraft.regular_ring_item.description_0": "",
-      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
-      "item.ringcraft.reinforced_iron_ingot": "Versterkte ysterstaaf",
-      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "block.ringcraft.reinforced_iron_stone_block": "Versterkte Ystererts",
-      "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
-      "key.ringcraft.ring_1_binding": "Ring 1",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Versterkte Oond",
-      "item.ringcraft.vex_soul": "Blaze Soul",
-      "item.ringcraft.regular_ring_item": "Gereelde Ring",
-      "item.ringcraft.enderman_soul": "Blaze Soul",
-      "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
-      "entity.ringcraft.ice_king_entity": "Ice King",
-      "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
-      "item.ringcraft.fire_ring.description_0": "",
-      "item.ringcraft.teleportation_ring": "Teleportation Ring",
-      "advancements.regular_ring_obtained.title": "\u0027n Nuwe Begin",
-      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
-      "advancements.blaze_soul_advancement.title": "Fire Power!",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
-      "item.ringcraft.ice_crystal": "Ice Crystal",
-      "item.ringcraft.blaze_soul": "Blaze Soul",
-      "block.ringcraft.reinforced_furnance": "Versterkte Oond",
-      "block.ringcraft.ring_forge_block": "Ring Forge",
-      "item.ringcraft.flight_ring": "Fire Ring",
-      "key.ringcraft.ring_2_binding": "Ring 1",
-      "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
-      "effect.ringcraft.frost_resistance": "Frost Resistance",
-      "key.ringcraft.ring_power_keybind": "Ring Power",
-      "item.ringcraft.gold_ring": "Goud Ring",
-      "item.ringcraft.water_walk_ring": "Water Walk Ring",
-      "effect.ringcraft.fireproof_effect": "Fireproof",
-      "advancements.enderman_soul_advancement.title": "Dark Power!",
-      "item.ringcraft.flight_ring.description_0": "",
-      "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
-      "item.ringcraft.teleportation_ring.description_0": "",
-      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
-      "gui.ringcraft.rings_gui.label_3": "3",
-      "item.ringcraft.gold_ring.description_0": "",
-      "gui.ringcraft.rings_gui.label_1": "1",
-      "gui.ringcraft.rings_gui.label_2": "2"
-    },
-    "de_de": {
-      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
-      "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
-      "key.ringcraft.ring_3_binding": "Ring 3",
-      "advancements.reinforced_iron_ingot_obtained.descr": "Besorge einen verstärkten Eisenbarren",
-      "item.ringcraft.fire_ring": "Gold Ring",
-      "key.ringcraft.rings_menu_binding": "Ring Menu",
-      "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringe",
-      "advancements.reinforced_iron_ingot_obtained.title": "Fortgeschrittene Metallurgie",
-      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
-      "item.ringcraft.regular_ring_item.description_0": "",
-      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
-      "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
-      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
-      "block.ringcraft.reinforced_iron_stone_block": "Verstärkter Eisenerz",
-      "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
-      "key.ringcraft.ring_1_binding": "Ring 1",
-      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Verstärkter Ofen",
-      "item.ringcraft.vex_soul": "Blaze Soul",
-      "item.ringcraft.regular_ring_item": "Regulär Ring",
-      "item.ringcraft.enderman_soul": "Blaze Soul",
-      "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
-      "entity.ringcraft.ice_king_entity": "Ice King",
-      "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
-      "item.ringcraft.fire_ring.description_0": "",
-      "item.ringcraft.teleportation_ring": "Teleportation Ring",
-      "advancements.regular_ring_obtained.title": "Ein neuer Beginn",
-      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
-      "advancements.blaze_soul_advancement.title": "Fire Power!",
-      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
-      "item.ringcraft.ice_crystal": "Ice Crystal",
-      "item.ringcraft.blaze_soul": "Blaze Soul",
-      "block.ringcraft.reinforced_furnance": "Verstärkter Ofen",
-      "block.ringcraft.ring_forge_block": "Ring Forge",
-      "item.ringcraft.flight_ring": "Fire Ring",
-      "key.ringcraft.ring_2_binding": "Ring 1",
-      "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
-      "effect.ringcraft.frost_resistance": "Frost Resistance",
-      "key.ringcraft.ring_power_keybind": "Ring Power",
-      "item.ringcraft.gold_ring": "Regulär Ring",
-      "item.ringcraft.water_walk_ring": "Water Walk Ring",
-      "effect.ringcraft.fireproof_effect": "Fireproof",
-      "advancements.enderman_soul_advancement.title": "Dark Power!",
-      "item.ringcraft.flight_ring.description_0": "",
-      "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
-      "item.ringcraft.teleportation_ring.description_0": "",
-      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
-      "gui.ringcraft.rings_gui.label_3": "3",
-      "item.ringcraft.gold_ring.description_0": "",
+      "item.ringcraft.wind_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
     "hu_hu": {
-      "advancements.regular_ring_obtained.descr": "Alapgyűrűt kovácsolni",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "advancements.regular_ring_obtained.descr": "Alapgyűrűt kovácsolni",
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Szerezzen megerősített vasrúd",
       "item.ringcraft.fire_ring": "Gold Ring",
@@ -2461,6 +2564,7 @@
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
+      "item.ringcraft.wind_ring": "Flight Ring",
       "item.ringcraft.fire_ring.description_0": "",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
       "advancements.regular_ring_obtained.title": "Egy Új Kezdet",
@@ -2468,6 +2572,7 @@
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "block.ringcraft.reinforced_iron_block": "Megerősített Vasblokk",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Őrlángidéző lélek",
       "block.ringcraft.reinforced_furnance": "Megerősített kemence",
       "block.ringcraft.ring_forge_block": "Ring Forge",
@@ -2485,6 +2590,62 @@
       "item.ringcraft.reinforced_raw_iron": "Megerősített nyersvas",
       "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.gold_ring.description_0": "",
+      "item.ringcraft.wind_ring.description_0": "",
+      "gui.ringcraft.rings_gui.label_1": "1",
+      "gui.ringcraft.rings_gui.label_2": "2"
+    },
+    "de_de": {
+      "advancements.regular_ring_obtained.descr": "Schmeltze einen grundlegenden Ring",
+      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "key.ringcraft.ring_3_binding": "Ring 3",
+      "advancements.reinforced_iron_ingot_obtained.descr": "Besorge einen verstärkten Eisenbarren",
+      "item.ringcraft.fire_ring": "Gold Ring",
+      "key.ringcraft.rings_menu_binding": "Ring Menu",
+      "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringe",
+      "advancements.reinforced_iron_ingot_obtained.title": "Fortgeschrittene Metallurgie",
+      "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
+      "item.ringcraft.regular_ring_item.description_0": "",
+      "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
+      "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
+      "block.ringcraft.reinforced_iron_stone_block": "Verstärkter Eisenerz",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
+      "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "key.ringcraft.ring_1_binding": "Ring 1",
+      "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Verstärkter Ofen",
+      "item.ringcraft.vex_soul": "Blaze Soul",
+      "item.ringcraft.regular_ring_item": "Regulär Ring",
+      "item.ringcraft.enderman_soul": "Blaze Soul",
+      "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
+      "entity.ringcraft.ice_king_entity": "Ice King",
+      "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
+      "item.ringcraft.wind_ring": "Flight Ring",
+      "item.ringcraft.fire_ring.description_0": "",
+      "item.ringcraft.teleportation_ring": "Teleportation Ring",
+      "advancements.regular_ring_obtained.title": "Ein neuer Beginn",
+      "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "advancements.blaze_soul_advancement.title": "Fire Power!",
+      "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
+      "item.ringcraft.ice_crystal": "Ice Crystal",
+      "item.ringcraft.breeze_soul": "Vex Soul",
+      "item.ringcraft.blaze_soul": "Blaze Soul",
+      "block.ringcraft.reinforced_furnance": "Verstärkter Ofen",
+      "block.ringcraft.ring_forge_block": "Ring Forge",
+      "item.ringcraft.flight_ring": "Fire Ring",
+      "key.ringcraft.ring_2_binding": "Ring 1",
+      "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
+      "effect.ringcraft.frost_resistance": "Frost Resistance",
+      "key.ringcraft.ring_power_keybind": "Ring Power",
+      "item.ringcraft.gold_ring": "Regulär Ring",
+      "item.ringcraft.water_walk_ring": "Water Walk Ring",
+      "effect.ringcraft.fireproof_effect": "Fireproof",
+      "advancements.enderman_soul_advancement.title": "Dark Power!",
+      "item.ringcraft.flight_ring.description_0": "",
+      "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
+      "item.ringcraft.teleportation_ring.description_0": "",
+      "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
+      "gui.ringcraft.rings_gui.label_3": "3",
+      "item.ringcraft.gold_ring.description_0": "",
+      "item.ringcraft.wind_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
@@ -2511,7 +2672,8 @@
       "item.ringcraft.enderman_soul": "Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.enderman_soul_advancement.descr": "Get the Soul of an Enderman",
-      "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get its Crystal!",
+      "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
+      "item.ringcraft.wind_ring": "Wind Ring",
       "item.ringcraft.fire_ring.description_0": "",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
       "advancements.regular_ring_obtained.title": "A New Beginning",
@@ -2520,6 +2682,7 @@
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Ice Crystal",
       "block.ringcraft.ring_forge": "Ring Forge",
+      "item.ringcraft.breeze_soul": "Breeze Soul",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "block.ringcraft.ring_forge_block": "Ring Forge",
@@ -2539,12 +2702,13 @@
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.gold_ring.description_0": "",
+      "item.ringcraft.wind_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
     "uk_ua": {
-      "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "item.ringcraft.fire_ring": "Gold Ring",
@@ -2566,6 +2730,7 @@
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
+      "item.ringcraft.wind_ring": "Flight Ring",
       "item.ringcraft.fire_ring.description_0": "",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
       "advancements.regular_ring_obtained.title": "A New Beginning",
@@ -2573,6 +2738,7 @@
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "block.ringcraft.ring_forge_block": "Ring Forge",
@@ -2590,12 +2756,13 @@
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.gold_ring.description_0": "",
+      "item.ringcraft.wind_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
     "es_es": {
-      "advancements.regular_ring_obtained.descr": "Forja un Anillo Regular",
       "advancements.blaze_soul_advancement.descr": "Consigue un Alma de Blaze",
+      "advancements.regular_ring_obtained.descr": "Forja un Anillo Regular",
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtén un Lingote de Hierro Reforzado",
       "item.ringcraft.fire_ring": "Gold Ring",
@@ -2606,8 +2773,8 @@
       "item.ringcraft.regular_ring_item.description_0": "",
       "key.ringcraft.fire_ring_shoot_binding": "Atajo del Disparo con Anillo ed Fuego",
       "item.ringcraft.reinforced_iron_ingot": "Lingote de Hierro Reforzado",
-      "block.ringcraft.reinforced_iron_stone_block": "Hierro Reforzado",
       "item.ringcraft.ice_king_entity_spawn_egg": "Rey Helado Spawn Egg",
+      "block.ringcraft.reinforced_iron_stone_block": "Hierro Reforzado",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Horno Reforzado",
@@ -2617,6 +2784,7 @@
       "advancements.enderman_soul_advancement.descr": "Consigue un Alma de Enderman",
       "entity.ringcraft.ice_king_entity": "Rey Helado",
       "advancements.ice_crystal_advancement.descr": "Derrota al Rey Helado y obtén su Cristal!",
+      "item.ringcraft.wind_ring": "Flight Ring",
       "item.ringcraft.fire_ring.description_0": "",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
       "advancements.regular_ring_obtained.title": "Un Nuevo Comienzo",
@@ -2624,6 +2792,7 @@
       "advancements.blaze_soul_advancement.title": "Poder Ígneo!",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Cristal Helado",
+      "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Horno Reforzado",
       "block.ringcraft.ring_forge_block": "Ring Forge",
@@ -2642,12 +2811,13 @@
       "item.ringcraft.reinforced_raw_iron": "Hierro Reforzado",
       "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.gold_ring.description_0": "",
+      "item.ringcraft.wind_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
     "nl_nl": {
-      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "advancements.regular_ring_obtained.descr": "Smeed een basisring",
+      "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Verkrijg een Gewapend IJzerstaaf",
       "item.ringcraft.fire_ring": "Gold Ring",
@@ -2658,8 +2828,8 @@
       "item.ringcraft.regular_ring_item.description_0": "",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.reinforced_iron_ingot": "Gewapend IJzerstaaf",
-      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "block.ringcraft.reinforced_iron_stone_block": "Gewapend IJzererts",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Gewamped Oven",
@@ -2669,6 +2839,7 @@
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
+      "item.ringcraft.wind_ring": "Flight Ring",
       "item.ringcraft.fire_ring.description_0": "",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
       "advancements.regular_ring_obtained.title": "Een Nieuw Begin",
@@ -2676,6 +2847,7 @@
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Gewamped Oven",
       "block.ringcraft.ring_forge_block": "Ring Forge",
@@ -2694,12 +2866,13 @@
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.gold_ring.description_0": "",
+      "item.ringcraft.wind_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
     "pt_pt": {
-      "advancements.regular_ring_obtained.descr": "Forjar um anel básico",
       "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+      "advancements.regular_ring_obtained.descr": "Forjar um anel básico",
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "item.ringcraft.fire_ring": "Gold Ring",
@@ -2721,6 +2894,7 @@
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
+      "item.ringcraft.wind_ring": "Flight Ring",
       "item.ringcraft.fire_ring.description_0": "",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
       "advancements.regular_ring_obtained.title": "Um novo começo",
@@ -2728,6 +2902,7 @@
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "block.ringcraft.reinforced_iron_block": "Bloco de ferro reforçado",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Alma de blaze",
       "block.ringcraft.reinforced_furnance": "Fornalha reforçada",
       "block.ringcraft.ring_forge_block": "Ring Forge",
@@ -2745,6 +2920,7 @@
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.gold_ring.description_0": "",
+      "item.ringcraft.wind_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     }

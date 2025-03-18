@@ -1,6 +1,6 @@
 {
-  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
+  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "key.ringcraft.ring_3_binding": "Ring 3",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
   "item.ringcraft.fire_ring": "Gold Ring",
@@ -22,6 +22,7 @@
   "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
   "entity.ringcraft.ice_king_entity": "Ice King",
   "advancements.ice_crystal_advancement.descr": "Beat an Ice King and get It\u0027s Crystal!",
+  "item.ringcraft.wind_ring": "Flight Ring",
   "item.ringcraft.fire_ring.description_0": "",
   "item.ringcraft.teleportation_ring": "Teleportation Ring",
   "advancements.regular_ring_obtained.title": "A New Beginning",
@@ -29,6 +30,7 @@
   "advancements.blaze_soul_advancement.title": "Fire Power!",
   "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
   "item.ringcraft.ice_crystal": "Ice Crystal",
+  "item.ringcraft.breeze_soul": "Vex Soul",
   "item.ringcraft.blaze_soul": "Blaze Soul",
   "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
   "block.ringcraft.ring_forge_block": "Ring Forge",
@@ -46,6 +48,7 @@
   "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
   "gui.ringcraft.rings_gui.label_3": "3",
   "item.ringcraft.gold_ring.description_0": "",
+  "item.ringcraft.wind_ring.description_0": "",
   "gui.ringcraft.rings_gui.label_1": "1",
   "gui.ringcraft.rings_gui.label_2": "2"
 }

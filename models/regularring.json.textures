@@ -23,6 +23,12 @@
         "2": "teleportation_ring"
       },
       "name": "teleportation"
+    },
+    "wind": {
+      "map": {
+        "2": "wind_ring"
+      },
+      "name": "wind"
     }
   }
 }

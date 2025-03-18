@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ringcraft:blaze_soul",
+    "ringcraft:enderman_soul",
+    "ringcraft:vex_soul",
+    "ringcraft:breeze_soul"
+  ]
+}

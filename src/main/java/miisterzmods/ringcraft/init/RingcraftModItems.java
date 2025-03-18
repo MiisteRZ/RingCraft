@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import miisterzmods.ringcraft.item.WindRingItem;
 import miisterzmods.ringcraft.item.WaterWalkRingItem;
 import miisterzmods.ringcraft.item.VexSoulItem;
 import miisterzmods.ringcraft.item.TeleportationRingItem;
@@ -24,6 +25,7 @@ import miisterzmods.ringcraft.item.GoldRingItem;
 import miisterzmods.ringcraft.item.FlightRingItem;
 import miisterzmods.ringcraft.item.FireRingItem;
 import miisterzmods.ringcraft.item.EndermanSoulItem;
+import miisterzmods.ringcraft.item.BreezeSoulItem;
 import miisterzmods.ringcraft.item.BlazeSoulItem;
 import miisterzmods.ringcraft.RingcraftMod;
 
@@ -47,6 +49,8 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> TELEPORTATION_RING = REGISTRY.register("teleportation_ring", TeleportationRingItem::new);
 	public static final DeferredItem<Item> ICE_CRYSTAL = REGISTRY.register("ice_crystal", IceCrystalItem::new);
 	public static final DeferredItem<Item> WATER_WALK_RING = REGISTRY.register("water_walk_ring", WaterWalkRingItem::new);
+	public static final DeferredItem<Item> WIND_RING = REGISTRY.register("wind_ring", WindRingItem::new);
+	public static final DeferredItem<Item> BREEZE_SOUL = REGISTRY.register("breeze_soul", BreezeSoulItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
