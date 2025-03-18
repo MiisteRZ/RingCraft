@@ -1,6 +1,6 @@
 {
-  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "advancements.blaze_soul_advancement.descr": "Get the Soul of a Blaze",
+  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "key.ringcraft.ring_3_binding": "Ring 3",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
   "item.ringcraft.fire_ring": "Fire Ring",
@@ -37,6 +37,7 @@
   "key.ringcraft.ring_power_keybind": "Ring Power",
   "effect.ringcraft.frost_resistance": "Frost Resistance",
   "item.ringcraft.gold_ring": "Regular Ring",
+  "item.ringcraft.water_walk_ring": "Water Walk Ring",
   "effect.ringcraft.fireproof_effect": "Fireproof",
   "item.ringcraft.flight_ring.description_0": "",
   "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
