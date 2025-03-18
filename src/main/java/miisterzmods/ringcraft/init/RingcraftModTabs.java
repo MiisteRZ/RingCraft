@@ -30,5 +30,11 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.FIRE_RING.get());
 				tabData.accept(RingcraftModItems.ENDERMAN_SOUL.get());
 				tabData.accept(RingcraftModBlocks.RING_FORGE_BLOCK.get().asItem());
+				tabData.accept(RingcraftModItems.ICE_KING_ENTITY_SPAWN_EGG.get());
+				tabData.accept(RingcraftModItems.FLIGHT_RING.get());
+				tabData.accept(RingcraftModItems.VEX_SOUL.get());
+				tabData.accept(RingcraftModItems.TELEPORTATION_RING.get());
+				tabData.accept(RingcraftModItems.ICE_CRYSTAL.get());
+				tabData.accept(RingcraftModItems.WATER_WALK_RING.get());
 			}).build());
 }
