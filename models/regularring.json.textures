@@ -29,6 +29,12 @@
         "2": "wind_ring"
       },
       "name": "wind"
+    },
+    "sea": {
+      "map": {
+        "2": "sea_ring"
+      },
+      "name": "sea"
     }
   }
 }

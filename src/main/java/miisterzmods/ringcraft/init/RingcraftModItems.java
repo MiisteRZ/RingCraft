@@ -17,10 +17,12 @@ import miisterzmods.ringcraft.item.WindRingItem;
 import miisterzmods.ringcraft.item.WaterWalkRingItem;
 import miisterzmods.ringcraft.item.VexSoulItem;
 import miisterzmods.ringcraft.item.TeleportationRingItem;
+import miisterzmods.ringcraft.item.SeaRingItem;
 import miisterzmods.ringcraft.item.ReinforcedRawIronItem;
 import miisterzmods.ringcraft.item.ReinforcedIronIngotItem;
 import miisterzmods.ringcraft.item.RegularRingItemItem;
 import miisterzmods.ringcraft.item.IceCrystalItem;
+import miisterzmods.ringcraft.item.GuardianSoulItem;
 import miisterzmods.ringcraft.item.GoldRingItem;
 import miisterzmods.ringcraft.item.FlightRingItem;
 import miisterzmods.ringcraft.item.FireRingItem;
@@ -51,6 +53,8 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> WATER_WALK_RING = REGISTRY.register("water_walk_ring", WaterWalkRingItem::new);
 	public static final DeferredItem<Item> WIND_RING = REGISTRY.register("wind_ring", WindRingItem::new);
 	public static final DeferredItem<Item> BREEZE_SOUL = REGISTRY.register("breeze_soul", BreezeSoulItem::new);
+	public static final DeferredItem<Item> SEA_RING = REGISTRY.register("sea_ring", SeaRingItem::new);
+	public static final DeferredItem<Item> GUARDIAN_SOUL = REGISTRY.register("guardian_soul", GuardianSoulItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items
