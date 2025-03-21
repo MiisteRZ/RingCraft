@@ -63,7 +63,6 @@ public class RingcraftModVariables {
 			PlayerVariables clone = new PlayerVariables();
 			clone.ringSaving = original.ringSaving;
 			clone.cooldown = original.cooldown;
-			clone.flying = original.flying;
 			if (!event.isWasDeath()) {
 				clone.ringSlot0 = original.ringSlot0;
 				clone.ringSlot1 = original.ringSlot1;
@@ -79,7 +78,6 @@ public class RingcraftModVariables {
 		public ItemStack ringSlot2 = ItemStack.EMPTY;
 		public boolean ringSaving = true;
 		public double cooldown = 0;
-		public boolean flying = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -89,7 +87,6 @@ public class RingcraftModVariables {
 			nbt.put("ringSlot2", ringSlot2.saveOptional(lookupProvider));
 			nbt.putBoolean("ringSaving", ringSaving);
 			nbt.putDouble("cooldown", cooldown);
-			nbt.putBoolean("flying", flying);
 			return nbt;
 		}
 
@@ -100,7 +97,6 @@ public class RingcraftModVariables {
 			ringSlot2 = ItemStack.parseOptional(lookupProvider, nbt.getCompound("ringSlot2"));
 			ringSaving = nbt.getBoolean("ringSaving");
 			cooldown = nbt.getDouble("cooldown");
-			flying = nbt.getBoolean("flying");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
