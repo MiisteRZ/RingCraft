@@ -2027,10 +2027,10 @@
       "registry_name": "water_walk_ring",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/model/WaterWalkRingItemModel.java",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/WaterWalkRingItemRenderer.java",
           "src/main/resources/assets/ringcraft/models/item/water_walk_ring.json",
-          "src/main/java/miisterzmods/ringcraft/item/WaterWalkRingItem.java",
-          "src/main/java/miisterzmods/ringcraft/item/renderer/WaterWalkRingItemRenderer.java"
+          "src/main/java/miisterzmods/ringcraft/item/model/WaterWalkRingItemModel.java",
+          "src/main/java/miisterzmods/ringcraft/item/WaterWalkRingItem.java"
         ]
       },
       "path": "~/Items/Rings"
@@ -2796,7 +2796,7 @@
       "effect.ringcraft.frost_resistance_effect": "Frost Resistance",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "item.ringcraft.gold_ring": "Gold Ring",
-      "item.ringcraft.water_walk_ring": "Water Walk Ring",
+      "item.ringcraft.water_walk_ring": "Frost Ring",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
@@ -2868,8 +2868,8 @@
       "gui.ringcraft.rings_gui.label_2": "2"
     },
     "es_es": {
-      "advancements.blaze_soul_advancement.descr": "Consigue un Alma de Blaze",
       "advancements.regular_ring_obtained.descr": "Forja un Anillo Regular",
+      "advancements.blaze_soul_advancement.descr": "Consigue un Alma de Blaze",
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtén un Lingote de Hierro Reforzado",
       "item.ringcraft.fire_ring": "Gold Ring",
@@ -2881,8 +2881,8 @@
       "item.ringcraft.regular_ring_item.description_0": "",
       "key.ringcraft.fire_ring_shoot_binding": "Atajo del Disparo con Anillo ed Fuego",
       "item.ringcraft.reinforced_iron_ingot": "Lingote de Hierro Reforzado",
-      "item.ringcraft.ice_king_entity_spawn_egg": "Rey Helado Spawn Egg",
       "block.ringcraft.reinforced_iron_stone_block": "Hierro Reforzado",
+      "item.ringcraft.ice_king_entity_spawn_egg": "Rey Helado Spawn Egg",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Horno Reforzado",
@@ -2913,7 +2913,7 @@
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Poder del Anillo",
       "item.ringcraft.gold_ring": "Anillo Regular",
-      "item.ringcraft.water_walk_ring": "Anillo del Caminar Sobre las Aguas",
+      "item.ringcraft.water_walk_ring": "Anillo del Hiello",
       "effect.ringcraft.fireproof_effect": "Fireproof",
       "advancements.enderman_soul_advancement.title": "Poder Oscuro!",
       "item.ringcraft.flight_ring.description_0": "",

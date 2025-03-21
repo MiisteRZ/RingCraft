@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 0,
     "texture": "waterwalk_ring_texture",
-    "name": "Water Walk Ring",
+    "name": "Frost Ring",
     "idle": "animation",
     "rarity": "EPIC",
     "displaySettings": "water_walk_ring.json",
