@@ -1,6 +1,6 @@
 {
-  "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
   "advancements.regular_ring_obtained.descr": "Smeed een basisring",
+  "advancements.blaze_soul_advancement.descr": "Get a Blaze Soul",
   "key.ringcraft.ring_3_binding": "Ring 3",
   "advancements.reinforced_iron_ingot_obtained.descr": "Verkrijg een Gewapend IJzerstaaf",
   "item.ringcraft.fire_ring": "Gold Ring",
@@ -11,8 +11,8 @@
   "item.ringcraft.regular_ring_item.description_0": "",
   "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
   "item.ringcraft.reinforced_iron_ingot": "Gewapend IJzerstaaf",
-  "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
   "block.ringcraft.reinforced_iron_stone_block": "Gewapend IJzererts",
+  "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
   "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
   "key.ringcraft.ring_1_binding": "Ring 1",
   "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Gewamped Oven",
