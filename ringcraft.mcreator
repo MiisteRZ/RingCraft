@@ -8,9 +8,9 @@
       "registry_name": "rings_gui",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java",
           "src/main/java/miisterzmods/ringcraft/network/RingsGUISlotMessage.java",
-          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java"
+          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java",
+          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java"
         ]
       },
       "path": "~/GUI"
@@ -152,14 +152,14 @@
       "registry_name": "reinforced_iron_stone_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json"
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
         ]
       },
       "path": "~/Blocks/Reinforced Iron"
@@ -187,11 +187,11 @@
       "metadata": {
         "files": [
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedFurnanceBlock.java",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_furnance.json",
           "src/main/java/miisterzmods/ringcraft/block/entity/ReinforcedFurnanceBlockEntity.java",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_furnance.json",
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_furnance.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_furnance.json",
-          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json"
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_furnance.json"
         ]
       },
       "path": "~/Blocks/Reinforced Furnace"
@@ -257,8 +257,8 @@
       "registry_name": "gold_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/gold_ring.json",
-          "src/main/java/miisterzmods/ringcraft/item/GoldRingItem.java"
+          "src/main/java/miisterzmods/ringcraft/item/GoldRingItem.java",
+          "src/main/resources/assets/ringcraft/models/item/gold_ring.json"
         ]
       },
       "path": "~/Items/Rings"
@@ -480,8 +480,8 @@
       "registry_name": "reinforced_raw_iron",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/reinforced_raw_iron.json",
-          "src/main/java/miisterzmods/ringcraft/item/ReinforcedRawIronItem.java"
+          "src/main/java/miisterzmods/ringcraft/item/ReinforcedRawIronItem.java",
+          "src/main/resources/assets/ringcraft/models/item/reinforced_raw_iron.json"
         ]
       },
       "path": "~/Items/RawOres"
@@ -668,14 +668,14 @@
       "registry_name": "reinforced_iron_deepslate_block",
       "metadata": {
         "files": [
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_deepslate_block_biome_modifier.json",
-          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_deepslate_block.json",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_deepslate_block.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_deepslate_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronDeepslateBlockBlock.java",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deepslate_block.json",
           "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_deepslate_block.json",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deepslate_block.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deepslate_block.json"
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_deepslate_block.json",
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_deepslate_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronDeepslateBlockBlock.java",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_deepslate_block_biome_modifier.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deepslate_block.json"
         ]
       },
       "path": "~/Blocks/Reinforced Iron"
@@ -689,9 +689,9 @@
       "metadata": {
         "files": [
           "src/main/java/miisterzmods/ringcraft/item/renderer/BlazeSoulItemRenderer.java",
+          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemModel.java",
           "src/main/java/miisterzmods/ringcraft/item/BlazeSoulItem.java",
-          "src/main/resources/assets/ringcraft/models/item/blaze_soul.json",
-          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemModel.java"
+          "src/main/resources/assets/ringcraft/models/item/blaze_soul.json"
         ]
       },
       "path": "~/Items/Souls"
@@ -739,11 +739,11 @@
       "registry_name": "reinforced_iron_block",
       "metadata": {
         "files": [
+          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_block.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_block.json",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_block.json",
-          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_block.json",
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronBlockBlock.java",
-          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_block.json"
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_block.json"
         ]
       },
       "path": "~/Blocks/Reinforced Iron"
@@ -872,10 +872,10 @@
       "registry_name": "enderman_soul",
       "metadata": {
         "files": [
+          "src/main/java/miisterzmods/ringcraft/item/EndermanSoulItem.java",
           "src/main/java/miisterzmods/ringcraft/item/model/EndermanSoulItemModel.java",
-          "src/main/resources/assets/ringcraft/models/item/enderman_soul.json",
           "src/main/java/miisterzmods/ringcraft/item/renderer/EndermanSoulItemRenderer.java",
-          "src/main/java/miisterzmods/ringcraft/item/EndermanSoulItem.java"
+          "src/main/resources/assets/ringcraft/models/item/enderman_soul.json"
         ]
       },
       "path": "~/Items/Souls"
@@ -890,10 +890,10 @@
         "files": [
           "src/main/java/miisterzmods/ringcraft/block/RingForgeBlockBlock.java",
           "src/main/java/miisterzmods/ringcraft/block/entity/RingForgeBlockBlockEntity.java",
-          "src/main/resources/assets/ringcraft/blockstates/ring_forge_block.json",
-          "src/main/resources/assets/ringcraft/models/block/ring_forge_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/ring_forge_block.json",
           "src/main/resources/assets/ringcraft/models/item/ring_forge_block.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/ring_forge_block.json"
+          "src/main/resources/assets/ringcraft/blockstates/ring_forge_block.json",
+          "src/main/resources/assets/ringcraft/models/block/ring_forge_block.json"
         ]
       },
       "path": "~/Blocks/Ring Forge"
@@ -1157,10 +1157,10 @@
       "registry_name": "ice_king_entity",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/entity/model/IceKingEntityModel.java",
           "src/main/java/miisterzmods/ringcraft/client/renderer/IceKingEntityRenderer.java",
-          "src/main/resources/assets/ringcraft/models/item/ice_king_entity_spawn_egg.json",
           "src/main/resources/data/ringcraft/neoforge/biome_modifier/ice_king_entity_biome_modifier.json",
+          "src/main/java/miisterzmods/ringcraft/entity/model/IceKingEntityModel.java",
+          "src/main/resources/assets/ringcraft/models/item/ice_king_entity_spawn_egg.json",
           "src/main/java/miisterzmods/ringcraft/entity/IceKingEntityEntity.java"
         ]
       },
@@ -1174,8 +1174,8 @@
       "registry_name": "flight_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/flight_ring.json",
-          "src/main/java/miisterzmods/ringcraft/item/FlightRingItem.java"
+          "src/main/java/miisterzmods/ringcraft/item/FlightRingItem.java",
+          "src/main/resources/assets/ringcraft/models/item/flight_ring.json"
         ]
       },
       "path": "~/Items/Rings"
@@ -1188,9 +1188,9 @@
       "registry_name": "vex_soul",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/model/VexSoulItemModel.java",
-          "src/main/resources/assets/ringcraft/models/item/vex_soul.json",
           "src/main/java/miisterzmods/ringcraft/item/renderer/VexSoulItemRenderer.java",
+          "src/main/resources/assets/ringcraft/models/item/vex_soul.json",
+          "src/main/java/miisterzmods/ringcraft/item/model/VexSoulItemModel.java",
           "src/main/java/miisterzmods/ringcraft/item/VexSoulItem.java"
         ]
       },
@@ -1442,9 +1442,9 @@
       "registry_name": "ice_crystal",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/model/IceCrystalItemModel.java",
-          "src/main/java/miisterzmods/ringcraft/item/IceCrystalItem.java",
           "src/main/java/miisterzmods/ringcraft/item/renderer/IceCrystalItemRenderer.java",
+          "src/main/java/miisterzmods/ringcraft/item/IceCrystalItem.java",
+          "src/main/java/miisterzmods/ringcraft/item/model/IceCrystalItemModel.java",
           "src/main/resources/assets/ringcraft/models/item/ice_crystal.json"
         ]
       },
@@ -2027,10 +2027,10 @@
       "registry_name": "water_walk_ring",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/renderer/WaterWalkRingItemRenderer.java",
-          "src/main/resources/assets/ringcraft/models/item/water_walk_ring.json",
           "src/main/java/miisterzmods/ringcraft/item/model/WaterWalkRingItemModel.java",
-          "src/main/java/miisterzmods/ringcraft/item/WaterWalkRingItem.java"
+          "src/main/resources/assets/ringcraft/models/item/water_walk_ring.json",
+          "src/main/java/miisterzmods/ringcraft/item/WaterWalkRingItem.java",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/WaterWalkRingItemRenderer.java"
         ]
       },
       "path": "~/Items/Rings"
@@ -2092,9 +2092,9 @@
       "registry_name": "breeze_soul",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/model/BreezeSoulItemModel.java",
-          "src/main/java/miisterzmods/ringcraft/item/renderer/BreezeSoulItemRenderer.java",
           "src/main/java/miisterzmods/ringcraft/item/BreezeSoulItem.java",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/BreezeSoulItemRenderer.java",
+          "src/main/java/miisterzmods/ringcraft/item/model/BreezeSoulItemModel.java",
           "src/main/resources/assets/ringcraft/models/item/breeze_soul.json"
         ]
       },
@@ -2268,8 +2268,8 @@
       "registry_name": "sea_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/sea_ring.json",
-          "src/main/java/miisterzmods/ringcraft/item/SeaRingItem.java"
+          "src/main/java/miisterzmods/ringcraft/item/SeaRingItem.java",
+          "src/main/resources/assets/ringcraft/models/item/sea_ring.json"
         ]
       },
       "path": "~/Items/Rings"
@@ -2282,10 +2282,10 @@
       "registry_name": "guardian_soul",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/GuardianSoulItem.java",
           "src/main/java/miisterzmods/ringcraft/item/renderer/GuardianSoulItemRenderer.java",
           "src/main/resources/assets/ringcraft/models/item/guardian_soul.json",
-          "src/main/java/miisterzmods/ringcraft/item/model/GuardianSoulItemModel.java"
+          "src/main/java/miisterzmods/ringcraft/item/model/GuardianSoulItemModel.java",
+          "src/main/java/miisterzmods/ringcraft/item/GuardianSoulItem.java"
         ]
       },
       "path": "~/Items/Souls"
@@ -2357,9 +2357,9 @@
       "registry_name": "warden_soul",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/warden_soul.json",
           "src/main/java/miisterzmods/ringcraft/item/renderer/WardenSoulItemRenderer.java",
           "src/main/java/miisterzmods/ringcraft/item/WardenSoulItem.java",
+          "src/main/resources/assets/ringcraft/models/item/warden_soul.json",
           "src/main/java/miisterzmods/ringcraft/item/model/WardenSoulItemModel.java"
         ]
       },
@@ -3038,7 +3038,7 @@
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
       "block.ringcraft.ring_forge_block": "Ring Forge",
-      "advancements.warden_soul_advancement.title": "Do you hear something!",
+      "advancements.warden_soul_advancement.title": "Feel the Warden Power!",
       "item.ringcraft.flight_ring": "Flight Ring",
       "advancements.breeze_soul_advancement.title": "Feel the Wind Power!",
       "key.ringcraft.ring_2_binding": "Ring 2",
@@ -3054,7 +3054,7 @@
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
-      "advancements.guardian_soul_advancement.title": "Feel the Sea!",
+      "advancements.guardian_soul_advancement.title": "Feel the Sea Power!",
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_3": "3",
