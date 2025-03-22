@@ -13,7 +13,7 @@ public class RingPowerKeybindOnKeyPressedProcedure {
 		if (entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot0.getItem() == RingcraftModItems.FIRE_RING.get()) {
 			FireRingShootProcedureProcedure.execute(entity);
 		} else if (entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot0.getItem() == RingcraftModItems.FLIGHT_RING.get()) {
-			FlightRingProcedureProcedure.execute(entity);
+			FlightRingProcedureProcedure.execute(world, x, y, z, entity);
 		} else if (entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot0.getItem() == RingcraftModItems.TELEPORTATION_RING.get()) {
 			TeleportationRingUsedProcedure.execute(world, x, y, z, entity);
 		} else if (entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot0.getItem() == RingcraftModItems.WIND_RING.get()) {
