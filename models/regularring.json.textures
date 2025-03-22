@@ -35,6 +35,12 @@
         "2": "sea_ring"
       },
       "name": "sea"
+    },
+    "sculk": {
+      "map": {
+        "2": "sculk_ring"
+      },
+      "name": "sculk"
     }
   }
 }

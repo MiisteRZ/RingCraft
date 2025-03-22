@@ -129,6 +129,21 @@ public class ForgeSmeltingProcedureProcedure {
 						}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
 						_itemHandlerModifiable.setStackInSlot(2, _setstack);
 					}
+				} else if (ForgeSculkRingRecipeProcedure.execute(world, x, y, z)) {
+					if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+						ItemStack _setstack = new ItemStack(RingcraftModItems.SCULK_RING.get()).copy();
+						_setstack.setCount((int) (new Object() {
+							public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
+								if (world instanceof ILevelExtension _ext) {
+									IItemHandler _itemHandler = _ext.getCapability(Capabilities.ItemHandler.BLOCK, pos, null);
+									if (_itemHandler != null)
+										return _itemHandler.getStackInSlot(slotid).getCount();
+								}
+								return 0;
+							}
+						}.getAmount(world, BlockPos.containing(x, y, z), 2) + 1));
+						_itemHandlerModifiable.setStackInSlot(2, _setstack);
+					}
 				}
 				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 					ItemStack _setstack = (new Object() {

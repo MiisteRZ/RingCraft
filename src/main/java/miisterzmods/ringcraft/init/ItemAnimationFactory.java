@@ -11,6 +11,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.component.DataComponents;
 
 import miisterzmods.ringcraft.item.WaterWalkRingItem;
+import miisterzmods.ringcraft.item.WardenSoulItem;
 import miisterzmods.ringcraft.item.VexSoulItem;
 import miisterzmods.ringcraft.item.IceCrystalItem;
 import miisterzmods.ringcraft.item.GuardianSoulItem;
@@ -149,6 +150,24 @@ public class ItemAnimationFactory {
 					CustomData.update(DataComponents.CUSTOM_DATA, event.getEntity().getOffhandItem(), tag -> tag.putString("geckoAnim", ""));
 					if (event.getEntity().level().isClientSide()) {
 						((GuardianSoulItem) event.getEntity().getOffhandItem().getItem()).animationprocedure = animation;
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof WardenSoulItem animatable) {
+				animation = mainhandItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					CustomData.update(DataComponents.CUSTOM_DATA, event.getEntity().getMainHandItem(), tag -> tag.putString("geckoAnim", ""));
+					if (event.getEntity().level().isClientSide()) {
+						((WardenSoulItem) event.getEntity().getMainHandItem().getItem()).animationprocedure = animation;
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof WardenSoulItem animatable) {
+				animation = offhandItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					CustomData.update(DataComponents.CUSTOM_DATA, event.getEntity().getOffhandItem(), tag -> tag.putString("geckoAnim", ""));
+					if (event.getEntity().level().isClientSide()) {
+						((WardenSoulItem) event.getEntity().getOffhandItem().getItem()).animationprocedure = animation;
 					}
 				}
 			}
