@@ -14,7 +14,7 @@
         "particleTexture": "ringforgeonfront",
         "renderType": 0,
         "customModelName": "Normal",
-        "luminance": 15,
+        "luminance": 12,
         "boundingBoxes": []
       }
     ]

@@ -53,7 +53,7 @@ public class RingForgeBlockBlock extends Block implements EntityBlock {
 		super(BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(8f, 10f).lightLevel(s -> (new Object() {
 			public int getLightLevel() {
 				if (s.getValue(BLOCKSTATE) == 1)
-					return 15;
+					return 12;
 				return 0;
 			}
 		}.getLightLevel())).requiresCorrectToolForDrops().pushReaction(PushReaction.BLOCK));
