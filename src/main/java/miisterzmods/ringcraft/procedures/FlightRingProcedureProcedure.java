@@ -21,7 +21,7 @@ public class FlightRingProcedureProcedure {
 		boolean facingNY = false;
 		boolean facingNZ = false;
 		if (entity.getData(RingcraftModVariables.PLAYER_VARIABLES).cooldown <= 0) {
-			entity.push((entity.getDeltaMovement().x() + entity.getLookAngle().x * 0.8), (entity.getDeltaMovement().y() + entity.getLookAngle().y * 1.5), (entity.getDeltaMovement().z() + entity.getLookAngle().z * 0.8));
+			entity.push((entity.getDeltaMovement().x() + entity.getLookAngle().x * 0.8), (entity.getDeltaMovement().y() + entity.getLookAngle().y * 1.25), (entity.getDeltaMovement().z() + entity.getLookAngle().z * 0.8));
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("entity.breeze.wind_burst")), SoundSource.NEUTRAL, 1, 1);
@@ -31,7 +31,7 @@ public class FlightRingProcedureProcedure {
 			}
 			{
 				RingcraftModVariables.PlayerVariables _vars = entity.getData(RingcraftModVariables.PLAYER_VARIABLES);
-				_vars.cooldown = 7;
+				_vars.cooldown = 15;
 				_vars.syncPlayerVariables(entity);
 			}
 		}
