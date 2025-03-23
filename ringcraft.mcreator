@@ -2409,6 +2409,19 @@
         ]
       },
       "path": "~/RingForgeProcedures/recipes/customrecipe"
+    },
+    {
+      "name": "ReinforcedIronIngotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/reinforced_iron_ingot_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Reinforced Iron"
     }
   ],
   "variable_elements": [
@@ -3445,7 +3458,7 @@
   "workspaceSettings": {
     "modid": "ringcraft",
     "modName": "RingCraft",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Herbow Development, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Not specified",

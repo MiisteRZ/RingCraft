@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "ringcraft:reinforced_iron_block"
+    }
+  },
+  "result": {
+    "id": "ringcraft:reinforced_iron_ingot",
+    "count": 9
+  }
+}

@@ -17,7 +17,8 @@
       "ReinforcedIronBlockRecipe",
       "RegularRingCrafting",
       "ReinforcedFurnceCraftingRecipe",
-      "RingForgeCraftingRecipe"
+      "RingForgeCraftingRecipe",
+      "ReinforcedIronIngotRecipe"
     ],
     "rewardXP": 0,
     "achievementType": "task",

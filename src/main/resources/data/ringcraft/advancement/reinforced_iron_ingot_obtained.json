@@ -38,7 +38,8 @@
       "ringcraft:reinforced_iron_block",
       "ringcraft:regular_ring_crafting",
       "ringcraft:reinforced_furnce_crafting_recipe",
-      "ringcraft:ring_forge_crafting_recipe"
+      "ringcraft:ring_forge_crafting_recipe",
+      "ringcraft:reinforced_iron_ingot_recipe"
     ]
   },
   "parent": "minecraft:story/iron_tools"
