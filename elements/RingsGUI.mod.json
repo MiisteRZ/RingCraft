@@ -88,7 +88,7 @@
             "falpha": 0.0
           },
           "x": 182,
-          "y": 41,
+          "y": 43,
           "locked": false
         }
       },
@@ -185,7 +185,7 @@
       "sy": 11,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }
