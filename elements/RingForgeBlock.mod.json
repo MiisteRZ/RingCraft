@@ -128,6 +128,9 @@
     "onTickUpdate": {
       "name": "ForgeOnTickUpdate"
     },
+    "onRandomUpdateEvent": {
+      "name": "ForgeParticlesProcedure"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
