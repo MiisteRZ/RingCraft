@@ -63,7 +63,7 @@ public class RingsMainProcedureProcedure {
 						|| entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot2.getItem() == ring.getItem()) {
 					if (ring.getItem() == RingcraftModItems.FIRE_RING.get()) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(RingcraftModMobEffects.FIREPROOF_EFFECT, 600, 1));
+							_entity.addEffect(new MobEffectInstance(RingcraftModMobEffects.FIREPROOF_EFFECT, 600, 1, false, false));
 					} else if (ring.getItem() == RingcraftModItems.WATER_WALK_RING.get()) {
 						WaterWalkProcedureProcedure.execute(world, x, y, z, entity);
 					} else if (ring.getItem() == RingcraftModItems.FLIGHT_RING.get()) {

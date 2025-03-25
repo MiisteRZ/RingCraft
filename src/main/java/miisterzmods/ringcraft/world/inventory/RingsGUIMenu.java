@@ -22,7 +22,9 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
@@ -101,6 +103,11 @@ public class RingsGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 				super.setChanged();
 				slotChanged(0, 0, 0);
 			}
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")));
+			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 131, 41) {
 			private final int slot = 1;
@@ -112,6 +119,11 @@ public class RingsGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 				super.setChanged();
 				slotChanged(1, 0, 0);
 			}
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")));
+			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 77, 41) {
 			private final int slot = 2;
@@ -122,6 +134,11 @@ public class RingsGUIMenu extends AbstractContainerMenu implements Supplier<Map<
 			public void setChanged() {
 				super.setChanged();
 				slotChanged(2, 0, 0);
+			}
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")));
 			}
 		}));
 		for (int si = 0; si < 3; ++si)

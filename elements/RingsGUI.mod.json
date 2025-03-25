@@ -14,7 +14,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "TAG:mod:rings"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -36,7 +36,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "TAG:mod:rings"
           },
           "disablePlacement": {
             "fixedValue": false
@@ -58,7 +58,7 @@
         "type": "inputslot",
         "data": {
           "inputLimit": {
-            "value": ""
+            "value": "TAG:mod:rings"
           },
           "disablePlacement": {
             "fixedValue": false

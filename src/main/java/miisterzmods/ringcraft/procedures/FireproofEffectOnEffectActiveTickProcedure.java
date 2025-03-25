@@ -18,28 +18,28 @@ public class FireproofEffectOnEffectActiveTickProcedure {
 			return;
 		if (entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot0.getItem() == RingcraftModItems.FIRE_RING.get() || entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot1.getItem() == RingcraftModItems.FIRE_RING.get()
 				|| entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot2.getItem() == RingcraftModItems.FIRE_RING.get()) {
-			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(RingcraftModMobEffects.FIREPROOF_EFFECT) ? _livEnt.getEffect(RingcraftModMobEffects.FIREPROOF_EFFECT).getDuration() : 0) <= 60) {
+			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(RingcraftModMobEffects.FIREPROOF_EFFECT) ? _livEnt.getEffect(RingcraftModMobEffects.FIREPROOF_EFFECT).getDuration() : 0) > 0) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 600, 2, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1, 2, false, false));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 600,
+					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1,
 							entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(RingcraftModMobEffects.FIREPROOF_EFFECT) ? _livEnt.getEffect(RingcraftModMobEffects.FIREPROOF_EFFECT).getAmplifier() : 0, false, false));
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 600, 2, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 1, 2, false, false));
 				entity.clearFire();
 				if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(RingcraftModMobEffects.FIREPROOF_EFFECT) ? _livEnt.getEffect(RingcraftModMobEffects.FIREPROOF_EFFECT).getAmplifier() : 0) >= 2) {
 					if (entity.isOnFire() || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.LAVA || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.FIRE) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 60,
+							_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1,
 									(int) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(RingcraftModMobEffects.FIREPROOF_EFFECT) ? _livEnt.getEffect(RingcraftModMobEffects.FIREPROOF_EFFECT).getAmplifier() : 0) * 1.5), false, false));
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 60,
+							_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1,
 									entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(RingcraftModMobEffects.FIREPROOF_EFFECT) ? _livEnt.getEffect(RingcraftModMobEffects.FIREPROOF_EFFECT).getAmplifier() : 0, false, false));
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60,
+							_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 1,
 									entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(RingcraftModMobEffects.FIREPROOF_EFFECT) ? _livEnt.getEffect(RingcraftModMobEffects.FIREPROOF_EFFECT).getAmplifier() : 0, false, false));
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 60,
+							_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 1,
 									entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(RingcraftModMobEffects.FIREPROOF_EFFECT) ? _livEnt.getEffect(RingcraftModMobEffects.FIREPROOF_EFFECT).getAmplifier() : 0, false, false));
 					}
 				}
