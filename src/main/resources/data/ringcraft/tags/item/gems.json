@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ringcraft:ice_crystal"
+    "ringcraft:ice_crystal",
+    "ringcraft:sand_gem"
   ]
 }

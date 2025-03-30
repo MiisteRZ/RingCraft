@@ -16,6 +16,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
+import miisterzmods.ringcraft.entity.KingSandstormEntity;
 import miisterzmods.ringcraft.entity.IceKingEntityEntity;
 import miisterzmods.ringcraft.RingcraftMod;
 
@@ -24,6 +25,8 @@ public class RingcraftModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, RingcraftMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<IceKingEntityEntity>> ICE_KING_ENTITY = register("ice_king_entity",
 			EntityType.Builder.<IceKingEntityEntity>of(IceKingEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<KingSandstormEntity>> KING_SANDSTORM = register("king_sandstorm",
+			EntityType.Builder.<KingSandstormEntity>of(KingSandstormEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(84).setUpdateInterval(3).fireImmune().sized(1f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -34,10 +37,12 @@ public class RingcraftModEntities {
 	@SubscribeEvent
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		IceKingEntityEntity.init(event);
+		KingSandstormEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(ICE_KING_ENTITY.get(), IceKingEntityEntity.createAttributes().build());
+		event.put(KING_SANDSTORM.get(), KingSandstormEntity.createAttributes().build());
 	}
 }

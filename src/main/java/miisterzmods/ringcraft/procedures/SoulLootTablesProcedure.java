@@ -20,6 +20,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 
 import miisterzmods.ringcraft.init.RingcraftModItems;
+import miisterzmods.ringcraft.entity.KingSandstormEntity;
 import miisterzmods.ringcraft.entity.IceKingEntityEntity;
 
 import javax.annotation.Nullable;
@@ -98,6 +99,15 @@ public class SoulLootTablesProcedure {
 			if (1 == Mth.nextInt(RandomSource.create(), 1, 3) ? true : false) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RingcraftModItems.WARDEN_SOUL.get()));
+					entityToSpawn.setPickUpDelay(10);
+					entityToSpawn.setUnlimitedLifetime();
+					_level.addFreshEntity(entityToSpawn);
+				}
+			}
+		} else if (entity instanceof KingSandstormEntity) {
+			if (1 == Mth.nextInt(RandomSource.create(), 1, 3) ? true : false) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RingcraftModItems.SAND_GEM.get()));
 					entityToSpawn.setPickUpDelay(10);
 					entityToSpawn.setUnlimitedLifetime();
 					_level.addFreshEntity(entityToSpawn);

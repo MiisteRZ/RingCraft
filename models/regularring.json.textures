@@ -41,6 +41,12 @@
         "2": "sculk_ring"
       },
       "name": "sculk"
+    },
+    "sand": {
+      "map": {
+        "2": "sand_ring"
+      },
+      "name": "sand"
     }
   }
 }

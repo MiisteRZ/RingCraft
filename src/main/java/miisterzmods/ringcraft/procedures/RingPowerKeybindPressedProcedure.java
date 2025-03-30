@@ -30,8 +30,8 @@ public class RingPowerKeybindPressedProcedure {
 			TeleportationRingUsedProcedure.execute(world, x, y, z, entity);
 		} else if (Ring.getItem() == RingcraftModItems.WIND_RING.get()) {
 			WindRingProcedureProcedure.execute(world, x, y, z, entity);
-		} else if (Ring.getItem() == RingcraftModItems.REINFORCED_IRON_INGOT.get()) {
-			assert Boolean.TRUE; //#dbg:RingPowerKeybindPressed:OtherRingProcedureHere
+		} else if (Ring.getItem() == RingcraftModItems.SAND_RING.get()) {
+			SandRingProcedureProcedure.execute(world, x, y, z, entity);
 		} else if (Ring.getItem() == RingcraftModItems.REINFORCED_IRON_INGOT.get()) {
 			assert Boolean.TRUE; //#dbg:RingPowerKeybindPressed:OtherRingProcedureHere
 		} else if (Ring.getItem() == RingcraftModItems.REINFORCED_IRON_INGOT.get()) {

@@ -20,6 +20,8 @@ import miisterzmods.ringcraft.item.VexSoulItem;
 import miisterzmods.ringcraft.item.TeleportationRingItem;
 import miisterzmods.ringcraft.item.SeaRingItem;
 import miisterzmods.ringcraft.item.SculkRingItem;
+import miisterzmods.ringcraft.item.SandRingItem;
+import miisterzmods.ringcraft.item.SandGemItem;
 import miisterzmods.ringcraft.item.ReinforcedRawIronItem;
 import miisterzmods.ringcraft.item.ReinforcedIronIngotItem;
 import miisterzmods.ringcraft.item.RegularRingItemItem;
@@ -59,6 +61,9 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> GUARDIAN_SOUL = REGISTRY.register("guardian_soul", GuardianSoulItem::new);
 	public static final DeferredItem<Item> SCULK_RING = REGISTRY.register("sculk_ring", SculkRingItem::new);
 	public static final DeferredItem<Item> WARDEN_SOUL = REGISTRY.register("warden_soul", WardenSoulItem::new);
+	public static final DeferredItem<Item> KING_SANDSTORM_SPAWN_EGG = REGISTRY.register("king_sandstorm_spawn_egg", () -> new DeferredSpawnEggItem(RingcraftModEntities.KING_SANDSTORM, -3368704, -13210, new Item.Properties()));
+	public static final DeferredItem<Item> SAND_GEM = REGISTRY.register("sand_gem", SandGemItem::new);
+	public static final DeferredItem<Item> SAND_RING = REGISTRY.register("sand_ring", SandRingItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -17,7 +17,7 @@ import miisterzmods.ringcraft.RingcraftMod;
 public class RingcraftModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RingcraftMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RING_CRAFT_CREATIVE_TAB = REGISTRY.register("ring_craft_creative_tab",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ringcraft.ring_craft_creative_tab")).icon(() -> new ItemStack(RingcraftModItems.REGULAR_RING_ITEM.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ringcraft.ring_craft_creative_tab")).icon(() -> new ItemStack(RingcraftModItems.WATER_WALK_RING.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(RingcraftModBlocks.REINFORCED_IRON_BLOCK.get().asItem());
 				tabData.accept(RingcraftModBlocks.REINFORCED_IRON_DEEPSLATE_BLOCK.get().asItem());
 				tabData.accept(RingcraftModBlocks.REINFORCED_IRON_STONE_BLOCK.get().asItem());
@@ -42,5 +42,8 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.TELEPORTATION_RING.get());
 				tabData.accept(RingcraftModItems.WIND_RING.get());
 				tabData.accept(RingcraftModItems.ICE_KING_ENTITY_SPAWN_EGG.get());
+				tabData.accept(RingcraftModItems.KING_SANDSTORM_SPAWN_EGG.get());
+				tabData.accept(RingcraftModItems.SAND_GEM.get());
+				tabData.accept(RingcraftModItems.SAND_RING.get());
 			}).build());
 }

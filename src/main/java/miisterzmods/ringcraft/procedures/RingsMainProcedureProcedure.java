@@ -40,7 +40,7 @@ public class RingsMainProcedureProcedure {
 				|| entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot1.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")))
 				|| entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot2.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")))) {
 			run = 1;
-			for (int index0 = 0; index0 < 5; index0++) {
+			for (int index0 = 0; index0 < 6; index0++) {
 				if (run == 1) {
 					ring = new ItemStack(RingcraftModItems.FIRE_RING.get()).copy();
 					run = run + 1;
@@ -56,7 +56,10 @@ public class RingsMainProcedureProcedure {
 				} else if (run == 5) {
 					ring = new ItemStack(RingcraftModItems.SCULK_RING.get()).copy();
 					run = run + 1;
-				} else if (run >= 6) {
+				} else if (run == 6) {
+					ring = new ItemStack(RingcraftModItems.SAND_RING.get()).copy();
+					run = run + 1;
+				} else if (run >= 7 || run < 1) {
 					run = 1;
 				}
 				if (entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot0.getItem() == ring.getItem() || entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot1.getItem() == ring.getItem()
@@ -91,6 +94,17 @@ public class RingsMainProcedureProcedure {
 						if (entity.isShiftKeyDown()) {
 							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20, 1, false, false));
+						}
+					} else if (ring.getItem() == RingcraftModItems.SAND_RING.get()) {
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 20, 1, false, false));
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20, 1, false, false));
+						if (entity.isInWaterOrBubble() || entity.isShiftKeyDown()) {
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20, 1, false, false));
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 1, false, false));
 						}
 					}
 				}
