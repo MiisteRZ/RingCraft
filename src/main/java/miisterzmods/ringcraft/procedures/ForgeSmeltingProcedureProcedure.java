@@ -10,6 +10,9 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import miisterzmods.ringcraft.init.RingcraftModItems;
@@ -54,6 +57,13 @@ public class ForgeSmeltingProcedureProcedure {
 					Result = new ItemStack(RingcraftModItems.SEA_RING.get()).copy();
 				} else if (ForgeSculkRingRecipeProcedure.execute(world, x, y, z)) {
 					Result = new ItemStack(RingcraftModItems.SCULK_RING.get()).copy();
+				}
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chiseled_bookshelf.pickup.enchanted")), SoundSource.NEUTRAL, 1, 1);
+					} else {
+						_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.chiseled_bookshelf.pickup.enchanted")), SoundSource.NEUTRAL, 1, 1, false);
+					}
 				}
 				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 					ItemStack _setstack = Result.copy();

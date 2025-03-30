@@ -3,6 +3,9 @@ package miisterzmods.ringcraft.block;
 
 import org.checkerframework.checker.units.qual.s;
 
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
@@ -37,8 +40,10 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.Minecraft;
 
 import miisterzmods.ringcraft.world.inventory.RingForgeGUIMenu;
+import miisterzmods.ringcraft.procedures.ForgeParticlesProcedureProcedure;
 import miisterzmods.ringcraft.procedures.ForgeOnTickUpdateProcedure;
 import miisterzmods.ringcraft.procedures.ForgeOnBlockAddedProcedure;
 import miisterzmods.ringcraft.block.entity.RingForgeBlockBlockEntity;
@@ -111,6 +116,17 @@ public class RingForgeBlockBlock extends Block implements EntityBlock {
 		super.tick(blockstate, world, pos, random);
 		ForgeOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 		world.scheduleTick(pos, this, 1);
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	@Override
+	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
+		super.animateTick(blockstate, world, pos, random);
+		Player entity = Minecraft.getInstance().player;
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		ForgeParticlesProcedureProcedure.execute(world, x, y, z, blockstate);
 	}
 
 	@Override

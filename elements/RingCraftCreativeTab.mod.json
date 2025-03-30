@@ -4,7 +4,7 @@
   "definition": {
     "name": "Ring Craft",
     "icon": {
-      "value": "CUSTOM:RegularRingItem"
+      "value": "CUSTOM:WaterWalkRing"
     },
     "showSearch": false
   }
