@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "structure",
+  "definition": {
+    "structure": "reinforcedironstructure",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 7,
+    "separation": 3,
+    "restrictionBiomes": [
+      {
+        "value": "stony_peaks"
+      },
+      {
+        "value": "stone_beach"
+      },
+      {
+        "value": "desert"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "plains"
+      },
+      {
+        "value": "swamp"
+      },
+      {
+        "value": "snowy_tundra"
+      }
+    ],
+    "terrainAdaptation": "none",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

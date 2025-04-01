@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "ringcraft:reinforced_iron_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 7,
+    "separation": 3,
+    "salt": 1500820805
+  }
+}
