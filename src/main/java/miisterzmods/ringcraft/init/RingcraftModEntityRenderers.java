@@ -9,6 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import miisterzmods.ringcraft.client.renderer.SandBallRenderer;
 import miisterzmods.ringcraft.client.renderer.KingSandstormRenderer;
 import miisterzmods.ringcraft.client.renderer.IceKingEntityRenderer;
 
@@ -18,5 +19,6 @@ public class RingcraftModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(RingcraftModEntities.ICE_KING_ENTITY.get(), IceKingEntityRenderer::new);
 		event.registerEntityRenderer(RingcraftModEntities.KING_SANDSTORM.get(), KingSandstormRenderer::new);
+		event.registerEntityRenderer(RingcraftModEntities.SAND_BALL.get(), SandBallRenderer::new);
 	}
 }

@@ -2591,22 +2591,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       },
@@ -2652,12 +2636,96 @@
       "registry_name": "reinforced_iron_structure",
       "metadata": {
         "files": [
-          "src/main/resources/data/ringcraft/worldgen/structure_set/reinforced_iron_structure.json",
+          "src/main/resources/data/ringcraft/worldgen/template_pool/reinforced_iron_structure.json",
           "src/main/resources/data/ringcraft/worldgen/structure/reinforced_iron_structure.json",
-          "src/main/resources/data/ringcraft/worldgen/template_pool/reinforced_iron_structure.json"
+          "src/main/resources/data/ringcraft/worldgen/structure_set/reinforced_iron_structure.json"
         ]
       },
       "path": "~/Other"
+    },
+    {
+      "name": "SandBallProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_ball_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/SandBallProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MOBS"
+    },
+    {
+      "name": "SandBall",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_ball",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/entity/SandBallEntity.java",
+          "src/main/java/miisterzmods/ringcraft/client/renderer/SandBallRenderer.java"
+        ]
+      },
+      "path": "~/MOBS"
+    },
+    {
+      "name": "SandBallProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_ball_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/SandBallProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MOBS"
     }
   ],
   "variable_elements": [

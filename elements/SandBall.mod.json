@@ -1,0 +1,30 @@
+{
+  "_fv": 73,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.SMOOTH_SANDSTONE"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "block.sand.break"
+    },
+    "igniteFire": false,
+    "power": 1.0,
+    "damage": 3.5,
+    "knockback": 3,
+    "entityModel": "ModelSandBall",
+    "customModelTexture": "sand_ball.png",
+    "modelWidth": 0.31,
+    "modelHeight": 0.31,
+    "onHitsBlock": {
+      "name": "SandBallProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "SandBallProjectileHitsLivingEntity"
+    },
+    "onHitsEntity": {
+      "name": "SandBallProjectileHitsLivingEntity"
+    }
+  }
+}

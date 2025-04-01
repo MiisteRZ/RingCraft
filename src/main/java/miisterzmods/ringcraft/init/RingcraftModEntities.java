@@ -16,6 +16,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
+import miisterzmods.ringcraft.entity.SandBallEntity;
 import miisterzmods.ringcraft.entity.KingSandstormEntity;
 import miisterzmods.ringcraft.entity.IceKingEntityEntity;
 import miisterzmods.ringcraft.RingcraftMod;
@@ -27,6 +28,8 @@ public class RingcraftModEntities {
 			EntityType.Builder.<IceKingEntityEntity>of(IceKingEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<KingSandstormEntity>> KING_SANDSTORM = register("king_sandstorm",
 			EntityType.Builder.<KingSandstormEntity>of(KingSandstormEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(84).setUpdateInterval(3).fireImmune().sized(1f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SandBallEntity>> SAND_BALL = register("sand_ball",
+			EntityType.Builder.<SandBallEntity>of(SandBallEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.31f, 0.31f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
