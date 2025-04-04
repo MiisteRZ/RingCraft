@@ -1,0 +1,6 @@
+{
+  "parent": "ringcraft:displaysettings/cursed_soul",
+  "textures": {
+    "layer0": "ringcraft:item/cursed_soul"
+  }
+}

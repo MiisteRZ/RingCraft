@@ -16,6 +16,7 @@ import miisterzmods.ringcraft.item.VexSoulItem;
 import miisterzmods.ringcraft.item.IceCrystalItem;
 import miisterzmods.ringcraft.item.GuardianSoulItem;
 import miisterzmods.ringcraft.item.EndermanSoulItem;
+import miisterzmods.ringcraft.item.CursedSoulItem;
 import miisterzmods.ringcraft.item.BreezeSoulItem;
 import miisterzmods.ringcraft.item.BlazeSoulItem;
 
@@ -168,6 +169,24 @@ public class ItemAnimationFactory {
 					CustomData.update(DataComponents.CUSTOM_DATA, event.getEntity().getOffhandItem(), tag -> tag.putString("geckoAnim", ""));
 					if (event.getEntity().level().isClientSide()) {
 						((WardenSoulItem) event.getEntity().getOffhandItem().getItem()).animationprocedure = animation;
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof CursedSoulItem animatable) {
+				animation = mainhandItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					CustomData.update(DataComponents.CUSTOM_DATA, event.getEntity().getMainHandItem(), tag -> tag.putString("geckoAnim", ""));
+					if (event.getEntity().level().isClientSide()) {
+						((CursedSoulItem) event.getEntity().getMainHandItem().getItem()).animationprocedure = animation;
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof CursedSoulItem animatable) {
+				animation = offhandItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					CustomData.update(DataComponents.CUSTOM_DATA, event.getEntity().getOffhandItem(), tag -> tag.putString("geckoAnim", ""));
+					if (event.getEntity().level().isClientSide()) {
+						((CursedSoulItem) event.getEntity().getOffhandItem().getItem()).animationprocedure = animation;
 					}
 				}
 			}

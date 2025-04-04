@@ -59,6 +59,8 @@ public class ForgeSmeltingProcedureProcedure {
 					Result = new ItemStack(RingcraftModItems.SCULK_RING.get()).copy();
 				} else if (ForgeSandRingRecipeProcedure.execute(world, x, y, z)) {
 					Result = new ItemStack(RingcraftModItems.SAND_RING.get()).copy();
+				} else if (ForgeCursedRingRecipeProcedure.execute(world, x, y, z)) {
+					Result = new ItemStack(RingcraftModItems.CURSED_RING.get()).copy();
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

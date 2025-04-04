@@ -47,6 +47,12 @@
         "2": "sand_ring"
       },
       "name": "sand"
+    },
+    "cursed": {
+      "map": {
+        "2": "cursed_ring"
+      },
+      "name": "cursed"
     }
   }
 }

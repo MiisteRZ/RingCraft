@@ -33,6 +33,7 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.BREEZE_SOUL.get());
 				tabData.accept(RingcraftModItems.ENDERMAN_SOUL.get());
 				tabData.accept(RingcraftModItems.WARDEN_SOUL.get());
+				tabData.accept(RingcraftModItems.CURSED_SOUL.get());
 				tabData.accept(RingcraftModItems.ICE_CRYSTAL.get());
 				tabData.accept(RingcraftModItems.SAND_GEM.get());
 				tabData.accept(RingcraftModItems.SEA_RING.get());
@@ -43,6 +44,7 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.TELEPORTATION_RING.get());
 				tabData.accept(RingcraftModItems.WIND_RING.get());
 				tabData.accept(RingcraftModItems.SAND_RING.get());
+				tabData.accept(RingcraftModItems.CURSED_RING.get());
 				tabData.accept(RingcraftModItems.ICE_KING_ENTITY_SPAWN_EGG.get());
 				tabData.accept(RingcraftModItems.KING_SANDSTORM_SPAWN_EGG.get());
 			}).build());
