@@ -1,6 +1,6 @@
 {
-  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "advancements.blaze_soul_advancement.descr": "Get the Soul of a Blaze",
+  "advancements.regular_ring_obtained.descr": "Forge a Basic Ring",
   "key.ringcraft.ring_3_binding": "Ring 3",
   "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
   "item.ringcraft.fire_ring": "Fire Ring",
@@ -10,8 +10,8 @@
   "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
   "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
   "gui.ringcraft.ring_forge_gui.label_ring_forge": "Ring Forge",
-  "item.ringcraft.sea_ring.description_0": "",
   "item.ringcraft.sculk_ring": "Sculk Ring",
+  "item.ringcraft.sea_ring.description_0": "",
   "item.ringcraft.regular_ring_item.description_0": "",
   "item.ringcraft.king_sandstorm_spawn_egg": "King Sandstorm Spawn Egg",
   "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",

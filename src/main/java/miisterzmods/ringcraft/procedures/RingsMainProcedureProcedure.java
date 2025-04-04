@@ -96,6 +96,7 @@ public class RingsMainProcedureProcedure {
 								_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20, 1, false, false));
 						}
 					} else if (ring.getItem() == RingcraftModItems.SAND_RING.get()) {
+						DeflectProjectilesAbilityProcedure.execute(world, x, y, z, entity);
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 20, 1, false, false));
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
