@@ -17,6 +17,7 @@ import miisterzmods.ringcraft.item.WindRingItem;
 import miisterzmods.ringcraft.item.WaterWalkRingItem;
 import miisterzmods.ringcraft.item.WardenSoulItem;
 import miisterzmods.ringcraft.item.VexSoulItem;
+import miisterzmods.ringcraft.item.TotemRingItem;
 import miisterzmods.ringcraft.item.TeleportationRingItem;
 import miisterzmods.ringcraft.item.SeaRingItem;
 import miisterzmods.ringcraft.item.SculkRingItem;
@@ -68,6 +69,7 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> SAND_RING = REGISTRY.register("sand_ring", SandRingItem::new);
 	public static final DeferredItem<Item> CURSED_SOUL = REGISTRY.register("cursed_soul", CursedSoulItem::new);
 	public static final DeferredItem<Item> CURSED_RING = REGISTRY.register("cursed_ring", CursedRingItem::new);
+	public static final DeferredItem<Item> TOTEM_RING = REGISTRY.register("totem_ring", TotemRingItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

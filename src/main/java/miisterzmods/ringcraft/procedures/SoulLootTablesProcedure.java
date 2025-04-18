@@ -53,7 +53,7 @@ public class SoulLootTablesProcedure {
 				}
 			}
 		} else if (entity instanceof EnderMan) {
-			if (1 == Mth.nextInt(RandomSource.create(), 1, 50) ? true : false) {
+			if (1 == Mth.nextInt(RandomSource.create(), 1, 40) ? true : false) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RingcraftModItems.ENDERMAN_SOUL.get()));
 					entityToSpawn.setPickUpDelay(10);
@@ -62,7 +62,7 @@ public class SoulLootTablesProcedure {
 				}
 			}
 		} else if (entity instanceof Vex) {
-			if (1 == Mth.nextInt(RandomSource.create(), 1, 25) ? true : false) {
+			if (1 == Mth.nextInt(RandomSource.create(), 1, 30) ? true : false) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RingcraftModItems.VEX_SOUL.get()));
 					entityToSpawn.setPickUpDelay(10);
@@ -71,7 +71,7 @@ public class SoulLootTablesProcedure {
 				}
 			}
 		} else if (entity instanceof IceKingEntityEntity) {
-			if (1 == Mth.nextInt(RandomSource.create(), 1, 3) ? true : false) {
+			if (1 == Mth.nextInt(RandomSource.create(), 1, 2) ? true : false) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RingcraftModItems.ICE_CRYSTAL.get()));
 					entityToSpawn.setPickUpDelay(10);
@@ -89,7 +89,7 @@ public class SoulLootTablesProcedure {
 				}
 			}
 		} else if (entity instanceof ElderGuardian) {
-			if (1 == Mth.nextInt(RandomSource.create(), 1, 5) ? true : false) {
+			if (1 == Mth.nextInt(RandomSource.create(), 1, 3) ? true : false) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RingcraftModItems.GUARDIAN_SOUL.get()));
 					entityToSpawn.setPickUpDelay(10);
@@ -107,7 +107,7 @@ public class SoulLootTablesProcedure {
 				}
 			}
 		} else if (entity instanceof KingSandstormEntity) {
-			if (1 == Mth.nextInt(RandomSource.create(), 1, 3) ? true : false) {
+			if (1 == Mth.nextInt(RandomSource.create(), 1, 2) ? true : false) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RingcraftModItems.SAND_GEM.get()));
 					entityToSpawn.setPickUpDelay(10);
@@ -116,7 +116,7 @@ public class SoulLootTablesProcedure {
 				}
 			}
 		} else if (entity instanceof Phantom || ("dinnerbone").equals(entity.getDisplayName().getString()) || entity instanceof WitherSkeleton) {
-			if (1 == Mth.nextInt(RandomSource.create(), 1, 50) ? true : false) {
+			if (1 == Mth.nextInt(RandomSource.create(), 1, 40) ? true : false) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(RingcraftModItems.CURSED_SOUL.get()));
 					entityToSpawn.setPickUpDelay(10);

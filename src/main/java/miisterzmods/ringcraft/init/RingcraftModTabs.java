@@ -44,6 +44,7 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.TELEPORTATION_RING.get());
 				tabData.accept(RingcraftModItems.WIND_RING.get());
 				tabData.accept(RingcraftModItems.SAND_RING.get());
+				tabData.accept(RingcraftModItems.TOTEM_RING.get());
 				tabData.accept(RingcraftModItems.CURSED_RING.get());
 				tabData.accept(RingcraftModItems.ICE_KING_ENTITY_SPAWN_EGG.get());
 				tabData.accept(RingcraftModItems.KING_SANDSTORM_SPAWN_EGG.get());

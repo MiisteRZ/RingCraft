@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ringcraft:gold_ring"
+    "ringcraft:gold_ring",
+    "ringcraft:totem_ring"
   ]
 }

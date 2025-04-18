@@ -53,6 +53,12 @@
         "2": "cursed_ring"
       },
       "name": "cursed"
+    },
+    "totem": {
+      "map": {
+        "2": "totem_ring"
+      },
+      "name": "totem"
     }
   }
 }
