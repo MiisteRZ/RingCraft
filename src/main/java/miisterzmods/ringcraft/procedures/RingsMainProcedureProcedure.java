@@ -112,11 +112,7 @@ public class RingsMainProcedureProcedure {
 						}
 					} else if (ring.getItem() == RingcraftModItems.CURSED_RING.get()) {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 1, false, false));
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 20, 1, false, false));
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.UNLUCK, 20, 1, false, false));
+							_entity.addEffect(new MobEffectInstance(RingcraftModMobEffects.CURSED_EFFECT, 20, 1, false, false));
 					}
 				}
 			}

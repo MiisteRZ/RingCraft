@@ -2823,6 +2823,19 @@
         ]
       },
       "path": "~/RingForgeProcedures/recipes/customrecipe"
+    },
+    {
+      "name": "CursedEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cursed_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/potion/CursedEffectMobEffect.java"
+        ]
+      },
+      "path": "~/RingsProcedures"
     }
   ],
   "variable_elements": [
@@ -2909,6 +2922,9 @@
     "ITEMS:mod:gems": [
       "CUSTOM:IceCrystal",
       "CUSTOM:SandGem"
+    ],
+    "ITEMS:minecraft:piglin_loved": [
+      "CUSTOM:GoldRing"
     ]
   },
   "tab_element_order": {
@@ -2954,6 +2970,7 @@
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
+      "effect.ringcraft.cursed_effect": "Cursed",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
@@ -3030,6 +3047,7 @@
       "key.ringcraft.rings_menu_binding": "Pierścienie",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
+      "effect.ringcraft.cursed_effect": "Cursed",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
       "advancements.reinforced_iron_ingot_obtained.title": "Zaawansowany sprzęt",
@@ -3107,6 +3125,7 @@
       "key.ringcraft.rings_menu_binding": "Menu Cincin",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
+      "effect.ringcraft.cursed_effect": "Cursed",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
@@ -3183,6 +3202,7 @@
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
+      "effect.ringcraft.cursed_effect": "Cursed",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
       "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
@@ -3260,6 +3280,7 @@
       "key.ringcraft.rings_menu_binding": "Menu de Anéis",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
+      "effect.ringcraft.cursed_effect": "Cursed",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Anéis Mágicos",
       "advancements.reinforced_iron_ingot_obtained.title": "Hardware avançado",
@@ -3336,6 +3357,7 @@
       "key.ringcraft.rings_menu_binding": "Gyűrűk menü",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
+      "effect.ringcraft.cursed_effect": "Cursed",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Varázsgyűrűk",
       "advancements.reinforced_iron_ingot_obtained.title": "Speciális hardver",
@@ -3412,6 +3434,7 @@
       "key.ringcraft.rings_menu_binding": "Ring Menu",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
+      "effect.ringcraft.cursed_effect": "Cursed",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringe",
       "advancements.reinforced_iron_ingot_obtained.title": "Fortgeschrittene Metallurgie",
@@ -3489,6 +3512,7 @@
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "C^rse% R*ng",
+      "effect.ringcraft.cursed_effect": "Cursed",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
@@ -3568,6 +3592,7 @@
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
+      "effect.ringcraft.cursed_effect": "Cursed",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
@@ -3644,6 +3669,7 @@
       "key.ringcraft.rings_menu_binding": "Menú de Anillos RingCraft",
       "advancements.vex_soul_advancement.descr": "Consigue el Alma de un Vex",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
+      "effect.ringcraft.cursed_effect": "Cursed",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Anillos Mágicos",
       "advancements.reinforced_iron_ingot_obtained.title": "Tecnología Avanzada",
@@ -3651,7 +3677,7 @@
       "item.ringcraft.sea_ring.description_0": "",
       "item.ringcraft.sculk_ring": "Anillo Sculk",
       "item.ringcraft.regular_ring_item.description_0": "",
-      "item.ringcraft.king_sandstorm_spawn_egg": "King Sandstorm Spawn Egg",
+      "item.ringcraft.king_sandstorm_spawn_egg": "Rey Sandstorm Spawn Egg",
       "key.ringcraft.fire_ring_shoot_binding": "Atajo de los Poderes de los Anillos",
       "item.ringcraft.reinforced_iron_ingot": "Lingote de Hierro Reforzado",
       "item.ringcraft.ice_king_entity_spawn_egg": "Rey Helado Spawn Egg",
@@ -3677,11 +3703,11 @@
       "advancements.blaze_soul_advancement.title": "Poder Ígneo!",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Cristal Helado",
-      "item.ringcraft.sand_gem": "Sand Gem",
+      "item.ringcraft.sand_gem": "Gema de Arena",
       "item.ringcraft.breeze_soul": "Alma de Brisa",
       "item.ringcraft.blaze_soul": "Alma de Blaze",
       "block.ringcraft.reinforced_furnance": "Horno Reforzado",
-      "item.ringcraft.cursed_soul": "Warden Soul",
+      "item.ringcraft.cursed_soul": "Alma de Warden",
       "advancements.breeze_soul_advancement.descr": "Consigue el alma de una Brisa",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.sand_ring.description_0": "",
@@ -3690,7 +3716,7 @@
       "advancements.breeze_soul_advancement.title": "Siente el Poder del Viento!",
       "key.ringcraft.ring_2_binding": "Anillo 2",
       "block.ringcraft.reinforced_furnance.description_0": "Texture is a placeholder",
-      "item.ringcraft.sand_ring": "Sculk Ring",
+      "item.ringcraft.sand_ring": "Anillo de Arena",
       "item.ringcraft.cursed_ring.description_0": "",
       "effect.ringcraft.frost_resistance": "Frost Resistance",
       "key.ringcraft.ring_power_keybind": "Poder del Anillo",
@@ -3721,6 +3747,7 @@
       "key.ringcraft.rings_menu_binding": "Ringen Menu",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
+      "effect.ringcraft.cursed_effect": "Cursed",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringen",
       "advancements.reinforced_iron_ingot_obtained.title": "Geavanceerde IJzerwaren vekrijgen",
@@ -3798,6 +3825,7 @@
       "key.ringcraft.rings_menu_binding": "Menu de Anéis",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
+      "effect.ringcraft.cursed_effect": "Cursed",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Anéis Mágicos",
       "advancements.reinforced_iron_ingot_obtained.title": "Hardware avançado",

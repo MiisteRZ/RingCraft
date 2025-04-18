@@ -36,23 +36,29 @@ public class DeleteRingsOnClearProcedure {
 			return;
 		if ((command).equals("clear")) {
 			RingcraftMod.queueServerWork(1, () -> {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##").format(entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot0.getCount()
-							+ entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot1.getCount() + entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot2.getCount()) + " Rings Cleared")), false);
-				{
-					RingcraftModVariables.PlayerVariables _vars = entity.getData(RingcraftModVariables.PLAYER_VARIABLES);
-					_vars.ringSlot0 = new ItemStack(Blocks.AIR).copy();
-					_vars.syncPlayerVariables(entity);
-				}
-				{
-					RingcraftModVariables.PlayerVariables _vars = entity.getData(RingcraftModVariables.PLAYER_VARIABLES);
-					_vars.ringSlot1 = new ItemStack(Blocks.AIR).copy();
-					_vars.syncPlayerVariables(entity);
-				}
-				{
-					RingcraftModVariables.PlayerVariables _vars = entity.getData(RingcraftModVariables.PLAYER_VARIABLES);
-					_vars.ringSlot2 = new ItemStack(Blocks.AIR).copy();
-					_vars.syncPlayerVariables(entity);
+				if (entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot0.getCount() + entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot1.getCount()
+						+ entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot2.getCount() > 0) {
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal((new java.text.DecimalFormat("##").format(entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot0.getCount()
+								+ entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot1.getCount() + entity.getData(RingcraftModVariables.PLAYER_VARIABLES).ringSlot2.getCount()) + " Rings Cleared")), false);
+					{
+						RingcraftModVariables.PlayerVariables _vars = entity.getData(RingcraftModVariables.PLAYER_VARIABLES);
+						_vars.ringSlot0 = new ItemStack(Blocks.AIR).copy();
+						_vars.syncPlayerVariables(entity);
+					}
+					{
+						RingcraftModVariables.PlayerVariables _vars = entity.getData(RingcraftModVariables.PLAYER_VARIABLES);
+						_vars.ringSlot1 = new ItemStack(Blocks.AIR).copy();
+						_vars.syncPlayerVariables(entity);
+					}
+					{
+						RingcraftModVariables.PlayerVariables _vars = entity.getData(RingcraftModVariables.PLAYER_VARIABLES);
+						_vars.ringSlot2 = new ItemStack(Blocks.AIR).copy();
+						_vars.syncPlayerVariables(entity);
+					}
+				} else {
+					if (entity instanceof Player _player && !_player.level().isClientSide())
+						_player.displayClientMessage(Component.literal("No Rings to Clear"), false);
 				}
 			});
 		}

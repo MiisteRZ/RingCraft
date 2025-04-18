@@ -1,0 +1,70 @@
+{
+  "_fv": 73,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Cursed",
+    "icon": "cursed",
+    "color": {
+      "value": -10092442,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ARMOR_TOUGHNESS"
+        },
+        "amount": -1.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "ARMOR"
+        },
+        "amount": -1.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": -2.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_KNOCKBACK"
+        },
+        "amount": -0.5,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "LUCK"
+        },
+        "amount": -100.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "FALL_DAMAGE_MULTIPLIER"
+        },
+        "amount": 1.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "SCALE"
+        },
+        "amount": -0.2,
+        "operation": "ADD_VALUE"
+      }
+    ]
+  }
+}
