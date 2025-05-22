@@ -6,14 +6,19 @@ package miisterzmods.ringcraft.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import miisterzmods.ringcraft.RingcraftMod;
 
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class RingcraftModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RingcraftMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RING_CRAFT_CREATIVE_TAB = REGISTRY.register("ring_craft_creative_tab",
@@ -49,4 +54,21 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.ICE_KING_ENTITY_SPAWN_EGG.get());
 				tabData.accept(RingcraftModItems.KING_SANDSTORM_SPAWN_EGG.get());
 			}).build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(RingcraftModBlocks.ROZANI_WOOD.get().asItem());
+			tabData.accept(RingcraftModBlocks.ROZANI_LOG.get().asItem());
+			tabData.accept(RingcraftModBlocks.ROZANI_PLANKS.get().asItem());
+			tabData.accept(RingcraftModBlocks.ROZANI_STAIRS.get().asItem());
+			tabData.accept(RingcraftModBlocks.ROZANI_SLAB.get().asItem());
+			tabData.accept(RingcraftModBlocks.ROZANI_FENCE.get().asItem());
+			tabData.accept(RingcraftModBlocks.ROZANI_FENCE_GATE.get().asItem());
+			tabData.accept(RingcraftModBlocks.ROZANI_PRESSURE_PLATE.get().asItem());
+			tabData.accept(RingcraftModBlocks.ROZANI_BUTTON.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(RingcraftModBlocks.ROZANI_LEAVES.get().asItem());
+		}
+	}
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "ringcraft:rozani_planks"
+    }
+  ],
+  "result": {
+    "id": "ringcraft:rozani_button",
+    "count": 1
+  }
+}

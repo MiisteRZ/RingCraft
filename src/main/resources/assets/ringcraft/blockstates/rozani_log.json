@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ringcraft:block/rozani_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ringcraft:block/rozani_log"
+    },
+    "axis=z": {
+      "model": "ringcraft:block/rozani_log",
+      "x": 90
+    }
+  }
+}

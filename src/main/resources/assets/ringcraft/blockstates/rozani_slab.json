@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ringcraft:block/rozani_slab"
+    },
+    "type=top": {
+      "model": "ringcraft:block/rozani_slab_top"
+    },
+    "type=double": {
+      "model": "ringcraft:block/rozani_slab_full"
+    }
+  }
+}

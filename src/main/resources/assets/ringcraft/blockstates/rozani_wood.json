@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ringcraft:block/rozani_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ringcraft:block/rozani_wood"
+    },
+    "axis=z": {
+      "model": "ringcraft:block/rozani_wood",
+      "x": 90
+    }
+  }
+}
