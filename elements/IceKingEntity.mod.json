@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Ice King",
     "mobLabel": "Ice King",
-    "mobModelTexture": "icekingtexture.png",
+    "mobModelTexture": "king_ice.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 2.5

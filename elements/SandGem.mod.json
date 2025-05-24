@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 1,
-    "texture": "sand_gem",
+    "texture": "gem_sand",
     "customModelName": "sand_gem:default",
     "customProperties": {},
     "states": [],

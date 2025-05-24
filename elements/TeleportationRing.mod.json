@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 1,
-    "texture": "teleportation_ring",
+    "texture": "ring_teleportation",
     "customModelName": "regularring:teleportation",
     "customProperties": {},
     "states": [],

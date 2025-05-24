@@ -1,6 +1,6 @@
 {
   "parent": "ringcraft:displaysettings/warden_soul",
   "textures": {
-    "layer0": "ringcraft:item/warden_soul"
+    "layer0": "ringcraft:item/soul_warden"
   }
 }

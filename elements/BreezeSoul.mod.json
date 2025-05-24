@@ -3,7 +3,7 @@
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
-    "texture": "breeze_soul",
+    "texture": "soul_breeze",
     "name": "Breeze Soul",
     "idle": "animation.breeze.soul.idle",
     "rarity": "RARE",

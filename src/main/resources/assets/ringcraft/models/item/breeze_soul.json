@@ -1,6 +1,6 @@
 {
   "parent": "ringcraft:displaysettings/breeze_soul",
   "textures": {
-    "layer0": "ringcraft:item/breeze_soul"
+    "layer0": "ringcraft:item/soul_breeze"
   }
 }

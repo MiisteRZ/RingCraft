@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 1,
-    "texture": "flight_ring",
+    "texture": "ring_flight",
     "customModelName": "flightring:default",
     "customProperties": {},
     "states": [],

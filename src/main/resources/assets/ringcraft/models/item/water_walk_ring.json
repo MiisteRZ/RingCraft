@@ -1,6 +1,6 @@
 {
   "parent": "ringcraft:displaysettings/water_walk_ring",
   "textures": {
-    "layer0": "ringcraft:item/waterwalk_ring_texture"
+    "layer0": "ringcraft:item/ring_waterwalk"
   }
 }

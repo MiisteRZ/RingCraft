@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 1,
-    "texture": "wind_ring",
+    "texture": "ring_wind",
     "customModelName": "regularring:wind",
     "customProperties": {},
     "states": [],

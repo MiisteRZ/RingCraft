@@ -19,6 +19,6 @@ public class BreezeSoulItemModel extends GeoModel<BreezeSoulItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(BreezeSoulItem animatable) {
-		return ResourceLocation.parse("ringcraft:textures/item/breeze_soul.png");
+		return ResourceLocation.parse("ringcraft:textures/item/soul_breeze.png");
 	}
 }

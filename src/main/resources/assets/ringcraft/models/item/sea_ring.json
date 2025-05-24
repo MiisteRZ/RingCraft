@@ -2,6 +2,6 @@
   "parent": "ringcraft:custom/regularring",
   "textures": {
     "2": "ringcraft:block/sea_ring",
-    "particle": "ringcraft:item/sea_ring"
+    "particle": "ringcraft:item/ring_sea"
   }
 }

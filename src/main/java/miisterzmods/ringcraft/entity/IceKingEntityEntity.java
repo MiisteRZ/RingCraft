@@ -80,7 +80,7 @@ public class IceKingEntityEntity extends Monster implements GeoEntity {
 		super.defineSynchedData(builder);
 		builder.define(SHOOT, false);
 		builder.define(ANIMATION, "undefined");
-		builder.define(TEXTURE, "icekingtexture");
+		builder.define(TEXTURE, "king_ice");
 	}
 
 	public void setTexture(String texture) {

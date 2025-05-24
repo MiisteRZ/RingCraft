@@ -1,6 +1,6 @@
 {
   "parent": "ringcraft:displaysettings/guardian_soul",
   "textures": {
-    "layer0": "ringcraft:item/guardian_soul"
+    "layer0": "ringcraft:item/soul_guardian"
   }
 }
