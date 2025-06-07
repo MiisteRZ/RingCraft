@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ringcraft:fire_ring",
+    "ringcraft:flight_ring",
+    "ringcraft:teleportation_ring",
+    "ringcraft:water_walk_ring",
+    "ringcraft:sea_ring"
+  ]
+}

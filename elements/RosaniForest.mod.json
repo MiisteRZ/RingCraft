@@ -7,25 +7,25 @@
       "value": "Blocks.GRASS"
     },
     "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "CUSTOM:Muckroot"
     },
     "underwaterBlock": {
       "value": "Blocks.FLOWING_WATER"
     },
     "airColor": {
-      "value": -6795647,
+      "value": -7909736,
       "falpha": 0.0
     },
     "fogColor": {
-      "value": -13057,
+      "value": -3821569,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -39169,
+      "value": -5221712,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -52225,
+      "value": -5488980,
       "falpha": 0.0
     },
     "waterColor": {

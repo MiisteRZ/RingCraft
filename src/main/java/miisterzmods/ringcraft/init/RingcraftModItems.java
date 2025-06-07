@@ -26,6 +26,7 @@ import miisterzmods.ringcraft.item.SandGemItem;
 import miisterzmods.ringcraft.item.ReinforcedRawIronItem;
 import miisterzmods.ringcraft.item.ReinforcedIronIngotItem;
 import miisterzmods.ringcraft.item.RegularRingItemItem;
+import miisterzmods.ringcraft.item.RealmsPortalItem;
 import miisterzmods.ringcraft.item.IceCrystalItem;
 import miisterzmods.ringcraft.item.GuardianSoulItem;
 import miisterzmods.ringcraft.item.GoldRingItem;
@@ -80,6 +81,10 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> ROZANI_FENCE_GATE = block(RingcraftModBlocks.ROZANI_FENCE_GATE);
 	public static final DeferredItem<Item> ROZANI_PRESSURE_PLATE = block(RingcraftModBlocks.ROZANI_PRESSURE_PLATE);
 	public static final DeferredItem<Item> ROZANI_BUTTON = block(RingcraftModBlocks.ROZANI_BUTTON);
+	public static final DeferredItem<Item> MISTROCK = block(RingcraftModBlocks.MISTROCK);
+	public static final DeferredItem<Item> RING_ALTAR_BLOCK = block(RingcraftModBlocks.RING_ALTAR_BLOCK);
+	public static final DeferredItem<Item> MUCKROOT = block(RingcraftModBlocks.MUCKROOT);
+	public static final DeferredItem<Item> REALMS_PORTAL = REGISTRY.register("realms_portal", RealmsPortalItem::new);
 
 	// Start of user code block custom items
 	// End of user code block custom items

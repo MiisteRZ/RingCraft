@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "ringcraft:ring_altar_block",
+    "ringcraft:mistrock",
     "ringcraft:ring_forge_block",
     "ringcraft:reinforced_iron_block",
     "ringcraft:reinforced_iron_deepslate_block",

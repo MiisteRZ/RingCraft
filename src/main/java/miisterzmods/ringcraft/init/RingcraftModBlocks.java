@@ -20,10 +20,13 @@ import miisterzmods.ringcraft.block.RozaniFenceGateBlock;
 import miisterzmods.ringcraft.block.RozaniFenceBlock;
 import miisterzmods.ringcraft.block.RozaniButtonBlock;
 import miisterzmods.ringcraft.block.RingForgeBlockBlock;
+import miisterzmods.ringcraft.block.RingAltarBlockBlock;
 import miisterzmods.ringcraft.block.ReinforcedIronStoneBlockBlock;
 import miisterzmods.ringcraft.block.ReinforcedIronDeepslateBlockBlock;
 import miisterzmods.ringcraft.block.ReinforcedIronBlockBlock;
 import miisterzmods.ringcraft.block.ReinforcedFurnanceBlock;
+import miisterzmods.ringcraft.block.MuckrootBlock;
+import miisterzmods.ringcraft.block.MistrockBlock;
 import miisterzmods.ringcraft.RingcraftMod;
 
 public class RingcraftModBlocks {
@@ -43,6 +46,9 @@ public class RingcraftModBlocks {
 	public static final DeferredBlock<Block> ROZANI_FENCE_GATE = REGISTRY.register("rozani_fence_gate", RozaniFenceGateBlock::new);
 	public static final DeferredBlock<Block> ROZANI_PRESSURE_PLATE = REGISTRY.register("rozani_pressure_plate", RozaniPressurePlateBlock::new);
 	public static final DeferredBlock<Block> ROZANI_BUTTON = REGISTRY.register("rozani_button", RozaniButtonBlock::new);
+	public static final DeferredBlock<Block> MISTROCK = REGISTRY.register("mistrock", MistrockBlock::new);
+	public static final DeferredBlock<Block> RING_ALTAR_BLOCK = REGISTRY.register("ring_altar_block", RingAltarBlockBlock::new);
+	public static final DeferredBlock<Block> MUCKROOT = REGISTRY.register("muckroot", MuckrootBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

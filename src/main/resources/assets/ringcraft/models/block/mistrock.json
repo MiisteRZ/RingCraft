@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ringcraft:block/mistrock",
+    "particle": "ringcraft:block/mistrock"
+  },
+  "render_type": "solid"
+}
