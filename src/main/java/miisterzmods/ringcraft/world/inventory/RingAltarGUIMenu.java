@@ -18,12 +18,13 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import miisterzmods.ringcraft.init.RingcraftModMenus;
-import miisterzmods.ringcraft.init.RingcraftModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -90,13 +91,18 @@ public class RingAltarGUIMenu extends AbstractContainerMenu implements Supplier<
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return RingcraftModItems.REGULAR_RING_ITEM.get() == stack.getItem();
+				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:altar_usable")));
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 65, 20) {
 			private final int slot = 1;
 			private int x = RingAltarGUIMenu.this.x;
 			private int y = RingAltarGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")));
+			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 92, 92) {
 			private final int slot = 2;
@@ -112,16 +118,31 @@ public class RingAltarGUIMenu extends AbstractContainerMenu implements Supplier<
 			private final int slot = 3;
 			private int x = RingAltarGUIMenu.this.x;
 			private int y = RingAltarGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")));
+			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 65, 65) {
 			private final int slot = 4;
 			private int x = RingAltarGUIMenu.this.x;
 			private int y = RingAltarGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")));
+			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 119, 65) {
 			private final int slot = 5;
 			private int x = RingAltarGUIMenu.this.x;
 			private int y = RingAltarGUIMenu.this.y;
+
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")));
+			}
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)

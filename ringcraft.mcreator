@@ -3569,6 +3569,38 @@
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "ExampleRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "example_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ExampleRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingAltar/Recipes/Recipes"
     }
   ],
   "variable_elements": [
@@ -3611,26 +3643,22 @@
   ],
   "sound_elements": [],
   "tag_elements": {
-    "ITEMS:mod:furnacefuel": [
-      "Items.COAL#0"
-    ],
-    "ITEMS:minecraft:beacon_payment_items": [
-      "CUSTOM:ReinforcedIronIngot"
-    ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:ReinforcedIronBlock",
       "~CUSTOM:ReinforcedIronDeepslateBlock",
       "~CUSTOM:ReinforcedIronStoneBlock"
     ],
+    "ITEMS:minecraft:beacon_payment_items": [
+      "CUSTOM:ReinforcedIronIngot"
+    ],
+    "ITEMS:mod:furnacefuel": [
+      "Items.COAL#0"
+    ],
     "ITEMS:mod:ringtoforge": [
       "CUSTOM:RegularRingItem"
     ],
     "ITEMS:mod:altar_usable": [
-      "CUSTOM:FireRing",
-      "CUSTOM:FlightRing",
-      "CUSTOM:TeleportationRing",
-      "CUSTOM:WaterWalkRing",
-      "CUSTOM:SeaRing"
+      "Items.END_CRYSTAL"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
       "~CUSTOM:Muckroot",
@@ -3868,8 +3896,8 @@
       "item.ringcraft.warden_soul": "Warden Soul",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
       "block.ringcraft.rozani_leaves": "Rozani Leaves",
-      "advancements.enderman_soul_advancement.descr": "Get the Soul of an Enderman",
       "entity.ringcraft.ice_king_entity": "Ice King",
+      "advancements.enderman_soul_advancement.descr": "Get the Soul of an Enderman",
       "item.ringcraft.fire_ring.description_0": "",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
       "block.ringcraft.rozani_log": "Rozani Log",
@@ -3882,8 +3910,8 @@
       "item.ringcraft.sand_gem": "Sand Gem",
       "item.ringcraft.realms_portal": "Realms Portal",
       "item.ringcraft.blaze_soul": "Blaze Soul",
-      "item.ringcraft.cursed_soul": "C%r#ed S0u)",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
+      "item.ringcraft.cursed_soul": "C%r#ed S0u)",
       "gui.ringcraft.ring_altar_gui.label_ring_forge": "Ring Altar",
       "biome.ringcraft.rosani_forest": "Rosani Forest",
       "item.ringcraft.flight_ring": "Flight Ring",
@@ -3894,8 +3922,8 @@
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "item.ringcraft.sea_ring": "Sea Ring",
       "item.ringcraft.gold_ring": "Gold Ring",
-      "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
+      "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
       "block.ringcraft.rozani_wood": "Rozani Wood",
       "gui.ringcraft.rings_gui.label_3": "3",
       "item.ringcraft.gold_ring.description_0": "",
