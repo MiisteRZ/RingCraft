@@ -3,7 +3,7 @@
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
-    "texture": "waterwalk_ring_texture",
+    "texture": "ring_waterwalk",
     "name": "Frost Ring",
     "idle": "animation",
     "rarity": "EPIC",

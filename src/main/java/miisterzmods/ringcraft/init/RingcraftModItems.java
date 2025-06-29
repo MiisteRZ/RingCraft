@@ -26,6 +26,7 @@ import miisterzmods.ringcraft.item.SandGemItem;
 import miisterzmods.ringcraft.item.ReinforcedRawIronItem;
 import miisterzmods.ringcraft.item.ReinforcedIronIngotItem;
 import miisterzmods.ringcraft.item.RegularRingItemItem;
+import miisterzmods.ringcraft.item.RealmsPortalItem;
 import miisterzmods.ringcraft.item.IceCrystalItem;
 import miisterzmods.ringcraft.item.GuardianSoulItem;
 import miisterzmods.ringcraft.item.GoldRingItem;
@@ -70,6 +71,20 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> CURSED_SOUL = REGISTRY.register("cursed_soul", CursedSoulItem::new);
 	public static final DeferredItem<Item> CURSED_RING = REGISTRY.register("cursed_ring", CursedRingItem::new);
 	public static final DeferredItem<Item> TOTEM_RING = REGISTRY.register("totem_ring", TotemRingItem::new);
+	public static final DeferredItem<Item> RING_ALTAR_BLOCK = block(RingcraftModBlocks.RING_ALTAR_BLOCK);
+	public static final DeferredItem<Item> REALMS_PORTAL = REGISTRY.register("realms_portal", RealmsPortalItem::new);
+	public static final DeferredItem<Item> ROZANI_STAIRS = block(RingcraftModBlocks.ROZANI_STAIRS);
+	public static final DeferredItem<Item> ROZANI_LOG = block(RingcraftModBlocks.ROZANI_LOG);
+	public static final DeferredItem<Item> ROZANI_FENCE = block(RingcraftModBlocks.ROZANI_FENCE);
+	public static final DeferredItem<Item> ROZANI_LEAVES = block(RingcraftModBlocks.ROZANI_LEAVES);
+	public static final DeferredItem<Item> ROZANI_PLANKS = block(RingcraftModBlocks.ROZANI_PLANKS);
+	public static final DeferredItem<Item> ROZANI_PRESSURE_PLATE = block(RingcraftModBlocks.ROZANI_PRESSURE_PLATE);
+	public static final DeferredItem<Item> ROZANI_BUTTON = block(RingcraftModBlocks.ROZANI_BUTTON);
+	public static final DeferredItem<Item> ROZANI_WOOD = block(RingcraftModBlocks.ROZANI_WOOD);
+	public static final DeferredItem<Item> MUCKROOT = block(RingcraftModBlocks.MUCKROOT);
+	public static final DeferredItem<Item> ROZANI_FENCE_GATE = block(RingcraftModBlocks.ROZANI_FENCE_GATE);
+	public static final DeferredItem<Item> ROZANI_SLAB = block(RingcraftModBlocks.ROZANI_SLAB);
+	public static final DeferredItem<Item> MISTROCK = block(RingcraftModBlocks.MISTROCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

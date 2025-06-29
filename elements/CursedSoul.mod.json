@@ -3,7 +3,7 @@
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
-    "texture": "cursed_soul",
+    "texture": "soul_cursed",
     "name": "C%r#ed S0u)",
     "idle": "animation.cursed.soul.idle",
     "rarity": "RARE",

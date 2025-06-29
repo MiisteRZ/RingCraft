@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ringcraft:block/rozani_log_top",
+    "up": "ringcraft:block/rozani_log_top",
+    "north": "ringcraft:block/rozani_log_side",
+    "east": "ringcraft:block/rozani_log_side",
+    "south": "ringcraft:block/rozani_log_side",
+    "west": "ringcraft:block/rozani_log_side",
+    "particle": "ringcraft:block/rozani_log_top"
+  },
+  "render_type": "solid"
+}

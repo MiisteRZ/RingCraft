@@ -1,6 +1,6 @@
 {
   "parent": "ringcraft:displaysettings/vex_soul",
   "textures": {
-    "layer0": "ringcraft:item/vex_soul"
+    "layer0": "ringcraft:item/soul_vex"
   }
 }

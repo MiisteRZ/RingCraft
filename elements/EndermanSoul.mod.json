@@ -3,7 +3,7 @@
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
-    "texture": "enderman_soul",
+    "texture": "soul_enderman",
     "name": "Enderman Soul",
     "idle": "animation.enderman.soul.idle",
     "rarity": "RARE",

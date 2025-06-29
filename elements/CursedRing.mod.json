@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 1,
-    "texture": "cursed_ring",
+    "texture": "ring_cursed",
     "customModelName": "regularring:cursed",
     "customProperties": {},
     "states": [],

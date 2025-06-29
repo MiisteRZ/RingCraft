@@ -3,7 +3,7 @@
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
-    "texture": "vex_soul",
+    "texture": "soul_vex",
     "name": "Vex Soul",
     "idle": "animation.vex.soul.idle",
     "rarity": "RARE",

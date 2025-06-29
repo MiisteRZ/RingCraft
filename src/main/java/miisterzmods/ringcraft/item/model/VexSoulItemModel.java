@@ -19,6 +19,6 @@ public class VexSoulItemModel extends GeoModel<VexSoulItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(VexSoulItem animatable) {
-		return ResourceLocation.parse("ringcraft:textures/item/vex_soul.png");
+		return ResourceLocation.parse("ringcraft:textures/item/soul_vex.png");
 	}
 }

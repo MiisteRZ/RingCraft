@@ -2917,6 +2917,690 @@
         ]
       },
       "path": "~/RingsProcedures"
+    },
+    {
+      "name": "RingAltarBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring_altar_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/item/ring_altar_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/ring_altar_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/entity/RingAltarBlockBlockEntity.java",
+          "src/main/java/miisterzmods/ringcraft/block/RingAltarBlockBlock.java",
+          "src/main/resources/assets/ringcraft/blockstates/ring_altar_block.json",
+          "src/main/resources/assets/ringcraft/models/block/ring_altar_block.json"
+        ]
+      },
+      "path": "~/Blocks/Ring Altar"
+    },
+    {
+      "name": "RozaniPlanksLogRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_planks_log_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/rozani_planks_log_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RealmsPortal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "realms_portal",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/item/RealmsPortalItem.java",
+          "src/main/resources/assets/ringcraft/models/item/realms_portal.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RozaniStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_stairs",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/block/RozaniStairsBlock.java",
+          "src/main/resources/assets/ringcraft/blockstates/rozani_stairs.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_stairs_outer.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_stairs.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_stairs_inner.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_stairs.json",
+          "src/main/resources/assets/ringcraft/models/item/rozani_stairs.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RozaniFenceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_fence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/rozani_fence_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "ExampleRecipe",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "example_recipe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/ExampleRecipeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingAltar/Recipes/Recipes"
+    },
+    {
+      "name": "RozaniLog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/item/rozani_log.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_log.json",
+          "src/main/java/miisterzmods/ringcraft/block/RozaniLogBlock.java",
+          "src/main/resources/assets/ringcraft/blockstates/rozani_log.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_log.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RozaniWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/rozani_wood_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RozaniFenceGateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_fence_gate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/rozani_fence_gate_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "AltarParticlesProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_particles_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/AltarParticlesProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingAltar"
+    },
+    {
+      "name": "RosaniForest",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rosani_forest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/worldgen/biome/rosani_forest.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/rosani_forest_tree.json",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/rosani_forest_tree.json",
+          "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/RosaniForestTrunkDecorator.java",
+          "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/RosaniForestLeaveDecorator.java",
+          "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/RosaniForestFruitDecorator.java"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "TheSecretRealms",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_secret_realms",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/dimension/the_secret_realms.json",
+          "src/main/java/miisterzmods/ringcraft/world/dimension/TheSecretRealmsDimension.java",
+          "src/main/resources/data/ringcraft/dimension_type/the_secret_realms.json"
+        ]
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "RozaniButtonRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_button_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/rozani_button_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RozaniPressurePlateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_pressure_plate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/rozani_pressure_plate_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RozaniStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/rozani_stairs_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RozaniStickRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/rozani_stick_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "AltarRecipeCheck",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_recipe_check",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/AltarRecipeCheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingAltar/Recipes"
+    },
+    {
+      "name": "RealmsPortalRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "realms_portal_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/RealmsPortalRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RozaniFence",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/block/rozani_fence_post.json",
+          "src/main/resources/assets/ringcraft/models/item/rozani_fence.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_fence.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_fence.json",
+          "src/main/java/miisterzmods/ringcraft/block/RozaniFenceBlock.java",
+          "src/main/resources/assets/ringcraft/blockstates/rozani_fence.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_fence_inventory.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RozaniLeaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_leaves.json",
+          "src/main/resources/assets/ringcraft/blockstates/rozani_leaves.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_leaves.json",
+          "src/main/resources/assets/ringcraft/models/item/rozani_leaves.json",
+          "src/main/java/miisterzmods/ringcraft/block/RozaniLeavesBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RozaniPlanks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_planks",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/block/RozaniPlanksBlock.java",
+          "src/main/resources/assets/ringcraft/models/block/rozani_planks.json",
+          "src/main/resources/assets/ringcraft/models/item/rozani_planks.json",
+          "src/main/resources/assets/ringcraft/blockstates/rozani_planks.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_planks.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RozaniPressurePlate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/block/RozaniPressurePlateBlock.java",
+          "src/main/resources/assets/ringcraft/models/item/rozani_pressure_plate.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_pressure_plate_down.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_pressure_plate.json",
+          "src/main/resources/assets/ringcraft/blockstates/rozani_pressure_plate.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_pressure_plate.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RozaniPlanksWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_planks_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/rozani_planks_wood_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RozaniSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/rozani_slab_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RozaniButton",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/block/rozani_button.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_button_inventory.json",
+          "src/main/java/miisterzmods/ringcraft/block/RozaniButtonBlock.java",
+          "src/main/resources/assets/ringcraft/models/item/rozani_button.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_button_pressed.json",
+          "src/main/resources/assets/ringcraft/blockstates/rozani_button.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_button.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "RingAltarGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring_altar_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/world/inventory/RingAltarGUIMenu.java",
+          "src/main/java/miisterzmods/ringcraft/client/gui/RingAltarGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "RozaniWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_wood.json",
+          "src/main/resources/assets/ringcraft/blockstates/rozani_wood.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_wood.json",
+          "src/main/java/miisterzmods/ringcraft/block/RozaniWoodBlock.java",
+          "src/main/resources/assets/ringcraft/models/item/rozani_wood.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "AltarONBlockState",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_on_block_state",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/block/altar_on_block_state_blockstate_0.json"
+        ]
+      },
+      "path": "~/Blocks/Ring Altar"
+    },
+    {
+      "name": "AltarWorkingProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_working_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/AltarWorkingProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingAltar"
+    },
+    {
+      "name": "Muckroot",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muckroot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/item/muckroot.json",
+          "src/main/java/miisterzmods/ringcraft/block/MuckrootBlock.java",
+          "src/main/resources/assets/ringcraft/models/block/muckroot.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/muckroot.json",
+          "src/main/resources/assets/ringcraft/blockstates/muckroot.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "RozaniFenceGate",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/block/rozani_fence_gate.json",
+          "src/main/resources/assets/ringcraft/models/item/rozani_fence_gate.json",
+          "src/main/resources/assets/ringcraft/blockstates/rozani_fence_gate.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_fence_gate_wall.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_fence_gate_wall_open.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_fence_gate_open.json",
+          "src/main/java/miisterzmods/ringcraft/block/RozaniFenceGateBlock.java",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_fence_gate.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "AltarOnBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_on_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/AltarOnBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingAltar"
+    },
+    {
+      "name": "AltarOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/AltarOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingAltar"
+    },
+    {
+      "name": "RozaniSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/block/rozani_slab_full.json",
+          "src/main/resources/assets/ringcraft/blockstates/rozani_slab.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_slab_top.json",
+          "src/main/java/miisterzmods/ringcraft/block/RozaniSlabBlock.java",
+          "src/main/resources/assets/ringcraft/models/block/rozani_slab.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_slab.json",
+          "src/main/resources/assets/ringcraft/models/item/rozani_slab.json"
+        ]
+      },
+      "path": "~/Blocks/Rozani"
+    },
+    {
+      "name": "AltarFuelProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_fuel_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/AltarFuelProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/RingAltar"
+    },
+    {
+      "name": "Mistrock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mistrock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/loot_table/blocks/mistrock.json",
+          "src/main/java/miisterzmods/ringcraft/block/MistrockBlock.java",
+          "src/main/resources/assets/ringcraft/blockstates/mistrock.json",
+          "src/main/resources/assets/ringcraft/models/item/mistrock.json",
+          "src/main/resources/assets/ringcraft/models/block/mistrock.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [
@@ -2962,6 +3646,24 @@
     "ITEMS:mod:furnacefuel": [
       "Items.COAL#0"
     ],
+    "ITEMS:minecraft:beacon_payment_items": [
+      "CUSTOM:ReinforcedIronIngot"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:ReinforcedIronBlock",
+      "~CUSTOM:ReinforcedIronDeepslateBlock",
+      "~CUSTOM:ReinforcedIronStoneBlock"
+    ],
+    "ITEMS:mod:ringtoforge": [
+      "CUSTOM:RegularRingItem"
+    ],
+    "ITEMS:minecraft:piglin_loved": [
+      "CUSTOM:GoldRing",
+      "CUSTOM:TotemRing"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:RozaniLeaves"
+    ],
     "ITEMS:mod:souls": [
       "CUSTOM:BlazeSoul",
       "CUSTOM:EndermanSoul",
@@ -2971,23 +3673,31 @@
       "CUSTOM:WardenSoul",
       "CUSTOM:CursedSoul"
     ],
-    "ITEMS:minecraft:beacon_payment_items": [
-      "CUSTOM:ReinforcedIronIngot"
-    ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~CUSTOM:ReinforcedIronBlock",
-      "~CUSTOM:ReinforcedIronDeepslateBlock",
-      "~CUSTOM:ReinforcedIronStoneBlock"
-    ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Mistrock",
+      "~CUSTOM:RingAltarBlock",
       "~CUSTOM:RingForgeBlock",
       "~CUSTOM:ReinforcedIronBlock",
       "~CUSTOM:ReinforcedIronDeepslateBlock",
       "~CUSTOM:ReinforcedFurnance",
       "~CUSTOM:ReinforcedIronStoneBlock"
     ],
-    "ITEMS:mod:ringtoforge": [
-      "CUSTOM:RegularRingItem"
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:RozaniWood",
+      "~CUSTOM:RozaniPlanks",
+      "~CUSTOM:RozaniLog"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:RozaniSlab"
+    ],
+    "BLOCKS:minecraft:fences": [
+      "~CUSTOM:RozaniFence"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:Muckroot"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:RozaniStairs"
     ],
     "ITEMS:mod:rings": [
       "CUSTOM:FlightRing",
@@ -3004,10 +3714,6 @@
     "ITEMS:mod:gems": [
       "CUSTOM:IceCrystal",
       "CUSTOM:SandGem"
-    ],
-    "ITEMS:minecraft:piglin_loved": [
-      "CUSTOM:GoldRing",
-      "CUSTOM:TotemRing"
     ]
   },
   "tab_element_order": {
@@ -3041,7 +3747,21 @@
       "TotemRing",
       "CursedRing",
       "IceKingEntity",
-      "KingSandstorm"
+      "KingSandstorm",
+      "RingAltarBlock",
+      "RealmsPortal",
+      "RozaniStairs",
+      "RozaniLog",
+      "RozaniFence",
+      "RozaniLeaves",
+      "RozaniPlanks",
+      "RozaniPressurePlate",
+      "RozaniButton",
+      "RozaniWood",
+      "Muckroot",
+      "RozaniFenceGate",
+      "RozaniSlab",
+      "Mistrock"
     ]
   },
   "language_map": {
@@ -3214,6 +3934,7 @@
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.ring_altar_block": "Ring Forge",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
@@ -3225,6 +3946,7 @@
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "key.ringcraft.fire_ring_shoot_binding": "Tembakan Cincin Api",
       "item.ringcraft.totem_ring": "C^rse% R*ng",
+      "block.ringcraft.rozani_pressure_plate": "Rozani Pressure Plate",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "item.ringcraft.warden_soul": "Guardian Soul",
@@ -3232,8 +3954,11 @@
       "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.vex_soul": "Blaze Soul",
+      "block.ringcraft.rozani_planks": "Rozani Planks",
+      "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "item.ringcraft.regular_ring_item": "Regular Ring",
       "item.ringcraft.enderman_soul": "Blaze Soul",
+      "block.ringcraft.rozani_button": "Rozani Button",
       "item.ringcraft.guardian_soul": "Breeze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
@@ -3243,18 +3968,25 @@
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
+      "block.ringcraft.rozani_log": "Rozani Log",
       "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.totem_ring.description_0": "",
+      "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "block.ringcraft.rozani_fence_gate": "Rozani Fence Gate",
       "item.ringcraft.sand_gem": "Sand Gem",
+      "item.ringcraft.realms_portal": "Realms Portal",
       "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.cursed_soul": "Warden Soul",
+      "block.ringcraft.rozani_stairs": "Rozani Stairs",
+      "gui.ringcraft.ring_altar_gui.label_ring_forge": "Ring Forge",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
+      "biome.ringcraft.rosani_forest": "Rosani Forest",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.sand_ring.description_0": "",
       "advancements.warden_soul_advancement.title": "Feel the Sea!",
@@ -3273,13 +4005,17 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
+      "block.ringcraft.rozani_wood": "Rozani Wood",
+      "block.ringcraft.mistrock": "Mistrock",
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Besi Mentah Bertulang",
       "gui.ringcraft.rings_gui.label_3": "3",
+      "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.gold_ring.description_0": "",
       "item.ringcraft.wind_ring.description_0": "",
+      "block.ringcraft.rozani_slab": "Rozani Slab",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
@@ -3293,6 +4029,7 @@
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.ring_altar_block": "Ring Forge",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Anéis Mágicos",
       "advancements.reinforced_iron_ingot_obtained.title": "Hardware avançado",
@@ -3304,6 +4041,7 @@
       "item.ringcraft.reinforced_iron_ingot": "Barra de ferro reforçado",
       "key.ringcraft.fire_ring_shoot_binding": "Tiro do Anel do Fogo",
       "item.ringcraft.totem_ring": "C^rse% R*ng",
+      "block.ringcraft.rozani_pressure_plate": "Rozani Pressure Plate",
       "block.ringcraft.reinforced_iron_stone_block": "Minério de ferro reforçado",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "item.ringcraft.warden_soul": "Guardian Soul",
@@ -3311,8 +4049,11 @@
       "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Fornalha reforçada",
       "item.ringcraft.vex_soul": "Alma de Blaze",
+      "block.ringcraft.rozani_planks": "Rozani Planks",
+      "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "item.ringcraft.regular_ring_item": "Anel normal",
       "item.ringcraft.enderman_soul": "Alma de Blaze",
+      "block.ringcraft.rozani_button": "Rozani Button",
       "item.ringcraft.guardian_soul": "Breeze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
@@ -3322,18 +4063,25 @@
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
+      "block.ringcraft.rozani_log": "Rozani Log",
       "advancements.regular_ring_obtained.title": "Um novo começo",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.totem_ring.description_0": "",
+      "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.reinforced_iron_block": "Bloco de ferro reforçado",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "block.ringcraft.rozani_fence_gate": "Rozani Fence Gate",
       "item.ringcraft.sand_gem": "Sand Gem",
+      "item.ringcraft.realms_portal": "Realms Portal",
       "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Alma de blaze",
       "block.ringcraft.reinforced_furnance": "Fornalha reforçada",
       "item.ringcraft.cursed_soul": "Warden Soul",
+      "block.ringcraft.rozani_stairs": "Rozani Stairs",
+      "gui.ringcraft.ring_altar_gui.label_ring_forge": "Ring Forge",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
+      "biome.ringcraft.rosani_forest": "Rosani Forest",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.sand_ring.description_0": "",
       "advancements.warden_soul_advancement.title": "Feel the Sea!",
@@ -3352,13 +4100,17 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
+      "block.ringcraft.rozani_wood": "Rozani Wood",
+      "block.ringcraft.mistrock": "Mistrock",
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "gui.ringcraft.rings_gui.label_3": "3",
+      "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.gold_ring.description_0": "",
       "item.ringcraft.wind_ring.description_0": "",
+      "block.ringcraft.rozani_slab": "Rozani Slab",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
@@ -3372,6 +4124,7 @@
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.ring_altar_block": "Ring Forge",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
       "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
@@ -3383,6 +4136,7 @@
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.reinforced_iron_ingot": "Versterkte ysterstaaf",
       "item.ringcraft.totem_ring": "C^rse% R*ng",
+      "block.ringcraft.rozani_pressure_plate": "Rozani Pressure Plate",
       "block.ringcraft.reinforced_iron_stone_block": "Versterkte Ystererts",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "item.ringcraft.warden_soul": "Guardian Soul",
@@ -3390,8 +4144,11 @@
       "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Versterkte Oond",
       "item.ringcraft.vex_soul": "Blaze Soul",
+      "block.ringcraft.rozani_planks": "Rozani Planks",
+      "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "item.ringcraft.regular_ring_item": "Gereelde Ring",
       "item.ringcraft.enderman_soul": "Blaze Soul",
+      "block.ringcraft.rozani_button": "Rozani Button",
       "item.ringcraft.guardian_soul": "Breeze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
@@ -3401,18 +4158,25 @@
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
+      "block.ringcraft.rozani_log": "Rozani Log",
       "advancements.regular_ring_obtained.title": "\u0027n Nuwe Begin",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.totem_ring.description_0": "",
+      "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "block.ringcraft.rozani_fence_gate": "Rozani Fence Gate",
       "item.ringcraft.sand_gem": "Sand Gem",
+      "item.ringcraft.realms_portal": "Realms Portal",
       "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Versterkte Oond",
       "item.ringcraft.cursed_soul": "Warden Soul",
+      "block.ringcraft.rozani_stairs": "Rozani Stairs",
+      "gui.ringcraft.ring_altar_gui.label_ring_forge": "Ring Forge",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
+      "biome.ringcraft.rosani_forest": "Rosani Forest",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.sand_ring.description_0": "",
       "advancements.warden_soul_advancement.title": "Feel the Sea!",
@@ -3432,13 +4196,17 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
+      "block.ringcraft.rozani_wood": "Rozani Wood",
+      "block.ringcraft.mistrock": "Mistrock",
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_3": "3",
+      "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.gold_ring.description_0": "",
       "item.ringcraft.wind_ring.description_0": "",
+      "block.ringcraft.rozani_slab": "Rozani Slab",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
@@ -3452,6 +4220,7 @@
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.ring_altar_block": "Ring Forge",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringe",
       "advancements.reinforced_iron_ingot_obtained.title": "Fortgeschrittene Metallurgie",
@@ -3463,6 +4232,7 @@
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "item.ringcraft.totem_ring": "C^rse% R*ng",
+      "block.ringcraft.rozani_pressure_plate": "Rozani Pressure Plate",
       "block.ringcraft.reinforced_iron_stone_block": "Verstärkter Eisenerz",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "item.ringcraft.warden_soul": "Guardian Soul",
@@ -3470,8 +4240,11 @@
       "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Verstärkter Ofen",
       "item.ringcraft.vex_soul": "Blaze Soul",
+      "block.ringcraft.rozani_planks": "Rozani Planks",
+      "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "item.ringcraft.regular_ring_item": "Regulär Ring",
       "item.ringcraft.enderman_soul": "Blaze Soul",
+      "block.ringcraft.rozani_button": "Rozani Button",
       "item.ringcraft.guardian_soul": "Breeze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
@@ -3481,18 +4254,25 @@
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
+      "block.ringcraft.rozani_log": "Rozani Log",
       "advancements.regular_ring_obtained.title": "Ein neuer Beginn",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.totem_ring.description_0": "",
+      "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "block.ringcraft.rozani_fence_gate": "Rozani Fence Gate",
       "item.ringcraft.sand_gem": "Sand Gem",
+      "item.ringcraft.realms_portal": "Realms Portal",
       "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Verstärkter Ofen",
       "item.ringcraft.cursed_soul": "Warden Soul",
+      "block.ringcraft.rozani_stairs": "Rozani Stairs",
+      "gui.ringcraft.ring_altar_gui.label_ring_forge": "Ring Forge",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
+      "biome.ringcraft.rosani_forest": "Rosani Forest",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.sand_ring.description_0": "",
       "advancements.warden_soul_advancement.title": "Feel the Sea!",
@@ -3512,13 +4292,17 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
+      "block.ringcraft.rozani_wood": "Rozani Wood",
+      "block.ringcraft.mistrock": "Mistrock",
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_3": "3",
+      "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.gold_ring.description_0": "",
       "item.ringcraft.wind_ring.description_0": "",
+      "block.ringcraft.rozani_slab": "Rozani Slab",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
@@ -3532,6 +4316,7 @@
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.ring_altar_block": "Ring Forge",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Varázsgyűrűk",
       "advancements.reinforced_iron_ingot_obtained.title": "Speciális hardver",
@@ -3543,6 +4328,7 @@
       "key.ringcraft.fire_ring_shoot_binding": "Tűzgyűrű Lő",
       "item.ringcraft.reinforced_iron_ingot": "Megerősített vasrúd",
       "item.ringcraft.totem_ring": "C^rse% R*ng",
+      "block.ringcraft.rozani_pressure_plate": "Rozani Pressure Plate",
       "block.ringcraft.reinforced_iron_stone_block": "Megerősített vasérc",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "item.ringcraft.warden_soul": "Guardian Soul",
@@ -3550,8 +4336,11 @@
       "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Megerősített kemence",
       "item.ringcraft.vex_soul": "Blaze Soul",
+      "block.ringcraft.rozani_planks": "Rozani Planks",
+      "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "item.ringcraft.regular_ring_item": "Rendszeres gyűrű",
       "item.ringcraft.enderman_soul": "Blaze Soul",
+      "block.ringcraft.rozani_button": "Rozani Button",
       "item.ringcraft.guardian_soul": "Breeze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
@@ -3561,18 +4350,25 @@
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
+      "block.ringcraft.rozani_log": "Rozani Log",
       "advancements.regular_ring_obtained.title": "Egy Új Kezdet",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.totem_ring.description_0": "",
+      "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.reinforced_iron_block": "Megerősített Vasblokk",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "block.ringcraft.rozani_fence_gate": "Rozani Fence Gate",
       "item.ringcraft.sand_gem": "Sand Gem",
+      "item.ringcraft.realms_portal": "Realms Portal",
       "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Őrlángidéző lélek",
       "block.ringcraft.reinforced_furnance": "Megerősített kemence",
       "item.ringcraft.cursed_soul": "Warden Soul",
+      "block.ringcraft.rozani_stairs": "Rozani Stairs",
+      "gui.ringcraft.ring_altar_gui.label_ring_forge": "Ring Forge",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
+      "biome.ringcraft.rosani_forest": "Rosani Forest",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.sand_ring.description_0": "",
       "advancements.warden_soul_advancement.title": "Feel the Sea!",
@@ -3591,13 +4387,17 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
+      "block.ringcraft.rozani_wood": "Rozani Wood",
+      "block.ringcraft.mistrock": "Mistrock",
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Megerősített nyersvas",
       "gui.ringcraft.rings_gui.label_3": "3",
+      "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.gold_ring.description_0": "",
       "item.ringcraft.wind_ring.description_0": "",
+      "block.ringcraft.rozani_slab": "Rozani Slab",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
@@ -3622,6 +4422,7 @@
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.totem_ring": "Totem Ring",
+      "block.ringcraft.rozani_pressure_plate": "Rozani Pressure Plate",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "item.ringcraft.warden_soul": "Warden Soul",
@@ -3640,6 +4441,7 @@
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.guardian_soul_advancement.descr": "Get a Guardian Soul",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
+      "block.ringcraft.rozani_log": "Rozani Log",
       "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "advancements.blaze_soul_advancement.title": "Feel the Fire Power",
@@ -3647,12 +4449,14 @@
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Ice Crystal",
       "item.ringcraft.sand_gem": "Sand Gem",
+      "item.ringcraft.realms_portal": "Realms Portal",
       "block.ringcraft.ring_forge": "Ring Forge",
       "item.ringcraft.breeze_soul": "Breeze Soul",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.cursed_soul": "C%r#ed S0u)",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
+      "biome.ringcraft.rosani_forest": "Rosani Forest",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.sand_ring.description_0": "",
       "advancements.warden_soul_advancement.title": "Feel the Warden Power!",
@@ -3673,11 +4477,14 @@
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
+      "block.ringcraft.rozani_wood": "Rozani Wood",
+      "block.ringcraft.mistrock": "Mistrock",
       "advancements.guardian_soul_advancement.title": "Feel the Sea Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_3": "3",
+      "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.gold_ring.description_0": "",
       "item.ringcraft.wind_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_1": "1",
@@ -3693,6 +4500,7 @@
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.ring_altar_block": "Ring Forge",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
@@ -3704,6 +4512,7 @@
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.reinforced_iron_ingot": "Reinforced Iron Ingot",
       "item.ringcraft.totem_ring": "C^rse% R*ng",
+      "block.ringcraft.rozani_pressure_plate": "Rozani Pressure Plate",
       "block.ringcraft.reinforced_iron_stone_block": "Reinforced Iron Ore",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "item.ringcraft.warden_soul": "Guardian Soul",
@@ -3711,8 +4520,11 @@
       "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.vex_soul": "Blaze Soul",
+      "block.ringcraft.rozani_planks": "Rozani Planks",
+      "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "item.ringcraft.regular_ring_item": "Regular Ring",
       "item.ringcraft.enderman_soul": "Blaze Soul",
+      "block.ringcraft.rozani_button": "Rozani Button",
       "item.ringcraft.guardian_soul": "Breeze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
@@ -3722,18 +4534,25 @@
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
+      "block.ringcraft.rozani_log": "Rozani Log",
       "advancements.regular_ring_obtained.title": "A New Beginning",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.totem_ring.description_0": "",
+      "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "block.ringcraft.rozani_fence_gate": "Rozani Fence Gate",
       "item.ringcraft.sand_gem": "Sand Gem",
+      "item.ringcraft.realms_portal": "Realms Portal",
       "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Reinforced Furnance",
       "item.ringcraft.cursed_soul": "Warden Soul",
+      "block.ringcraft.rozani_stairs": "Rozani Stairs",
+      "gui.ringcraft.ring_altar_gui.label_ring_forge": "Ring Forge",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
+      "biome.ringcraft.rosani_forest": "Rosani Forest",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.sand_ring.description_0": "",
       "advancements.warden_soul_advancement.title": "Feel the Sea!",
@@ -3752,13 +4571,17 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
+      "block.ringcraft.rozani_wood": "Rozani Wood",
+      "block.ringcraft.mistrock": "Mistrock",
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_3": "3",
+      "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.gold_ring.description_0": "",
       "item.ringcraft.wind_ring.description_0": "",
+      "block.ringcraft.rozani_slab": "Rozani Slab",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
@@ -3772,6 +4595,7 @@
       "advancements.vex_soul_advancement.descr": "Consigue el Alma de un Vex",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.ring_altar_block": "Ring Forge",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Anillos Mágicos",
       "advancements.reinforced_iron_ingot_obtained.title": "Tecnología Avanzada",
@@ -3783,6 +4607,7 @@
       "key.ringcraft.fire_ring_shoot_binding": "Atajo de los Poderes de los Anillos",
       "item.ringcraft.reinforced_iron_ingot": "Lingote de Hierro Reforzado",
       "item.ringcraft.totem_ring": "C^rse% R*ng",
+      "block.ringcraft.rozani_pressure_plate": "Rozani Pressure Plate",
       "item.ringcraft.ice_king_entity_spawn_egg": "Rey Helado Spawn Egg",
       "block.ringcraft.reinforced_iron_stone_block": "Hierro Reforzado",
       "item.ringcraft.warden_soul": "Alma de Warden",
@@ -3790,8 +4615,11 @@
       "key.ringcraft.ring_1_binding": "Anillo 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Horno Reforzado",
       "item.ringcraft.vex_soul": "Alma de Vex",
+      "block.ringcraft.rozani_planks": "Rozani Planks",
+      "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "item.ringcraft.regular_ring_item": "Anillo Regular",
       "item.ringcraft.enderman_soul": "Alma de Enderman",
+      "block.ringcraft.rozani_button": "Rozani Button",
       "item.ringcraft.guardian_soul": "Alma de Guardián",
       "advancements.enderman_soul_advancement.descr": "Consigue un Alma de Enderman",
       "entity.ringcraft.ice_king_entity": "Rey Helado",
@@ -3801,18 +4629,25 @@
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.guardian_soul_advancement.descr": "Consigue el Alma de un Guardían",
       "item.ringcraft.teleportation_ring": "Anillo del Teletransporte",
+      "block.ringcraft.rozani_log": "Rozani Log",
       "advancements.regular_ring_obtained.title": "Un Nuevo Comienzo",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "advancements.blaze_soul_advancement.title": "Poder Ígneo!",
       "item.ringcraft.totem_ring.description_0": "",
+      "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Cristal Helado",
+      "block.ringcraft.rozani_fence_gate": "Rozani Fence Gate",
       "item.ringcraft.sand_gem": "Gema de Arena",
+      "item.ringcraft.realms_portal": "Realms Portal",
       "item.ringcraft.breeze_soul": "Alma de Brisa",
       "item.ringcraft.blaze_soul": "Alma de Blaze",
       "block.ringcraft.reinforced_furnance": "Horno Reforzado",
       "item.ringcraft.cursed_soul": "Alma de Warden",
+      "block.ringcraft.rozani_stairs": "Rozani Stairs",
+      "gui.ringcraft.ring_altar_gui.label_ring_forge": "Ring Forge",
       "advancements.breeze_soul_advancement.descr": "Consigue el alma de una Brisa",
+      "biome.ringcraft.rosani_forest": "Rosani Forest",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.sand_ring.description_0": "",
       "advancements.warden_soul_advancement.title": "Siente el poder Sculk!",
@@ -3832,13 +4667,17 @@
       "advancements.enderman_soul_advancement.title": "Siente el Poder Oscuro!",
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.ice_crystal_advancement.title": "El poder del Rey Helado!",
+      "block.ringcraft.rozani_wood": "Rozani Wood",
+      "block.ringcraft.mistrock": "Mistrock",
       "advancements.guardian_soul_advancement.title": "Siente el Poder de los Mares!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Hierro Reforzado",
       "gui.ringcraft.rings_gui.label_3": "3",
+      "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.gold_ring.description_0": "",
       "item.ringcraft.wind_ring.description_0": "",
+      "block.ringcraft.rozani_slab": "Rozani Slab",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
@@ -3852,6 +4691,7 @@
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.ring_altar_block": "Ring Forge",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringen",
       "advancements.reinforced_iron_ingot_obtained.title": "Geavanceerde IJzerwaren vekrijgen",
@@ -3863,6 +4703,7 @@
       "key.ringcraft.fire_ring_shoot_binding": "Fire Ring Shoot Binding",
       "item.ringcraft.reinforced_iron_ingot": "Gewapend IJzerstaaf",
       "item.ringcraft.totem_ring": "C^rse% R*ng",
+      "block.ringcraft.rozani_pressure_plate": "Rozani Pressure Plate",
       "block.ringcraft.reinforced_iron_stone_block": "Gewapend IJzererts",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "item.ringcraft.warden_soul": "Guardian Soul",
@@ -3870,8 +4711,11 @@
       "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Gewamped Oven",
       "item.ringcraft.vex_soul": "Blaze Soul",
+      "block.ringcraft.rozani_planks": "Rozani Planks",
+      "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "item.ringcraft.regular_ring_item": "Normale Ring",
       "item.ringcraft.enderman_soul": "Blaze Soul",
+      "block.ringcraft.rozani_button": "Rozani Button",
       "item.ringcraft.guardian_soul": "Breeze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
@@ -3881,18 +4725,25 @@
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
+      "block.ringcraft.rozani_log": "Rozani Log",
       "advancements.regular_ring_obtained.title": "Een Nieuw Begin",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.totem_ring.description_0": "",
+      "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.reinforced_iron_block": "Reinforced Iron Block",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "block.ringcraft.rozani_fence_gate": "Rozani Fence Gate",
       "item.ringcraft.sand_gem": "Sand Gem",
+      "item.ringcraft.realms_portal": "Realms Portal",
       "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Blaze Soul",
       "block.ringcraft.reinforced_furnance": "Gewamped Oven",
       "item.ringcraft.cursed_soul": "Warden Soul",
+      "block.ringcraft.rozani_stairs": "Rozani Stairs",
+      "gui.ringcraft.ring_altar_gui.label_ring_forge": "Ring Forge",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
+      "biome.ringcraft.rosani_forest": "Rosani Forest",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.sand_ring.description_0": "",
       "advancements.warden_soul_advancement.title": "Feel the Sea!",
@@ -3912,13 +4763,17 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
+      "block.ringcraft.rozani_wood": "Rozani Wood",
+      "block.ringcraft.mistrock": "Mistrock",
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "gui.ringcraft.rings_gui.label_3": "3",
+      "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.gold_ring.description_0": "",
       "item.ringcraft.wind_ring.description_0": "",
+      "block.ringcraft.rozani_slab": "Rozani Slab",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     },
@@ -3932,6 +4787,7 @@
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.ring_altar_block": "Ring Forge",
       "item.ringcraft.sculk_ring.description_0": "",
       "gui.ringcraft.rings_gui.label_magic_rings": "Anéis Mágicos",
       "advancements.reinforced_iron_ingot_obtained.title": "Hardware avançado",
@@ -3943,6 +4799,7 @@
       "item.ringcraft.reinforced_iron_ingot": "Barra de ferro reforçado",
       "key.ringcraft.fire_ring_shoot_binding": "Tiro ao Anel de Fogo ",
       "item.ringcraft.totem_ring": "C^rse% R*ng",
+      "block.ringcraft.rozani_pressure_plate": "Rozani Pressure Plate",
       "block.ringcraft.reinforced_iron_stone_block": "Minério de ferro reforçado",
       "item.ringcraft.ice_king_entity_spawn_egg": "Ice King Spawn Egg",
       "item.ringcraft.warden_soul": "Guardian Soul",
@@ -3950,8 +4807,11 @@
       "key.ringcraft.ring_1_binding": "Ring 1",
       "gui.ringcraft.reinforced_furnance_gui.label_reinforced_furnance": "Fornalha reforçada",
       "item.ringcraft.vex_soul": "Blaze Soul",
+      "block.ringcraft.rozani_planks": "Rozani Planks",
+      "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "item.ringcraft.regular_ring_item": "Anel normal",
       "item.ringcraft.enderman_soul": "Blaze Soul",
+      "block.ringcraft.rozani_button": "Rozani Button",
       "item.ringcraft.guardian_soul": "Breeze Soul",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
       "entity.ringcraft.ice_king_entity": "Ice King",
@@ -3961,18 +4821,25 @@
       "item.ringcraft.fire_ring.description_0": "",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item.ringcraft.teleportation_ring": "Teleportation Ring",
+      "block.ringcraft.rozani_log": "Rozani Log",
       "advancements.regular_ring_obtained.title": "Um novo começo",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
       "advancements.blaze_soul_advancement.title": "Fire Power!",
       "item.ringcraft.totem_ring.description_0": "",
+      "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.reinforced_iron_block": "Bloco de ferro reforçado",
       "item.ringcraft.ice_crystal": "Ice Crystal",
+      "block.ringcraft.rozani_fence_gate": "Rozani Fence Gate",
       "item.ringcraft.sand_gem": "Sand Gem",
+      "item.ringcraft.realms_portal": "Realms Portal",
       "item.ringcraft.breeze_soul": "Vex Soul",
       "item.ringcraft.blaze_soul": "Alma de blaze",
       "block.ringcraft.reinforced_furnance": "Fornalha reforçada",
       "item.ringcraft.cursed_soul": "Warden Soul",
+      "block.ringcraft.rozani_stairs": "Rozani Stairs",
+      "gui.ringcraft.ring_altar_gui.label_ring_forge": "Ring Forge",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
+      "biome.ringcraft.rosani_forest": "Rosani Forest",
       "block.ringcraft.ring_forge_block": "Ring Forge",
       "item.ringcraft.sand_ring.description_0": "",
       "advancements.warden_soul_advancement.title": "Feel the Sea!",
@@ -3991,13 +4858,17 @@
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "item.ringcraft.flight_ring.description_0": "",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
+      "block.ringcraft.rozani_wood": "Rozani Wood",
+      "block.ringcraft.mistrock": "Mistrock",
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "gui.ringcraft.rings_gui.label_3": "3",
+      "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.gold_ring.description_0": "",
       "item.ringcraft.wind_ring.description_0": "",
+      "block.ringcraft.rozani_slab": "Rozani Slab",
       "gui.ringcraft.rings_gui.label_1": "1",
       "gui.ringcraft.rings_gui.label_2": "2"
     }
@@ -4005,6 +4876,52 @@
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "Advancements",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": [
+          {
+            "name": "Reinforced Furnace",
+            "children": []
+          },
+          {
+            "name": "Ring Forge",
+            "children": []
+          },
+          {
+            "name": "Reinforced Iron",
+            "children": []
+          },
+          {
+            "name": "Ring Altar",
+            "children": []
+          },
+          {
+            "name": "Rozani",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Other",
+        "children": []
+      },
+      {
+        "name": "GUI",
+        "children": [
+          {
+            "name": "DisplayConditions",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Dimensions",
+        "children": []
+      },
       {
         "name": "Items",
         "children": [
@@ -4041,6 +4958,10 @@
         ]
       },
       {
+        "name": "Biomes",
+        "children": []
+      },
+      {
         "name": "ReinforcedFurnaceProcedures",
         "children": [
           {
@@ -4059,42 +4980,22 @@
         ]
       },
       {
-        "name": "Advancements",
-        "children": []
-      },
-      {
-        "name": "Blocks",
+        "name": "RingAltar",
         "children": [
           {
-            "name": "Reinforced Furnace",
-            "children": []
-          },
-          {
-            "name": "Ring Forge",
-            "children": []
-          },
-          {
-            "name": "Reinforced Iron",
-            "children": []
+            "name": "Recipes",
+            "children": [
+              {
+                "name": "Recipes",
+                "children": []
+              }
+            ]
           }
         ]
       },
       {
         "name": "MOBS",
         "children": []
-      },
-      {
-        "name": "Other",
-        "children": []
-      },
-      {
-        "name": "GUI",
-        "children": [
-          {
-            "name": "DisplayConditions",
-            "children": []
-          }
-        ]
       },
       {
         "name": "RingsProcedures",

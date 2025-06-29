@@ -19,6 +19,6 @@ public class WaterWalkRingItemModel extends GeoModel<WaterWalkRingItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(WaterWalkRingItem animatable) {
-		return ResourceLocation.parse("ringcraft:textures/item/waterwalk_ring_texture.png");
+		return ResourceLocation.parse("ringcraft:textures/item/ring_waterwalk.png");
 	}
 }

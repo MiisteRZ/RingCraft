@@ -19,6 +19,6 @@ public class EndermanSoulItemModel extends GeoModel<EndermanSoulItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(EndermanSoulItem animatable) {
-		return ResourceLocation.parse("ringcraft:textures/item/enderman_soul.png");
+		return ResourceLocation.parse("ringcraft:textures/item/soul_enderman.png");
 	}
 }

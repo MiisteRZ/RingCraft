@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Feel the Ice King Power!",
-    "achievementDescription": "Beat an Ice King and get It's Crystal!",
+    "achievementDescription": "Beat an Ice King and get Its Crystal!",
     "achievementIcon": {
       "value": "CUSTOM:WaterWalkRing"
     },

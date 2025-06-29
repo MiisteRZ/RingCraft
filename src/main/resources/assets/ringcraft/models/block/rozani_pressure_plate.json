@@ -1,0 +1,8 @@
+{
+  "parent": "block/pressure_plate_up",
+  "textures": {
+    "particle": "ringcraft:block/rozani_planks",
+    "texture": "ringcraft:block/rozani_planks"
+  },
+  "render_type": "solid"
+}

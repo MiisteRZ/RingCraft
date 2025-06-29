@@ -48,5 +48,19 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.CURSED_RING.get());
 				tabData.accept(RingcraftModItems.ICE_KING_ENTITY_SPAWN_EGG.get());
 				tabData.accept(RingcraftModItems.KING_SANDSTORM_SPAWN_EGG.get());
+				tabData.accept(RingcraftModBlocks.RING_ALTAR_BLOCK.get().asItem());
+				tabData.accept(RingcraftModItems.REALMS_PORTAL.get());
+				tabData.accept(RingcraftModBlocks.ROZANI_STAIRS.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_LOG.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_FENCE.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_LEAVES.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_PLANKS.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_PRESSURE_PLATE.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_BUTTON.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_WOOD.get().asItem());
+				tabData.accept(RingcraftModBlocks.MUCKROOT.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_FENCE_GATE.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_SLAB.get().asItem());
+				tabData.accept(RingcraftModBlocks.MISTROCK.get().asItem());
 			}).build());
 }

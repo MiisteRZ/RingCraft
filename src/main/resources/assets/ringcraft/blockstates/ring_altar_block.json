@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ringcraft:block/ring_altar_block"
+    },
+    "facing=east": {
+      "model": "ringcraft:block/ring_altar_block",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ringcraft:block/ring_altar_block",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ringcraft:block/ring_altar_block",
+      "y": 270
+    }
+  }
+}

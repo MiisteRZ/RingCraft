@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "ringcraft:deleted_mod_element"
+    }
+  ],
+  "result": {
+    "id": "ringcraft:rozani_planks",
+    "count": 4
+  }
+}

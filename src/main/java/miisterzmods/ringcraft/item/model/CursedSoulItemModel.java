@@ -19,6 +19,6 @@ public class CursedSoulItemModel extends GeoModel<CursedSoulItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(CursedSoulItem animatable) {
-		return ResourceLocation.parse("ringcraft:textures/item/cursed_soul.png");
+		return ResourceLocation.parse("ringcraft:textures/item/soul_cursed.png");
 	}
 }

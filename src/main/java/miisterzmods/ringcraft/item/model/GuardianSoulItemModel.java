@@ -19,6 +19,6 @@ public class GuardianSoulItemModel extends GeoModel<GuardianSoulItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(GuardianSoulItem animatable) {
-		return ResourceLocation.parse("ringcraft:textures/item/guardian_soul.png");
+		return ResourceLocation.parse("ringcraft:textures/item/soul_guardian.png");
 	}
 }

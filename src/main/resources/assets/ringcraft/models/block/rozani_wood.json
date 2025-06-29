@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ringcraft:block/rozani_log_side",
+    "particle": "ringcraft:block/rozani_log_side"
+  },
+  "render_type": "solid"
+}

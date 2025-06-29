@@ -19,6 +19,6 @@ public class WardenSoulItemModel extends GeoModel<WardenSoulItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(WardenSoulItem animatable) {
-		return ResourceLocation.parse("ringcraft:textures/item/warden_soul.png");
+		return ResourceLocation.parse("ringcraft:textures/item/soul_warden.png");
 	}
 }

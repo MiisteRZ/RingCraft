@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ringcraft:block/rozani_leaves",
+    "particle": "ringcraft:block/rozani_leaves"
+  }
+}

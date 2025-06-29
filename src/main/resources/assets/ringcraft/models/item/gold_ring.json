@@ -2,6 +2,6 @@
   "parent": "ringcraft:custom/regularring",
   "textures": {
     "2": "ringcraft:block/goldring",
-    "particle": "ringcraft:item/gold_ring"
+    "particle": "ringcraft:item/ring_gold"
   }
 }

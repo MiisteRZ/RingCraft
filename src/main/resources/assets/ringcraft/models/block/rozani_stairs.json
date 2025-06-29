@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "ringcraft:block/rozani_planks",
+    "bottom": "ringcraft:block/rozani_planks",
+    "top": "ringcraft:block/rozani_planks",
+    "side": "ringcraft:block/rozani_planks"
+  },
+  "render_type": "solid"
+}

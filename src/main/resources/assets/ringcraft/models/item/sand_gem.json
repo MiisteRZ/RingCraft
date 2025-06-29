@@ -2,6 +2,6 @@
   "parent": "ringcraft:custom/sand_gem",
   "textures": {
     "0": "ringcraft:block/sand_gem",
-    "particle": "ringcraft:item/sand_gem"
+    "particle": "ringcraft:item/gem_sand"
   }
 }

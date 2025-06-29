@@ -3,7 +3,7 @@
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
-    "texture": "blaze_soul",
+    "texture": "soul_blaze",
     "name": "Blaze Soul",
     "idle": "animation.blaze.soul.idle",
     "rarity": "RARE",

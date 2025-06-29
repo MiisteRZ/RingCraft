@@ -3,7 +3,7 @@
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
-    "texture": "guardian_soul",
+    "texture": "soul_guardian",
     "name": "Guardian Soul",
     "idle": "animation.guardian.soul.idle",
     "rarity": "RARE",
