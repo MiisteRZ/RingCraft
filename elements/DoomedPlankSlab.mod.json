@@ -43,7 +43,11 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:RingCraftCreativeTab"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": "CUSTOM:DoomedPlankSlab"

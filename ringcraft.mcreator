@@ -4187,7 +4187,8 @@
       "DoomedPlankPressurePlate",
       "DoomedPlankTrapdoor",
       "DoomedWood",
-      "DoomedPlankDoor"
+      "DoomedPlankDoor",
+      "DoomedPlankSlab"
     ]
   },
   "language_map": {
