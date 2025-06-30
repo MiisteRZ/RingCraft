@@ -3,12 +3,12 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
-    "group": "wooden_presure_plate",
+    "recipeRetstackSize": 4,
+    "group": "wooden_stick",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "craftingBookCategory": "BUILDING",
+    "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
       {
@@ -24,13 +24,13 @@
         "value": ""
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
         "value": "CUSTOM:DoomedPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": "CUSTOM:DoomedPlanks"
@@ -40,9 +40,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DoomedPlankPressurePlate"
+      "value": "Items.STICK"
     },
-    "name": "doomed_pressure_plate_recipe",
+    "name": "doomed_planks_stick_recipe",
     "namespace": "mod"
   }
 }

@@ -4,11 +4,11 @@
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
-    "group": "wooden_presure_plate",
+    "group": "wooden_trapdoor",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
-    "craftingBookCategory": "BUILDING",
+    "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
       {
@@ -21,13 +21,10 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "CUSTOM:DoomedPlanks"
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "CUSTOM:DoomedPlanks"
       },
       {
         "value": "CUSTOM:DoomedPlanks"
@@ -36,13 +33,16 @@
         "value": "CUSTOM:DoomedPlanks"
       },
       {
-        "value": ""
+        "value": "CUSTOM:DoomedPlanks"
+      },
+      {
+        "value": "CUSTOM:DoomedPlanks"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DoomedPlankPressurePlate"
+      "value": "CUSTOM:DoomedPlankTrapdoor"
     },
-    "name": "doomed_pressure_plate_recipe",
+    "name": "doomed_trapdoor_recipe",
     "namespace": "mod"
   }
 }

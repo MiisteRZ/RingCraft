@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "wooden_presure_plate",
+  "group": "wooden_wood",
   "category": "building",
   "pattern": [
+    "aa",
     "aa"
   ],
   "key": {
     "a": {
-      "item": "ringcraft:doomed_planks"
+      "item": "ringcraft:doomed_tree_log"
     }
   },
   "result": {
-    "id": "ringcraft:doomed_plank_pressure_plate",
+    "id": "ringcraft:doomed_wood",
     "count": 1
   }
 }

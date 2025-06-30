@@ -3887,6 +3887,81 @@
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms"
+    },
+    {
+      "name": "DoomedPlankTrapdoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doomed_plank_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_trapdoor.json",
+          "src/main/resources/assets/ringcraft/models/item/doomed_plank_trapdoor.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_trapdoor_open.json",
+          "src/main/java/miisterzmods/ringcraft/block/DoomedPlankTrapdoorBlock.java",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_trapdoor_top.json",
+          "src/main/resources/assets/ringcraft/blockstates/doomed_plank_trapdoor.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_trapdoor.json"
+        ]
+      },
+      "path": "~/Blocks/PlaneOfTheDooms"
+    },
+    {
+      "name": "DoomedTrapdoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doomed_trapdoor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/doomed_trapdoor_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/PlaneOfTheDooms"
+    },
+    {
+      "name": "DoomedPlanksStickRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doomed_planks_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/doomed_planks_stick_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/PlaneOfTheDooms"
+    },
+    {
+      "name": "DoomedWood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doomed_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/block/doomed_wood.json",
+          "src/main/java/miisterzmods/ringcraft/block/DoomedWoodBlock.java",
+          "src/main/resources/assets/ringcraft/models/item/doomed_wood.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_wood.json",
+          "src/main/resources/assets/ringcraft/blockstates/doomed_wood.json"
+        ]
+      },
+      "path": "~/Blocks/PlaneOfTheDooms"
+    },
+    {
+      "name": "DoomedWoodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doomed_wood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/doomed_wood_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/PlaneOfTheDooms"
     }
   ],
   "variable_elements": [
@@ -4072,7 +4147,9 @@
       "DoomedPlankFence",
       "DoomedPlankFenceGate",
       "DoomedPlankButton",
-      "DoomedPlankPressurePlate"
+      "DoomedPlankPressurePlate",
+      "DoomedPlankTrapdoor",
+      "DoomedWood"
     ]
   },
   "language_map": {
@@ -4117,6 +4194,7 @@
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Regular Ring",
+      "block.ringcraft.doomed_wood": "Doomed Wood",
       "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4175,6 +4253,7 @@
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
+      "block.ringcraft.doomed_plank_trapdoor": "Doomed Plank Trapdoor",
       "block.ringcraft.doomed_plank_pressure_plate": "Doomed Plank Pressure Plate",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
@@ -4222,6 +4301,7 @@
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Regular Ring",
+      "block.ringcraft.doomed_wood": "Doomed Wood",
       "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4281,6 +4361,7 @@
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
+      "block.ringcraft.doomed_plank_trapdoor": "Doomed Plank Trapdoor",
       "block.ringcraft.doomed_plank_pressure_plate": "Doomed Plank Pressure Plate",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
@@ -4328,6 +4409,7 @@
       "key.ringcraft.ring_power_keybind": "Cincin daya",
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Regular Ring",
+      "block.ringcraft.doomed_wood": "Doomed Wood",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4386,6 +4468,7 @@
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
+      "block.ringcraft.doomed_plank_trapdoor": "Doomed Plank Trapdoor",
       "block.ringcraft.doomed_plank_pressure_plate": "Doomed Plank Pressure Plate",
       "item.ringcraft.reinforced_raw_iron": "Besi Mentah Bertulang",
       "block.ringcraft.muckroot": "Muckroot",
@@ -4434,6 +4517,7 @@
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Goud Ring",
+      "block.ringcraft.doomed_wood": "Doomed Wood",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4492,6 +4576,7 @@
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
+      "block.ringcraft.doomed_plank_trapdoor": "Doomed Plank Trapdoor",
       "block.ringcraft.doomed_plank_pressure_plate": "Doomed Plank Pressure Plate",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
@@ -4539,6 +4624,7 @@
       "key.ringcraft.ring_power_keybind": "Poderes dos anéis",
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Anel ouro",
+      "block.ringcraft.doomed_wood": "Doomed Wood",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4597,6 +4683,7 @@
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
+      "block.ringcraft.doomed_plank_trapdoor": "Doomed Plank Trapdoor",
       "block.ringcraft.doomed_plank_pressure_plate": "Doomed Plank Pressure Plate",
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "block.ringcraft.muckroot": "Muckroot",
@@ -4644,6 +4731,7 @@
       "key.ringcraft.ring_power_keybind": "Hatalom gyűrű",
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Aranygyűrű",
+      "block.ringcraft.doomed_wood": "Doomed Wood",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4702,6 +4790,7 @@
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
+      "block.ringcraft.doomed_plank_trapdoor": "Doomed Plank Trapdoor",
       "block.ringcraft.doomed_plank_pressure_plate": "Doomed Plank Pressure Plate",
       "item.ringcraft.reinforced_raw_iron": "Megerősített nyersvas",
       "block.ringcraft.muckroot": "Muckroot",
@@ -4750,6 +4839,7 @@
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Regulär Ring",
+      "block.ringcraft.doomed_wood": "Doomed Wood",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4808,6 +4898,7 @@
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
+      "block.ringcraft.doomed_plank_trapdoor": "Doomed Plank Trapdoor",
       "block.ringcraft.doomed_plank_pressure_plate": "Doomed Plank Pressure Plate",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
@@ -4856,6 +4947,7 @@
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "item.ringcraft.sea_ring": "Sea Ring",
       "item.ringcraft.gold_ring": "Gold Ring",
+      "block.ringcraft.doomed_wood": "Doomed Wood",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4916,6 +5008,7 @@
       "advancements.guardian_soul_advancement.title": "Feel the Sea Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
+      "block.ringcraft.doomed_plank_trapdoor": "Doomed Plank Trapdoor",
       "block.ringcraft.doomed_plank_pressure_plate": "Doomed Plank Pressure Plate",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
@@ -4963,6 +5056,7 @@
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Regular Ring",
+      "block.ringcraft.doomed_wood": "Doomed Wood",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -5021,6 +5115,7 @@
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
+      "block.ringcraft.doomed_plank_trapdoor": "Doomed Plank Trapdoor",
       "block.ringcraft.doomed_plank_pressure_plate": "Doomed Plank Pressure Plate",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
@@ -5069,6 +5164,7 @@
       "key.ringcraft.ring_power_keybind": "Poder del Anillo",
       "item.ringcraft.sea_ring": "Anillo de los Mares",
       "item.ringcraft.gold_ring": "Anillo Regular",
+      "block.ringcraft.doomed_wood": "Doomed Wood",
       "advancements.enderman_soul_advancement.title": "Siente el Poder Oscuro!",
       "advancements.ice_crystal_advancement.title": "El poder del Rey Helado!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -5127,6 +5223,7 @@
       "advancements.guardian_soul_advancement.title": "Siente el Poder de los Mares!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
+      "block.ringcraft.doomed_plank_trapdoor": "Doomed Plank Trapdoor",
       "block.ringcraft.doomed_plank_pressure_plate": "Doomed Plank Pressure Plate",
       "item.ringcraft.reinforced_raw_iron": "Hierro Reforzado",
       "block.ringcraft.muckroot": "Muckroot",
@@ -5175,6 +5272,7 @@
       "key.ringcraft.ring_power_keybind": "Ring Power",
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Goud Ring",
+      "block.ringcraft.doomed_wood": "Doomed Wood",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -5233,6 +5331,7 @@
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
+      "block.ringcraft.doomed_plank_trapdoor": "Doomed Plank Trapdoor",
       "block.ringcraft.doomed_plank_pressure_plate": "Doomed Plank Pressure Plate",
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
@@ -5280,6 +5379,7 @@
       "key.ringcraft.ring_power_keybind": "Forja de poder",
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Anel ouro",
+      "block.ringcraft.doomed_wood": "Doomed Wood",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -5338,6 +5438,7 @@
       "advancements.guardian_soul_advancement.title": "Feel the Sky Power!",
       "entity.ringcraft.king_sandstorm": "King Sandstorm",
       "item.ringcraft.teleportation_ring.description_0": "",
+      "block.ringcraft.doomed_plank_trapdoor": "Doomed Plank Trapdoor",
       "block.ringcraft.doomed_plank_pressure_plate": "Doomed Plank Pressure Plate",
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "block.ringcraft.muckroot": "Muckroot",

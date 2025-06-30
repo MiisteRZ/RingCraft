@@ -4,7 +4,7 @@
   "definition": {
     "recipeType": "Crafting",
     "recipeRetstackSize": 1,
-    "group": "wooden_presure_plate",
+    "group": "wooden_wood",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
     "cookingTime": 200,
@@ -12,6 +12,21 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
+        "value": "CUSTOM:DoomedTreeLog"
+      },
+      {
+        "value": "CUSTOM:DoomedTreeLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DoomedTreeLog"
+      },
+      {
+        "value": "CUSTOM:DoomedTreeLog"
+      },
+      {
         "value": ""
       },
       {
@@ -19,30 +34,15 @@
       },
       {
         "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:DoomedPlanks"
-      },
-      {
-        "value": "CUSTOM:DoomedPlanks"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:DoomedPlankPressurePlate"
+      "value": "CUSTOM:DoomedWood"
     },
-    "name": "doomed_pressure_plate_recipe",
+    "name": "doomed_wood_recipe",
     "namespace": "mod"
   }
 }

@@ -70,5 +70,7 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_FENCE_GATE.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_BUTTON.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_PRESSURE_PLATE.get().asItem());
+				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_TRAPDOOR.get().asItem());
+				tabData.accept(RingcraftModBlocks.DOOMED_WOOD.get().asItem());
 			}).build());
 }

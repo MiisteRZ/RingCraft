@@ -94,6 +94,8 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> DOOMED_PLANK_FENCE_GATE = block(RingcraftModBlocks.DOOMED_PLANK_FENCE_GATE);
 	public static final DeferredItem<Item> DOOMED_PLANK_BUTTON = block(RingcraftModBlocks.DOOMED_PLANK_BUTTON);
 	public static final DeferredItem<Item> DOOMED_PLANK_PRESSURE_PLATE = block(RingcraftModBlocks.DOOMED_PLANK_PRESSURE_PLATE);
+	public static final DeferredItem<Item> DOOMED_PLANK_TRAPDOOR = block(RingcraftModBlocks.DOOMED_PLANK_TRAPDOOR);
+	public static final DeferredItem<Item> DOOMED_WOOD = block(RingcraftModBlocks.DOOMED_WOOD);
 
 	// Start of user code block custom items
 	// End of user code block custom items
