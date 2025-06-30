@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ringcraft:block/doomed_leaves",
+    "particle": "ringcraft:block/doomed_leaves"
+  },
+  "render_type": "cutout"
+}

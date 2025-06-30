@@ -4,11 +4,11 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "ringcraft:deleted_mod_element"
+      "item": "ringcraft:rozani_log"
     }
   ],
   "result": {
-    "id": "ringcraft:deleted_mod_element",
+    "id": "ringcraft:rozani_planks",
     "count": 4
   }
 }

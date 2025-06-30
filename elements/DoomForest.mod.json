@@ -1,0 +1,195 @@
+{
+  "_fv": 73,
+  "_type": "biome",
+  "definition": {
+    "name": "Doom Forest",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "airColor": {
+      "value": -5600769,
+      "falpha": 0.0
+    },
+    "fogColor": {
+      "value": -7775233,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -9340740,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -13815967,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -607233,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "ambient.crimson_forest.loop"
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 0.5,
+    "rainingPossibility": 0.55,
+    "temperature": 0.5,
+    "spawnBiome": false,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.5,
+      "max": 0.5
+    },
+    "genHumidity": {
+      "min": -0.5,
+      "max": 0.5
+    },
+    "genContinentalness": {
+      "min": -0.19,
+      "max": 1.0
+    },
+    "genErosion": {
+      "min": -0.95,
+      "max": -0.5
+    },
+    "genWeirdness": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "treesPerChunk": 18,
+    "vanillaTreeType": "Big trees",
+    "treeType": 1,
+    "minHeight": 8,
+    "treeStem": {
+      "value": "CUSTOM:DoomedTreeLog"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:DoomedTreeLeaves"
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "defaultFeatures": [
+      "Caves",
+      "ForestGrass",
+      "ForestFlowers",
+      "Ores"
+    ],
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "savanna",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": true,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntitySheep"
+        },
+        "minGroup": 2,
+        "maxGroup": 3,
+        "weight": 5,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityCreeper"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 7,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityGoat"
+        },
+        "minGroup": 1,
+        "maxGroup": 3,
+        "weight": 2,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntitySalmon"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 1,
+        "spawnType": "waterAmbient"
+      },
+      {
+        "entity": {
+          "value": "EntityCow"
+        },
+        "minGroup": 2,
+        "maxGroup": 4,
+        "weight": 6,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityZombie"
+        },
+        "minGroup": 1,
+        "maxGroup": 3,
+        "weight": 7,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityBreeze"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 1,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityTropicalFish"
+        },
+        "minGroup": 2,
+        "maxGroup": 3,
+        "weight": 2,
+        "spawnType": "waterAmbient"
+      }
+    ]
+  }
+}

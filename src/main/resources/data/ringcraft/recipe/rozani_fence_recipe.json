@@ -8,14 +8,14 @@
   ],
   "key": {
     "a": {
-      "item": "ringcraft:deleted_mod_element"
+      "item": "ringcraft:rozani_planks"
     },
     "b": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "id": "ringcraft:deleted_mod_element",
+    "id": "ringcraft:rozani_fence",
     "count": 3
   }
 }

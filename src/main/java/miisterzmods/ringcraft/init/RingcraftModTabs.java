@@ -62,5 +62,7 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModBlocks.ROZANI_FENCE_GATE.get().asItem());
 				tabData.accept(RingcraftModBlocks.ROZANI_SLAB.get().asItem());
 				tabData.accept(RingcraftModBlocks.MISTROCK.get().asItem());
+				tabData.accept(RingcraftModBlocks.DOOMED_TREE_LOG.get().asItem());
+				tabData.accept(RingcraftModBlocks.DOOMED_TREE_LEAVES.get().asItem());
 			}).build());
 }

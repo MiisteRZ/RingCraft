@@ -11,11 +11,11 @@
       "item": "minecraft:stick"
     },
     "b": {
-      "item": "ringcraft:deleted_mod_element"
+      "item": "ringcraft:rozani_planks"
     }
   },
   "result": {
-    "id": "ringcraft:deleted_mod_element",
+    "id": "ringcraft:rozani_fence_gate",
     "count": 1
   }
 }

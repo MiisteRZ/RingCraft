@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ringcraft:block/doomed_tree_log"
+    },
+    "facing=east": {
+      "model": "ringcraft:block/doomed_tree_log",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ringcraft:block/doomed_tree_log",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ringcraft:block/doomed_tree_log",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "ringcraft:block/doomed_tree_log",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "ringcraft:block/doomed_tree_log",
+      "x": 90
+    }
+  }
+}

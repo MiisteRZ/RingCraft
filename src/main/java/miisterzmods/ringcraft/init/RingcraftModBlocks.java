@@ -27,6 +27,8 @@ import miisterzmods.ringcraft.block.ReinforcedIronBlockBlock;
 import miisterzmods.ringcraft.block.ReinforcedFurnanceBlock;
 import miisterzmods.ringcraft.block.MuckrootBlock;
 import miisterzmods.ringcraft.block.MistrockBlock;
+import miisterzmods.ringcraft.block.DoomedTreeLogBlock;
+import miisterzmods.ringcraft.block.DoomedTreeLeavesBlock;
 import miisterzmods.ringcraft.RingcraftMod;
 
 public class RingcraftModBlocks {
@@ -49,6 +51,8 @@ public class RingcraftModBlocks {
 	public static final DeferredBlock<Block> ROZANI_FENCE_GATE = REGISTRY.register("rozani_fence_gate", RozaniFenceGateBlock::new);
 	public static final DeferredBlock<Block> ROZANI_SLAB = REGISTRY.register("rozani_slab", RozaniSlabBlock::new);
 	public static final DeferredBlock<Block> MISTROCK = REGISTRY.register("mistrock", MistrockBlock::new);
+	public static final DeferredBlock<Block> DOOMED_TREE_LOG = REGISTRY.register("doomed_tree_log", DoomedTreeLogBlock::new);
+	public static final DeferredBlock<Block> DOOMED_TREE_LEAVES = REGISTRY.register("doomed_tree_leaves", DoomedTreeLeavesBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

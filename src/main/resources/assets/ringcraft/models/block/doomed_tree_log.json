@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ringcraft:block/doomed_log_top",
+    "up": "ringcraft:block/doomed_log_top",
+    "north": "ringcraft:block/doomed_log",
+    "east": "ringcraft:block/doomed_log",
+    "south": "ringcraft:block/doomed_log",
+    "west": "ringcraft:block/doomed_log",
+    "particle": "ringcraft:block/doomed_log_top"
+  },
+  "render_type": "solid"
+}

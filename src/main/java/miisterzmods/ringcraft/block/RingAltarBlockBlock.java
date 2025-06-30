@@ -1,13 +1,67 @@
 
 package miisterzmods.ringcraft.block;
 
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import org.checkerframework.checker.units.qual.s;
+
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.api.distmarker.Dist;
+
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.pathfinder.PathType;
+import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
+import net.minecraft.client.Minecraft;
+
+import miisterzmods.ringcraft.world.inventory.RingAltarGUIMenu;
+import miisterzmods.ringcraft.procedures.AltarParticlesProcedureProcedure;
+import miisterzmods.ringcraft.procedures.AltarOnTickUpdateProcedure;
+import miisterzmods.ringcraft.procedures.AltarOnBlockAddedProcedure;
+import miisterzmods.ringcraft.block.entity.RingAltarBlockBlockEntity;
+
+import io.netty.buffer.Unpooled;
 
 public class RingAltarBlockBlock extends Block implements EntityBlock {
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public RingAltarBlockBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).strength(8f, 10f).requiresCorrectToolForDrops().pushReaction(PushReaction.BLOCK));
+		super(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).strength(8f, 10f).lightLevel(s -> (new Object() {
+			public int getLightLevel() {
+				if (s.getValue(BLOCKSTATE) == 1)
+					return 12;
+				return 0;
+			}
+		}.getLightLevel())).requiresCorrectToolForDrops().pushReaction(PushReaction.BLOCK));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -17,9 +71,19 @@ public class RingAltarBlockBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return switch (state.getValue(FACING)) {
+			default -> box(0, 0, 0, 16, 16, 16);
+			case NORTH -> box(0, 0, 0, 16, 16, 16);
+			case EAST -> box(0, 0, 0, 16, 16, 16);
+			case WEST -> box(0, 0, 0, 16, 16, 16);
+		};
+	}
+
+	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING);
+		builder.add(FACING, BLOCKSTATE);
 	}
 
 	@Override
@@ -44,13 +108,13 @@ public class RingAltarBlockBlock extends Block implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 1);
-		AltarOnBlockAddedProcedure.execute();
+		AltarOnBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
-		AltarOnTickUpdateProcedure.execute();
+		AltarOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), blockstate);
 		world.scheduleTick(pos, this, 1);
 	}
 
@@ -62,7 +126,7 @@ public class RingAltarBlockBlock extends Block implements EntityBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		AltarParticlesProcedureProcedure.execute();
+		AltarParticlesProcedureProcedure.execute(world, x, y, z, blockstate);
 	}
 
 	@Override
