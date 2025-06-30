@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "ringcraft:doomed_planks"
+    }
+  },
+  "result": {
+    "id": "ringcraft:doomed_plank_pressure_plate",
+    "count": 1
+  }
+}

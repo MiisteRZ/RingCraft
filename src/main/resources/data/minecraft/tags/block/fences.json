@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "ringcraft:doomed_plank_fence",
     "ringcraft:rozani_fence"
   ]
 }

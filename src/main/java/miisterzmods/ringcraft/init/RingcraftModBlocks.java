@@ -29,6 +29,13 @@ import miisterzmods.ringcraft.block.MuckrootBlock;
 import miisterzmods.ringcraft.block.MistrockBlock;
 import miisterzmods.ringcraft.block.DoomedTreeLogBlock;
 import miisterzmods.ringcraft.block.DoomedTreeLeavesBlock;
+import miisterzmods.ringcraft.block.DoomedPlanksBlock;
+import miisterzmods.ringcraft.block.DoomedPlankStairsBlock;
+import miisterzmods.ringcraft.block.DoomedPlankSlabBlock;
+import miisterzmods.ringcraft.block.DoomedPlankPressurePlateBlock;
+import miisterzmods.ringcraft.block.DoomedPlankFenceGateBlock;
+import miisterzmods.ringcraft.block.DoomedPlankFenceBlock;
+import miisterzmods.ringcraft.block.DoomedPlankButtonBlock;
 import miisterzmods.ringcraft.RingcraftMod;
 
 public class RingcraftModBlocks {
@@ -53,6 +60,13 @@ public class RingcraftModBlocks {
 	public static final DeferredBlock<Block> MISTROCK = REGISTRY.register("mistrock", MistrockBlock::new);
 	public static final DeferredBlock<Block> DOOMED_TREE_LOG = REGISTRY.register("doomed_tree_log", DoomedTreeLogBlock::new);
 	public static final DeferredBlock<Block> DOOMED_TREE_LEAVES = REGISTRY.register("doomed_tree_leaves", DoomedTreeLeavesBlock::new);
+	public static final DeferredBlock<Block> DOOMED_PLANKS = REGISTRY.register("doomed_planks", DoomedPlanksBlock::new);
+	public static final DeferredBlock<Block> DOOMED_PLANK_STAIRS = REGISTRY.register("doomed_plank_stairs", DoomedPlankStairsBlock::new);
+	public static final DeferredBlock<Block> DOOMED_PLANK_SLAB = REGISTRY.register("doomed_plank_slab", DoomedPlankSlabBlock::new);
+	public static final DeferredBlock<Block> DOOMED_PLANK_FENCE = REGISTRY.register("doomed_plank_fence", DoomedPlankFenceBlock::new);
+	public static final DeferredBlock<Block> DOOMED_PLANK_FENCE_GATE = REGISTRY.register("doomed_plank_fence_gate", DoomedPlankFenceGateBlock::new);
+	public static final DeferredBlock<Block> DOOMED_PLANK_BUTTON = REGISTRY.register("doomed_plank_button", DoomedPlankButtonBlock::new);
+	public static final DeferredBlock<Block> DOOMED_PLANK_PRESSURE_PLATE = REGISTRY.register("doomed_plank_pressure_plate", DoomedPlankPressurePlateBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

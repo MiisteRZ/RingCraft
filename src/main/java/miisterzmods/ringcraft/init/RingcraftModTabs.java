@@ -64,5 +64,11 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModBlocks.MISTROCK.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_TREE_LOG.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_TREE_LEAVES.get().asItem());
+				tabData.accept(RingcraftModBlocks.DOOMED_PLANKS.get().asItem());
+				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_STAIRS.get().asItem());
+				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_FENCE.get().asItem());
+				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_FENCE_GATE.get().asItem());
+				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_BUTTON.get().asItem());
+				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_PRESSURE_PLATE.get().asItem());
 			}).build());
 }

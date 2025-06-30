@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ringcraft:block/doomed_plank_slab"
+    },
+    "type=top": {
+      "model": "ringcraft:block/doomed_plank_slab_top"
+    },
+    "type=double": {
+      "model": "ringcraft:block/doomed_plank_slab_full"
+    }
+  }
+}

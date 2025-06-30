@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "wooden_stairs",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DoomedPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DoomedPlanks"
+      },
+      {
+        "value": "CUSTOM:DoomedPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DoomedPlanks"
+      },
+      {
+        "value": "CUSTOM:DoomedPlanks"
+      },
+      {
+        "value": "CUSTOM:DoomedPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DoomedPlankStairs"
+    },
+    "name": "doomed_stairs_recipe",
+    "namespace": "mod"
+  }
+}

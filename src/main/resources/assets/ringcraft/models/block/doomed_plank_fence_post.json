@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "ringcraft:block/doomed_planks",
+    "particle": "ringcraft:block/doomed_planks"
+  },
+  "render_type": "solid"
+}

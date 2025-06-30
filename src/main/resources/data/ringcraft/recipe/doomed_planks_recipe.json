@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_planks",
+  "category": "building",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "ringcraft:doomed_tree_log"
+    }
+  },
+  "result": {
+    "id": "ringcraft:doomed_planks",
+    "count": 4
+  }
+}

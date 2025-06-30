@@ -87,6 +87,13 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> MISTROCK = block(RingcraftModBlocks.MISTROCK);
 	public static final DeferredItem<Item> DOOMED_TREE_LOG = block(RingcraftModBlocks.DOOMED_TREE_LOG);
 	public static final DeferredItem<Item> DOOMED_TREE_LEAVES = block(RingcraftModBlocks.DOOMED_TREE_LEAVES);
+	public static final DeferredItem<Item> DOOMED_PLANKS = block(RingcraftModBlocks.DOOMED_PLANKS);
+	public static final DeferredItem<Item> DOOMED_PLANK_STAIRS = block(RingcraftModBlocks.DOOMED_PLANK_STAIRS);
+	public static final DeferredItem<Item> DOOMED_PLANK_SLAB = block(RingcraftModBlocks.DOOMED_PLANK_SLAB);
+	public static final DeferredItem<Item> DOOMED_PLANK_FENCE = block(RingcraftModBlocks.DOOMED_PLANK_FENCE);
+	public static final DeferredItem<Item> DOOMED_PLANK_FENCE_GATE = block(RingcraftModBlocks.DOOMED_PLANK_FENCE_GATE);
+	public static final DeferredItem<Item> DOOMED_PLANK_BUTTON = block(RingcraftModBlocks.DOOMED_PLANK_BUTTON);
+	public static final DeferredItem<Item> DOOMED_PLANK_PRESSURE_PLATE = block(RingcraftModBlocks.DOOMED_PLANK_PRESSURE_PLATE);
 
 	// Start of user code block custom items
 	// End of user code block custom items
