@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_top_right_open",
+  "textures": {
+    "particle": "ringcraft:block/doomed_door_bottom",
+    "bottom": "ringcraft:block/doomed_door_bottom",
+    "top": "ringcraft:block/doomed_door_top"
+  },
+  "render_type": "cutout"
+}

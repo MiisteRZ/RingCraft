@@ -1,19 +1,7 @@
 {
   "variants": {
-    "facing=north": {
+    "": {
       "model": "ringcraft:block/doomed_planks"
-    },
-    "facing=east": {
-      "model": "ringcraft:block/doomed_planks",
-      "y": 90
-    },
-    "facing=south": {
-      "model": "ringcraft:block/doomed_planks",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "ringcraft:block/doomed_planks",
-      "y": 270
     }
   }
 }

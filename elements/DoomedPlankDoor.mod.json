@@ -2,8 +2,8 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "doomed_trapdoor",
-    "textureTop": "",
+    "texture": "doomed_door_bottom",
+    "textureTop": "doomed_door_top",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
@@ -14,9 +14,9 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "doomed_door",
     "particleTexture": "",
-    "blockBase": "TrapDoor",
+    "blockBase": "Door",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -35,7 +35,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Doomed Plank Trapdoor",
+    "name": "Doomed Plank Door",
     "specialInformation": {
       "fixedValue": []
     },
@@ -50,7 +50,7 @@
     ],
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:DoomedPlankTrapdoor"
+      "value": "CUSTOM:DoomedPlankDoor"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

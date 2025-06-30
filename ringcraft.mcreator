@@ -3962,6 +3962,43 @@
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms"
+    },
+    {
+      "name": "DoomedPlankDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doomed_plank_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/item/doomed_plank_door.json",
+          "src/main/resources/assets/ringcraft/blockstates/doomed_plank_door.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_door.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_bottom_right.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_top_left_open.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_top_right_open.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_bottom_left.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_bottom_left_open.json",
+          "src/main/java/miisterzmods/ringcraft/block/DoomedPlankDoorBlock.java",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_bottom_right_open.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_top_right.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_top_left.json"
+        ]
+      },
+      "path": "~/Blocks/PlaneOfTheDooms"
+    },
+    {
+      "name": "DoomedDoorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doomed_door_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/recipe/doomed_door_recipe.json"
+        ]
+      },
+      "path": "~/Blocks/PlaneOfTheDooms"
     }
   ],
   "variable_elements": [
@@ -4149,7 +4186,8 @@
       "DoomedPlankButton",
       "DoomedPlankPressurePlate",
       "DoomedPlankTrapdoor",
-      "DoomedWood"
+      "DoomedWood",
+      "DoomedPlankDoor"
     ]
   },
   "language_map": {
@@ -4210,6 +4248,7 @@
       "item.ringcraft.fire_ring": "Fire Ring",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.doomed_plank_door": "Doomed Plank Door",
       "item.ringcraft.sculk_ring.description_0": "",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
       "block.ringcraft.doomed_planks": "Doomed Planks",
@@ -4317,6 +4356,7 @@
       "item.ringcraft.fire_ring": "Fire Ring",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.doomed_plank_door": "Doomed Plank Door",
       "item.ringcraft.sculk_ring.description_0": "",
       "advancements.reinforced_iron_ingot_obtained.title": "Zaawansowany sprzęt",
       "block.ringcraft.doomed_planks": "Doomed Planks",
@@ -4425,6 +4465,7 @@
       "item.ringcraft.fire_ring": "Gold Ring",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.doomed_plank_door": "Doomed Plank Door",
       "item.ringcraft.sculk_ring.description_0": "",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
       "block.ringcraft.doomed_planks": "Doomed Planks",
@@ -4533,6 +4574,7 @@
       "item.ringcraft.fire_ring": "Gold Ring",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.doomed_plank_door": "Doomed Plank Door",
       "item.ringcraft.sculk_ring.description_0": "",
       "advancements.reinforced_iron_ingot_obtained.title": "Gevorderd verkry Hardeware",
       "block.ringcraft.doomed_planks": "Doomed Planks",
@@ -4640,6 +4682,7 @@
       "item.ringcraft.fire_ring": "Gold Ring",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.doomed_plank_door": "Doomed Plank Door",
       "item.ringcraft.sculk_ring.description_0": "",
       "advancements.reinforced_iron_ingot_obtained.title": "Hardware avançado",
       "block.ringcraft.doomed_planks": "Doomed Planks",
@@ -4747,6 +4790,7 @@
       "item.ringcraft.fire_ring": "Gold Ring",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.doomed_plank_door": "Doomed Plank Door",
       "item.ringcraft.sculk_ring.description_0": "",
       "advancements.reinforced_iron_ingot_obtained.title": "Speciális hardver",
       "block.ringcraft.doomed_planks": "Doomed Planks",
@@ -4855,6 +4899,7 @@
       "item.ringcraft.fire_ring": "Gold Ring",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.doomed_plank_door": "Doomed Plank Door",
       "item.ringcraft.sculk_ring.description_0": "",
       "advancements.reinforced_iron_ingot_obtained.title": "Fortgeschrittene Metallurgie",
       "block.ringcraft.doomed_planks": "Doomed Planks",
@@ -4963,6 +5008,7 @@
       "item.ringcraft.fire_ring": "Fire Ring",
       "item.ringcraft.cursed_ring": "C^rse% R*ng",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.doomed_plank_door": "Doomed Plank Door",
       "item.ringcraft.sculk_ring.description_0": "",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
       "block.ringcraft.doomed_planks": "Doomed Planks",
@@ -5072,6 +5118,7 @@
       "item.ringcraft.fire_ring": "Gold Ring",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.doomed_plank_door": "Doomed Plank Door",
       "item.ringcraft.sculk_ring.description_0": "",
       "advancements.reinforced_iron_ingot_obtained.title": "Advanced Hardware",
       "block.ringcraft.doomed_planks": "Doomed Planks",
@@ -5180,6 +5227,7 @@
       "item.ringcraft.fire_ring": "Anillo Ígneo",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.doomed_plank_door": "Doomed Plank Door",
       "item.ringcraft.sculk_ring.description_0": "",
       "advancements.reinforced_iron_ingot_obtained.title": "Tecnología Avanzada",
       "block.ringcraft.doomed_planks": "Doomed Planks",
@@ -5288,6 +5336,7 @@
       "item.ringcraft.fire_ring": "Gold Ring",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.doomed_plank_door": "Doomed Plank Door",
       "item.ringcraft.sculk_ring.description_0": "",
       "advancements.reinforced_iron_ingot_obtained.title": "Geavanceerde IJzerwaren vekrijgen",
       "block.ringcraft.doomed_planks": "Doomed Planks",
@@ -5395,6 +5444,7 @@
       "item.ringcraft.fire_ring": "Gold Ring",
       "item.ringcraft.cursed_ring": "Teleportation Ring",
       "effect.ringcraft.cursed_effect": "Cursed",
+      "block.ringcraft.doomed_plank_door": "Doomed Plank Door",
       "item.ringcraft.sculk_ring.description_0": "",
       "advancements.reinforced_iron_ingot_obtained.title": "Hardware avançado",
       "block.ringcraft.doomed_planks": "Doomed Planks",

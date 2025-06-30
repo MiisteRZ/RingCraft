@@ -37,6 +37,7 @@ import miisterzmods.ringcraft.block.DoomedPlankSlabBlock;
 import miisterzmods.ringcraft.block.DoomedPlankPressurePlateBlock;
 import miisterzmods.ringcraft.block.DoomedPlankFenceGateBlock;
 import miisterzmods.ringcraft.block.DoomedPlankFenceBlock;
+import miisterzmods.ringcraft.block.DoomedPlankDoorBlock;
 import miisterzmods.ringcraft.block.DoomedPlankButtonBlock;
 import miisterzmods.ringcraft.RingcraftMod;
 
@@ -71,6 +72,7 @@ public class RingcraftModBlocks {
 	public static final DeferredBlock<Block> DOOMED_PLANK_PRESSURE_PLATE = REGISTRY.register("doomed_plank_pressure_plate", DoomedPlankPressurePlateBlock::new);
 	public static final DeferredBlock<Block> DOOMED_PLANK_TRAPDOOR = REGISTRY.register("doomed_plank_trapdoor", DoomedPlankTrapdoorBlock::new);
 	public static final DeferredBlock<Block> DOOMED_WOOD = REGISTRY.register("doomed_wood", DoomedWoodBlock::new);
+	public static final DeferredBlock<Block> DOOMED_PLANK_DOOR = REGISTRY.register("doomed_plank_door", DoomedPlankDoorBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

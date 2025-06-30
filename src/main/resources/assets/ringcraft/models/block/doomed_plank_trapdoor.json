@@ -4,5 +4,5 @@
     "texture": "ringcraft:block/doomed_trapdoor",
     "particle": "ringcraft:block/doomed_trapdoor"
   },
-  "render_type": "solid"
+  "render_type": "cutout"
 }
