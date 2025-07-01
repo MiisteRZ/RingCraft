@@ -42,6 +42,7 @@ import miisterzmods.ringcraft.block.DoomedPlankFenceBlock;
 import miisterzmods.ringcraft.block.DoomedPlankDoorBlock;
 import miisterzmods.ringcraft.block.DoomedPlankButtonBlock;
 import miisterzmods.ringcraft.block.DoomedPitcherPlantBlock;
+import miisterzmods.ringcraft.block.BurntGrassBlockBlock;
 import miisterzmods.ringcraft.RingcraftMod;
 
 public class RingcraftModBlocks {
@@ -79,6 +80,7 @@ public class RingcraftModBlocks {
 	public static final DeferredBlock<Block> DOOMED_PITCHER_PLANT = REGISTRY.register("doomed_pitcher_plant", DoomedPitcherPlantBlock::new);
 	public static final DeferredBlock<Block> DOOMED_TWISTING_VINES = REGISTRY.register("doomed_twisting_vines", DoomedTwistingVinesBlock::new);
 	public static final DeferredBlock<Block> DOOMED_TWISTING_PLANT = REGISTRY.register("doomed_twisting_plant", DoomedTwistingPlantBlock::new);
+	public static final DeferredBlock<Block> BURNT_GRASS_BLOCK = REGISTRY.register("burnt_grass_block", BurntGrassBlockBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

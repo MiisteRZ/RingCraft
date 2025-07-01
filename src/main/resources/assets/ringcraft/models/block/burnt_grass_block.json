@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "ringcraft:block/dirt",
+    "top": "ringcraft:block/burnt_grass_block_top",
+    "side": "ringcraft:block/burnt_grass_block_side",
+    "overlay": "ringcraft:block/burnt_grass_block_side",
+    "particle": "ringcraft:block/dirt"
+  },
+  "render_type": "cutout_mipped"
+}

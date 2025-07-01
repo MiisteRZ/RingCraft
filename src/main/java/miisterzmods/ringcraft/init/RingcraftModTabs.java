@@ -82,6 +82,7 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModBlocks.DOOMED_PITCHER_PLANT.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_TWISTING_VINES.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_TWISTING_PLANT.get().asItem());
+				tabData.accept(RingcraftModBlocks.BURNT_GRASS_BLOCK.get().asItem());
 			}).build());
 
 	@SubscribeEvent

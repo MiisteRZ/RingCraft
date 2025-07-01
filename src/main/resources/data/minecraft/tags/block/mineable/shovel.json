@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "ringcraft:burnt_grass_block",
     "ringcraft:muckroot"
   ]
 }
