@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "ringcraft:block/doomed_twisting_plant",
+    "particle": "ringcraft:block/doomed_twisting_plant"
+  },
+  "render_type": "cutout"
+}

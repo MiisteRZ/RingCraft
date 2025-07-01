@@ -75,7 +75,7 @@
       "min": -1.0,
       "max": 1.0
     },
-    "treesPerChunk": 18,
+    "treesPerChunk": 12,
     "vanillaTreeType": "Big trees",
     "treeType": 1,
     "minHeight": 8,
@@ -86,7 +86,7 @@
       "value": "CUSTOM:DoomedTreeLeaves"
     },
     "treeVines": {
-      "value": ""
+      "value": "CUSTOM:DoomedTwistingVines"
     },
     "treeFruits": {
       "value": ""
@@ -95,7 +95,9 @@
       "Caves",
       "ForestGrass",
       "ForestFlowers",
-      "Ores"
+      "Ores",
+      "PlainsTallGrass",
+      "TaigaGrassAndMushrooms"
     ],
     "spawnStronghold": false,
     "spawnMineshaft": false,

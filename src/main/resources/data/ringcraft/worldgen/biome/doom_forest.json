@@ -113,6 +113,10 @@
     [
       "ringcraft:doom_forest_tree",
       "minecraft:forest_flowers",
+      "minecraft:patch_tall_grass",
+      "minecraft:patch_grass_taiga_2",
+      "minecraft:brown_mushroom_taiga",
+      "minecraft:red_mushroom_taiga",
       "minecraft:patch_grass_forest"
     ],
     []

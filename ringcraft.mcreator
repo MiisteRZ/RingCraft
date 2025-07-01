@@ -3617,7 +3617,7 @@
           "src/main/resources/assets/ringcraft/models/block/doomed_tree_log.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedTreeLeaves",
@@ -3634,7 +3634,7 @@
           "src/main/resources/assets/ringcraft/models/block/doomed_tree_leaves.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomForest",
@@ -3646,7 +3646,9 @@
         "files": [
           "src/main/resources/data/ringcraft/worldgen/biome/doom_forest.json",
           "src/main/resources/data/ringcraft/worldgen/configured_feature/doom_forest_tree.json",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/doom_forest_tree.json"
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/doom_forest_tree.json",
+          "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/DoomForestTrunkDecorator.java",
+          "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/DoomForestLeaveDecorator.java"
         ]
       },
       "path": "~/Biomes"
@@ -3681,7 +3683,7 @@
           "src/main/resources/assets/ringcraft/blockstates/doomed_planks.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedPlankStairs",
@@ -3700,7 +3702,7 @@
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_stairs_outer.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedPlankSlab",
@@ -3719,7 +3721,7 @@
           "src/main/resources/assets/ringcraft/models/item/doomed_plank_slab.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedPlankFence",
@@ -3738,7 +3740,7 @@
           "src/main/resources/assets/ringcraft/blockstates/doomed_plank_fence.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedPlankFenceGate",
@@ -3758,7 +3760,7 @@
           "src/main/resources/assets/ringcraft/blockstates/doomed_plank_fence_gate.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedPlankButton",
@@ -3777,7 +3779,7 @@
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_button_pressed.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedStairsRecipe",
@@ -3790,7 +3792,7 @@
           "src/main/resources/data/ringcraft/recipe/doomed_stairs_recipe.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedSlabRecipe",
@@ -3803,7 +3805,7 @@
           "src/main/resources/data/ringcraft/recipe/doomed_slab_recipe.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedFenceRecipe",
@@ -3816,7 +3818,7 @@
           "src/main/resources/data/ringcraft/recipe/doomed_fence_recipe.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedFenceGateRecipe",
@@ -3829,7 +3831,7 @@
           "src/main/resources/data/ringcraft/recipe/doomed_fence_gate_recipe.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedButtonRecipe",
@@ -3842,7 +3844,7 @@
           "src/main/resources/data/ringcraft/recipe/doomed_button_recipe.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedPlankPressurePlate",
@@ -3860,7 +3862,7 @@
           "src/main/java/miisterzmods/ringcraft/block/DoomedPlankPressurePlateBlock.java"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedPressurePlateRecipe",
@@ -3873,7 +3875,7 @@
           "src/main/resources/data/ringcraft/recipe/doomed_pressure_plate_recipe.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedPlanksRecipe",
@@ -3886,7 +3888,7 @@
           "src/main/resources/data/ringcraft/recipe/doomed_planks_recipe.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedPlankTrapdoor",
@@ -3905,7 +3907,7 @@
           "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_trapdoor.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedTrapdoorRecipe",
@@ -3918,7 +3920,7 @@
           "src/main/resources/data/ringcraft/recipe/doomed_trapdoor_recipe.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedPlanksStickRecipe",
@@ -3931,7 +3933,7 @@
           "src/main/resources/data/ringcraft/recipe/doomed_planks_stick_recipe.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedWood",
@@ -3948,7 +3950,7 @@
           "src/main/resources/assets/ringcraft/blockstates/doomed_wood.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedWoodRecipe",
@@ -3961,7 +3963,7 @@
           "src/main/resources/data/ringcraft/recipe/doomed_wood_recipe.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedPlankDoor",
@@ -3985,7 +3987,7 @@
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_top_left.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     },
     {
       "name": "DoomedDoorRecipe",
@@ -3998,7 +4000,64 @@
           "src/main/resources/data/ringcraft/recipe/doomed_door_recipe.json"
         ]
       },
-      "path": "~/Blocks/PlaneOfTheDooms"
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
+    },
+    {
+      "name": "DoomedPitcherPlant",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doomed_pitcher_plant",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/block/doomed_pitcher_plant.json",
+          "src/main/resources/assets/ringcraft/blockstates/doomed_pitcher_plant.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/doomed_pitcher_plant.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_pitcher_plant.json",
+          "src/main/resources/assets/ringcraft/models/item/doomed_pitcher_plant.json",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/doomed_pitcher_plant.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/doomed_pitcher_plant_biome_modifier.json",
+          "src/main/java/miisterzmods/ringcraft/block/DoomedPitcherPlantBlock.java"
+        ]
+      },
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
+    },
+    {
+      "name": "DoomedTwistingVines",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doomed_twisting_vines",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/blockstates/doomed_twisting_vines.json",
+          "src/main/java/miisterzmods/ringcraft/block/DoomedTwistingVinesBlock.java",
+          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_twisting_vines.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_twisting_vines.json",
+          "src/main/resources/assets/ringcraft/models/item/doomed_twisting_vines.json"
+        ]
+      },
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
+    },
+    {
+      "name": "DoomedTwistingPlant",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "doomed_twisting_plant",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/doomed_twisting_plant.json",
+          "src/main/resources/assets/ringcraft/models/item/doomed_twisting_plant.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_twisting_plant.json",
+          "src/main/resources/assets/ringcraft/blockstates/doomed_twisting_plant.json",
+          "src/main/java/miisterzmods/ringcraft/block/DoomedTwistingPlantBlock.java",
+          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_twisting_plant.json",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/doomed_twisting_plant.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/doomed_twisting_plant_biome_modifier.json"
+        ]
+      },
+      "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
     }
   ],
   "variable_elements": [
@@ -4188,7 +4247,10 @@
       "DoomedPlankTrapdoor",
       "DoomedWood",
       "DoomedPlankDoor",
-      "DoomedPlankSlab"
+      "DoomedPlankSlab",
+      "DoomedPitcherPlant",
+      "DoomedTwistingVines",
+      "DoomedTwistingPlant"
     ]
   },
   "language_map": {
@@ -4196,6 +4258,7 @@
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "block.ringcraft.ring_altar_block": "Ring Altar",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
@@ -4234,6 +4297,7 @@
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Regular Ring",
       "block.ringcraft.doomed_wood": "Doomed Wood",
+      "block.ringcraft.doomed_pitcher_plant": "Doomed Pitcher Plant",
       "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4275,6 +4339,7 @@
       "advancements.vex_soul_advancement.title": "Feel the Sky Power!",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "block.ringcraft.doomed_twisting_plant": "Doomed Twisting Plant",
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
@@ -4304,6 +4369,7 @@
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Zdobądź wzmocnioną sztabkę żelaza",
       "key.ringcraft.rings_menu_binding": "Pierścienie",
+      "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "block.ringcraft.ring_altar_block": "Ring Altar",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
@@ -4342,6 +4408,7 @@
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Regular Ring",
       "block.ringcraft.doomed_wood": "Doomed Wood",
+      "block.ringcraft.doomed_pitcher_plant": "Doomed Pitcher Plant",
       "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4382,6 +4449,7 @@
       "advancements.vex_soul_advancement.title": "Feel the Sky Power!",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item_group.ringcraft.ring_craft_creative_tab": "RingCraft",
+      "block.ringcraft.doomed_twisting_plant": "Doomed Twisting Plant",
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "block.ringcraft.ring_forge": "Ring Forge",
@@ -4413,6 +4481,7 @@
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Menu Cincin",
+      "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
@@ -4451,6 +4520,7 @@
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Regular Ring",
       "block.ringcraft.doomed_wood": "Doomed Wood",
+      "block.ringcraft.doomed_pitcher_plant": "Doomed Pitcher Plant",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4492,6 +4562,7 @@
       "advancements.vex_soul_advancement.title": "Feel the Sky Power!",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "block.ringcraft.doomed_twisting_plant": "Doomed Twisting Plant",
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
@@ -4521,6 +4592,7 @@
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Kry \u0027n versterkte ysterstaaf",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
@@ -4560,6 +4632,7 @@
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Goud Ring",
       "block.ringcraft.doomed_wood": "Doomed Wood",
+      "block.ringcraft.doomed_pitcher_plant": "Doomed Pitcher Plant",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4601,6 +4674,7 @@
       "advancements.vex_soul_advancement.title": "Feel the Sky Power!",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "block.ringcraft.doomed_twisting_plant": "Doomed Twisting Plant",
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
@@ -4630,6 +4704,7 @@
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Menu de Anéis",
+      "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
@@ -4668,6 +4743,7 @@
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Anel ouro",
       "block.ringcraft.doomed_wood": "Doomed Wood",
+      "block.ringcraft.doomed_pitcher_plant": "Doomed Pitcher Plant",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4709,6 +4785,7 @@
       "advancements.vex_soul_advancement.title": "Feel the Sky Power!",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "block.ringcraft.doomed_twisting_plant": "Doomed Twisting Plant",
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
@@ -4738,6 +4815,7 @@
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Szerezzen megerősített vasrúd",
       "key.ringcraft.rings_menu_binding": "Gyűrűk menü",
+      "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
@@ -4776,6 +4854,7 @@
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Aranygyűrű",
       "block.ringcraft.doomed_wood": "Doomed Wood",
+      "block.ringcraft.doomed_pitcher_plant": "Doomed Pitcher Plant",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4817,6 +4896,7 @@
       "advancements.vex_soul_advancement.title": "Feel the Sky Power!",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "block.ringcraft.doomed_twisting_plant": "Doomed Twisting Plant",
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
@@ -4846,6 +4926,7 @@
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Besorge einen verstärkten Eisenbarren",
       "key.ringcraft.rings_menu_binding": "Ring Menu",
+      "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
@@ -4885,6 +4966,7 @@
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Regulär Ring",
       "block.ringcraft.doomed_wood": "Doomed Wood",
+      "block.ringcraft.doomed_pitcher_plant": "Doomed Pitcher Plant",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -4926,6 +5008,7 @@
       "advancements.vex_soul_advancement.title": "Feel the Sky Power!",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "block.ringcraft.doomed_twisting_plant": "Doomed Twisting Plant",
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
@@ -4955,6 +5038,7 @@
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "block.ringcraft.ring_altar_block": "Ring Altar",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
@@ -4994,6 +5078,7 @@
       "item.ringcraft.sea_ring": "Sea Ring",
       "item.ringcraft.gold_ring": "Gold Ring",
       "block.ringcraft.doomed_wood": "Doomed Wood",
+      "block.ringcraft.doomed_pitcher_plant": "Doomed Pitcher Plant",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "advancements.enderman_soul_advancement.title": "Feel the Ender Power",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -5035,6 +5120,7 @@
       "advancements.vex_soul_advancement.title": "Feel the Sky Power!",
       "advancements.guardian_soul_advancement.descr": "Get a Guardian Soul",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "block.ringcraft.doomed_twisting_plant": "Doomed Twisting Plant",
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "block.ringcraft.ring_forge": "Ring Forge",
@@ -5066,6 +5152,7 @@
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Rings Menu",
+      "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
@@ -5104,6 +5191,7 @@
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Regular Ring",
       "block.ringcraft.doomed_wood": "Doomed Wood",
+      "block.ringcraft.doomed_pitcher_plant": "Doomed Pitcher Plant",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -5145,6 +5233,7 @@
       "advancements.vex_soul_advancement.title": "Feel the Sky Power!",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "block.ringcraft.doomed_twisting_plant": "Doomed Twisting Plant",
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
@@ -5174,6 +5263,7 @@
       "key.ringcraft.ring_3_binding": "Anillo 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtén un Lingote de Hierro Reforzado",
       "key.ringcraft.rings_menu_binding": "Menú de Anillos RingCraft",
+      "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Consigue el Alma de un Vex",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
@@ -5213,6 +5303,7 @@
       "item.ringcraft.sea_ring": "Anillo de los Mares",
       "item.ringcraft.gold_ring": "Anillo Regular",
       "block.ringcraft.doomed_wood": "Doomed Wood",
+      "block.ringcraft.doomed_pitcher_plant": "Doomed Pitcher Plant",
       "advancements.enderman_soul_advancement.title": "Siente el Poder Oscuro!",
       "advancements.ice_crystal_advancement.title": "El poder del Rey Helado!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -5254,6 +5345,7 @@
       "advancements.vex_soul_advancement.title": "Siente el Poder de los Cielos!",
       "advancements.guardian_soul_advancement.descr": "Consigue el Alma de un Guardían",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "block.ringcraft.doomed_twisting_plant": "Doomed Twisting Plant",
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Alma de Brisa",
@@ -5283,6 +5375,7 @@
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Verkrijg een Gewapend IJzerstaaf",
       "key.ringcraft.rings_menu_binding": "Ringen Menu",
+      "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
@@ -5322,6 +5415,7 @@
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Goud Ring",
       "block.ringcraft.doomed_wood": "Doomed Wood",
+      "block.ringcraft.doomed_pitcher_plant": "Doomed Pitcher Plant",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -5363,6 +5457,7 @@
       "advancements.vex_soul_advancement.title": "Feel the Sky Power!",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "block.ringcraft.doomed_twisting_plant": "Doomed Twisting Plant",
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
@@ -5392,6 +5487,7 @@
       "key.ringcraft.ring_3_binding": "Ring 3",
       "advancements.reinforced_iron_ingot_obtained.descr": "Obtain a Reinforced Iron Ingot",
       "key.ringcraft.rings_menu_binding": "Menu de Anéis",
+      "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
@@ -5430,6 +5526,7 @@
       "item.ringcraft.sea_ring": "Fire Ring",
       "item.ringcraft.gold_ring": "Anel ouro",
       "block.ringcraft.doomed_wood": "Doomed Wood",
+      "block.ringcraft.doomed_pitcher_plant": "Doomed Pitcher Plant",
       "advancements.enderman_soul_advancement.title": "Dark Power!",
       "advancements.ice_crystal_advancement.title": "Feel the Ice King Power!",
       "biome.ringcraft.doom_forest": "Doom Forest",
@@ -5471,6 +5568,7 @@
       "advancements.vex_soul_advancement.title": "Feel the Sky Power!",
       "advancements.guardian_soul_advancement.descr": "Get a Vex Soul",
       "item_group.ringcraft.ring_craft_creative_tab": "Ring Craft",
+      "block.ringcraft.doomed_twisting_plant": "Doomed Twisting Plant",
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
@@ -5529,7 +5627,12 @@
           },
           {
             "name": "PlaneOfTheDooms",
-            "children": []
+            "children": [
+              {
+                "name": "DoomedForest",
+                "children": []
+              }
+            ]
           }
         ]
       },

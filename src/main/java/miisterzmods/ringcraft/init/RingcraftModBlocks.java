@@ -28,6 +28,8 @@ import miisterzmods.ringcraft.block.ReinforcedFurnanceBlock;
 import miisterzmods.ringcraft.block.MuckrootBlock;
 import miisterzmods.ringcraft.block.MistrockBlock;
 import miisterzmods.ringcraft.block.DoomedWoodBlock;
+import miisterzmods.ringcraft.block.DoomedTwistingVinesBlock;
+import miisterzmods.ringcraft.block.DoomedTwistingPlantBlock;
 import miisterzmods.ringcraft.block.DoomedTreeLogBlock;
 import miisterzmods.ringcraft.block.DoomedTreeLeavesBlock;
 import miisterzmods.ringcraft.block.DoomedPlanksBlock;
@@ -39,6 +41,7 @@ import miisterzmods.ringcraft.block.DoomedPlankFenceGateBlock;
 import miisterzmods.ringcraft.block.DoomedPlankFenceBlock;
 import miisterzmods.ringcraft.block.DoomedPlankDoorBlock;
 import miisterzmods.ringcraft.block.DoomedPlankButtonBlock;
+import miisterzmods.ringcraft.block.DoomedPitcherPlantBlock;
 import miisterzmods.ringcraft.RingcraftMod;
 
 public class RingcraftModBlocks {
@@ -73,6 +76,9 @@ public class RingcraftModBlocks {
 	public static final DeferredBlock<Block> DOOMED_PLANK_TRAPDOOR = REGISTRY.register("doomed_plank_trapdoor", DoomedPlankTrapdoorBlock::new);
 	public static final DeferredBlock<Block> DOOMED_WOOD = REGISTRY.register("doomed_wood", DoomedWoodBlock::new);
 	public static final DeferredBlock<Block> DOOMED_PLANK_DOOR = REGISTRY.register("doomed_plank_door", DoomedPlankDoorBlock::new);
+	public static final DeferredBlock<Block> DOOMED_PITCHER_PLANT = REGISTRY.register("doomed_pitcher_plant", DoomedPitcherPlantBlock::new);
+	public static final DeferredBlock<Block> DOOMED_TWISTING_VINES = REGISTRY.register("doomed_twisting_vines", DoomedTwistingVinesBlock::new);
+	public static final DeferredBlock<Block> DOOMED_TWISTING_PLANT = REGISTRY.register("doomed_twisting_plant", DoomedTwistingPlantBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

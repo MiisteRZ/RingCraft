@@ -42,6 +42,13 @@
       "offset": 0,
       "height": 2
     },
-    "decorators": []
+    "decorators": [
+      {
+        "type": "ringcraft:doom_forest_tree_trunk_decorator"
+      },
+      {
+        "type": "ringcraft:doom_forest_tree_leave_decorator"
+      }
+    ]
   }
 }

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "ringcraft:doom_forest",
+  "features": "ringcraft:doomed_twisting_plant",
+  "step": "vegetal_decoration"
+}
