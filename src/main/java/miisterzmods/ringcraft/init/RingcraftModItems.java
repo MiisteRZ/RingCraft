@@ -101,6 +101,7 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> DOOMED_PITCHER_PLANT = block(RingcraftModBlocks.DOOMED_PITCHER_PLANT);
 	public static final DeferredItem<Item> DOOMED_TWISTING_VINES = block(RingcraftModBlocks.DOOMED_TWISTING_VINES);
 	public static final DeferredItem<Item> DOOMED_TWISTING_PLANT = block(RingcraftModBlocks.DOOMED_TWISTING_PLANT);
+	public static final DeferredItem<Item> SNEAP_ENTITY_SPAWN_EGG = REGISTRY.register("sneap_entity_spawn_egg", () -> new DeferredSpawnEggItem(RingcraftModEntities.SNEAP_ENTITY, -13434829, -16777165, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

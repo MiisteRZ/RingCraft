@@ -28,8 +28,7 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModBlocks.REINFORCED_IRON_STONE_BLOCK.get().asItem());
 				tabData.accept(RingcraftModItems.REINFORCED_RAW_IRON.get());
 				tabData.accept(RingcraftModItems.REINFORCED_IRON_INGOT.get());
-				tabData.accept(RingcraftModItems.REGULAR_RING_ITEM.get());
-				tabData.accept(RingcraftModItems.GOLD_RING.get());
+				tabData.accept(RingcraftModBlocks.RING_ALTAR_BLOCK.get().asItem());
 				tabData.accept(RingcraftModBlocks.REINFORCED_FURNANCE.get().asItem());
 				tabData.accept(RingcraftModBlocks.RING_FORGE_BLOCK.get().asItem());
 				tabData.accept(RingcraftModItems.BLAZE_SOUL.get());
@@ -41,6 +40,8 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.CURSED_SOUL.get());
 				tabData.accept(RingcraftModItems.ICE_CRYSTAL.get());
 				tabData.accept(RingcraftModItems.SAND_GEM.get());
+				tabData.accept(RingcraftModItems.REGULAR_RING_ITEM.get());
+				tabData.accept(RingcraftModItems.GOLD_RING.get());
 				tabData.accept(RingcraftModItems.SEA_RING.get());
 				tabData.accept(RingcraftModItems.SCULK_RING.get());
 				tabData.accept(RingcraftModItems.WATER_WALK_RING.get());
@@ -53,22 +54,22 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.CURSED_RING.get());
 				tabData.accept(RingcraftModItems.ICE_KING_ENTITY_SPAWN_EGG.get());
 				tabData.accept(RingcraftModItems.KING_SANDSTORM_SPAWN_EGG.get());
-				tabData.accept(RingcraftModBlocks.RING_ALTAR_BLOCK.get().asItem());
 				tabData.accept(RingcraftModItems.REALMS_PORTAL.get());
-				tabData.accept(RingcraftModBlocks.ROZANI_STAIRS.get().asItem());
-				tabData.accept(RingcraftModBlocks.ROZANI_LOG.get().asItem());
-				tabData.accept(RingcraftModBlocks.ROZANI_FENCE.get().asItem());
 				tabData.accept(RingcraftModBlocks.ROZANI_LEAVES.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_WOOD.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_LOG.get().asItem());
 				tabData.accept(RingcraftModBlocks.ROZANI_PLANKS.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_STAIRS.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_SLAB.get().asItem());
 				tabData.accept(RingcraftModBlocks.ROZANI_PRESSURE_PLATE.get().asItem());
 				tabData.accept(RingcraftModBlocks.ROZANI_BUTTON.get().asItem());
-				tabData.accept(RingcraftModBlocks.ROZANI_WOOD.get().asItem());
-				tabData.accept(RingcraftModBlocks.MUCKROOT.get().asItem());
+				tabData.accept(RingcraftModBlocks.ROZANI_FENCE.get().asItem());
 				tabData.accept(RingcraftModBlocks.ROZANI_FENCE_GATE.get().asItem());
-				tabData.accept(RingcraftModBlocks.ROZANI_SLAB.get().asItem());
+				tabData.accept(RingcraftModBlocks.MUCKROOT.get().asItem());
 				tabData.accept(RingcraftModBlocks.MISTROCK.get().asItem());
-				tabData.accept(RingcraftModBlocks.DOOMED_TREE_LOG.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_TREE_LEAVES.get().asItem());
+				tabData.accept(RingcraftModBlocks.DOOMED_WOOD.get().asItem());
+				tabData.accept(RingcraftModBlocks.DOOMED_TREE_LOG.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_PLANKS.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_STAIRS.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_FENCE.get().asItem());
@@ -76,7 +77,6 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_BUTTON.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_PRESSURE_PLATE.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_TRAPDOOR.get().asItem());
-				tabData.accept(RingcraftModBlocks.DOOMED_WOOD.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_DOOR.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_PLANK_SLAB.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_PITCHER_PLANT.get().asItem());
@@ -90,6 +90,8 @@ public class RingcraftModTabs {
 			tabData.accept(RingcraftModBlocks.DOOMED_PITCHER_PLANT.get().asItem());
 			tabData.accept(RingcraftModBlocks.DOOMED_TWISTING_VINES.get().asItem());
 			tabData.accept(RingcraftModBlocks.DOOMED_TWISTING_PLANT.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(RingcraftModItems.SNEAP_ENTITY_SPAWN_EGG.get());
 		}
 	}
 }

@@ -4,6 +4,7 @@
   "key.ringcraft.rings_menu_binding": "Ringen Menu",
   "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
   "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
+  "entity.ringcraft.sneap_entity": "Sneap",
   "block.ringcraft.ring_altar_block": "Ring Forge",
   "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
   "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringen",
@@ -108,5 +109,6 @@
   "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
   "block.ringcraft.muckroot": "Muckroot",
   "item.ringcraft.wind_ring.description_0": "",
+  "item.ringcraft.sneap_entity_spawn_egg": "Sneap Spawn Egg",
   "block.ringcraft.rozani_slab": "Rozani Slab"
 }

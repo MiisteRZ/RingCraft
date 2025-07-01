@@ -8,9 +8,9 @@
       "registry_name": "rings_gui",
       "metadata": {
         "files": [
+          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java",
           "src/main/java/miisterzmods/ringcraft/network/RingsGUISlotMessage.java",
-          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java",
-          "src/main/java/miisterzmods/ringcraft/world/inventory/RingsGUIMenu.java"
+          "src/main/java/miisterzmods/ringcraft/client/gui/RingsGUIScreen.java"
         ]
       },
       "path": "~/GUI"
@@ -152,14 +152,14 @@
       "registry_name": "reinforced_iron_stone_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_iron_stone_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_stone_block.json",
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_stone_block_biome_modifier.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java"
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_stone_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronStoneBlockBlock.java",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_stone_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_stone_block.json"
         ]
       },
       "path": "~/Blocks/Reinforced Iron"
@@ -187,11 +187,11 @@
       "metadata": {
         "files": [
           "src/main/java/miisterzmods/ringcraft/block/ReinforcedFurnanceBlock.java",
-          "src/main/java/miisterzmods/ringcraft/block/entity/ReinforcedFurnanceBlockEntity.java",
-          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json",
           "src/main/resources/assets/ringcraft/models/block/reinforced_furnance.json",
+          "src/main/java/miisterzmods/ringcraft/block/entity/ReinforcedFurnanceBlockEntity.java",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_furnance.json",
           "src/main/resources/assets/ringcraft/models/item/reinforced_furnance.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_furnance.json"
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_furnance.json"
         ]
       },
       "path": "~/Blocks/Reinforced Furnace"
@@ -257,8 +257,8 @@
       "registry_name": "gold_ring",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/GoldRingItem.java",
-          "src/main/resources/assets/ringcraft/models/item/gold_ring.json"
+          "src/main/resources/assets/ringcraft/models/item/gold_ring.json",
+          "src/main/java/miisterzmods/ringcraft/item/GoldRingItem.java"
         ]
       },
       "path": "~/Items/Rings"
@@ -480,8 +480,8 @@
       "registry_name": "reinforced_raw_iron",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/ReinforcedRawIronItem.java",
-          "src/main/resources/assets/ringcraft/models/item/reinforced_raw_iron.json"
+          "src/main/resources/assets/ringcraft/models/item/reinforced_raw_iron.json",
+          "src/main/java/miisterzmods/ringcraft/item/ReinforcedRawIronItem.java"
         ]
       },
       "path": "~/Items/RawOres"
@@ -668,14 +668,14 @@
       "registry_name": "reinforced_iron_deepslate_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_deepslate_block.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deepslate_block.json",
-          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_deepslate_block.json",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_deepslate_block.json",
-          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_deepslate_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronDeepslateBlockBlock.java",
           "src/main/resources/data/ringcraft/neoforge/biome_modifier/reinforced_iron_deepslate_block_biome_modifier.json",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deepslate_block.json"
+          "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_deepslate_block.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/reinforced_iron_deepslate_block.json",
+          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_deepslate_block.json",
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronDeepslateBlockBlock.java",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/reinforced_iron_deepslate_block.json",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_deepslate_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_deepslate_block.json"
         ]
       },
       "path": "~/Blocks/Reinforced Iron"
@@ -689,9 +689,9 @@
       "metadata": {
         "files": [
           "src/main/java/miisterzmods/ringcraft/item/renderer/BlazeSoulItemRenderer.java",
-          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemModel.java",
           "src/main/java/miisterzmods/ringcraft/item/BlazeSoulItem.java",
-          "src/main/resources/assets/ringcraft/models/item/blaze_soul.json"
+          "src/main/resources/assets/ringcraft/models/item/blaze_soul.json",
+          "src/main/java/miisterzmods/ringcraft/item/model/BlazeSoulItemModel.java"
         ]
       },
       "path": "~/Items/Souls"
@@ -739,11 +739,11 @@
       "registry_name": "reinforced_iron_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_block.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/reinforced_iron_block.json",
-          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronBlockBlock.java",
+          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_block.json",
           "src/main/resources/assets/ringcraft/blockstates/reinforced_iron_block.json",
-          "src/main/resources/assets/ringcraft/models/block/reinforced_iron_block.json"
+          "src/main/java/miisterzmods/ringcraft/block/ReinforcedIronBlockBlock.java",
+          "src/main/resources/assets/ringcraft/models/item/reinforced_iron_block.json"
         ]
       },
       "path": "~/Blocks/Reinforced Iron"
@@ -872,10 +872,10 @@
       "registry_name": "enderman_soul",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/EndermanSoulItem.java",
           "src/main/java/miisterzmods/ringcraft/item/model/EndermanSoulItemModel.java",
+          "src/main/resources/assets/ringcraft/models/item/enderman_soul.json",
           "src/main/java/miisterzmods/ringcraft/item/renderer/EndermanSoulItemRenderer.java",
-          "src/main/resources/assets/ringcraft/models/item/enderman_soul.json"
+          "src/main/java/miisterzmods/ringcraft/item/EndermanSoulItem.java"
         ]
       },
       "path": "~/Items/Souls"
@@ -890,10 +890,10 @@
         "files": [
           "src/main/java/miisterzmods/ringcraft/block/RingForgeBlockBlock.java",
           "src/main/java/miisterzmods/ringcraft/block/entity/RingForgeBlockBlockEntity.java",
-          "src/main/resources/data/ringcraft/loot_table/blocks/ring_forge_block.json",
-          "src/main/resources/assets/ringcraft/models/item/ring_forge_block.json",
           "src/main/resources/assets/ringcraft/blockstates/ring_forge_block.json",
-          "src/main/resources/assets/ringcraft/models/block/ring_forge_block.json"
+          "src/main/resources/assets/ringcraft/models/block/ring_forge_block.json",
+          "src/main/resources/assets/ringcraft/models/item/ring_forge_block.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/ring_forge_block.json"
         ]
       },
       "path": "~/Blocks/Ring Forge"
@@ -1157,10 +1157,10 @@
       "registry_name": "ice_king_entity",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/client/renderer/IceKingEntityRenderer.java",
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/ice_king_entity_biome_modifier.json",
           "src/main/java/miisterzmods/ringcraft/entity/model/IceKingEntityModel.java",
+          "src/main/java/miisterzmods/ringcraft/client/renderer/IceKingEntityRenderer.java",
           "src/main/resources/assets/ringcraft/models/item/ice_king_entity_spawn_egg.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/ice_king_entity_biome_modifier.json",
           "src/main/java/miisterzmods/ringcraft/entity/IceKingEntityEntity.java"
         ]
       },
@@ -1174,8 +1174,8 @@
       "registry_name": "flight_ring",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/FlightRingItem.java",
-          "src/main/resources/assets/ringcraft/models/item/flight_ring.json"
+          "src/main/resources/assets/ringcraft/models/item/flight_ring.json",
+          "src/main/java/miisterzmods/ringcraft/item/FlightRingItem.java"
         ]
       },
       "path": "~/Items/Rings"
@@ -1188,9 +1188,9 @@
       "registry_name": "vex_soul",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/renderer/VexSoulItemRenderer.java",
-          "src/main/resources/assets/ringcraft/models/item/vex_soul.json",
           "src/main/java/miisterzmods/ringcraft/item/model/VexSoulItemModel.java",
+          "src/main/resources/assets/ringcraft/models/item/vex_soul.json",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/VexSoulItemRenderer.java",
           "src/main/java/miisterzmods/ringcraft/item/VexSoulItem.java"
         ]
       },
@@ -1442,9 +1442,9 @@
       "registry_name": "ice_crystal",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/renderer/IceCrystalItemRenderer.java",
-          "src/main/java/miisterzmods/ringcraft/item/IceCrystalItem.java",
           "src/main/java/miisterzmods/ringcraft/item/model/IceCrystalItemModel.java",
+          "src/main/java/miisterzmods/ringcraft/item/IceCrystalItem.java",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/IceCrystalItemRenderer.java",
           "src/main/resources/assets/ringcraft/models/item/ice_crystal.json"
         ]
       },
@@ -2027,10 +2027,10 @@
       "registry_name": "water_walk_ring",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/model/WaterWalkRingItemModel.java",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/WaterWalkRingItemRenderer.java",
           "src/main/resources/assets/ringcraft/models/item/water_walk_ring.json",
-          "src/main/java/miisterzmods/ringcraft/item/WaterWalkRingItem.java",
-          "src/main/java/miisterzmods/ringcraft/item/renderer/WaterWalkRingItemRenderer.java"
+          "src/main/java/miisterzmods/ringcraft/item/model/WaterWalkRingItemModel.java",
+          "src/main/java/miisterzmods/ringcraft/item/WaterWalkRingItem.java"
         ]
       },
       "path": "~/Items/Rings"
@@ -2092,9 +2092,9 @@
       "registry_name": "breeze_soul",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/BreezeSoulItem.java",
-          "src/main/java/miisterzmods/ringcraft/item/renderer/BreezeSoulItemRenderer.java",
           "src/main/java/miisterzmods/ringcraft/item/model/BreezeSoulItemModel.java",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/BreezeSoulItemRenderer.java",
+          "src/main/java/miisterzmods/ringcraft/item/BreezeSoulItem.java",
           "src/main/resources/assets/ringcraft/models/item/breeze_soul.json"
         ]
       },
@@ -2268,8 +2268,8 @@
       "registry_name": "sea_ring",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/SeaRingItem.java",
-          "src/main/resources/assets/ringcraft/models/item/sea_ring.json"
+          "src/main/resources/assets/ringcraft/models/item/sea_ring.json",
+          "src/main/java/miisterzmods/ringcraft/item/SeaRingItem.java"
         ]
       },
       "path": "~/Items/Rings"
@@ -2282,10 +2282,10 @@
       "registry_name": "guardian_soul",
       "metadata": {
         "files": [
+          "src/main/java/miisterzmods/ringcraft/item/GuardianSoulItem.java",
           "src/main/java/miisterzmods/ringcraft/item/renderer/GuardianSoulItemRenderer.java",
           "src/main/resources/assets/ringcraft/models/item/guardian_soul.json",
-          "src/main/java/miisterzmods/ringcraft/item/model/GuardianSoulItemModel.java",
-          "src/main/java/miisterzmods/ringcraft/item/GuardianSoulItem.java"
+          "src/main/java/miisterzmods/ringcraft/item/model/GuardianSoulItemModel.java"
         ]
       },
       "path": "~/Items/Souls"
@@ -2357,9 +2357,9 @@
       "registry_name": "warden_soul",
       "metadata": {
         "files": [
+          "src/main/resources/assets/ringcraft/models/item/warden_soul.json",
           "src/main/java/miisterzmods/ringcraft/item/renderer/WardenSoulItemRenderer.java",
           "src/main/java/miisterzmods/ringcraft/item/WardenSoulItem.java",
-          "src/main/resources/assets/ringcraft/models/item/warden_soul.json",
           "src/main/java/miisterzmods/ringcraft/item/model/WardenSoulItemModel.java"
         ]
       },
@@ -2539,12 +2539,12 @@
       "registry_name": "king_sandstorm",
       "metadata": {
         "files": [
+          "src/main/java/miisterzmods/ringcraft/entity/KingSandstormEntity.java",
+          "src/main/java/miisterzmods/ringcraft/client/renderer/KingSandstormRenderer.java",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/king_sandstorm_biome_modifier.json",
           "src/main/resources/assets/ringcraft/models/item/king_sandstorm_spawn_egg.json",
           "src/main/java/miisterzmods/ringcraft/entity/model/KingSandstormModel.java",
-          "src/main/java/miisterzmods/ringcraft/entity/layer/KingSandstormLayer.java",
-          "src/main/java/miisterzmods/ringcraft/client/renderer/KingSandstormRenderer.java",
-          "src/main/java/miisterzmods/ringcraft/entity/KingSandstormEntity.java",
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/king_sandstorm_biome_modifier.json"
+          "src/main/java/miisterzmods/ringcraft/entity/layer/KingSandstormLayer.java"
         ]
       },
       "path": "~/MOBS"
@@ -2557,8 +2557,8 @@
       "registry_name": "sand_gem",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/SandGemItem.java",
-          "src/main/resources/assets/ringcraft/models/item/sand_gem.json"
+          "src/main/resources/assets/ringcraft/models/item/sand_gem.json",
+          "src/main/java/miisterzmods/ringcraft/item/SandGemItem.java"
         ]
       },
       "path": "~/Items/Souls"
@@ -2571,8 +2571,8 @@
       "registry_name": "sand_ring",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/SandRingItem.java",
-          "src/main/resources/assets/ringcraft/models/item/sand_ring.json"
+          "src/main/resources/assets/ringcraft/models/item/sand_ring.json",
+          "src/main/java/miisterzmods/ringcraft/item/SandRingItem.java"
         ]
       },
       "path": "~/Items/Rings"
@@ -2636,9 +2636,9 @@
       "registry_name": "reinforced_iron_structure",
       "metadata": {
         "files": [
-          "src/main/resources/data/ringcraft/worldgen/structure_set/reinforced_iron_structure.json",
+          "src/main/resources/data/ringcraft/worldgen/template_pool/reinforced_iron_structure.json",
           "src/main/resources/data/ringcraft/worldgen/structure/reinforced_iron_structure.json",
-          "src/main/resources/data/ringcraft/worldgen/template_pool/reinforced_iron_structure.json"
+          "src/main/resources/data/ringcraft/worldgen/structure_set/reinforced_iron_structure.json"
         ]
       },
       "path": "~/Other"
@@ -2770,10 +2770,10 @@
       "registry_name": "cursed_soul",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/item/renderer/CursedSoulItemRenderer.java",
           "src/main/java/miisterzmods/ringcraft/item/model/CursedSoulItemModel.java",
           "src/main/resources/assets/ringcraft/models/item/cursed_soul.json",
-          "src/main/java/miisterzmods/ringcraft/item/CursedSoulItem.java"
+          "src/main/java/miisterzmods/ringcraft/item/CursedSoulItem.java",
+          "src/main/java/miisterzmods/ringcraft/item/renderer/CursedSoulItemRenderer.java"
         ]
       },
       "path": "~/Items/Souls"
@@ -2926,12 +2926,12 @@
       "registry_name": "ring_altar_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/ring_altar_block.json",
+          "src/main/resources/assets/ringcraft/blockstates/ring_altar_block.json",
+          "src/main/resources/assets/ringcraft/models/block/ring_altar_block.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/ring_altar_block.json",
           "src/main/java/miisterzmods/ringcraft/block/entity/RingAltarBlockBlockEntity.java",
           "src/main/java/miisterzmods/ringcraft/block/RingAltarBlockBlock.java",
-          "src/main/resources/assets/ringcraft/blockstates/ring_altar_block.json",
-          "src/main/resources/assets/ringcraft/models/block/ring_altar_block.json"
+          "src/main/resources/assets/ringcraft/models/item/ring_altar_block.json"
         ]
       },
       "path": "~/Blocks/Ring Altar"
@@ -2971,13 +2971,13 @@
       "registry_name": "rozani_stairs",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/block/RozaniStairsBlock.java",
-          "src/main/resources/assets/ringcraft/blockstates/rozani_stairs.json",
-          "src/main/resources/assets/ringcraft/models/block/rozani_stairs_outer.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_stairs.json",
           "src/main/resources/assets/ringcraft/models/block/rozani_stairs_inner.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_stairs.json",
+          "src/main/resources/assets/ringcraft/blockstates/rozani_stairs.json",
           "src/main/resources/assets/ringcraft/models/block/rozani_stairs.json",
-          "src/main/resources/assets/ringcraft/models/item/rozani_stairs.json"
+          "src/main/resources/assets/ringcraft/models/item/rozani_stairs.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_stairs_outer.json",
+          "src/main/java/miisterzmods/ringcraft/block/RozaniStairsBlock.java"
         ]
       },
       "path": "~/Blocks/Rozani"
@@ -3036,10 +3036,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/ringcraft/models/item/rozani_log.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_log.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/rozani_log.json",
           "src/main/java/miisterzmods/ringcraft/block/RozaniLogBlock.java",
-          "src/main/resources/assets/ringcraft/blockstates/rozani_log.json",
-          "src/main/resources/assets/ringcraft/models/block/rozani_log.json"
+          "src/main/resources/assets/ringcraft/blockstates/rozani_log.json"
         ]
       },
       "path": "~/Blocks/Rozani"
@@ -3113,12 +3113,12 @@
       "registry_name": "rosani_forest",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/RosaniForestFruitDecorator.java",
-          "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/RosaniForestLeaveDecorator.java",
           "src/main/resources/data/ringcraft/worldgen/biome/rosani_forest.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/rosani_forest_tree.json",
           "src/main/resources/data/ringcraft/worldgen/configured_feature/rosani_forest_tree.json",
           "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/RosaniForestTrunkDecorator.java",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/rosani_forest_tree.json"
+          "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/RosaniForestLeaveDecorator.java",
+          "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/RosaniForestFruitDecorator.java"
         ]
       },
       "path": "~/Biomes"
@@ -3131,9 +3131,9 @@
       "registry_name": "the_secret_realms",
       "metadata": {
         "files": [
-          "src/main/resources/data/ringcraft/dimension_type/the_secret_realms.json",
+          "src/main/resources/data/ringcraft/dimension/the_secret_realms.json",
           "src/main/java/miisterzmods/ringcraft/world/dimension/TheSecretRealmsDimension.java",
-          "src/main/resources/data/ringcraft/dimension/the_secret_realms.json"
+          "src/main/resources/data/ringcraft/dimension_type/the_secret_realms.json"
         ]
       },
       "path": "~/Dimensions"
@@ -3249,12 +3249,12 @@
       "registry_name": "rozani_fence",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/rozani_fence_post.json",
-          "src/main/resources/assets/ringcraft/models/item/rozani_fence.json",
           "src/main/resources/assets/ringcraft/models/block/rozani_fence.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_fence.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_fence_post.json",
           "src/main/java/miisterzmods/ringcraft/block/RozaniFenceBlock.java",
+          "src/main/resources/assets/ringcraft/models/item/rozani_fence.json",
           "src/main/resources/assets/ringcraft/blockstates/rozani_fence.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_fence.json",
           "src/main/resources/assets/ringcraft/models/block/rozani_fence_inventory.json"
         ]
       },
@@ -3268,10 +3268,10 @@
       "registry_name": "rozani_leaves",
       "metadata": {
         "files": [
-          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_leaves.json",
           "src/main/resources/assets/ringcraft/blockstates/rozani_leaves.json",
-          "src/main/resources/assets/ringcraft/models/block/rozani_leaves.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_leaves.json",
           "src/main/resources/assets/ringcraft/models/item/rozani_leaves.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_leaves.json",
           "src/main/java/miisterzmods/ringcraft/block/RozaniLeavesBlock.java"
         ]
       },
@@ -3285,11 +3285,11 @@
       "registry_name": "rozani_planks",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/block/RozaniPlanksBlock.java",
-          "src/main/resources/assets/ringcraft/models/block/rozani_planks.json",
           "src/main/resources/assets/ringcraft/models/item/rozani_planks.json",
           "src/main/resources/assets/ringcraft/blockstates/rozani_planks.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_planks.json"
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_planks.json",
+          "src/main/java/miisterzmods/ringcraft/block/RozaniPlanksBlock.java",
+          "src/main/resources/assets/ringcraft/models/block/rozani_planks.json"
         ]
       },
       "path": "~/Blocks/Rozani"
@@ -3302,12 +3302,12 @@
       "registry_name": "rozani_pressure_plate",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/block/RozaniPressurePlateBlock.java",
           "src/main/resources/assets/ringcraft/models/item/rozani_pressure_plate.json",
-          "src/main/resources/assets/ringcraft/models/block/rozani_pressure_plate_down.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_pressure_plate.json",
           "src/main/resources/assets/ringcraft/blockstates/rozani_pressure_plate.json",
-          "src/main/resources/assets/ringcraft/models/block/rozani_pressure_plate.json"
+          "src/main/resources/assets/ringcraft/models/block/rozani_pressure_plate.json",
+          "src/main/java/miisterzmods/ringcraft/block/RozaniPressurePlateBlock.java",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_pressure_plate.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_pressure_plate_down.json"
         ]
       },
       "path": "~/Blocks/Rozani"
@@ -3346,13 +3346,13 @@
       "registry_name": "rozani_button",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/rozani_button.json",
-          "src/main/resources/assets/ringcraft/models/block/rozani_button_inventory.json",
-          "src/main/java/miisterzmods/ringcraft/block/RozaniButtonBlock.java",
           "src/main/resources/assets/ringcraft/models/item/rozani_button.json",
           "src/main/resources/assets/ringcraft/models/block/rozani_button_pressed.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_button_inventory.json",
+          "src/main/java/miisterzmods/ringcraft/block/RozaniButtonBlock.java",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_button.json",
           "src/main/resources/assets/ringcraft/blockstates/rozani_button.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_button.json"
+          "src/main/resources/assets/ringcraft/models/block/rozani_button.json"
         ]
       },
       "path": "~/Blocks/Rozani"
@@ -3380,10 +3380,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/ringcraft/loot_table/blocks/rozani_wood.json",
-          "src/main/resources/assets/ringcraft/blockstates/rozani_wood.json",
           "src/main/resources/assets/ringcraft/models/block/rozani_wood.json",
-          "src/main/java/miisterzmods/ringcraft/block/RozaniWoodBlock.java",
-          "src/main/resources/assets/ringcraft/models/item/rozani_wood.json"
+          "src/main/resources/assets/ringcraft/blockstates/rozani_wood.json",
+          "src/main/resources/assets/ringcraft/models/item/rozani_wood.json",
+          "src/main/java/miisterzmods/ringcraft/block/RozaniWoodBlock.java"
         ]
       },
       "path": "~/Blocks/Rozani"
@@ -3440,11 +3440,11 @@
       "registry_name": "muckroot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/muckroot.json",
-          "src/main/java/miisterzmods/ringcraft/block/MuckrootBlock.java",
-          "src/main/resources/assets/ringcraft/models/block/muckroot.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/muckroot.json",
-          "src/main/resources/assets/ringcraft/blockstates/muckroot.json"
+          "src/main/resources/assets/ringcraft/blockstates/muckroot.json",
+          "src/main/resources/assets/ringcraft/models/item/muckroot.json",
+          "src/main/resources/assets/ringcraft/models/block/muckroot.json",
+          "src/main/java/miisterzmods/ringcraft/block/MuckrootBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -3457,14 +3457,14 @@
       "registry_name": "rozani_fence_gate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/rozani_fence_gate.json",
-          "src/main/resources/assets/ringcraft/models/item/rozani_fence_gate.json",
-          "src/main/resources/assets/ringcraft/blockstates/rozani_fence_gate.json",
           "src/main/resources/assets/ringcraft/models/block/rozani_fence_gate_wall.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_fence_gate.json",
           "src/main/resources/assets/ringcraft/models/block/rozani_fence_gate_wall_open.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_fence_gate.json",
+          "src/main/resources/assets/ringcraft/blockstates/rozani_fence_gate.json",
+          "src/main/resources/assets/ringcraft/models/item/rozani_fence_gate.json",
           "src/main/resources/assets/ringcraft/models/block/rozani_fence_gate_open.json",
-          "src/main/java/miisterzmods/ringcraft/block/RozaniFenceGateBlock.java",
-          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_fence_gate.json"
+          "src/main/java/miisterzmods/ringcraft/block/RozaniFenceGateBlock.java"
         ]
       },
       "path": "~/Blocks/Rozani"
@@ -3543,12 +3543,12 @@
       "registry_name": "rozani_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/rozani_slab_full.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_slab.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_slab.json",
           "src/main/resources/assets/ringcraft/blockstates/rozani_slab.json",
           "src/main/resources/assets/ringcraft/models/block/rozani_slab_top.json",
           "src/main/java/miisterzmods/ringcraft/block/RozaniSlabBlock.java",
-          "src/main/resources/assets/ringcraft/models/block/rozani_slab.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/rozani_slab.json",
+          "src/main/resources/assets/ringcraft/models/block/rozani_slab_full.json",
           "src/main/resources/assets/ringcraft/models/item/rozani_slab.json"
         ]
       },
@@ -3594,10 +3594,10 @@
       "metadata": {
         "files": [
           "src/main/resources/data/ringcraft/loot_table/blocks/mistrock.json",
-          "src/main/java/miisterzmods/ringcraft/block/MistrockBlock.java",
           "src/main/resources/assets/ringcraft/blockstates/mistrock.json",
           "src/main/resources/assets/ringcraft/models/item/mistrock.json",
-          "src/main/resources/assets/ringcraft/models/block/mistrock.json"
+          "src/main/resources/assets/ringcraft/models/block/mistrock.json",
+          "src/main/java/miisterzmods/ringcraft/block/MistrockBlock.java"
         ]
       },
       "path": "~/Blocks"
@@ -3610,11 +3610,11 @@
       "registry_name": "doomed_tree_log",
       "metadata": {
         "files": [
+          "src/main/resources/assets/ringcraft/models/block/doomed_tree_log.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/doomed_tree_log.json",
           "src/main/java/miisterzmods/ringcraft/block/DoomedTreeLogBlock.java",
           "src/main/resources/assets/ringcraft/models/item/doomed_tree_log.json",
-          "src/main/resources/assets/ringcraft/blockstates/doomed_tree_log.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_tree_log.json"
+          "src/main/resources/assets/ringcraft/blockstates/doomed_tree_log.json"
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
@@ -3627,11 +3627,11 @@
       "registry_name": "doomed_tree_leaves",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/blockstates/doomed_tree_leaves.json",
-          "src/main/resources/assets/ringcraft/models/item/doomed_tree_leaves.json",
-          "src/main/java/miisterzmods/ringcraft/block/DoomedTreeLeavesBlock.java",
           "src/main/resources/data/ringcraft/loot_table/blocks/doomed_tree_leaves.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_tree_leaves.json"
+          "src/main/java/miisterzmods/ringcraft/block/DoomedTreeLeavesBlock.java",
+          "src/main/resources/assets/ringcraft/models/item/doomed_tree_leaves.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_tree_leaves.json",
+          "src/main/resources/assets/ringcraft/blockstates/doomed_tree_leaves.json"
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
@@ -3644,11 +3644,11 @@
       "registry_name": "doom_forest",
       "metadata": {
         "files": [
-          "src/main/resources/data/ringcraft/worldgen/biome/doom_forest.json",
-          "src/main/resources/data/ringcraft/worldgen/configured_feature/doom_forest_tree.json",
           "src/main/resources/data/ringcraft/worldgen/placed_feature/doom_forest_tree.json",
-          "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/DoomForestTrunkDecorator.java",
-          "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/DoomForestLeaveDecorator.java"
+          "src/main/resources/data/ringcraft/worldgen/biome/doom_forest.json",
+          "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/DoomForestLeaveDecorator.java",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/doom_forest_tree.json",
+          "src/main/java/miisterzmods/ringcraft/world/features/treedecorators/DoomForestTrunkDecorator.java"
         ]
       },
       "path": "~/Biomes"
@@ -3661,8 +3661,8 @@
       "registry_name": "plane_of_the_dooms",
       "metadata": {
         "files": [
-          "src/main/java/miisterzmods/ringcraft/world/dimension/PlaneOfTheDoomsDimension.java",
           "src/main/resources/data/ringcraft/dimension_type/plane_of_the_dooms.json",
+          "src/main/java/miisterzmods/ringcraft/world/dimension/PlaneOfTheDoomsDimension.java",
           "src/main/resources/data/ringcraft/dimension/plane_of_the_dooms.json"
         ]
       },
@@ -3678,9 +3678,9 @@
         "files": [
           "src/main/resources/data/ringcraft/loot_table/blocks/doomed_planks.json",
           "src/main/resources/assets/ringcraft/models/block/doomed_planks.json",
-          "src/main/resources/assets/ringcraft/models/item/doomed_planks.json",
           "src/main/java/miisterzmods/ringcraft/block/DoomedPlanksBlock.java",
-          "src/main/resources/assets/ringcraft/blockstates/doomed_planks.json"
+          "src/main/resources/assets/ringcraft/blockstates/doomed_planks.json",
+          "src/main/resources/assets/ringcraft/models/item/doomed_planks.json"
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
@@ -3693,13 +3693,13 @@
       "registry_name": "doomed_plank_stairs",
       "metadata": {
         "files": [
-          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_stairs.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_stairs_inner.json",
-          "src/main/resources/assets/ringcraft/models/item/doomed_plank_stairs.json",
           "src/main/java/miisterzmods/ringcraft/block/DoomedPlankStairsBlock.java",
-          "src/main/resources/assets/ringcraft/blockstates/doomed_plank_stairs.json",
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_stairs.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_stairs_outer.json"
+          "src/main/resources/assets/ringcraft/models/item/doomed_plank_stairs.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_stairs.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_stairs_outer.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_stairs_inner.json",
+          "src/main/resources/assets/ringcraft/blockstates/doomed_plank_stairs.json"
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
@@ -3712,13 +3712,13 @@
       "registry_name": "doomed_plank_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_slab.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_slab_full.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_slab.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_slab_top.json",
-          "src/main/resources/assets/ringcraft/blockstates/doomed_plank_slab.json",
           "src/main/java/miisterzmods/ringcraft/block/DoomedPlankSlabBlock.java",
-          "src/main/resources/assets/ringcraft/models/item/doomed_plank_slab.json"
+          "src/main/resources/assets/ringcraft/blockstates/doomed_plank_slab.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_slab_full.json",
+          "src/main/resources/assets/ringcraft/models/item/doomed_plank_slab.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_slab_top.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_slab.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_slab.json"
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
@@ -3732,12 +3732,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/ringcraft/models/item/doomed_plank_fence.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_fence_post.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_fence_inventory.json",
-          "src/main/java/miisterzmods/ringcraft/block/DoomedPlankFenceBlock.java",
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_fence.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_fence.json",
-          "src/main/resources/assets/ringcraft/blockstates/doomed_plank_fence.json"
+          "src/main/java/miisterzmods/ringcraft/block/DoomedPlankFenceBlock.java",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_fence_inventory.json",
+          "src/main/resources/assets/ringcraft/blockstates/doomed_plank_fence.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_fence_post.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_fence.json"
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
@@ -3751,12 +3751,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_fence_gate.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_fence_gate.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_fence_gate_wall.json",
+          "src/main/resources/assets/ringcraft/models/item/doomed_plank_fence_gate.json",
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_fence_gate_open.json",
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_fence_gate_wall_open.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_fence_gate_wall.json",
           "src/main/java/miisterzmods/ringcraft/block/DoomedPlankFenceGateBlock.java",
-          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_fence_gate.json",
-          "src/main/resources/assets/ringcraft/models/item/doomed_plank_fence_gate.json",
           "src/main/resources/assets/ringcraft/blockstates/doomed_plank_fence_gate.json"
         ]
       },
@@ -3770,13 +3770,13 @@
       "registry_name": "doomed_plank_button",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/doomed_plank_button.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_button.json",
-          "src/main/resources/assets/ringcraft/blockstates/doomed_plank_button.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_button_inventory.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_button.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_button_pressed.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_button_inventory.json",
+          "src/main/resources/assets/ringcraft/blockstates/doomed_plank_button.json",
           "src/main/java/miisterzmods/ringcraft/block/DoomedPlankButtonBlock.java",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_button_pressed.json"
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_button.json",
+          "src/main/resources/assets/ringcraft/models/item/doomed_plank_button.json"
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
@@ -3854,12 +3854,12 @@
       "registry_name": "doomed_plank_pressure_plate",
       "metadata": {
         "files": [
-          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_pressure_plate.json",
           "src/main/resources/assets/ringcraft/models/item/doomed_plank_pressure_plate.json",
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_pressure_plate_down.json",
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_pressure_plate.json",
           "src/main/resources/assets/ringcraft/blockstates/doomed_plank_pressure_plate.json",
-          "src/main/java/miisterzmods/ringcraft/block/DoomedPlankPressurePlateBlock.java"
+          "src/main/java/miisterzmods/ringcraft/block/DoomedPlankPressurePlateBlock.java",
+          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_pressure_plate.json"
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
@@ -3899,12 +3899,12 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_trapdoor.json",
-          "src/main/resources/assets/ringcraft/models/item/doomed_plank_trapdoor.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_trapdoor_open.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_trapdoor.json",
           "src/main/java/miisterzmods/ringcraft/block/DoomedPlankTrapdoorBlock.java",
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_trapdoor_top.json",
           "src/main/resources/assets/ringcraft/blockstates/doomed_plank_trapdoor.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_trapdoor.json"
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_trapdoor_open.json",
+          "src/main/resources/assets/ringcraft/models/item/doomed_plank_trapdoor.json"
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
@@ -3944,9 +3944,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/ringcraft/models/block/doomed_wood.json",
-          "src/main/java/miisterzmods/ringcraft/block/DoomedWoodBlock.java",
           "src/main/resources/assets/ringcraft/models/item/doomed_wood.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/doomed_wood.json",
+          "src/main/java/miisterzmods/ringcraft/block/DoomedWoodBlock.java",
           "src/main/resources/assets/ringcraft/blockstates/doomed_wood.json"
         ]
       },
@@ -3973,18 +3973,18 @@
       "registry_name": "doomed_plank_door",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/item/doomed_plank_door.json",
-          "src/main/resources/assets/ringcraft/blockstates/doomed_plank_door.json",
           "src/main/resources/data/ringcraft/loot_table/blocks/doomed_plank_door.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_bottom_right_open.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_top_left.json",
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_bottom_right.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_top_left_open.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_top_right_open.json",
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_bottom_left.json",
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_bottom_left_open.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_top_right_open.json",
+          "src/main/resources/assets/ringcraft/models/item/doomed_plank_door.json",
+          "src/main/resources/assets/ringcraft/blockstates/doomed_plank_door.json",
           "src/main/java/miisterzmods/ringcraft/block/DoomedPlankDoorBlock.java",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_bottom_right_open.json",
           "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_top_right.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_top_left.json"
+          "src/main/resources/assets/ringcraft/models/block/doomed_plank_door_top_left_open.json"
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
@@ -4010,14 +4010,14 @@
       "registry_name": "doomed_pitcher_plant",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/models/block/doomed_pitcher_plant.json",
-          "src/main/resources/assets/ringcraft/blockstates/doomed_pitcher_plant.json",
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/doomed_pitcher_plant.json",
-          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_pitcher_plant.json",
-          "src/main/resources/assets/ringcraft/models/item/doomed_pitcher_plant.json",
+          "src/main/java/miisterzmods/ringcraft/block/DoomedPitcherPlantBlock.java",
           "src/main/resources/data/ringcraft/worldgen/configured_feature/doomed_pitcher_plant.json",
           "src/main/resources/data/ringcraft/neoforge/biome_modifier/doomed_pitcher_plant_biome_modifier.json",
-          "src/main/java/miisterzmods/ringcraft/block/DoomedPitcherPlantBlock.java"
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/doomed_pitcher_plant.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_pitcher_plant.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/doomed_pitcher_plant.json",
+          "src/main/resources/assets/ringcraft/models/item/doomed_pitcher_plant.json",
+          "src/main/resources/assets/ringcraft/blockstates/doomed_pitcher_plant.json"
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
@@ -4030,11 +4030,11 @@
       "registry_name": "doomed_twisting_vines",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ringcraft/blockstates/doomed_twisting_vines.json",
-          "src/main/java/miisterzmods/ringcraft/block/DoomedTwistingVinesBlock.java",
           "src/main/resources/data/ringcraft/loot_table/blocks/doomed_twisting_vines.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_twisting_vines.json",
-          "src/main/resources/assets/ringcraft/models/item/doomed_twisting_vines.json"
+          "src/main/java/miisterzmods/ringcraft/block/DoomedTwistingVinesBlock.java",
+          "src/main/resources/assets/ringcraft/models/item/doomed_twisting_vines.json",
+          "src/main/resources/assets/ringcraft/blockstates/doomed_twisting_vines.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_twisting_vines.json"
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
@@ -4047,17 +4047,83 @@
       "registry_name": "doomed_twisting_plant",
       "metadata": {
         "files": [
-          "src/main/resources/data/ringcraft/worldgen/placed_feature/doomed_twisting_plant.json",
-          "src/main/resources/assets/ringcraft/models/item/doomed_twisting_plant.json",
-          "src/main/resources/assets/ringcraft/models/block/doomed_twisting_plant.json",
-          "src/main/resources/assets/ringcraft/blockstates/doomed_twisting_plant.json",
           "src/main/java/miisterzmods/ringcraft/block/DoomedTwistingPlantBlock.java",
           "src/main/resources/data/ringcraft/loot_table/blocks/doomed_twisting_plant.json",
+          "src/main/resources/assets/ringcraft/models/block/doomed_twisting_plant.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/doomed_twisting_plant_biome_modifier.json",
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/doomed_twisting_plant.json",
+          "src/main/resources/assets/ringcraft/models/item/doomed_twisting_plant.json",
           "src/main/resources/data/ringcraft/worldgen/configured_feature/doomed_twisting_plant.json",
-          "src/main/resources/data/ringcraft/neoforge/biome_modifier/doomed_twisting_plant_biome_modifier.json"
+          "src/main/resources/assets/ringcraft/blockstates/doomed_twisting_plant.json"
         ]
       },
       "path": "~/Blocks/PlaneOfTheDooms/DoomedForest"
+    },
+    {
+      "name": "RozaniVines",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rozani_vines",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ringcraft/worldgen/placed_feature/rozani_vines.json",
+          "src/main/resources/data/ringcraft/worldgen/configured_feature/rozani_vines.json",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/rozani_vines_biome_modifier.json"
+        ]
+      },
+      "path": "~/Features"
+    },
+    {
+      "name": "SneapOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sneap_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/miisterzmods/ringcraft/procedures/SneapOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MOBS"
+    },
+    {
+      "name": "SneapEntity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sneap_entity",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/item/sneap_entity_spawn_egg.json",
+          "src/main/java/miisterzmods/ringcraft/entity/SneapEntityEntity.java",
+          "src/main/java/miisterzmods/ringcraft/client/renderer/SneapEntityRenderer.java",
+          "src/main/resources/data/ringcraft/neoforge/biome_modifier/sneap_entity_biome_modifier.json"
+        ]
+      },
+      "path": "~/MOBS"
     }
   ],
   "variable_elements": [
@@ -4100,16 +4166,16 @@
   ],
   "sound_elements": [],
   "tag_elements": {
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:ReinforcedIronBlock",
+      "~CUSTOM:ReinforcedIronDeepslateBlock",
+      "~CUSTOM:ReinforcedIronStoneBlock"
+    ],
     "ITEMS:minecraft:beacon_payment_items": [
       "CUSTOM:ReinforcedIronIngot"
     ],
     "ITEMS:mod:furnacefuel": [
       "Items.COAL#0"
-    ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~CUSTOM:ReinforcedIronBlock",
-      "~CUSTOM:ReinforcedIronDeepslateBlock",
-      "~CUSTOM:ReinforcedIronStoneBlock"
     ],
     "ITEMS:mod:ringtoforge": [
       "CUSTOM:RegularRingItem"
@@ -4197,8 +4263,7 @@
       "ReinforcedIronStoneBlock",
       "ReinforcedRawIron",
       "ReinforcedIronIngot",
-      "RegularRingItem",
-      "GoldRing",
+      "RingAltarBlock",
       "ReinforcedFurnance",
       "RingForgeBlock",
       "BlazeSoul",
@@ -4210,6 +4275,8 @@
       "CursedSoul",
       "IceCrystal",
       "SandGem",
+      "RegularRingItem",
+      "GoldRing",
       "SeaRing",
       "SculkRing",
       "WaterWalkRing",
@@ -4222,22 +4289,22 @@
       "CursedRing",
       "IceKingEntity",
       "KingSandstorm",
-      "RingAltarBlock",
       "RealmsPortal",
-      "RozaniStairs",
-      "RozaniLog",
-      "RozaniFence",
       "RozaniLeaves",
+      "RozaniWood",
+      "RozaniLog",
       "RozaniPlanks",
+      "RozaniStairs",
+      "RozaniSlab",
       "RozaniPressurePlate",
       "RozaniButton",
-      "RozaniWood",
-      "Muckroot",
+      "RozaniFence",
       "RozaniFenceGate",
-      "RozaniSlab",
+      "Muckroot",
       "Mistrock",
-      "DoomedTreeLog",
       "DoomedTreeLeaves",
+      "DoomedWood",
+      "DoomedTreeLog",
       "DoomedPlanks",
       "DoomedPlankStairs",
       "DoomedPlankFence",
@@ -4245,7 +4312,6 @@
       "DoomedPlankButton",
       "DoomedPlankPressurePlate",
       "DoomedPlankTrapdoor",
-      "DoomedWood",
       "DoomedPlankDoor",
       "DoomedPlankSlab",
       "DoomedPitcherPlant",
@@ -4260,6 +4326,7 @@
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
+      "entity.ringcraft.sneap_entity": "Sneap",
       "block.ringcraft.ring_altar_block": "Ring Altar",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
@@ -4363,6 +4430,7 @@
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.wind_ring.description_0": "",
+      "item.ringcraft.sneap_entity_spawn_egg": "Sneap Spawn Egg",
       "block.ringcraft.rozani_slab": "Rozani Slab"
     },
     "pl_pl": {
@@ -4371,6 +4439,7 @@
       "key.ringcraft.rings_menu_binding": "Pierścienie",
       "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
+      "entity.ringcraft.sneap_entity": "Sneap",
       "block.ringcraft.ring_altar_block": "Ring Altar",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiczne pierścienie",
@@ -4475,6 +4544,7 @@
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.wind_ring.description_0": "",
+      "item.ringcraft.sneap_entity_spawn_egg": "Sneap Spawn Egg",
       "block.ringcraft.rozani_slab": "Rozani Slab"
     },
     "id_id": {
@@ -4483,6 +4553,7 @@
       "key.ringcraft.rings_menu_binding": "Menu Cincin",
       "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
+      "entity.ringcraft.sneap_entity": "Sneap",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
@@ -4586,6 +4657,7 @@
       "item.ringcraft.reinforced_raw_iron": "Besi Mentah Bertulang",
       "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.wind_ring.description_0": "",
+      "item.ringcraft.sneap_entity_spawn_egg": "Sneap Spawn Egg",
       "block.ringcraft.rozani_slab": "Rozani Slab"
     },
     "af_na": {
@@ -4594,6 +4666,7 @@
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
+      "entity.ringcraft.sneap_entity": "Sneap",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magiese Ringe",
@@ -4698,6 +4771,7 @@
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.wind_ring.description_0": "",
+      "item.ringcraft.sneap_entity_spawn_egg": "Sneap Spawn Egg",
       "block.ringcraft.rozani_slab": "Rozani Slab"
     },
     "pt_br": {
@@ -4706,6 +4780,7 @@
       "key.ringcraft.rings_menu_binding": "Menu de Anéis",
       "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
+      "entity.ringcraft.sneap_entity": "Sneap",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
       "gui.ringcraft.rings_gui.label_magic_rings": "Anéis Mágicos",
@@ -4809,6 +4884,7 @@
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.wind_ring.description_0": "",
+      "item.ringcraft.sneap_entity_spawn_egg": "Sneap Spawn Egg",
       "block.ringcraft.rozani_slab": "Rozani Slab"
     },
     "hu_hu": {
@@ -4817,6 +4893,7 @@
       "key.ringcraft.rings_menu_binding": "Gyűrűk menü",
       "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
+      "entity.ringcraft.sneap_entity": "Sneap",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
       "gui.ringcraft.rings_gui.label_magic_rings": "Varázsgyűrűk",
@@ -4920,6 +4997,7 @@
       "item.ringcraft.reinforced_raw_iron": "Megerősített nyersvas",
       "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.wind_ring.description_0": "",
+      "item.ringcraft.sneap_entity_spawn_egg": "Sneap Spawn Egg",
       "block.ringcraft.rozani_slab": "Rozani Slab"
     },
     "de_de": {
@@ -4928,6 +5006,7 @@
       "key.ringcraft.rings_menu_binding": "Ring Menu",
       "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
+      "entity.ringcraft.sneap_entity": "Sneap",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringe",
@@ -5032,6 +5111,7 @@
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.wind_ring.description_0": "",
+      "item.ringcraft.sneap_entity_spawn_egg": "Sneap Spawn Egg",
       "block.ringcraft.rozani_slab": "Rozani Slab"
     },
     "en_us": {
@@ -5040,6 +5120,7 @@
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
+      "entity.ringcraft.sneap_entity": "Sneap",
       "block.ringcraft.ring_altar_block": "Ring Altar",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
@@ -5146,6 +5227,7 @@
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.wind_ring.description_0": "",
+      "item.ringcraft.sneap_entity_spawn_egg": "Sneap Spawn Egg",
       "block.ringcraft.rozani_slab": "Rozani Slab"
     },
     "uk_ua": {
@@ -5154,6 +5236,7 @@
       "key.ringcraft.rings_menu_binding": "Rings Menu",
       "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
+      "entity.ringcraft.sneap_entity": "Sneap",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magic Rings",
@@ -5257,6 +5340,7 @@
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.wind_ring.description_0": "",
+      "item.ringcraft.sneap_entity_spawn_egg": "Sneap Spawn Egg",
       "block.ringcraft.rozani_slab": "Rozani Slab"
     },
     "es_es": {
@@ -5265,6 +5349,7 @@
       "key.ringcraft.rings_menu_binding": "Menú de Anillos RingCraft",
       "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Consigue el Alma de un Vex",
+      "entity.ringcraft.sneap_entity": "Sneap",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
       "gui.ringcraft.rings_gui.label_magic_rings": "Anillos Mágicos",
@@ -5369,6 +5454,7 @@
       "item.ringcraft.reinforced_raw_iron": "Hierro Reforzado",
       "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.wind_ring.description_0": "",
+      "item.ringcraft.sneap_entity_spawn_egg": "Sneap Spawn Egg",
       "block.ringcraft.rozani_slab": "Rozani Slab"
     },
     "nl_nl": {
@@ -5377,6 +5463,7 @@
       "key.ringcraft.rings_menu_binding": "Ringen Menu",
       "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
+      "entity.ringcraft.sneap_entity": "Sneap",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
       "gui.ringcraft.rings_gui.label_magic_rings": "Magische Ringen",
@@ -5481,6 +5568,7 @@
       "item.ringcraft.reinforced_raw_iron": "Reinforced Raw Iron",
       "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.wind_ring.description_0": "",
+      "item.ringcraft.sneap_entity_spawn_egg": "Sneap Spawn Egg",
       "block.ringcraft.rozani_slab": "Rozani Slab"
     },
     "pt_pt": {
@@ -5489,6 +5577,7 @@
       "key.ringcraft.rings_menu_binding": "Menu de Anéis",
       "block.ringcraft.doomed_twisting_vines": "Doomed Twisting Vines",
       "advancements.vex_soul_advancement.descr": "Get a Vex Soul",
+      "entity.ringcraft.sneap_entity": "Sneap",
       "block.ringcraft.ring_altar_block": "Ring Forge",
       "block.ringcraft.doomed_plank_fence": "Doomed Plank Fence",
       "gui.ringcraft.rings_gui.label_magic_rings": "Anéis Mágicos",
@@ -5592,6 +5681,7 @@
       "item.ringcraft.reinforced_raw_iron": "Ferro bruto reforçado",
       "block.ringcraft.muckroot": "Muckroot",
       "item.ringcraft.wind_ring.description_0": "",
+      "item.ringcraft.sneap_entity_spawn_egg": "Sneap Spawn Egg",
       "block.ringcraft.rozani_slab": "Rozani Slab"
     }
   },
@@ -5734,6 +5824,10 @@
       },
       {
         "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "Features",
         "children": []
       }
     ]
