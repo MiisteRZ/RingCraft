@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "minecraft:blackstone",
     "minecraft:stone",
     "minecraft:dirt",
+    "minecraft:blackstone",
     "ringcraft:muckroot",
     "ringcraft:mistrock",
     "minecraft:grass_block",

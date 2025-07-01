@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "minecraft:end_crystal"
+    "#ringcraft:rings",
+    "#ringcraft:essence",
+    "ringcraft:regular_ring_item"
   ]
 }

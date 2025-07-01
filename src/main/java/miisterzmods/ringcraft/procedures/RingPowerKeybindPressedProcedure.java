@@ -32,8 +32,8 @@ public class RingPowerKeybindPressedProcedure {
 			WindRingProcedureProcedure.execute(world, x, y, z, entity);
 		} else if (Ring.getItem() == RingcraftModItems.SAND_RING.get()) {
 			SandRingProcedureProcedure.execute(entity);
-		} else if (Ring.getItem() == RingcraftModItems.REINFORCED_IRON_INGOT.get()) {
-			assert Boolean.TRUE; //#dbg:RingPowerKeybindPressed:OtherRingProcedureHere
+		} else if (Ring.getItem() == RingcraftModItems.DIMENSIONAL_RING.get()) {
+			OpenDimensionSelectProcedure.execute(world, x, y, z, entity);
 		} else if (Ring.getItem() == RingcraftModItems.REINFORCED_IRON_INGOT.get()) {
 			assert Boolean.TRUE; //#dbg:RingPowerKeybindPressed:OtherRingProcedureHere
 		}

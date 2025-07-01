@@ -45,6 +45,8 @@ public class AltarWorkingProcedureProcedure {
 			}.getValue(world, BlockPos.containing(x, y, z), "MaxSmelting")) {
 				if (ExampleRecipeProcedure.execute(world, x, y, z)) {
 					Result = new ItemStack(RingcraftModItems.CURSED_RING.get()).copy();
+				} else if (DimensionRingRecipeProcedure.execute(world, x, y, z)) {
+					Result = new ItemStack(RingcraftModItems.DIMENSIONAL_RING.get()).copy();
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
@@ -100,7 +102,7 @@ public class AltarWorkingProcedureProcedure {
 							}
 							return ItemStack.EMPTY;
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 1)).copy();
+					}.getItemStack(world, BlockPos.containing(x, y, z), 3)).copy();
 					_setstack.setCount((int) (new Object() {
 						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 							if (world instanceof ILevelExtension _ext) {
@@ -110,7 +112,7 @@ public class AltarWorkingProcedureProcedure {
 							}
 							return 0;
 						}
-					}.getAmount(world, BlockPos.containing(x, y, z), 1) - 1));
+					}.getAmount(world, BlockPos.containing(x, y, z), 3) - 1));
 					_itemHandlerModifiable.setStackInSlot(3, _setstack);
 				}
 				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -123,7 +125,7 @@ public class AltarWorkingProcedureProcedure {
 							}
 							return ItemStack.EMPTY;
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 1)).copy();
+					}.getItemStack(world, BlockPos.containing(x, y, z), 4)).copy();
 					_setstack.setCount((int) (new Object() {
 						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 							if (world instanceof ILevelExtension _ext) {
@@ -133,7 +135,7 @@ public class AltarWorkingProcedureProcedure {
 							}
 							return 0;
 						}
-					}.getAmount(world, BlockPos.containing(x, y, z), 1) - 1));
+					}.getAmount(world, BlockPos.containing(x, y, z), 4) - 1));
 					_itemHandlerModifiable.setStackInSlot(4, _setstack);
 				}
 				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
@@ -146,7 +148,7 @@ public class AltarWorkingProcedureProcedure {
 							}
 							return ItemStack.EMPTY;
 						}
-					}.getItemStack(world, BlockPos.containing(x, y, z), 1)).copy();
+					}.getItemStack(world, BlockPos.containing(x, y, z), 5)).copy();
 					_setstack.setCount((int) (new Object() {
 						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 							if (world instanceof ILevelExtension _ext) {
@@ -156,7 +158,7 @@ public class AltarWorkingProcedureProcedure {
 							}
 							return 0;
 						}
-					}.getAmount(world, BlockPos.containing(x, y, z), 1) - 1));
+					}.getAmount(world, BlockPos.containing(x, y, z), 5) - 1));
 					_itemHandlerModifiable.setStackInSlot(5, _setstack);
 				}
 				if (!world.isClientSide()) {

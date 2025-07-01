@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cdc",
+    "ccc"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "minecraft:redstone"
+    },
+    "c": {
+      "item": "minecraft:obsidian"
+    },
+    "d": {
+      "item": "ringcraft:ring_forge_block"
+    }
+  },
+  "result": {
+    "id": "ringcraft:ring_altar_block",
+    "count": 1
+  }
+}

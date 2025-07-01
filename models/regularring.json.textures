@@ -59,6 +59,12 @@
         "2": "totem_ring"
       },
       "name": "totem"
+    },
+    "dimensional": {
+      "map": {
+        "2": "dimensional_ring"
+      },
+      "name": "dimensional"
     }
   }
 }

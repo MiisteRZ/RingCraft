@@ -13,6 +13,7 @@ import miisterzmods.ringcraft.client.gui.RingsGUIScreen;
 import miisterzmods.ringcraft.client.gui.RingForgeGUIScreen;
 import miisterzmods.ringcraft.client.gui.RingAltarGUIScreen;
 import miisterzmods.ringcraft.client.gui.ReinforcedFurnanceGUIScreen;
+import miisterzmods.ringcraft.client.gui.DimensionalRingGUIScreen;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class RingcraftModScreens {
@@ -22,5 +23,6 @@ public class RingcraftModScreens {
 		event.register(RingcraftModMenus.REINFORCED_FURNANCE_GUI.get(), ReinforcedFurnanceGUIScreen::new);
 		event.register(RingcraftModMenus.RING_FORGE_GUI.get(), RingForgeGUIScreen::new);
 		event.register(RingcraftModMenus.RING_ALTAR_GUI.get(), RingAltarGUIScreen::new);
+		event.register(RingcraftModMenus.DIMENSIONAL_RING_GUI.get(), DimensionalRingGUIScreen::new);
 	}
 }
