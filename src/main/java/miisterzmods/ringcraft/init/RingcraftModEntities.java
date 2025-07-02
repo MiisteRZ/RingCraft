@@ -16,6 +16,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
+import miisterzmods.ringcraft.entity.SneapEntityEntity;
 import miisterzmods.ringcraft.entity.SandBallEntity;
 import miisterzmods.ringcraft.entity.KingSandstormEntity;
 import miisterzmods.ringcraft.entity.IceKingEntityEntity;
@@ -30,6 +31,10 @@ public class RingcraftModEntities {
 			EntityType.Builder.<KingSandstormEntity>of(KingSandstormEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(84).setUpdateInterval(3).fireImmune().sized(1f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<SandBallEntity>> SAND_BALL = register("sand_ball",
 			EntityType.Builder.<SandBallEntity>of(SandBallEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.31f, 0.31f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SneapEntityEntity>> SNEAP_ENTITY = register("sneap_entity",
+			EntityType.Builder.<SneapEntityEntity>of(SneapEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(72).setUpdateInterval(3)
+
+					.sized(0.6f, 0.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -41,11 +46,13 @@ public class RingcraftModEntities {
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		IceKingEntityEntity.init(event);
 		KingSandstormEntity.init(event);
+		SneapEntityEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(ICE_KING_ENTITY.get(), IceKingEntityEntity.createAttributes().build());
 		event.put(KING_SANDSTORM.get(), KingSandstormEntity.createAttributes().build());
+		event.put(SNEAP_ENTITY.get(), SneapEntityEntity.createAttributes().build());
 	}
 }

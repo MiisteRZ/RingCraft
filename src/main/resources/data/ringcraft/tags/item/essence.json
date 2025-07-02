@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "ringcraft:nether_portal_essence",
+    "ringcraft:end_portal_essence",
+    "ringcraft:overworld_essence"
+  ]
+}

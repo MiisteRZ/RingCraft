@@ -28,12 +28,16 @@ import miisterzmods.ringcraft.item.ReinforcedRawIronItem;
 import miisterzmods.ringcraft.item.ReinforcedIronIngotItem;
 import miisterzmods.ringcraft.item.RegularRingItemItem;
 import miisterzmods.ringcraft.item.RealmsPortalItem;
+import miisterzmods.ringcraft.item.OverworldEssenceItem;
+import miisterzmods.ringcraft.item.NetherPortalEssenceItem;
 import miisterzmods.ringcraft.item.IceCrystalItem;
 import miisterzmods.ringcraft.item.GuardianSoulItem;
 import miisterzmods.ringcraft.item.GoldRingItem;
 import miisterzmods.ringcraft.item.FlightRingItem;
 import miisterzmods.ringcraft.item.FireRingItem;
 import miisterzmods.ringcraft.item.EndermanSoulItem;
+import miisterzmods.ringcraft.item.EndPortalEssenceItem;
+import miisterzmods.ringcraft.item.DimensionalRingItem;
 import miisterzmods.ringcraft.item.CursedSoulItem;
 import miisterzmods.ringcraft.item.CursedRingItem;
 import miisterzmods.ringcraft.item.BreezeSoulItem;
@@ -101,6 +105,12 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> DOOMED_PITCHER_PLANT = block(RingcraftModBlocks.DOOMED_PITCHER_PLANT);
 	public static final DeferredItem<Item> DOOMED_TWISTING_VINES = block(RingcraftModBlocks.DOOMED_TWISTING_VINES);
 	public static final DeferredItem<Item> DOOMED_TWISTING_PLANT = block(RingcraftModBlocks.DOOMED_TWISTING_PLANT);
+	public static final DeferredItem<Item> DIMENSIONAL_RING = REGISTRY.register("dimensional_ring", DimensionalRingItem::new);
+	public static final DeferredItem<Item> END_PORTAL_ESSENCE = REGISTRY.register("end_portal_essence", EndPortalEssenceItem::new);
+	public static final DeferredItem<Item> OVERWORLD_ESSENCE = REGISTRY.register("overworld_essence", OverworldEssenceItem::new);
+	public static final DeferredItem<Item> NETHER_PORTAL_ESSENCE = REGISTRY.register("nether_portal_essence", NetherPortalEssenceItem::new);
+	public static final DeferredItem<Item> BURNT_GRASS_BLOCK = block(RingcraftModBlocks.BURNT_GRASS_BLOCK);
+	public static final DeferredItem<Item> SNEAP_ENTITY_SPAWN_EGG = REGISTRY.register("sneap_entity_spawn_egg", () -> new DeferredSpawnEggItem(RingcraftModEntities.SNEAP_ENTITY, -13434829, -16777165, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

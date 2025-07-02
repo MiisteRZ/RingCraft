@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "ringcraft:rosani_forest",
+  "features": "ringcraft:rozani_vines",
+  "step": "vegetal_decoration"
+}

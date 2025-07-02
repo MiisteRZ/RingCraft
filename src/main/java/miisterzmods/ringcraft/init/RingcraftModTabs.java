@@ -82,6 +82,11 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModBlocks.DOOMED_PITCHER_PLANT.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_TWISTING_VINES.get().asItem());
 				tabData.accept(RingcraftModBlocks.DOOMED_TWISTING_PLANT.get().asItem());
+				tabData.accept(RingcraftModItems.DIMENSIONAL_RING.get());
+				tabData.accept(RingcraftModItems.END_PORTAL_ESSENCE.get());
+				tabData.accept(RingcraftModItems.OVERWORLD_ESSENCE.get());
+				tabData.accept(RingcraftModItems.NETHER_PORTAL_ESSENCE.get());
+				tabData.accept(RingcraftModBlocks.BURNT_GRASS_BLOCK.get().asItem());
 			}).build());
 
 	@SubscribeEvent
@@ -90,6 +95,8 @@ public class RingcraftModTabs {
 			tabData.accept(RingcraftModBlocks.DOOMED_PITCHER_PLANT.get().asItem());
 			tabData.accept(RingcraftModBlocks.DOOMED_TWISTING_VINES.get().asItem());
 			tabData.accept(RingcraftModBlocks.DOOMED_TWISTING_PLANT.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(RingcraftModItems.SNEAP_ENTITY_SPAWN_EGG.get());
 		}
 	}
 }

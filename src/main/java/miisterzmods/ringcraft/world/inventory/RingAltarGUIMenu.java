@@ -91,7 +91,7 @@ public class RingAltarGUIMenu extends AbstractContainerMenu implements Supplier<
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:altar_usable")));
+				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:altar_fuel")));
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 65, 20) {
@@ -101,7 +101,7 @@ public class RingAltarGUIMenu extends AbstractContainerMenu implements Supplier<
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")));
+				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:altar_usable")));
 			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 92, 92) {
@@ -121,7 +121,7 @@ public class RingAltarGUIMenu extends AbstractContainerMenu implements Supplier<
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")));
+				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:altar_usable")));
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 65, 65) {
@@ -131,7 +131,7 @@ public class RingAltarGUIMenu extends AbstractContainerMenu implements Supplier<
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")));
+				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:altar_usable")));
 			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 119, 65) {
@@ -141,7 +141,7 @@ public class RingAltarGUIMenu extends AbstractContainerMenu implements Supplier<
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:rings")));
+				return stack.is(ItemTags.create(ResourceLocation.parse("ringcraft:altar_usable")));
 			}
 		}));
 		for (int si = 0; si < 3; ++si)

@@ -9,6 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import miisterzmods.ringcraft.client.model.ModelSneap;
 import miisterzmods.ringcraft.client.model.ModelSandBall;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -16,5 +17,6 @@ public class RingcraftModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelSandBall.LAYER_LOCATION, ModelSandBall::createBodyLayer);
+		event.registerLayerDefinition(ModelSneap.LAYER_LOCATION, ModelSneap::createBodyLayer);
 	}
 }
