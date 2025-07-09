@@ -1,6 +1,14 @@
 package miisterzmods.ringcraft.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.neoforged.neoforge.items.IItemHandler;
+import net.neoforged.neoforge.common.extensions.ILevelExtension;
+import net.neoforged.neoforge.capabilities.Capabilities;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.BlockPos;
+
+import miisterzmods.ringcraft.init.RingcraftModItems;
 
 public class DimensionRingRecipeProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
@@ -13,7 +21,7 @@ public class DimensionRingRecipeProcedure {
 		boolean Ring3 = false;
 		boolean Ring4 = false;
 		boolean RequirementsMet = false;
-		ItemRing1 = new ItemStack(RingcraftModItems.DELETED_MOD_ELEMENT.get()).copy();
+		ItemRing1 = new ItemStack(RingcraftModItems.NETHER_PORTAL_ESSENCE.get()).copy();
 		ItemRing2 = new ItemStack(RingcraftModItems.END_PORTAL_ESSENCE.get()).copy();
 		ItemRing3 = new ItemStack(RingcraftModItems.OVERWORLD_ESSENCE.get()).copy();
 		ItemRing4 = new ItemStack(RingcraftModItems.REGULAR_RING_ITEM.get()).copy();

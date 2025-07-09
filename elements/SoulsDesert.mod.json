@@ -1,0 +1,121 @@
+{
+  "_fv": 73,
+  "_type": "biome",
+  "definition": {
+    "name": "Souls Desert",
+    "groundBlock": {
+      "value": "Blocks.SANDSTONE#0"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.STONE#0"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.SAND#0"
+    },
+    "airColor": {
+      "value": -8388694,
+      "falpha": 0.0
+    },
+    "fogColor": {
+      "value": -13589141,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -15966648,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -15519522,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -12714087,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": "music.overworld.desert"
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 0.5,
+    "rainingPossibility": 0.05,
+    "temperature": 1.8,
+    "spawnBiome": false,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.5,
+      "max": 1.5
+    },
+    "genHumidity": {
+      "min": -2.0,
+      "max": 1.0
+    },
+    "genContinentalness": {
+      "min": -2.0,
+      "max": 0.0
+    },
+    "genErosion": {
+      "min": -1.0,
+      "max": 0.0
+    },
+    "genWeirdness": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "treesPerChunk": 2,
+    "vanillaTreeType": "Savanna trees",
+    "treeType": 1,
+    "minHeight": 4,
+    "treeStem": {
+      "value": "Blocks.BONE_BLOCK"
+    },
+    "treeBranch": {
+      "value": "Blocks.AIR"
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "DeadBushes"
+    ],
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "desert",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": true,
+    "spawnSwampHut": true,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": true,
+    "spawnBuriedTreasure": true,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": []
+  }
+}

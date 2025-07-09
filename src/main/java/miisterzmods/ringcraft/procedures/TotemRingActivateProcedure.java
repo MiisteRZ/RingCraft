@@ -58,13 +58,13 @@ public class TotemRingActivateProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(RingcraftModMobEffects.FROST_RESISTANCE, 400, 1));
 			new Object() {
-				void timedLoop(int current, int total, int ticks) {
+				void timedLoop(int timedloopiterator, int timedlooptotal, int ticks) {
 					if (entity instanceof Player _player)
 						_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) + 1));
 					final int tick2 = ticks;
 					RingcraftMod.queueServerWork(tick2, () -> {
-						if (total > current + 1) {
-							timedLoop(current + 1, total, tick2);
+						if (timedlooptotal > timedloopiterator + 1) {
+							timedLoop(timedloopiterator + 1, timedlooptotal, tick2);
 						}
 					});
 				}
@@ -92,13 +92,13 @@ public class TotemRingActivateProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(RingcraftModMobEffects.FROST_RESISTANCE, 400, 1));
 			new Object() {
-				void timedLoop(int current, int total, int ticks) {
+				void timedLoop(int timedloopiterator, int timedlooptotal, int ticks) {
 					if (entity instanceof Player _player)
 						_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) + 1));
 					final int tick2 = ticks;
 					RingcraftMod.queueServerWork(tick2, () -> {
-						if (total > current + 1) {
-							timedLoop(current + 1, total, tick2);
+						if (timedlooptotal > timedloopiterator + 1) {
+							timedLoop(timedloopiterator + 1, timedlooptotal, tick2);
 						}
 					});
 				}
@@ -126,13 +126,13 @@ public class TotemRingActivateProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(RingcraftModMobEffects.FROST_RESISTANCE, 400, 1));
 			new Object() {
-				void timedLoop(int current, int total, int ticks) {
+				void timedLoop(int timedloopiterator, int timedlooptotal, int ticks) {
 					if (entity instanceof Player _player)
 						_player.getFoodData().setSaturation((float) ((entity instanceof Player _plr ? _plr.getFoodData().getSaturationLevel() : 0) + 1));
 					final int tick2 = ticks;
 					RingcraftMod.queueServerWork(tick2, () -> {
-						if (total > current + 1) {
-							timedLoop(current + 1, total, tick2);
+						if (timedlooptotal > timedloopiterator + 1) {
+							timedLoop(timedloopiterator + 1, timedlooptotal, tick2);
 						}
 					});
 				}

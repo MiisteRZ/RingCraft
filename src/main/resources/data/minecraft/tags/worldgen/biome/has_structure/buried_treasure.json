@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "ringcraft:souls_desert",
     "ringcraft:doom_forest"
   ]
 }
