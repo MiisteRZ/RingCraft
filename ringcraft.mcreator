@@ -4584,6 +4584,23 @@
         ]
       },
       "path": "~/Biomes"
+    },
+    {
+      "name": "SoulsSand",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "souls_sand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/item/souls_sand.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/souls_sand.json",
+          "src/main/resources/assets/ringcraft/models/block/souls_sand.json",
+          "src/main/java/miisterzmods/ringcraft/block/SoulsSandBlock.java",
+          "src/main/resources/assets/ringcraft/blockstates/souls_sand.json"
+        ]
+      },
+      "path": "~/Blocks/SoulsDesert"
     }
   ],
   "variable_elements": [
@@ -4626,16 +4643,16 @@
   ],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~CUSTOM:ReinforcedIronBlock",
-      "~CUSTOM:ReinforcedIronDeepslateBlock",
-      "~CUSTOM:ReinforcedIronStoneBlock"
-    ],
     "ITEMS:minecraft:beacon_payment_items": [
       "CUSTOM:ReinforcedIronIngot"
     ],
     "ITEMS:mod:furnacefuel": [
       "Items.COAL#0"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:ReinforcedIronBlock",
+      "~CUSTOM:ReinforcedIronDeepslateBlock",
+      "~CUSTOM:ReinforcedIronStoneBlock"
     ],
     "ITEMS:mod:ringtoforge": [
       "CUSTOM:RegularRingItem"
@@ -4651,9 +4668,8 @@
       "~CUSTOM:SoulsDesert"
     ],
     "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.SANDSTONE#0",
-      "~Blocks.SAND#0",
       "~Blocks.STONE#0",
+      "~CUSTOM:SoulsSand",
       "~Blocks.DIRT#0",
       "~CUSTOM:BurntGrassBlock",
       "~Blocks.BLACKSTONE",
@@ -4802,7 +4818,8 @@
       "EndPortalEssence",
       "OverworldEssence",
       "NetherPortalEssence",
-      "BurntGrassBlock"
+      "BurntGrassBlock",
+      "SoulsSand"
     ]
   },
   "language_map": {
@@ -4824,6 +4841,7 @@
       "block.ringcraft.doomed_plank_slab": "Doomed Plank Slab",
       "item.ringcraft.warden_soul": "Guardian Soul",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "block.ringcraft.souls_sand": "Souls Sand",
       "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "advancements.enderman_soul_advancement.descr": "Get the Soul of an Enderman",
       "entity.ringcraft.ice_king_entity": "Ice King",
@@ -4950,6 +4968,7 @@
       "block.ringcraft.doomed_plank_slab": "Doomed Plank Slab",
       "item.ringcraft.warden_soul": "Guardian Soul",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "block.ringcraft.souls_sand": "Souls Sand",
       "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "advancements.enderman_soul_advancement.descr": "Get the Soul of an Enderman",
       "entity.ringcraft.ice_king_entity": "Ice King",
@@ -5077,6 +5096,7 @@
       "block.ringcraft.doomed_plank_slab": "Doomed Plank Slab",
       "item.ringcraft.warden_soul": "Guardian Soul",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "block.ringcraft.souls_sand": "Souls Sand",
       "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
@@ -5203,6 +5223,7 @@
       "block.ringcraft.doomed_plank_slab": "Doomed Plank Slab",
       "item.ringcraft.warden_soul": "Guardian Soul",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "block.ringcraft.souls_sand": "Souls Sand",
       "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
@@ -5330,6 +5351,7 @@
       "block.ringcraft.doomed_plank_slab": "Doomed Plank Slab",
       "item.ringcraft.warden_soul": "Guardian Soul",
       "block.ringcraft.reinforced_iron_deepslate_block": "Minério de ferro eforçado de rardósia",
+      "block.ringcraft.souls_sand": "Souls Sand",
       "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
@@ -5456,6 +5478,7 @@
       "block.ringcraft.doomed_plank_slab": "Doomed Plank Slab",
       "item.ringcraft.warden_soul": "Guardian Soul",
       "block.ringcraft.reinforced_iron_deepslate_block": "Megerősített vasérc mélypalában",
+      "block.ringcraft.souls_sand": "Souls Sand",
       "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
@@ -5582,6 +5605,7 @@
       "block.ringcraft.doomed_plank_slab": "Doomed Plank Slab",
       "item.ringcraft.warden_soul": "Guardian Soul",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "block.ringcraft.souls_sand": "Souls Sand",
       "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
@@ -5709,6 +5733,7 @@
       "block.ringcraft.doomed_plank_slab": "Doomed Plank Slab",
       "item.ringcraft.warden_soul": "Warden Soul",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "block.ringcraft.souls_sand": "Souls Sand",
       "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.enderman_soul_advancement.descr": "Get the Soul of an Enderman",
@@ -5838,6 +5863,7 @@
       "block.ringcraft.doomed_plank_slab": "Doomed Plank Slab",
       "item.ringcraft.warden_soul": "Guardian Soul",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "block.ringcraft.souls_sand": "Souls Sand",
       "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
@@ -5964,6 +5990,7 @@
       "block.ringcraft.doomed_plank_slab": "Doomed Plank Slab",
       "item.ringcraft.warden_soul": "Alma de Warden",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "block.ringcraft.souls_sand": "Souls Sand",
       "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "entity.ringcraft.ice_king_entity": "Rey Helado",
       "advancements.enderman_soul_advancement.descr": "Consigue un Alma de Enderman",
@@ -6091,6 +6118,7 @@
       "block.ringcraft.doomed_plank_slab": "Doomed Plank Slab",
       "item.ringcraft.warden_soul": "Guardian Soul",
       "block.ringcraft.reinforced_iron_deepslate_block": "Reinforced Iron Deepslate",
+      "block.ringcraft.souls_sand": "Souls Sand",
       "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
@@ -6218,6 +6246,7 @@
       "block.ringcraft.doomed_plank_slab": "Doomed Plank Slab",
       "item.ringcraft.warden_soul": "Guardian Soul",
       "block.ringcraft.reinforced_iron_deepslate_block": "Minério de ferro eforçado de rardósia",
+      "block.ringcraft.souls_sand": "Souls Sand",
       "block.ringcraft.rozani_leaves": "Rozani Leaves",
       "entity.ringcraft.ice_king_entity": "Ice King",
       "advancements.enderman_soul_advancement.descr": "Get a Enderman Soul",
@@ -6364,6 +6393,10 @@
           },
           {
             "name": "Rozani",
+            "children": []
+          },
+          {
+            "name": "SoulsDesert",
             "children": []
           }
         ]

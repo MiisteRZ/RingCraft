@@ -111,6 +111,7 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> NETHER_PORTAL_ESSENCE = REGISTRY.register("nether_portal_essence", NetherPortalEssenceItem::new);
 	public static final DeferredItem<Item> BURNT_GRASS_BLOCK = block(RingcraftModBlocks.BURNT_GRASS_BLOCK);
 	public static final DeferredItem<Item> SNEAP_ENTITY_SPAWN_EGG = REGISTRY.register("sneap_entity_spawn_egg", () -> new DeferredSpawnEggItem(RingcraftModEntities.SNEAP_ENTITY, -13434829, -16777165, new Item.Properties()));
+	public static final DeferredItem<Item> SOULS_SAND = block(RingcraftModBlocks.SOULS_SAND);
 
 	// Start of user code block custom items
 	// End of user code block custom items

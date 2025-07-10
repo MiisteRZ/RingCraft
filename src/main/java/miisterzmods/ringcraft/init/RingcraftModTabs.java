@@ -87,6 +87,7 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModItems.OVERWORLD_ESSENCE.get());
 				tabData.accept(RingcraftModItems.NETHER_PORTAL_ESSENCE.get());
 				tabData.accept(RingcraftModBlocks.BURNT_GRASS_BLOCK.get().asItem());
+				tabData.accept(RingcraftModBlocks.SOULS_SAND.get().asItem());
 			}).build());
 
 	@SubscribeEvent

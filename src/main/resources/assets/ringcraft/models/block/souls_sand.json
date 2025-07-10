@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ringcraft:block/soul_sand",
+    "up": "ringcraft:block/soul_sand",
+    "north": "ringcraft:block/soul_sand",
+    "east": "ringcraft:block/soul_sand",
+    "south": "ringcraft:block/soul_sand",
+    "west": "ringcraft:block/soul_sand",
+    "particle": "ringcraft:block/soul_sand"
+  },
+  "render_type": "solid"
+}

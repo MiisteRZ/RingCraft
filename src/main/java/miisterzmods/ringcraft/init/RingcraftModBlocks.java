@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 import net.minecraft.world.level.block.Block;
 
+import miisterzmods.ringcraft.block.SoulsSandBlock;
 import miisterzmods.ringcraft.block.RozaniWoodBlock;
 import miisterzmods.ringcraft.block.RozaniStairsBlock;
 import miisterzmods.ringcraft.block.RozaniSlabBlock;
@@ -81,6 +82,7 @@ public class RingcraftModBlocks {
 	public static final DeferredBlock<Block> DOOMED_TWISTING_VINES = REGISTRY.register("doomed_twisting_vines", DoomedTwistingVinesBlock::new);
 	public static final DeferredBlock<Block> DOOMED_TWISTING_PLANT = REGISTRY.register("doomed_twisting_plant", DoomedTwistingPlantBlock::new);
 	public static final DeferredBlock<Block> BURNT_GRASS_BLOCK = REGISTRY.register("burnt_grass_block", BurntGrassBlockBlock::new);
+	public static final DeferredBlock<Block> SOULS_SAND = REGISTRY.register("souls_sand", SoulsSandBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

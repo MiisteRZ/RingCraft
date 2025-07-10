@@ -4,7 +4,7 @@
   "definition": {
     "name": "Souls Desert",
     "groundBlock": {
-      "value": "Blocks.SANDSTONE#0"
+      "value": "CUSTOM:SoulsSand"
     },
     "undergroundBlock": {
       "value": "Blocks.STONE#0"
@@ -18,10 +18,6 @@
     },
     "fogColor": {
       "value": -13589141,
-      "falpha": 0.0
-    },
-    "grassColor": {
-      "value": -15966648,
       "falpha": 0.0
     },
     "foliageColor": {
