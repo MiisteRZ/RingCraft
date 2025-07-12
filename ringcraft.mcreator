@@ -4601,6 +4601,23 @@
         ]
       },
       "path": "~/Blocks/SoulsDesert"
+    },
+    {
+      "name": "SoulSandstone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_sandstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ringcraft/models/item/soul_sandstone.json",
+          "src/main/resources/assets/ringcraft/models/block/soul_sandstone.json",
+          "src/main/java/miisterzmods/ringcraft/block/SoulSandstoneBlock.java",
+          "src/main/resources/assets/ringcraft/blockstates/soul_sandstone.json",
+          "src/main/resources/data/ringcraft/loot_table/blocks/soul_sandstone.json"
+        ]
+      },
+      "path": "~/Blocks/SoulsDesert"
     }
   ],
   "variable_elements": [
@@ -4643,39 +4660,12 @@
   ],
   "sound_elements": [],
   "tag_elements": {
-    "ITEMS:minecraft:beacon_payment_items": [
-      "CUSTOM:ReinforcedIronIngot"
-    ],
     "ITEMS:mod:furnacefuel": [
       "Items.COAL#0"
-    ],
-    "BLOCKS:minecraft:needs_iron_tool": [
-      "~CUSTOM:ReinforcedIronBlock",
-      "~CUSTOM:ReinforcedIronDeepslateBlock",
-      "~CUSTOM:ReinforcedIronStoneBlock"
-    ],
-    "ITEMS:mod:ringtoforge": [
-      "CUSTOM:RegularRingItem"
     ],
     "BIOMES:minecraft:has_structure/buried_treasure": [
       "~CUSTOM:SoulsDesert",
       "~CUSTOM:DoomForest"
-    ],
-    "BIOMES:minecraft:has_structure/village_desert": [
-      "~CUSTOM:SoulsDesert"
-    ],
-    "BIOMES:minecraft:has_structure/desert_pyramid": [
-      "~CUSTOM:SoulsDesert"
-    ],
-    "BLOCKS:minecraft:overworld_carver_replaceables": [
-      "~Blocks.STONE#0",
-      "~CUSTOM:SoulsSand",
-      "~Blocks.DIRT#0",
-      "~CUSTOM:BurntGrassBlock",
-      "~Blocks.BLACKSTONE",
-      "~CUSTOM:Muckroot",
-      "~CUSTOM:Mistrock",
-      "~Blocks.GRASS"
     ],
     "ITEMS:minecraft:piglin_loved": [
       "CUSTOM:GoldRing",
@@ -4684,33 +4674,6 @@
     "BLOCKS:minecraft:leaves": [
       "~CUSTOM:RozaniLeaves"
     ],
-    "BIOMES:minecraft:has_structure/shipwreck_beached": [
-      "~CUSTOM:SoulsDesert"
-    ],
-    "ITEMS:mod:souls": [
-      "CUSTOM:BlazeSoul",
-      "CUSTOM:EndermanSoul",
-      "CUSTOM:VexSoul",
-      "CUSTOM:BreezeSoul",
-      "CUSTOM:GuardianSoul",
-      "CUSTOM:WardenSoul",
-      "CUSTOM:CursedSoul"
-    ],
-    "BLOCKS:minecraft:mineable/pickaxe": [
-      "~CUSTOM:Mistrock",
-      "~CUSTOM:RingAltarBlock",
-      "~CUSTOM:RingForgeBlock",
-      "~CUSTOM:ReinforcedIronBlock",
-      "~CUSTOM:ReinforcedIronDeepslateBlock",
-      "~CUSTOM:ReinforcedFurnance",
-      "~CUSTOM:ReinforcedIronStoneBlock"
-    ],
-    "BLOCKS:minecraft:mineable/axe": [
-      "~CUSTOM:DoomedTreeLog",
-      "~CUSTOM:RozaniWood",
-      "~CUSTOM:RozaniPlanks",
-      "~CUSTOM:RozaniLog"
-    ],
     "BLOCKS:minecraft:slabs": [
       "~CUSTOM:DoomedPlankSlab",
       "~CUSTOM:RozaniSlab"
@@ -4718,16 +4681,8 @@
     "BIOMES:minecraft:has_structure/nether_fossil": [
       "~CUSTOM:Firidia"
     ],
-    "BLOCKS:minecraft:fences": [
-      "~CUSTOM:DoomedPlankFence",
-      "~CUSTOM:RozaniFence"
-    ],
-    "BIOMES:minecraft:has_structure/village_savanna": [
-      "~CUSTOM:DoomForest"
-    ],
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~CUSTOM:BurntGrassBlock",
-      "~CUSTOM:Muckroot"
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:SoulSandstone"
     ],
     "BLOCKS:minecraft:stairs": [
       "~CUSTOM:DoomedPlankStairs",
@@ -4751,6 +4706,72 @@
     ],
     "BIOMES:minecraft:has_structure/swamp_hut": [
       "~CUSTOM:SoulsDesert"
+    ],
+    "ITEMS:minecraft:beacon_payment_items": [
+      "CUSTOM:ReinforcedIronIngot"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:ReinforcedIronBlock",
+      "~CUSTOM:ReinforcedIronDeepslateBlock",
+      "~CUSTOM:ReinforcedIronStoneBlock"
+    ],
+    "ITEMS:mod:ringtoforge": [
+      "CUSTOM:RegularRingItem"
+    ],
+    "BIOMES:minecraft:has_structure/village_desert": [
+      "~CUSTOM:SoulsDesert"
+    ],
+    "BIOMES:minecraft:has_structure/desert_pyramid": [
+      "~CUSTOM:SoulsDesert"
+    ],
+    "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.STONE#0",
+      "~CUSTOM:SoulsSand",
+      "~Blocks.DIRT#0",
+      "~CUSTOM:BurntGrassBlock",
+      "~Blocks.BLACKSTONE",
+      "~CUSTOM:Muckroot",
+      "~CUSTOM:Mistrock",
+      "~Blocks.GRASS"
+    ],
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:SoulsDesert"
+    ],
+    "ITEMS:mod:souls": [
+      "CUSTOM:BlazeSoul",
+      "CUSTOM:EndermanSoul",
+      "CUSTOM:VexSoul",
+      "CUSTOM:BreezeSoul",
+      "CUSTOM:GuardianSoul",
+      "CUSTOM:WardenSoul",
+      "CUSTOM:CursedSoul"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:DoomedTreeLog",
+      "~CUSTOM:RozaniWood",
+      "~CUSTOM:RozaniPlanks",
+      "~CUSTOM:RozaniLog"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:SoulSandstone",
+      "~CUSTOM:Mistrock",
+      "~CUSTOM:RingAltarBlock",
+      "~CUSTOM:RingForgeBlock",
+      "~CUSTOM:ReinforcedIronBlock",
+      "~CUSTOM:ReinforcedIronDeepslateBlock",
+      "~CUSTOM:ReinforcedFurnance",
+      "~CUSTOM:ReinforcedIronStoneBlock"
+    ],
+    "BIOMES:minecraft:has_structure/village_savanna": [
+      "~CUSTOM:DoomForest"
+    ],
+    "BLOCKS:minecraft:fences": [
+      "~CUSTOM:DoomedPlankFence",
+      "~CUSTOM:RozaniFence"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:BurntGrassBlock",
+      "~CUSTOM:Muckroot"
     ]
   },
   "tab_element_order": {
@@ -4819,7 +4840,8 @@
       "OverworldEssence",
       "NetherPortalEssence",
       "BurntGrassBlock",
-      "SoulsSand"
+      "SoulsSand",
+      "SoulSandstone"
     ]
   },
   "language_map": {
@@ -4921,6 +4943,7 @@
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
+      "block.ringcraft.soul_sandstone": "Soul Sandstone",
       "block.ringcraft.rozani_stairs": "Rozani Stairs",
       "item.ringcraft.dimensional_ring": "Transdimensional Ring",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
@@ -5048,6 +5071,7 @@
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "block.ringcraft.ring_forge": "Ring Forge",
       "item.ringcraft.breeze_soul": "Vex Soul",
+      "block.ringcraft.soul_sandstone": "Soul Sandstone",
       "block.ringcraft.rozani_stairs": "Rozani Stairs",
       "item.ringcraft.dimensional_ring": "Transdimensional Ring",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
@@ -5176,6 +5200,7 @@
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
+      "block.ringcraft.soul_sandstone": "Soul Sandstone",
       "block.ringcraft.rozani_stairs": "Rozani Stairs",
       "item.ringcraft.dimensional_ring": "Sand Ring",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
@@ -5304,6 +5329,7 @@
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
+      "block.ringcraft.soul_sandstone": "Soul Sandstone",
       "block.ringcraft.rozani_stairs": "Rozani Stairs",
       "item.ringcraft.dimensional_ring": "Sand Ring",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
@@ -5431,6 +5457,7 @@
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
+      "block.ringcraft.soul_sandstone": "Soul Sandstone",
       "block.ringcraft.rozani_stairs": "Rozani Stairs",
       "item.ringcraft.dimensional_ring": "Sand Ring",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
@@ -5558,6 +5585,7 @@
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
+      "block.ringcraft.soul_sandstone": "Soul Sandstone",
       "block.ringcraft.rozani_stairs": "Rozani Stairs",
       "item.ringcraft.dimensional_ring": "Sand Ring",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
@@ -5686,6 +5714,7 @@
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
+      "block.ringcraft.soul_sandstone": "Soul Sandstone",
       "block.ringcraft.rozani_stairs": "Rozani Stairs",
       "item.ringcraft.dimensional_ring": "Sand Ring",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
@@ -5815,6 +5844,7 @@
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "block.ringcraft.ring_forge": "Ring Forge",
       "item.ringcraft.breeze_soul": "Breeze Soul",
+      "block.ringcraft.soul_sandstone": "Soul Sandstone",
       "block.ringcraft.rozani_stairs": "Rozani Stairs",
       "item.ringcraft.dimensional_ring": "Transdimensional Ring",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
@@ -5943,6 +5973,7 @@
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
+      "block.ringcraft.soul_sandstone": "Soul Sandstone",
       "block.ringcraft.rozani_stairs": "Rozani Stairs",
       "item.ringcraft.dimensional_ring": "Sand Ring",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
@@ -6071,6 +6102,7 @@
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Alma de Brisa",
+      "block.ringcraft.soul_sandstone": "Soul Sandstone",
       "block.ringcraft.rozani_stairs": "Rozani Stairs",
       "item.ringcraft.dimensional_ring": "Sand Ring",
       "advancements.breeze_soul_advancement.descr": "Consigue el alma de una Brisa",
@@ -6199,6 +6231,7 @@
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
+      "block.ringcraft.soul_sandstone": "Soul Sandstone",
       "block.ringcraft.rozani_stairs": "Rozani Stairs",
       "item.ringcraft.dimensional_ring": "Sand Ring",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
@@ -6326,6 +6359,7 @@
       "block.ringcraft.rozani_fence": "Rozani Fence",
       "block.ringcraft.doomed_tree_leaves": "Doomed Tree Leaves",
       "item.ringcraft.breeze_soul": "Vex Soul",
+      "block.ringcraft.soul_sandstone": "Soul Sandstone",
       "block.ringcraft.rozani_stairs": "Rozani Stairs",
       "item.ringcraft.dimensional_ring": "Sand Ring",
       "advancements.breeze_soul_advancement.descr": "Get a Breeze Soul",
