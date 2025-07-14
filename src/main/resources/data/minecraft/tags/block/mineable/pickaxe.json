@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "ringcraft:soul_sandstone_wall",
+    "ringcraft:soul_sandstone_slab",
+    "ringcraft:soul_sandstone_stairs",
     "ringcraft:soul_sandstone",
     "ringcraft:mistrock",
     "ringcraft:ring_altar_block",

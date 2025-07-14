@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "ringcraft:block/soul_sandstone_bottom",
+    "bottom": "ringcraft:block/soul_sandstone_bottom",
+    "top": "ringcraft:block/soul_sandstone_top",
+    "side": "ringcraft:block/soul_sandstone"
+  },
+  "render_type": "solid"
+}

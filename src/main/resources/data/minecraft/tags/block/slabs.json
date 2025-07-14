@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "ringcraft:soul_sandstone_slab",
     "ringcraft:doomed_plank_slab",
     "ringcraft:rozani_slab"
   ]

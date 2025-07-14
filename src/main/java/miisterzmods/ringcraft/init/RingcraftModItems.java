@@ -113,6 +113,9 @@ public class RingcraftModItems {
 	public static final DeferredItem<Item> SNEAP_ENTITY_SPAWN_EGG = REGISTRY.register("sneap_entity_spawn_egg", () -> new DeferredSpawnEggItem(RingcraftModEntities.SNEAP_ENTITY, -13434829, -16777165, new Item.Properties()));
 	public static final DeferredItem<Item> SOULS_SAND = block(RingcraftModBlocks.SOULS_SAND);
 	public static final DeferredItem<Item> SOUL_SANDSTONE = block(RingcraftModBlocks.SOUL_SANDSTONE);
+	public static final DeferredItem<Item> SOUL_SANDSTONE_STAIRS = block(RingcraftModBlocks.SOUL_SANDSTONE_STAIRS);
+	public static final DeferredItem<Item> SOUL_SANDSTONE_SLAB = block(RingcraftModBlocks.SOUL_SANDSTONE_SLAB);
+	public static final DeferredItem<Item> SOUL_SANDSTONE_WALL = block(RingcraftModBlocks.SOUL_SANDSTONE_WALL);
 
 	// Start of user code block custom items
 	// End of user code block custom items

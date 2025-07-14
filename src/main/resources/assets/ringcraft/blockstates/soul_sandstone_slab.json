@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ringcraft:block/soul_sandstone_slab"
+    },
+    "type=top": {
+      "model": "ringcraft:block/soul_sandstone_slab_top"
+    },
+    "type=double": {
+      "model": "ringcraft:block/soul_sandstone_slab_full"
+    }
+  }
+}

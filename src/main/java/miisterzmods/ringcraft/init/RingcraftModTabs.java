@@ -89,6 +89,9 @@ public class RingcraftModTabs {
 				tabData.accept(RingcraftModBlocks.BURNT_GRASS_BLOCK.get().asItem());
 				tabData.accept(RingcraftModBlocks.SOULS_SAND.get().asItem());
 				tabData.accept(RingcraftModBlocks.SOUL_SANDSTONE.get().asItem());
+				tabData.accept(RingcraftModBlocks.SOUL_SANDSTONE_STAIRS.get().asItem());
+				tabData.accept(RingcraftModBlocks.SOUL_SANDSTONE_SLAB.get().asItem());
+				tabData.accept(RingcraftModBlocks.SOUL_SANDSTONE_WALL.get().asItem());
 			}).build());
 
 	@SubscribeEvent

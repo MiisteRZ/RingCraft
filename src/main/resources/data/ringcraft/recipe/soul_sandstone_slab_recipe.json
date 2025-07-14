@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "soulstone_slab",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "ringcraft:soul_sandstone"
+    }
+  },
+  "result": {
+    "id": "ringcraft:soul_sandstone_slab",
+    "count": 1
+  }
+}

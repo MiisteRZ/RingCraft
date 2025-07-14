@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "ringcraft:soul_sandstone_stairs",
     "ringcraft:doomed_plank_stairs",
     "ringcraft:rozani_stairs"
   ]

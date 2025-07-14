@@ -10,6 +10,9 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.Block;
 
 import miisterzmods.ringcraft.block.SoulsSandBlock;
+import miisterzmods.ringcraft.block.SoulSandstoneWallBlock;
+import miisterzmods.ringcraft.block.SoulSandstoneStairsBlock;
+import miisterzmods.ringcraft.block.SoulSandstoneSlabBlock;
 import miisterzmods.ringcraft.block.SoulSandstoneBlock;
 import miisterzmods.ringcraft.block.RozaniWoodBlock;
 import miisterzmods.ringcraft.block.RozaniStairsBlock;
@@ -85,6 +88,9 @@ public class RingcraftModBlocks {
 	public static final DeferredBlock<Block> BURNT_GRASS_BLOCK = REGISTRY.register("burnt_grass_block", BurntGrassBlockBlock::new);
 	public static final DeferredBlock<Block> SOULS_SAND = REGISTRY.register("souls_sand", SoulsSandBlock::new);
 	public static final DeferredBlock<Block> SOUL_SANDSTONE = REGISTRY.register("soul_sandstone", SoulSandstoneBlock::new);
+	public static final DeferredBlock<Block> SOUL_SANDSTONE_STAIRS = REGISTRY.register("soul_sandstone_stairs", SoulSandstoneStairsBlock::new);
+	public static final DeferredBlock<Block> SOUL_SANDSTONE_SLAB = REGISTRY.register("soul_sandstone_slab", SoulSandstoneSlabBlock::new);
+	public static final DeferredBlock<Block> SOUL_SANDSTONE_WALL = REGISTRY.register("soul_sandstone_wall", SoulSandstoneWallBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
