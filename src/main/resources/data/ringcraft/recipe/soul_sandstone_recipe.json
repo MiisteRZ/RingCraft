@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sandstone",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "ringcraft:souls_sand"
+    }
+  },
+  "result": {
+    "id": "ringcraft:soul_sandstone",
+    "count": 1
+  }
+}
